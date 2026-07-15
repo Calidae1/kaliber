@@ -1,20 +1,37 @@
 {
   "id": "7x64",
   "name": "7 × 64",
-  "aliase": ["7x64", "7 x 64 Brenneke", "7x64 Brenneke", "7x64mm", "7 mm Brenneke"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    "7x64",
+    "7 x 64 Brenneke",
+    "7x64 Brenneke",
+    "7x64mm",
+    "7 mm Brenneke"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Wilhelm Brennekes europäische Antwort auf die .30-06: rasanter, flacher, weniger Rückstoß — und in Deutschland eine der beliebtesten Jagdpatronen überhaupt.",
-
   "schnell": {
-    "geschoss_gr": [140, 177],
-    "v0_ms": [790, 900],
-    "e0_j": [3400, 3800],
-    "drall_mm": [220, 220],
+    "geschoss_gr": [
+      140,
+      177
+    ],
+    "v0_ms": [
+      790,
+      900
+    ],
+    "e0_j": [
+      3400,
+      3800
+    ],
+    "drall_mm": [
+      220,
+      220
+    ],
     "gasdruck_bar": 4150
   },
-
   "warnungen": [],
-
   "basis": {
     "entwickler": "Wilhelm Brenneke",
     "jahr": 1917,
@@ -24,9 +41,13 @@
       "Militärisch spielte sie nie eine Rolle, was ihr Glück war: Sie blieb von Ordonnanzzwängen frei und konnte sich rein nach jagdlichen Kriterien entwickeln. In Deutschland und Frankreich wurde sie zur Standardpatrone für Repetierbüchsen, und mit der randlosen Hülse passt sie in jedes Mauser-System.",
       "Ihr Erfolg hat einen praktischen Grund, den man unterschätzt: die Randversion 7 × 65 R. Wer einen Drilling oder eine Kipplaufbüchse führt, bekommt dieselbe Ballistik in einer Hülse mit Rand — und kann für beide Waffen dieselben Geschosse und weitgehend dieselben Ladedaten nutzen. Diese Kombination hat sie in deutschen Waffenschränken fest verankert."
     ],
-    "einsatz": ["Jagd auf alles heimische Schalenwild", "Bergjagd und weite Schüsse", "Auslandsjagd in Europa und Afrika (leichtes Wild)", "Standardkaliber deutscher Repetierbüchsen"]
+    "einsatz": [
+      "Jagd auf alles heimische Schalenwild",
+      "Bergjagd und weite Schüsse",
+      "Auslandsjagd in Europa und Afrika (leichtes Wild)",
+      "Standardkaliber deutscher Repetierbüchsen"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P.",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -43,36 +64,134 @@
     "drall": "1:220 mm (1:8,66″)",
     "drall_hinweis": "Einheitlich und für alle gängigen Geschosse von 140 bis 177 gr ausreichend schnell. Ein Drall-Problem gibt es bei diesem Kaliber praktisch nicht."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 600 mm Lauf, wie bei deutschen Jagdbüchsen üblich.",
     "laborierungen": [
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 162, "g": 10.5, "v0": 830, "bc": 0.450, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Die deutsche Standard-Jagdlaborierung." },
-      { "hersteller": "RWS", "typ": "Doppelkern Teilmantel", "gr": 173, "g": 11.21, "v0": 800, "bc": 0.470, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Für starkes Wild — hoher Restgewichtserhalt." },
-      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 154, "g": 9.98, "v0": 850, "bc": 0.410, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 170, "g": 11.02, "v0": 805, "bc": 0.440, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bindekern, für Drückjagd auf Sauen." },
-      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 140, "g": 9.07, "v0": 880, "bc": 0.412, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bleifrei und rasant — die Antwort auf die Landesvorschriften." },
-      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 162, "g": 10.5, "v0": 835, "bc": 0.630, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Sehr hoher BC — die Wahl für weite Bergschüsse." },
-      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 173, "g": 11.21, "v0": 795, "bc": 0.460, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": null }
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 162,
+        "g": 10.5,
+        "v0": 830,
+        "bc": 0.45,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Die deutsche Standard-Jagdlaborierung."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Doppelkern Teilmantel",
+        "form": "teilmantel",
+        "gr": 173,
+        "g": 11.21,
+        "v0": 800,
+        "bc": 0.47,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Für starkes Wild — hoher Restgewichtserhalt."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 154,
+        "g": 9.98,
+        "v0": 850,
+        "bc": 0.41,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Günstigste reguläre Jagdlaborierung."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 170,
+        "g": 11.02,
+        "v0": 805,
+        "bc": 0.44,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bindekern, für Drückjagd auf Sauen."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TTSX bleifrei",
+        "form": "bleifrei",
+        "gr": 140,
+        "g": 9.07,
+        "v0": 880,
+        "bc": 0.412,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei und rasant — die Antwort auf die Landesvorschriften."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD-X Precision Hunter",
+        "form": "kunststoffspitze",
+        "gr": 162,
+        "g": 10.5,
+        "v0": 835,
+        "bc": 0.63,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Sehr hoher BC — die Wahl für weite Bergschüsse."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 173,
+        "g": 11.21,
+        "v0": 795,
+        "bc": 0.46,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": null
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N160", "eignung": "Der Klassiker für dieses Hülsenvolumen." },
-    { "name": "Vihtavuori N550", "eignung": "Für mittlere Geschossgewichte, sehr gleichmäßig." },
-    { "name": "Hodgdon H4350", "eignung": "Breites Ladefenster, temperaturstabil." },
-    { "name": "Alliant Reloder 19", "eignung": "Für schwere Geschosse ab 170 gr." }
+    {
+      "name": "Vihtavuori N160",
+      "eignung": "Der Klassiker für dieses Hülsenvolumen."
+    },
+    {
+      "name": "Vihtavuori N550",
+      "eignung": "Für mittlere Geschossgewichte, sehr gleichmäßig."
+    },
+    {
+      "name": "Hodgdon H4350",
+      "eignung": "Breites Ladefenster, temperaturstabil."
+    },
+    {
+      "name": "Alliant Reloder 19",
+      "eignung": "Für schwere Geschosse ab 170 gr."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 7×64", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=7x64" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 7×64",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=7x64"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Praktisch bedeutungslos. Fabrik-Unterschallmunition gibt es nicht, und die Patrone ist als rasante Vollmachtpatrone konzipiert. Auf dem Ansitz wird sie wie alle Jagdkaliber mit normaler Überschallmunition und Dämpfer geschossen — der nimmt den Mündungsknall, der Geschossknall bleibt. Das ist der übliche und ausreichende Weg."
   },
-
   "vorteile": [
     "Flachere Bahn als .30-06 bei ähnlicher Energie — die Stärke der Patrone",
     "Spürbar weniger Rückstoß als 8 × 57 IS oder .30-06",
@@ -89,7 +208,6 @@
     "Für sehr starkes Wild ist 9,3 × 62 souveräner",
     "Für Schalldämpferbetrieb ungeeignet"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich spielt die Patrone kaum eine Rolle — sie ist eine reine Jagdpatrone.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 7,24 mm erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 2.900–3.100 J deutlich über den geforderten 2.000 J.",
@@ -99,28 +217,60 @@
       "Für die Auslandsjagd außerhalb Europas ist die Verfügbarkeit ein echtes Problem. Wer nach Afrika oder Nordamerika reist, sollte Munition mitnehmen oder .30-06 wählen."
     ]
   },
-
   "varianten": [
-    { "name": "7 × 64", "text": "Die randlose Version für Repetierbüchsen. Der Regelfall." },
-    { "name": "7 × 65 R", "text": "Die Randversion für Drillinge, Kipplaufbüchsen und Doppelbüchsen. Ballistisch praktisch gleichwertig — passt aber nicht in 7×64-Waffen." },
-    { "name": "7 × 64 leicht (140 gr)", "text": "Rasant und flach, rund 880 m/s. Für Rehwild und weite Schüsse." },
-    { "name": "7 × 64 schwer (173–177 gr)", "text": "Langsamer, aber mit hoher Sektionaldichte. Für Rotwild und starke Sauen." },
-    { "name": "7 mm Rem Magnum", "text": "Die amerikanische Steigerung: rund 15 % mehr Energie, aber Magnum-System und mehr Rückstoß." }
+    {
+      "name": "7 × 64",
+      "text": "Die randlose Version für Repetierbüchsen. Der Regelfall."
+    },
+    {
+      "name": "7 × 65 R",
+      "text": "Die Randversion für Drillinge, Kipplaufbüchsen und Doppelbüchsen. Ballistisch praktisch gleichwertig — passt aber nicht in 7×64-Waffen."
+    },
+    {
+      "name": "7 × 64 leicht (140 gr)",
+      "text": "Rasant und flach, rund 880 m/s. Für Rehwild und weite Schüsse."
+    },
+    {
+      "name": "7 × 64 schwer (173–177 gr)",
+      "text": "Langsamer, aber mit hoher Sektionaldichte. Für Rotwild und starke Sauen."
+    },
+    {
+      "name": "7 mm Rem Magnum",
+      "text": "Die amerikanische Steigerung: rund 15 % mehr Energie, aber Magnum-System und mehr Rückstoß."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".30-06 Springfield", "text": "Ähnliche Energie, größeres Geschoss, weltweit verfügbar. Dafür mehr Rückstoß und weniger flach." },
-    { "name": "8 × 57 IS", "text": "Der deutsche Klassiker mit größerem Geschoss. Mehr Wirkung, weniger Rasanz." },
-    { "name": ".308 Winchester", "text": "Kürzeres System, billiger, weniger Energie. Für die meisten Reviere völlig ausreichend." },
-    { "name": "7 mm Rem Magnum", "text": "Dieselbe Geschossfamilie, rund 15 % mehr Energie — braucht ein Magnum-System." }
+    {
+      "name": ".30-06 Springfield",
+      "text": "Ähnliche Energie, größeres Geschoss, weltweit verfügbar. Dafür mehr Rückstoß und weniger flach."
+    },
+    {
+      "name": "8 × 57 IS",
+      "text": "Der deutsche Klassiker mit größerem Geschoss. Mehr Wirkung, weniger Rasanz."
+    },
+    {
+      "name": ".308 Winchester",
+      "text": "Kürzeres System, billiger, weniger Energie. Für die meisten Reviere völlig ausreichend."
+    },
+    {
+      "name": "7 mm Rem Magnum",
+      "text": "Dieselbe Geschossfamilie, rund 15 % mehr Energie — braucht ein Magnum-System."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Jagdlaborierungen aus einer guten Büchse liegen typisch bei 25–40 mm auf 100 m. Trag deine eigenen Werte ein und vergleiche die Laborierungen — die Unterschiede zwischen RWS, GECO und Norma sind in diesem Kaliber oft deutlich.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 7 × 64", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/7-x-64-en.pdf" },
-    { "titel": "Wikipedia — 7 × 64 mm", "url": "https://de.wikipedia.org/wiki/7_%C3%97_64_mm" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 7 × 64",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/7-x-64-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 7 × 64 mm",
+      "url": "https://de.wikipedia.org/wiki/7_%C3%97_64_mm"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

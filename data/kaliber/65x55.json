@@ -1,25 +1,45 @@
 {
   "id": "65x55",
   "name": "6,5 × 55 SE",
-  "aliase": ["6,5x55", "6.5x55", "6,5x55 SE", "6,5x55 Schwedisch", "6,5 Schwede", "6.5x55 Swedish", "6,5x55mm", "65x55"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    "6,5x55",
+    "6.5x55",
+    "6,5x55 SE",
+    "6,5x55 Schwedisch",
+    "6,5 Schwede",
+    "6.5x55 Swedish",
+    "6,5x55mm",
+    "65x55"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Die schwedische Militärpatrone von 1894 — und bis heute ein Maßstab. Wenig Rückstoß, hoher BC, legendäre Durchschlagsleistung. Alles, wofür die 6,5 Creedmoor gefeiert wird, konnte sie schon vor 130 Jahren.",
-
   "schnell": {
-    "geschoss_gr": [120, 160],
-    "v0_ms": [750, 870],
-    "e0_j": [2700, 3050],
-    "drall_mm": [220, 220],
+    "geschoss_gr": [
+      120,
+      160
+    ],
+    "v0_ms": [
+      750,
+      870
+    ],
+    "e0_j": [
+      2700,
+      3050
+    ],
+    "drall_mm": [
+      220,
+      220
+    ],
     "gasdruck_bar": 3800
   },
-
   "warnungen": [
     {
       "titel": "Alte schwedische Mauser vertragen keine modernen Volllasten",
       "text": "Die Gewehre m/94, m/96 und m/38 sind über hundert Jahre alt und haben ein Systemdesign aus den 1890ern. C.I.P. begrenzt 6,5 × 55 deshalb auf 3800 bar — deutlich unter dem, was die Patrone technisch könnte, und zwar ausdrücklich aus Rücksicht auf diese Altwaffen. Wer wiederlädt und die Ladedaten moderner Handbücher für starke Systeme (etwa CZ oder Sauer) verwendet, kann in einem m/96 gefährlich hohe Drücke erzeugen. Fabrikmunition nach C.I.P. ist unbedenklich. Beim Wiederladen: erst klären, welches System du hast, dann die Ladedaten wählen."
     }
   ],
-
   "basis": {
     "entwickler": "Gemeinsame norwegisch-schwedische Kommission",
     "jahr": 1894,
@@ -29,9 +49,13 @@
       "Genau diese Eigenschaft machte sie in Skandinavien zur Elchpatrone. Ein 156-gr-Rundkopfgeschoss aus der 6,5 × 55 durchschlägt einen Elch der Länge nach — Generationen schwedischer Jäger haben damit Wild erlegt, für das man in Mitteleuropa zur 9,3 × 62 greifen würde. Der Rückstoß ist dabei so mild, dass die Patrone auch für Jungjäger taugt.",
       "Ihr moderner Ruhm ist ironisch: Alles, wofür die 6,5 Creedmoor seit 2007 gefeiert wird — hoher BC, wenig Rückstoß, gute Langstreckenleistung — konnte die 6,5 × 55 schon 1894. Ballistisch nehmen sich beide praktisch nichts. Der einzige echte Vorteil der Creedmoor ist die kürzere Hülse, die in moderne Kurzsysteme und die AR-10 passt. Die 6,5 × 55 braucht ein langes System — und einen konservativen Druck wegen der Altwaffen."
     ],
-    "einsatz": ["Jagd auf alles heimische Schalenwild", "Elchjagd in Skandinavien", "Langstreckenschießen", "Militärhistorischer Sport (Ordonnanz)"]
+    "einsatz": [
+      "Jagd auf alles heimische Schalenwild",
+      "Elchjagd in Skandinavien",
+      "Langstreckenschießen",
+      "Militärhistorischer Sport (Ordonnanz)"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -48,37 +72,147 @@
     "drall": "1:220 mm (1:8,66″)",
     "drall_hinweis": "Von Anfang an schnell genug für die langen 6,5-mm-Geschosse — 1894 eine bemerkenswert weitsichtige Entscheidung. Deckt alle gängigen Gewichte von 120 bis 160 gr sicher ab."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 600 mm Lauf und Fabrikmunition nach C.I.P. Ladungen für starke moderne Systeme liegen darüber, gehören aber nicht in Altwaffen (siehe Warnung).",
     "laborierungen": [
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 156, "g": 10.11, "v0": 760, "bc": 0.480, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Die skandinavische Elchlaborierung. Bindekern, dringt außergewöhnlich tief ein." },
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 140, "g": 9.07, "v0": 800, "bc": 0.470, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Der Allrounder für heimisches Schalenwild." },
-      { "hersteller": "Lapua", "typ": "Mega Teilmantel", "gr": 155, "g": 10.04, "v0": 765, "bc": 0.470, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Finnischer Klassiker, sehr zuverlässig." },
-      { "hersteller": "Lapua", "typ": "Scenar HPBT", "gr": 139, "g": 9.01, "v0": 805, "bc": 0.615, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Präzision", "anmerkung": "Sehr hoher BC — hier zeigt die Patrone ihre Langstreckenqualität." },
-      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 140, "g": 9.07, "v0": 795, "bc": 0.430, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
-      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 120, "g": 7.78, "v0": 850, "bc": 0.412, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bleifrei und rasant — die Antwort auf die Landesvorschriften." },
-      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 131, "g": 8.49, "v0": 825, "bc": 0.440, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": null },
-      { "hersteller": "PPU", "typ": "Vollmantel (FMJ)", "gr": 139, "g": 9.01, "v0": 790, "bc": 0.500, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Training / Ordonnanz", "anmerkung": "Für den historischen Sport. Für die Jagd unzulässig." }
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 156,
+        "g": 10.11,
+        "v0": 760,
+        "bc": 0.48,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Die skandinavische Elchlaborierung. Bindekern, dringt außergewöhnlich tief ein."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 140,
+        "g": 9.07,
+        "v0": 800,
+        "bc": 0.47,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Der Allrounder für heimisches Schalenwild."
+      },
+      {
+        "hersteller": "Lapua",
+        "typ": "Mega Teilmantel",
+        "form": "teilmantel",
+        "gr": 155,
+        "g": 10.04,
+        "v0": 765,
+        "bc": 0.47,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Finnischer Klassiker, sehr zuverlässig."
+      },
+      {
+        "hersteller": "Lapua",
+        "typ": "Scenar HPBT",
+        "form": "match",
+        "gr": 139,
+        "g": 9.01,
+        "v0": 805,
+        "bc": 0.615,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Präzision",
+        "anmerkung": "Sehr hoher BC — hier zeigt die Patrone ihre Langstreckenqualität."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 140,
+        "g": 9.07,
+        "v0": 795,
+        "bc": 0.43,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Günstigste reguläre Jagdlaborierung."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TTSX bleifrei",
+        "form": "bleifrei",
+        "gr": 120,
+        "g": 7.78,
+        "v0": 850,
+        "bc": 0.412,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei und rasant — die Antwort auf die Landesvorschriften."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 131,
+        "g": 8.49,
+        "v0": 825,
+        "bc": 0.44,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "PPU",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 139,
+        "g": 9.01,
+        "v0": 790,
+        "bc": 0.5,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Training / Ordonnanz",
+        "anmerkung": "Für den historischen Sport. Für die Jagd unzulässig."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N160", "eignung": "Der nordische Klassiker für dieses Kaliber." },
-    { "name": "Vihtavuori N550", "eignung": "Für mittlere Geschossgewichte, sehr gleichmäßig." },
-    { "name": "Hodgdon H4350", "eignung": "Breites Ladefenster, temperaturstabil." },
-    { "name": "Norma URP", "eignung": "Speziell für dieses Hülsenvolumen gedacht." }
+    {
+      "name": "Vihtavuori N160",
+      "eignung": "Der nordische Klassiker für dieses Kaliber."
+    },
+    {
+      "name": "Vihtavuori N550",
+      "eignung": "Für mittlere Geschossgewichte, sehr gleichmäßig."
+    },
+    {
+      "name": "Hodgdon H4350",
+      "eignung": "Breites Ladefenster, temperaturstabil."
+    },
+    {
+      "name": "Norma URP",
+      "eignung": "Speziell für dieses Hülsenvolumen gedacht."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 6,5×55 SE", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=6-5x55-se" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 6,5×55 SE",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=6-5x55-se"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Praktisch bedeutungslos. Fabrik-Unterschallmunition gibt es nicht, und die Patrone lebt von Geschwindigkeit und hohem BC. Wie bei allen Jagdkalibern gilt: Auf dem Ansitz wird mit normaler Überschallmunition und Dämpfer geschossen — der reduziert den Mündungsknall spürbar, der Geschossknall bleibt."
   },
-
   "vorteile": [
     "Außergewöhnlich milder Rückstoß für die Leistung — auch für Jungjäger und kleine Schützen geeignet",
     "Sehr hohe Sektionsdichte: legendäre Durchschlagsleistung, in Skandinavien Elchpatrone",
@@ -96,7 +230,6 @@
     "Bleifreie Auswahl schmaler als bei .308 oder .30-06",
     "Für sehr starke Sauen von manchen als zu schwach empfunden — auch wenn die Skandinavier damit Elche schießen"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich in Ordonnanz- und Langstreckendisziplinen relevant; dort entscheidet der Verband über das Bedürfnis nach § 14 WaffG.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 6,71 mm erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 2.300–2.500 J über den geforderten 2.000 J.",
@@ -107,27 +240,56 @@
       "Bei alten schwedischen Mausern vor dem ersten Schuss den Beschussstempel prüfen lassen."
     ]
   },
-
   "varianten": [
-    { "name": "6,5 × 55 SE", "text": "Die C.I.P.-Norm, 3800 bar. Sicher in allen Waffen, auch alten Mausern. Der Regelfall." },
-    { "name": "6,5 × 55 „moderne Ladung“", "text": "Handladungen für starke Systeme mit deutlich höherem Druck. Können in Altwaffen gefährlich sein — siehe Warnung." },
-    { "name": "6,5 × 55 schwer (155–160 gr)", "text": "Die skandinavische Elchlaborierung. Langsam, aber mit enormer Durchschlagsleistung." },
-    { "name": "6,5 × 55 Match (139 gr HPBT)", "text": "Hoher BC für Langstreckendisziplinen. Zeigt, was die Patrone kann." }
+    {
+      "name": "6,5 × 55 SE",
+      "text": "Die C.I.P.-Norm, 3800 bar. Sicher in allen Waffen, auch alten Mausern. Der Regelfall."
+    },
+    {
+      "name": "6,5 × 55 „moderne Ladung“",
+      "text": "Handladungen für starke Systeme mit deutlich höherem Druck. Können in Altwaffen gefährlich sein — siehe Warnung."
+    },
+    {
+      "name": "6,5 × 55 schwer (155–160 gr)",
+      "text": "Die skandinavische Elchlaborierung. Langsam, aber mit enormer Durchschlagsleistung."
+    },
+    {
+      "name": "6,5 × 55 Match (139 gr HPBT)",
+      "text": "Hoher BC für Langstreckendisziplinen. Zeigt, was die Patrone kann."
+    }
   ],
-
   "nachbarn": [
-    { "name": "6,5 Creedmoor", "text": "Ballistisch praktisch gleichwertig, aber in kurzen Systemen und der AR-10 verfügbar. Der einzige echte Vorteil der Moderne — dafür teurer." },
-    { "name": ".308 Winchester", "text": "Mehr Energie auf kurze Distanz, größeres Geschoss, billiger. Aber mehr Rückstoß und auf Distanz unterlegen." },
-    { "name": ".243 Winchester", "text": "Rasanter und noch rückstoßärmer, aber mit 6,20 mm unter dem jagdlichen Mindestkaliber — nur Rehwild." },
-    { "name": "6,5 × 57", "text": "Die deutsche Entsprechung von Mauser. Ähnlich, aber deutlich seltener." }
+    {
+      "name": "6,5 Creedmoor",
+      "text": "Ballistisch praktisch gleichwertig, aber in kurzen Systemen und der AR-10 verfügbar. Der einzige echte Vorteil der Moderne — dafür teurer."
+    },
+    {
+      "name": ".308 Winchester",
+      "text": "Mehr Energie auf kurze Distanz, größeres Geschoss, billiger. Aber mehr Rückstoß und auf Distanz unterlegen."
+    },
+    {
+      "name": ".243 Winchester",
+      "text": "Rasanter und noch rückstoßärmer, aber mit 6,20 mm unter dem jagdlichen Mindestkaliber — nur Rehwild."
+    },
+    {
+      "name": "6,5 × 57",
+      "text": "Die deutsche Entsprechung von Mauser. Ähnlich, aber deutlich seltener."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Match-Laborierungen wie Lapua Scenar aus einer guten modernen Büchse liegen typisch bei 15–25 mm auf 100 m, Jagdlaborierungen bei 25–40 mm. Alte schwedische Mauser streuen mit ihren Militärabzügen deutlich weiter — das liegt nicht an der Munition. Trag deine eigenen Werte ein.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 6,5 × 55 SE", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/6-5-x-55-se-en.pdf" },
-    { "titel": "Wikipedia — 6,5 × 55 mm", "url": "https://de.wikipedia.org/wiki/6,5_%C3%97_55_mm" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 6,5 × 55 SE",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/6-5-x-55-se-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 6,5 × 55 mm",
+      "url": "https://de.wikipedia.org/wiki/6,5_%C3%97_55_mm"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

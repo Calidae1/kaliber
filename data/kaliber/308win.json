@@ -1,20 +1,41 @@
 {
   "id": "308win",
   "name": ".308 Winchester",
-  "aliase": [".308 Win", "308 Winchester", "7,62x51", "7.62x51", "7,62 NATO", ".308", "308", "7,62x51mm NATO"],
-  "gruppen": ["jagd", "msr"],
+  "aliase": [
+    ".308 Win",
+    "308 Winchester",
+    "7,62x51",
+    "7.62x51",
+    "7,62 NATO",
+    ".308",
+    "308",
+    "7,62x51mm NATO"
+  ],
+  "gruppen": [
+    "jagd",
+    "msr"
+  ],
   "kurz": "Der Universalist. Kann alles ordentlich, nichts überragend — und ist genau deshalb weltweit die meistgenutzte Büchsenpatrone für Jagd, Sport und Militär.",
-
   "schnell": {
-    "geschoss_gr": [110, 200],
-    "v0_ms": [760, 880],
-    "e0_j": [3200, 3700],
-    "drall_mm": [254, 305],
+    "geschoss_gr": [
+      110,
+      200
+    ],
+    "v0_ms": [
+      760,
+      880
+    ],
+    "e0_j": [
+      3200,
+      3700
+    ],
+    "drall_mm": [
+      254,
+      305
+    ],
     "gasdruck_bar": 4150
   },
-
   "warnungen": [],
-
   "basis": {
     "entwickler": "Winchester, parallel zur Entwicklung der T65 der US Army",
     "jahr": 1952,
@@ -24,9 +45,13 @@
       "Militärisch war die Karriere kurz: Schon 1964 löste die kleine 5,56 × 45 sie als Standardpatrone ab, weil sie im Automatikfeuer beherrschbarer ist. Als Scharfschützen- und MG-Patrone blieb 7,62 NATO jedoch bis heute im Dienst.",
       "Zivil dagegen wurde die .308 Win zum Welterfolg. Sie passt in kurze Systeme, hat beherrschbaren Rückstoß, liefert genug Energie für jedes europäische Wild und wird von jedem Hersteller in jeder erdenklichen Laborierung gebaut. Ihr Ruf als „langweilig“ ist ihr größtes Kompliment: Es gibt kaum eine jagdliche oder sportliche Aufgabe in Europa, die sie nicht ordentlich löst."
     ],
-    "einsatz": ["Jagd auf alles heimische Schalenwild", "Sportschießen (Ordonnanz, F-Klasse, PRS)", "AR-10-Plattform", "Militär und Behörden (Scharfschützen, MG)"]
+    "einsatz": [
+      "Jagd auf alles heimische Schalenwild",
+      "Sportschießen (Ordonnanz, F-Klasse, PRS)",
+      "AR-10-Plattform",
+      "Militär und Behörden (Scharfschützen, MG)"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI / NATO",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -43,37 +68,147 @@
     "drall": "1:305 mm (1:12″) jagdlich, 1:254 mm (1:10″) verbreitet, 1:280 mm (1:11″) bei Matchläufen",
     "drall_hinweis": "Weniger kritisch als bei .223, aber nicht egal: Ein 1:12″-Lauf deckt die üblichen 150–180 gr ab. Für schwere Matchgeschosse ab 190 gr braucht es 1:10″ oder schneller. Wer beides will, nimmt 1:10″ — damit stabilisiert praktisch alles von 110 bis 200 gr."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 610 mm (24″) Lauf. Ein jagdüblicher 20″-Lauf kostet rund 30–40 m/s, ein kurzer 16″-AR-Lauf 60–80 m/s.",
     "laborierungen": [
-      { "hersteller": "Sierra", "typ": "MatchKing HPBT", "gr": 168, "g": 10.89, "v0": 800, "bc": 0.462, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Der Matchstandard seit Jahrzehnten. Der Maßstab, an dem sich alles misst." },
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 165, "g": 10.69, "v0": 810, "bc": 0.400, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Die deutsche Jagdlaborierung schlechthin. Sehr zuverlässige Deformation." },
-      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 178, "g": 11.53, "v0": 790, "bc": 0.552, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Hoher BC für weite Schüsse, öffnet auch bei niedriger Restgeschwindigkeit." },
-      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 170, "g": 11.02, "v0": 800, "bc": 0.380, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
-      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 150, "g": 9.72, "v0": 850, "bc": 0.400, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Bleifrei, öffnet zuverlässig. Die Antwort auf die Landesvorschriften." },
-      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 147, "g": 9.53, "v0": 840, "bc": 0.395, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Training", "anmerkung": "Die billige Trainingsmunition. Für die Jagd unzulässig." },
-      { "hersteller": "Lapua", "typ": "Scenar-L HPBT", "gr": 185, "g": 11.99, "v0": 780, "bc": 0.520, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Schweres Matchgeschoss, braucht 1:10″ oder schneller." },
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 180, "g": 11.66, "v0": 780, "bc": 0.400, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Bindekern-Geschoss, hoher Restgewichtserhalt — für starkes Wild." }
+      {
+        "hersteller": "Sierra",
+        "typ": "MatchKing HPBT",
+        "form": "match",
+        "gr": 168,
+        "g": 10.89,
+        "v0": 800,
+        "bc": 0.462,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Präzision",
+        "anmerkung": "Der Matchstandard seit Jahrzehnten. Der Maßstab, an dem sich alles misst."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 165,
+        "g": 10.69,
+        "v0": 810,
+        "bc": 0.4,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd",
+        "anmerkung": "Die deutsche Jagdlaborierung schlechthin. Sehr zuverlässige Deformation."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD-X Precision Hunter",
+        "form": "kunststoffspitze",
+        "gr": 178,
+        "g": 11.53,
+        "v0": 790,
+        "bc": 0.552,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd",
+        "anmerkung": "Hoher BC für weite Schüsse, öffnet auch bei niedriger Restgeschwindigkeit."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 170,
+        "g": 11.02,
+        "v0": 800,
+        "bc": 0.38,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd",
+        "anmerkung": "Günstigste reguläre Jagdlaborierung."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TTSX bleifrei",
+        "form": "bleifrei",
+        "gr": 150,
+        "g": 9.72,
+        "v0": 850,
+        "bc": 0.4,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei, öffnet zuverlässig. Die Antwort auf die Landesvorschriften."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 147,
+        "g": 9.53,
+        "v0": 840,
+        "bc": 0.395,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Training",
+        "anmerkung": "Die billige Trainingsmunition. Für die Jagd unzulässig."
+      },
+      {
+        "hersteller": "Lapua",
+        "typ": "Scenar-L HPBT",
+        "form": "match",
+        "gr": 185,
+        "g": 11.99,
+        "v0": 780,
+        "bc": 0.52,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Präzision",
+        "anmerkung": "Schweres Matchgeschoss, braucht 1:10″ oder schneller."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 180,
+        "g": 11.66,
+        "v0": 780,
+        "bc": 0.4,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd",
+        "anmerkung": "Bindekern-Geschoss, hoher Restgewichtserhalt — für starkes Wild."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N140", "eignung": "Der europäische Klassiker für dieses Kaliber, sehr gleichmäßig." },
-    { "name": "Hodgdon Varget", "eignung": "Der US-Standard. Sehr temperaturstabil, breites Ladefenster." },
-    { "name": "Vihtavuori N550", "eignung": "Für schwere Geschosse ab 175 gr." },
-    { "name": "Alliant Reloder 15", "eignung": "In der Militär-Matchmunition verbreitet." }
+    {
+      "name": "Vihtavuori N140",
+      "eignung": "Der europäische Klassiker für dieses Kaliber, sehr gleichmäßig."
+    },
+    {
+      "name": "Hodgdon Varget",
+      "eignung": "Der US-Standard. Sehr temperaturstabil, breites Ladefenster."
+    },
+    {
+      "name": "Vihtavuori N550",
+      "eignung": "Für schwere Geschosse ab 175 gr."
+    },
+    {
+      "name": "Alliant Reloder 15",
+      "eignung": "In der Militär-Matchmunition verbreitet."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten .308 Winchester", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=308-winchester" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten .308 Winchester",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=308-winchester"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Möglich, aber undankbar. Es gibt Unterschalllaborierungen mit 200–220 gr um 320 m/s, und in einem Repetierer funktionieren die auch. Nur bleibt von den 3.500 J dann kaum ein Sechstel, die Bogenbahn ist extrem, und Selbstlader repetieren damit praktisch nie. In Deutschland ist solche Munition zudem kaum zu bekommen. Wer leise schießen will, nimmt .300 Blackout — die ist genau dafür gebaut und macht es besser."
   },
-
   "vorteile": [
     "Der Universalist: reicht für jedes heimische Wild, von Reh bis Rotwild und Sau",
     "Riesige Auswahl an Waffen, Laborierungen und Geschossen — jeder Hersteller führt sie",
@@ -90,7 +225,6 @@
     "Der Drall variiert zwischen Herstellern; schwere Matchgeschosse brauchen 1:10″",
     "Für sehr starkes Wild eher an der Grenze — dort ist 9,3 × 62 souveräner"
   ],
-
   "recht_de": {
     "sport": "Repetierer für Jäger über den Jagdschein unproblematisch. Halbautomaten (AR-10) für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 7,82 mm klar erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 2.800–3.000 J deutlich über den geforderten 2.000 J.",
@@ -101,28 +235,60 @@
       "Für Drückjagd auf Sauen sind schwere Bindekern-Geschosse wie Norma Oryx die bessere Wahl als schnell zerlegende Matchgeschosse."
     ]
   },
-
   "varianten": [
-    { "name": ".308 Winchester", "text": "Die zivile C.I.P.-Norm, 4150 bar. Der Regelfall." },
-    { "name": "7,62 × 51 NATO", "text": "Die militärische Spezifikation. Anders als bei .223/5,56 sind beide wechselseitig unbedenklich schießbar." },
-    { "name": ".308 Win Match", "text": "168–185 gr HPBT. Für Präzisionsdisziplinen; braucht bei schweren Geschossen 1:10″." },
-    { "name": ".308 Win bleifrei", "text": "Monolithische Kupfergeschosse, meist 150–165 gr. Etwas leichter und schneller als bleihaltige Laborierungen gleicher Wirkung." },
-    { "name": ".30-06 Springfield", "text": "Die längere Mutter. Rund 10 % mehr Energie, braucht aber ein langes System. Passt nicht in .308-Waffen." }
+    {
+      "name": ".308 Winchester",
+      "text": "Die zivile C.I.P.-Norm, 4150 bar. Der Regelfall."
+    },
+    {
+      "name": "7,62 × 51 NATO",
+      "text": "Die militärische Spezifikation. Anders als bei .223/5,56 sind beide wechselseitig unbedenklich schießbar."
+    },
+    {
+      "name": ".308 Win Match",
+      "text": "168–185 gr HPBT. Für Präzisionsdisziplinen; braucht bei schweren Geschossen 1:10″."
+    },
+    {
+      "name": ".308 Win bleifrei",
+      "text": "Monolithische Kupfergeschosse, meist 150–165 gr. Etwas leichter und schneller als bleihaltige Laborierungen gleicher Wirkung."
+    },
+    {
+      "name": ".30-06 Springfield",
+      "text": "Die längere Mutter. Rund 10 % mehr Energie, braucht aber ein langes System. Passt nicht in .308-Waffen."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".30-06 Springfield", "text": "Rund 10 % mehr Energie und mehr Spielraum bei schweren Geschossen — braucht aber ein längeres System." },
-    { "name": "6,5 Creedmoor", "text": "Auf Distanz überlegen bei weniger Rückstoß, auf kurze Distanz weniger Energie. Und teurer." },
-    { "name": "8 × 57 IS", "text": "Die deutsche Entsprechung: ähnliche Leistung, größeres Geschoss, hierzulande traditionell verbreitet." },
-    { "name": ".243 Winchester", "text": "Dieselbe Hülse auf 6 mm eingezogen. Viel weniger Rückstoß, aber unter dem jagdlichen Mindestkaliber — nur Rehwild." }
+    {
+      "name": ".30-06 Springfield",
+      "text": "Rund 10 % mehr Energie und mehr Spielraum bei schweren Geschossen — braucht aber ein längeres System."
+    },
+    {
+      "name": "6,5 Creedmoor",
+      "text": "Auf Distanz überlegen bei weniger Rückstoß, auf kurze Distanz weniger Energie. Und teurer."
+    },
+    {
+      "name": "8 × 57 IS",
+      "text": "Die deutsche Entsprechung: ähnliche Leistung, größeres Geschoss, hierzulande traditionell verbreitet."
+    },
+    {
+      "name": ".243 Winchester",
+      "text": "Dieselbe Hülse auf 6 mm eingezogen. Viel weniger Rückstoß, aber unter dem jagdlichen Mindestkaliber — nur Rehwild."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Match-Fabrikmunition aus einer guten Büchse liegt typisch bei 15–25 mm auf 100 m, Jagdlaborierungen bei 25–40 mm, billige Trainings-Vollmantel bei 40–60 mm. Die .308 ist so gut dokumentiert, dass Abweichungen fast immer an der Waffe liegen — trag deine Werte ein und vergleiche die Laborierungen untereinander.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 308 Winchester", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/308-win-en.pdf" },
-    { "titel": "Wikipedia — .308 Winchester", "url": "https://de.wikipedia.org/wiki/.308_Winchester" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 308 Winchester",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/308-win-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — .308 Winchester",
+      "url": "https://de.wikipedia.org/wiki/.308_Winchester"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

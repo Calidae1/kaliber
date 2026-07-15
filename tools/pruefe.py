@@ -58,7 +58,13 @@ PFLICHT_MASSE = [
     "norm", "huelsenform", "geschoss_mm", "hals_mm", "boden_mm",
     "huelsenlaenge_mm", "col_mm", "gasdruck_bar", "zuender", "drall",
 ]
-PFLICHT_LAB = ["hersteller", "typ", "gr", "g", "v0", "bc", "bc_modell", "zweck"]
+PFLICHT_LAB = ["hersteller", "typ", "form", "gr", "g", "v0", "bc", "bc_modell", "zweck"]
+
+# Muss mit GESCHOSS_FORM in app.js und FORMEN in tools/formen.py übereinstimmen —
+# eine unbekannte Form fällt in der App still auf Vollmantel zurück, und dann
+# stimmt die Zeichnung nicht mehr mit dem Datensatz überein.
+FORMEN_OK = {"wadcutter", "semiwadcutter", "blei", "vollmantel", "teilmantel",
+             "kunststoffspitze", "hohlspitz", "match", "bleifrei"}
 
 
 def main() -> int:
@@ -154,6 +160,8 @@ def main() -> int:
                     f(f"{wo}: Feld '{feld}' fehlt.")
                     break
             else:
+                if l["form"] not in FORMEN_OK:
+                    f(f"{wo}: unbekannte Geschossform '{l['form']}'.")
                 if l["bc_modell"] not in ("G1", "G7"):
                     f(f"{wo}: bc_modell '{l['bc_modell']}' ist weder G1 noch G7.")
                 if not 0.05 <= l["bc"] <= 1.2:
@@ -231,6 +239,9 @@ def main() -> int:
                 f(f"[preise/{pid}] {pr['hersteller']}: URL fehlt oder ist kaputt.")
             if pr.get("klasse") not in ("guenstig", "mittel", "premium"):
                 f(f"[preise/{pid}] {pr['hersteller']}: unbekannte Klasse '{pr.get('klasse')}'.")
+            if pr.get("form") not in FORMEN_OK:
+                f(f"[preise/{pid}] {pr['hersteller']} {pr['typ']}: unbekannte Geschossform "
+                  f"'{pr.get('form')}'.")
         echte = [pr["eur_schuss"] for pr in prods]
         rng = p.get("range_eur_schuss", [0, 0])
         if abs(rng[0] - round(min(echte), 2)) > 0.011 or abs(rng[1] - round(max(echte), 2)) > 0.011:

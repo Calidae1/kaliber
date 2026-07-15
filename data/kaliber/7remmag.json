@@ -1,20 +1,38 @@
 {
   "id": "7remmag",
   "name": "7 mm Rem. Magnum",
-  "aliase": ["7mm Rem Mag", "7 mm Remington Magnum", "7x64R Mag", "7mm RM", "7 Rem Mag", "7mmRemMag"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    "7mm Rem Mag",
+    "7 mm Remington Magnum",
+    "7x64R Mag",
+    "7mm RM",
+    "7 Rem Mag",
+    "7mmRemMag"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Die erfolgreichste Magnum überhaupt: sehr flache Bahn, hohe BC-Werte, für jedes heimische Wild mehr als genug. Der Preis sind Rückstoß, Knall und Laufverschleiß.",
-
   "schnell": {
-    "geschoss_gr": [140, 175],
-    "v0_ms": [860, 960],
-    "e0_j": [4000, 4500],
-    "drall_mm": [240, 240],
+    "geschoss_gr": [
+      140,
+      175
+    ],
+    "v0_ms": [
+      860,
+      960
+    ],
+    "e0_j": [
+      4000,
+      4500
+    ],
+    "drall_mm": [
+      240,
+      240
+    ],
     "gasdruck_bar": 4300
   },
-
   "warnungen": [],
-
   "basis": {
     "entwickler": "Remington",
     "jahr": 1962,
@@ -24,9 +42,13 @@
       "Der Erfolg war überwältigend und hält bis heute an: Die 7 mm Rem Mag ist die meistverkaufte Magnum-Patrone der Welt. Der Grund ist ihre Ausgewogenheit. Sie liefert deutlich mehr als eine .30-06, hat aber weniger Rückstoß als eine .300 Win Mag, weil das Geschoss leichter ist — und dank des hohen BC verliert sie unterwegs wenig.",
       "In Deutschland ist sie eine Nische, aber eine geschätzte: für Bergjagd, für weite Schüsse auf Gams und Rotwild, überall dort, wo Entfernungen groß und Nachsuchen schwierig sind. Für ein normales Niederwildrevier ist sie überdimensioniert — und wer das ignoriert, zahlt mit Wildbretentwertung und einem Lauf, der nach 2.000 Schuss fertig ist."
     ],
-    "einsatz": ["Bergjagd auf Gams und Rotwild", "Weite Schüsse", "Auslandsjagd (Nordamerika, Afrika Plains Game)", "Langstreckenschießen"]
+    "einsatz": [
+      "Bergjagd auf Gams und Rotwild",
+      "Weite Schüsse",
+      "Auslandsjagd (Nordamerika, Afrika Plains Game)",
+      "Langstreckenschießen"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "randlos mit Gürtel, Flaschenhals, mit Auszieherrille",
@@ -43,36 +65,134 @@
     "drall": "1:240 mm (1:9,5″)",
     "drall_hinweis": "Deckt alle gängigen Gewichte von 140 bis 175 gr sicher ab. Für die modernen sehr langen Hochleistungsgeschosse ab 180 gr wäre er grenzwertig — die spielen bei diesem Kaliber aber kaum eine Rolle."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 660 mm (26″) Lauf, wie bei Magnums üblich. Die Patrone braucht lange Läufe: Ein 560-mm-Lauf kostet 50–70 m/s und verschenkt damit einen guten Teil des Magnum-Vorteils.",
     "laborierungen": [
-      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 162, "g": 10.5, "v0": 890, "bc": 0.631, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Sehr hoher BC — die Wahl für weite Bergschüsse." },
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 160, "g": 10.37, "v0": 900, "bc": 0.500, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Die europäische Standard-Jagdlaborierung." },
-      { "hersteller": "Nosler", "typ": "Partition Teilmantel", "gr": 160, "g": 10.37, "v0": 895, "bc": 0.475, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Trennwand hält das Heck zusammen — für starkes Wild bewährt." },
-      { "hersteller": "Federal", "typ": "Power-Shok Teilmantel", "gr": 150, "g": 9.72, "v0": 940, "bc": 0.462, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Rasant und flach, für Gams und Rehwild auf Distanz." },
-      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 145, "g": 9.4, "v0": 950, "bc": 0.486, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Bleifrei, öffnet zuverlässig — die Antwort auf die Landesvorschriften." },
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 170, "g": 11.02, "v0": 875, "bc": 0.500, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Bindekern, hoher Restgewichtserhalt — für Rotwild und Sauen." },
-      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 175, "g": 11.34, "v0": 870, "bc": 0.520, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Schwerstes gängiges Geschoss, günstigste Laborierung." }
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD-X Precision Hunter",
+        "form": "kunststoffspitze",
+        "gr": 162,
+        "g": 10.5,
+        "v0": 890,
+        "bc": 0.631,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Sehr hoher BC — die Wahl für weite Bergschüsse."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 160,
+        "g": 10.37,
+        "v0": 900,
+        "bc": 0.5,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Die europäische Standard-Jagdlaborierung."
+      },
+      {
+        "hersteller": "Nosler",
+        "typ": "Partition Teilmantel",
+        "form": "teilmantel",
+        "gr": 160,
+        "g": 10.37,
+        "v0": 895,
+        "bc": 0.475,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Trennwand hält das Heck zusammen — für starkes Wild bewährt."
+      },
+      {
+        "hersteller": "Federal",
+        "typ": "Power-Shok Teilmantel",
+        "form": "teilmantel",
+        "gr": 150,
+        "g": 9.72,
+        "v0": 940,
+        "bc": 0.462,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Rasant und flach, für Gams und Rehwild auf Distanz."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TTSX bleifrei",
+        "form": "bleifrei",
+        "gr": 145,
+        "g": 9.4,
+        "v0": 950,
+        "bc": 0.486,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei, öffnet zuverlässig — die Antwort auf die Landesvorschriften."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 170,
+        "g": 11.02,
+        "v0": 875,
+        "bc": 0.5,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Bindekern, hoher Restgewichtserhalt — für Rotwild und Sauen."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 175,
+        "g": 11.34,
+        "v0": 870,
+        "bc": 0.52,
+        "bc_modell": "G1",
+        "lauf_mm": 660,
+        "zweck": "Jagd",
+        "anmerkung": "Schwerstes gängiges Geschoss, günstigste Laborierung."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N165", "eignung": "Langsam brennend — nötig für das große Volumen." },
-    { "name": "Hodgdon H4831", "eignung": "Der US-Klassiker für dieses Kaliber." },
-    { "name": "Alliant Reloder 22", "eignung": "Für maximale Geschwindigkeiten mit schweren Geschossen." },
-    { "name": "Vihtavuori N560", "eignung": "Temperaturstabil, sehr gleichmäßig." }
+    {
+      "name": "Vihtavuori N165",
+      "eignung": "Langsam brennend — nötig für das große Volumen."
+    },
+    {
+      "name": "Hodgdon H4831",
+      "eignung": "Der US-Klassiker für dieses Kaliber."
+    },
+    {
+      "name": "Alliant Reloder 22",
+      "eignung": "Für maximale Geschwindigkeiten mit schweren Geschossen."
+    },
+    {
+      "name": "Vihtavuori N560",
+      "eignung": "Temperaturstabil, sehr gleichmäßig."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 7 mm Rem Magnum", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=7mm-remington-magnum" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 7 mm Rem Magnum",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=7mm-remington-magnum"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Konzeptionell absurd. Die gesamte Patrone existiert, um maximale Geschwindigkeit über große Distanz zu halten — unterschall geladen bliebe von 4.000–4.500 J ein Bruchteil, bei extremer Bogenbahn. Fabrikmunition gibt es nicht. Auf dem Ansitz wird mit normaler Überschallmunition und Dämpfer geschossen; bei diesem Kaliber ist der Dämpfer besonders willkommen, weil der Mündungsknall erheblich ist."
   },
-
   "vorteile": [
     "Sehr flache Bahn — auf 300 m ist Entfernungsschätzung noch unkritisch",
     "Hohe BC-Werte: steht gut im Wind und hält die Energie über Distanz",
@@ -90,7 +210,6 @@
     "Für normale Reviere überdimensioniert, erhebliche Wildbretentwertung",
     "Der Gürtel ist konstruktiv überholt und erschwert das Wiederladen"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich in Langstreckendisziplinen gelegentlich anzutreffen; dort entscheidet der Verband über das Bedürfnis nach § 14 WaffG.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 7,21 mm erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 3.500–3.800 J weit über den geforderten 2.000 J.",
@@ -101,28 +220,60 @@
       "Für die Auslandsjagd in Nordamerika eine sehr gute Wahl — dort überall verfügbar."
     ]
   },
-
   "varianten": [
-    { "name": "7 mm Rem Mag Standard (160–162 gr)", "text": "Rund 890–900 m/s. Der Allrounder für jedes Wild." },
-    { "name": "7 mm Rem Mag leicht (140–150 gr)", "text": "Bis 950 m/s, sehr flach. Für Gams und weite Bergschüsse." },
-    { "name": "7 mm Rem Mag schwer (175 gr)", "text": "Rund 870 m/s mit hoher Sektionsdichte. Für Rotwild und starke Sauen." },
-    { "name": "7 × 64", "text": "Die europäische Alternative ohne Magnum: rund 15 % weniger Energie, dafür milder, billiger und mit besserer Laufstandzeit." },
-    { "name": "7 mm PRC", "text": "Die moderne Neuauflage von 2022: gürtellos, schnellerer Drall für lange Geschosse. Technisch überlegen, aber noch kaum verbreitet." }
+    {
+      "name": "7 mm Rem Mag Standard (160–162 gr)",
+      "text": "Rund 890–900 m/s. Der Allrounder für jedes Wild."
+    },
+    {
+      "name": "7 mm Rem Mag leicht (140–150 gr)",
+      "text": "Bis 950 m/s, sehr flach. Für Gams und weite Bergschüsse."
+    },
+    {
+      "name": "7 mm Rem Mag schwer (175 gr)",
+      "text": "Rund 870 m/s mit hoher Sektionsdichte. Für Rotwild und starke Sauen."
+    },
+    {
+      "name": "7 × 64",
+      "text": "Die europäische Alternative ohne Magnum: rund 15 % weniger Energie, dafür milder, billiger und mit besserer Laufstandzeit."
+    },
+    {
+      "name": "7 mm PRC",
+      "text": "Die moderne Neuauflage von 2022: gürtellos, schnellerer Drall für lange Geschosse. Technisch überlegen, aber noch kaum verbreitet."
+    }
   ],
-
   "nachbarn": [
-    { "name": "7 × 64", "text": "Dieselbe Geschossfamilie, rund 15 % weniger Energie — dafür kein Magnum-System, weniger Rückstoß und längere Laufstandzeit." },
-    { "name": ".300 Winchester Magnum", "text": "Größeres Geschoss, mehr Energie, mehr Rückstoß. Die Alternative, wenn 7 mm nicht reicht." },
-    { "name": ".30-06 Springfield", "text": "Deutlich milder, billiger und weltweit verfügbar. Für die meisten Reviere völlig ausreichend." },
-    { "name": "6,5 Creedmoor", "text": "Viel weniger Rückstoß und Energie, aber auf Distanz erstaunlich konkurrenzfähig — und mit besserer Laufstandzeit." }
+    {
+      "name": "7 × 64",
+      "text": "Dieselbe Geschossfamilie, rund 15 % weniger Energie — dafür kein Magnum-System, weniger Rückstoß und längere Laufstandzeit."
+    },
+    {
+      "name": ".300 Winchester Magnum",
+      "text": "Größeres Geschoss, mehr Energie, mehr Rückstoß. Die Alternative, wenn 7 mm nicht reicht."
+    },
+    {
+      "name": ".30-06 Springfield",
+      "text": "Deutlich milder, billiger und weltweit verfügbar. Für die meisten Reviere völlig ausreichend."
+    },
+    {
+      "name": "6,5 Creedmoor",
+      "text": "Viel weniger Rückstoß und Energie, aber auf Distanz erstaunlich konkurrenzfähig — und mit besserer Laufstandzeit."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Jagdlaborierungen aus einer guten Büchse liegen typisch bei 25–40 mm auf 100 m. Bei Magnums ist die Laufwärme ein echtes Thema — nach drei Schuss wandert die Treffpunktlage oft deutlich. Notiere unbedingt die Schusszahl und lass zwischen den Serien auskühlen.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 7 mm Rem Magnum", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/7-mm-rem-magnum-en.pdf" },
-    { "titel": "Wikipedia — 7 mm Remington Magnum", "url": "https://de.wikipedia.org/wiki/7_mm_Remington_Magnum" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 7 mm Rem Magnum",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/7-mm-rem-magnum-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 7 mm Remington Magnum",
+      "url": "https://de.wikipedia.org/wiki/7_mm_Remington_Magnum"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

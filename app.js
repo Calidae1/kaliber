@@ -169,7 +169,29 @@
 
   /* ---------- Patronen-Zeichnung (parametrisch aus den Maßen) ---------- */
 
-  function zeichnePatrone(m) {
+  // Geschossform -> Kontur und Farbgebung. Die Werte sind Anteile der sichtbaren
+  // Geschosslänge bzw. des Geschossradius.
+  //   laenge   : wie weit das Geschoss aus der Hülse ragt (Wadcutter sitzen tief)
+  //   meplat   : halbe Breite der Spitze (0 = spitz, ~1 = flach)
+  //   kurve    : flach | kegel | rund | ogive
+  //   fuehrung : Anteil zylindrischer Führungsteil vor der Kurve
+  const GESCHOSS_FORM = {
+    // Nur Wadcutter und Semi-Wadcutter sitzen wirklich tief in der Hülse — bei
+    // ihnen bleibt die COL-Maßlinie deshalb weg (siehe vollLang weiter unten).
+    // Rundkopf- und Hohlspitzgeschosse erreichen die Norm-Gesamtlänge praktisch.
+    wadcutter:        { laenge: 0.26, meplat: 0.94, kurve: 'flach', fuehrung: 1.0,  farbe: 'blei' },
+    semiwadcutter:    { laenge: 0.80, meplat: 0.30, kurve: 'kegel', fuehrung: 0.45, farbe: 'blei' },
+    blei:             { laenge: 0.98, meplat: 0.16, kurve: 'rund',  fuehrung: 0.32, farbe: 'blei' },
+    hohlspitz:        { laenge: 0.95, meplat: 0.42, kurve: 'rund',  fuehrung: 0.34, farbe: 'mantel', hohl: true },
+    vollmantel:       { laenge: 0.96, meplat: 0.15, kurve: 'rund',  fuehrung: 0.32, farbe: 'mantel' },
+    vollmantel_lang:  { laenge: 1.0,  meplat: 0.10, kurve: 'ogive', fuehrung: 0.28, farbe: 'mantel' },
+    teilmantel:       { laenge: 1.0,  meplat: 0.14, kurve: 'ogive', fuehrung: 0.26, farbe: 'mantel', spitze: 'blei', spitzeAnteil: 0.30 },
+    kunststoffspitze: { laenge: 1.0,  meplat: 0.06, kurve: 'ogive', fuehrung: 0.24, farbe: 'mantel', spitze: 'kunststoff', spitzeAnteil: 0.22 },
+    match:            { laenge: 1.0,  meplat: 0.09, kurve: 'ogive', fuehrung: 0.22, farbe: 'mantel', hohl: true },
+    bleifrei:         { laenge: 1.0,  meplat: 0.10, kurve: 'ogive', fuehrung: 0.24, farbe: 'kupfer' }
+  };
+
+  function zeichnePatrone(m, form) {
     if (!m || !m.col_mm || !m.huelsenlaenge_mm) return '';
 
     const COL = m.col_mm, CL = m.huelsenlaenge_mm;
@@ -213,33 +235,85 @@
       mundD = dHals;
     }
 
-    // Geschoss: Führungsteil + Ogive bis zur Spitze
-    const sichtbar = COL - CL;
-    const fuehrung = Math.min(sichtbar * 0.3, dGesch * 0.5);
-    const ogive = sichtbar - fuehrung;
+    // Geschoss: Kontur nach Form
+    const sichtbarRoh = COL - CL;
+    const rG = dGesch / 2;
+    let f = GESCHOSS_FORM[form] || GESCHOSS_FORM.vollmantel;
+    // Vollmantel gibt es stumpf (Kurzwaffe) und spitz (Büchse). Entschieden wird
+    // nach dem Verhältnis von sichtbarer Länge zu Durchmesser — ein Geschoss, das
+    // dreimal so weit herausragt wie es dick ist, ist ein Spitzgeschoss.
+    if (form === 'vollmantel' && sichtbarRoh / dGesch > 1.7) f = GESCHOSS_FORM.vollmantel_lang;
+
+    const sichtbar = sichtbarRoh * f.laenge;
+    const mund = x0 + CL;                      // Hülsenmund
+    const fuehrung = sichtbar * f.fuehrung;
+    const kurveL = sichtbar - fuehrung;
     const yG = y(dGesch);
-    const spitzeR = Math.max(0.35, dGesch * 0.06);
+    const spitzeR = Math.max(0.3, rG * f.meplat);
+    const tip = mund + sichtbar;
+
+    // Kontrollpunkt der quadratischen Kurve: weiter vorn = bauchiger.
+    const ktrl = f.kurve === 'rund' ? 0.88 : 0.60;
+
+    const oben = (rueck) => {
+      // Ein Segment der Geschosskontur, vorwärts oder rückwärts gespiegelt
+      const yy = rueck ? (cy + dGesch / 2) : yG;
+      const sy = rueck ? (cy + spitzeR) : (cy - spitzeR);
+      if (f.kurve === 'flach') {
+        return rueck
+          ? ` L ${tip.toFixed(2)} ${yy.toFixed(2)} L ${mund.toFixed(2)} ${yy.toFixed(2)}`
+          : ` L ${mund.toFixed(2)} ${yy.toFixed(2)} L ${tip.toFixed(2)} ${yy.toFixed(2)}`;
+      }
+      if (f.kurve === 'kegel') {
+        return rueck
+          ? ` L ${(mund + fuehrung).toFixed(2)} ${yy.toFixed(2)} L ${mund.toFixed(2)} ${yy.toFixed(2)}`
+          : ` L ${mund.toFixed(2)} ${yy.toFixed(2)} L ${(mund + fuehrung).toFixed(2)} ${yy.toFixed(2)} L ${tip.toFixed(2)} ${sy.toFixed(2)}`;
+      }
+      const cx = mund + fuehrung + kurveL * ktrl;
+      return rueck
+        ? ` Q ${cx.toFixed(2)} ${yy.toFixed(2)} ${(mund + fuehrung).toFixed(2)} ${yy.toFixed(2)} L ${mund.toFixed(2)} ${yy.toFixed(2)}`
+        : ` L ${mund.toFixed(2)} ${yy.toFixed(2)} L ${(mund + fuehrung).toFixed(2)} ${yy.toFixed(2)} Q ${cx.toFixed(2)} ${yy.toFixed(2)} ${tip.toFixed(2)} ${sy.toFixed(2)}`;
+    };
 
     let d = 'M ' + P.map(p => `${p[0].toFixed(2)} ${p[1].toFixed(2)}`).join(' L ');
-    // Übergang Hülsenmund -> Geschoss
-    d += ` L ${(x0 + CL).toFixed(2)} ${yG.toFixed(2)}`;
-    d += ` L ${(x0 + CL + fuehrung).toFixed(2)} ${yG.toFixed(2)}`;
-    // Tangentiale Ogive als quadratische Kurve
-    d += ` Q ${(x0 + CL + fuehrung + ogive * 0.62).toFixed(2)} ${yG.toFixed(2)}` +
-         ` ${(x0 + COL).toFixed(2)} ${(cy - spitzeR).toFixed(2)}`;
-    // Spitze
-    d += ` L ${(x0 + COL).toFixed(2)} ${(cy + spitzeR).toFixed(2)}`;
-    // Spiegeln (Unterkante rückwärts)
-    d += ` Q ${(x0 + CL + fuehrung + ogive * 0.62).toFixed(2)} ${(cy + dGesch / 2).toFixed(2)}` +
-         ` ${(x0 + CL + fuehrung).toFixed(2)} ${(cy + dGesch / 2).toFixed(2)}`;
-    d += ` L ${(x0 + CL).toFixed(2)} ${(cy + dGesch / 2).toFixed(2)}`;
+    d += oben(false);
+    d += ` L ${tip.toFixed(2)} ${(cy + spitzeR).toFixed(2)}`;   // Spitze/Meplat
+    if (f.kurve === 'kegel') d += ` L ${(mund + fuehrung).toFixed(2)} ${(cy + dGesch / 2).toFixed(2)}`;
+    d += oben(true);
     const mirror = P.slice().reverse().map(p => [p[0], cy + (cy - p[1])]);
     d += ' L ' + mirror.map(p => `${p[0].toFixed(2)} ${p[1].toFixed(2)}`).join(' L ');
     d += ' Z';
 
+    // Farbe des Geschosskörpers
+    const koerperFuell = f.farbe === 'blei' ? 'url(#pbg)'
+                       : f.farbe === 'kupfer' ? 'url(#kug)' : 'url(#blg)';
+
+    // Spitzenüberzug (freiliegendes Blei bzw. Kunststoffspitze)
+    let spitzeSVG = '';
+    if (f.spitze) {
+      const von = tip - sichtbar * f.spitzeAnteil;
+      const fuell = f.spitze === 'kunststoff' ? '#c8503c' : 'url(#pbg)';
+      spitzeSVG = `
+      <clipPath id="clipSpitze"><rect x="${von.toFixed(2)}" y="0" width="${(sichtbar + 2).toFixed(2)}" height="${H}"/></clipPath>
+      <path d="${d}" fill="${fuell}" stroke="none" clip-path="url(#clipSpitze)"/>`;
+    }
+
+    // Hohlraum bei Hohlspitz und Match-HPBT
+    let hohlSVG = '';
+    if (f.hohl) {
+      const tiefe = Math.max(0.5, rG * (f.kurve === 'rund' ? 0.55 : 0.35));
+      hohlSVG = `<ellipse cx="${(tip - tiefe * 0.35).toFixed(2)}" cy="${cy.toFixed(2)}"
+        rx="${(tiefe * 0.75).toFixed(2)}" ry="${(spitzeR * 0.72).toFixed(2)}"
+        fill="#231a10" opacity=".85"/>`;
+    }
+
     // Trennlinie Hülsenmund
     const halsY1 = y(mundD), halsY2 = cy + mundD / 2;
     const yMass = cy + maxD / 2 + 7;
+    // Die COL-Maßlinie nur zeigen, wenn das Geschoss auch bis dorthin reicht.
+    // Wadcutter und Semi-Wadcutter sitzen tief — dort wäre die Norm-Gesamtlänge
+    // eine Linie ins Leere.
+    const vollLang = f.laenge >= 0.95;
 
     return `
     <svg viewBox="0 0 ${W.toFixed(1)} ${H.toFixed(1)}" role="img"
@@ -256,12 +330,24 @@
           <stop offset="45%"  stop-color="#9c6740"/>
           <stop offset="100%" stop-color="#5f3d26"/>
         </linearGradient>
+        <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#b9bec6"/>
+          <stop offset="45%"  stop-color="#8b9099"/>
+          <stop offset="100%" stop-color="#4e535b"/>
+        </linearGradient>
+        <linearGradient id="kug" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#e0a06a"/>
+          <stop offset="45%"  stop-color="#b87333"/>
+          <stop offset="100%" stop-color="#6d4420"/>
+        </linearGradient>
         <clipPath id="clipGesch">
-          <rect x="${(x0 + CL).toFixed(2)}" y="0" width="${(sichtbar + 1).toFixed(2)}" height="${H}"/>
+          <rect x="${(x0 + CL).toFixed(2)}" y="0" width="${(sichtbar + 2).toFixed(2)}" height="${H}"/>
         </clipPath>
       </defs>
       <path d="${d}" fill="url(#msg)" stroke="#2a1f0d" stroke-width="0.22"/>
-      <path d="${d}" fill="url(#blg)" stroke="none" clip-path="url(#clipGesch)" opacity="0.95"/>
+      <path d="${d}" fill="${koerperFuell}" stroke="none" clip-path="url(#clipGesch)" opacity="0.97"/>
+      ${spitzeSVG}
+      ${hohlSVG}
       <path d="${d}" fill="none" stroke="#2a1f0d" stroke-width="0.22"/>
       <line x1="${(x0 + CL).toFixed(2)}" y1="${halsY1.toFixed(2)}"
             x2="${(x0 + CL).toFixed(2)}" y2="${halsY2.toFixed(2)}"
@@ -269,16 +355,20 @@
       <g stroke="#5d6979" stroke-width="0.18" fill="none">
         <line x1="${x0.toFixed(2)}" y1="${(yMass - 2.5).toFixed(2)}" x2="${x0.toFixed(2)}" y2="${(yMass + 1.5).toFixed(2)}"/>
         <line x1="${(x0 + CL).toFixed(2)}" y1="${(yMass - 2.5).toFixed(2)}" x2="${(x0 + CL).toFixed(2)}" y2="${(yMass + 1.5).toFixed(2)}"/>
-        <line x1="${(x0 + COL).toFixed(2)}" y1="${(yMass - 2.5).toFixed(2)}" x2="${(x0 + COL).toFixed(2)}" y2="${(yMass + 1.5).toFixed(2)}"/>
         <line x1="${x0.toFixed(2)}" y1="${yMass.toFixed(2)}" x2="${(x0 + CL).toFixed(2)}" y2="${yMass.toFixed(2)}"/>
+        ${vollLang ? `
+        <line x1="${(x0 + COL).toFixed(2)}" y1="${(yMass - 2.5).toFixed(2)}" x2="${(x0 + COL).toFixed(2)}" y2="${(yMass + 1.5).toFixed(2)}"/>
         <line x1="${(x0 + CL).toFixed(2)}" y1="${(yMass + 3.6).toFixed(2)}" x2="${(x0 + COL).toFixed(2)}" y2="${(yMass + 3.6).toFixed(2)}"/>
         <line x1="${x0.toFixed(2)}" y1="${(yMass + 2.6).toFixed(2)}" x2="${x0.toFixed(2)}" y2="${(yMass + 4.6).toFixed(2)}"/>
-        <line x1="${(x0 + COL).toFixed(2)}" y1="${(yMass + 2.6).toFixed(2)}" x2="${(x0 + COL).toFixed(2)}" y2="${(yMass + 4.6).toFixed(2)}"/>
+        <line x1="${(x0 + COL).toFixed(2)}" y1="${(yMass + 2.6).toFixed(2)}" x2="${(x0 + COL).toFixed(2)}" y2="${(yMass + 4.6).toFixed(2)}"/>` : ''}
       </g>
       <text x="${(x0 + CL / 2).toFixed(2)}" y="${(yMass - 0.9).toFixed(2)}" fill="#8b97a8"
             font-size="2.4" text-anchor="middle" font-family="ui-monospace, monospace">${nf(CL, 2)} mm Hülse</text>
-      <text x="${(x0 + COL / 2).toFixed(2)}" y="${(yMass + 2.9).toFixed(2)}" fill="#8b97a8"
-            font-size="2.4" text-anchor="middle" font-family="ui-monospace, monospace">${nf(COL, 2)} mm gesamt</text>
+      ${vollLang
+        ? `<text x="${(x0 + COL / 2).toFixed(2)}" y="${(yMass + 2.9).toFixed(2)}" fill="#8b97a8"
+             font-size="2.4" text-anchor="middle" font-family="ui-monospace, monospace">${nf(COL, 2)} mm gesamt</text>`
+        : `<text x="${(x0 + COL / 2).toFixed(2)}" y="${(yMass + 2.9).toFixed(2)}" fill="#5d6979"
+             font-size="2.2" text-anchor="middle" font-family="ui-monospace, monospace">Setztiefe je Laborierung verschieden</text>`}
     </svg>`;
   }
 
@@ -420,6 +510,40 @@
         <div class="cards">${vorschlaege.slice(0, 4).map(karte).join('')}</div>` : ''}`;
   }
 
+  /* ---------- Geschossformen ---------- */
+
+  const FORM_NAME = {
+    wadcutter: 'Wadcutter', semiwadcutter: 'Semi-Wadcutter', blei: 'Bleigeschoss',
+    vollmantel: 'Vollmantel', teilmantel: 'Teilmantel', kunststoffspitze: 'Kunststoffspitze',
+    hohlspitz: 'Hohlspitz', match: 'Match HPBT', bleifrei: 'Bleifrei'
+  };
+  // Sinnvolle Lesereihenfolge: vom einfachen Trainingsgeschoss zum Spezialisten
+  const FORM_ORDER = ['vollmantel', 'blei', 'wadcutter', 'semiwadcutter', 'hohlspitz',
+                      'teilmantel', 'kunststoffspitze', 'bleifrei', 'match'];
+
+  /** Welche Formen gibt es für dieses Kaliber — und wofür stehen sie? */
+  function formenVon(k, preise) {
+    const zaehl = {};
+    const zwecke = {};
+    for (const l of k.werte.laborierungen) {
+      zaehl[l.form] = (zaehl[l.form] || 0) + 1;
+      (zwecke[l.form] = zwecke[l.form] || []).push(l.zweck);
+    }
+    if (preise) for (const p of preise.produkte) zaehl[p.form] = zaehl[p.form] || 0;
+
+    return FORM_ORDER.filter(f => f in zaehl).map(f => {
+      // Häufigsten Zweck als Zusatz — daraus wird "Teilmantel — Jagd"
+      const z = zwecke[f] || [];
+      const haeufig = {};
+      for (const x of z) {
+        const kurz = String(x).split(' /')[0].trim();
+        haeufig[kurz] = (haeufig[kurz] || 0) + 1;
+      }
+      const top = Object.keys(haeufig).sort((a, b) => haeufig[b] - haeufig[a])[0];
+      return { id: f, name: FORM_NAME[f], zweck: top || '', anzahl: zaehl[f] };
+    });
+  }
+
   /* ---------- Detailansicht ---------- */
 
   async function renderDetail(id) {
@@ -447,24 +571,66 @@
         <div><div class="warn-t">${esc(w.titel)}</div><div class="warn-x">${esc(w.text)}</div></div>
       </div>`).join('');
 
-    const stats = [
-      ['Geschoss', range(s.geschoss_gr, '', 0), 'grain'],
-      ['v₀', range(s.v0_ms, '', 0), 'm/s'],
-      ['E₀', range(s.e0_j, '', 0), 'Joule'],
-      ['Preis', preise ? range(preise.range_eur_schuss, '', 2) : '–', '€/Schuss']
-    ].map(([kk, vv, uu]) => `
-      <div class="stat"><div class="stat-k">${kk}</div><div class="stat-v">${vv}</div><div class="stat-u">${uu}</div></div>`).join('');
+    const formen = formenVon(k, preise);
+    // Voreinstellung: die Form mit den meisten Laborierungen — das ist die, für
+    // die das Kaliber üblicherweise steht.
+    let aktiveForm = null;
+
+    const formOptionen = ['<option value="">Alle Geschossformen</option>'].concat(
+      formen.map(f => `<option value="${f.id}">${esc(f.name)}${f.zweck ? ' — ' + esc(f.zweck) : ''}</option>`)
+    ).join('');
 
     view.innerHTML = `
       <div class="det-head">
-        <h1 class="det-name">${esc(k.name)}</h1>
-        <div class="det-alias">${esc(k.aliase.join('  ·  '))}</div>
+        <div class="det-top">
+          <div class="det-titel">
+            <h1 class="det-name">${esc(k.name)}</h1>
+            <div class="det-alias">${esc(k.aliase.join('  ·  '))}</div>
+          </div>
+          ${formen.length > 1 ? `
+          <div class="formwahl">
+            <label for="formsel">erhältlich in</label>
+            <select id="formsel">${formOptionen}</select>
+          </div>` : ''}
+        </div>
         <div class="det-kurz">${esc(k.kurz)}</div>
       </div>
       ${warnungen}
-      <div class="drawing">${zeichnePatrone(k.masse)}<div class="drawing-cap">Maßstäbliche Zeichnung aus den C.I.P.-Maßen — nicht in Originalgröße</div></div>
-      <div class="stats">${stats}</div>
+      <div class="drawing" id="drawing"></div>
+      <div class="stats" id="stats"></div>
       <div class="chapters" id="chapters"></div>`;
+
+    /** Zeichnung + Schnellwerte auf die gewählte Form einstellen */
+    function kopfZeichnen() {
+      const labs = gefiltert();
+      const zeichenForm = aktiveForm ||
+        // Ohne Auswahl die häufigste Form zeigen — irgendeine muss es sein
+        (formen.slice().sort((a, b) => b.anzahl - a.anzahl)[0] || {}).id || 'vollmantel';
+      const fname = FORM_NAME[zeichenForm] || '';
+      $('#drawing').innerHTML = zeichnePatrone(k.masse, zeichenForm) +
+        `<div class="drawing-cap">${esc(fname)} · maßstäblich aus den C.I.P.-Maßen — nicht in Originalgröße${
+          aktiveForm ? '' : ' · häufigste Form dieses Kalibers'}</div>`;
+
+      const gr = labs.map(l => l.gr), v0 = labs.map(l => l.v0);
+      const e0 = labs.map(l => Ballistik.e0(l.gr, l.v0));
+      const pp = preise ? preise.produkte.filter(p => !aktiveForm || p.form === aktiveForm)
+                                          .map(p => p.eur_schuss) : [];
+      // Bei Auswahl die tatsächliche Spanne der Auswahl zeigen, sonst die des Kalibers
+      const sp = (arr, roh, d) => aktiveForm && arr.length
+        ? range([Math.min(...arr), Math.max(...arr)], '', d) : range(roh, '', d);
+
+      $('#stats').innerHTML = [
+        ['Geschoss', sp(gr, s.geschoss_gr, 0), 'grain'],
+        ['v₀', sp(v0, s.v0_ms, 0), 'm/s'],
+        ['E₀', sp(e0, s.e0_j, 0), 'Joule'],
+        ['Preis', preise ? (aktiveForm && pp.length
+            ? range([Math.min(...pp), Math.max(...pp)], '', 2)
+            : range(preise.range_eur_schuss, '', 2)) : '–', '€/Schuss']
+      ].map(([kk, vv, uu]) => `
+        <div class="stat"><div class="stat-k">${kk}</div><div class="stat-v">${vv}</div><div class="stat-u">${uu}</div></div>`).join('');
+    }
+
+    const gefiltert = () => k.werte.laborierungen.filter(l => !aktiveForm || l.form === aktiveForm);
 
     const ch = $('#chapters');
     let n = 0;
@@ -518,9 +684,13 @@
       ${m.drall_hinweis ? `<h4>Zum Drall</h4><p>${esc(m.drall_hinweis)}</p>` : ''}`);
 
     /* 03 Werte & Laborierungen */
-    const labs = k.werte.laborierungen;
-    kapitel('Werte & Laborierungen', `${labs.length} Sorten`, `
-      <div class="note">${esc(k.werte.hinweis)}</div>
+    const labDet = kapitel('Werte & Laborierungen', `${k.werte.laborierungen.length} Sorten`,
+      `<div class="note">${esc(k.werte.hinweis)}</div><div id="labtab"></div>`);
+
+    function labZeichnen() {
+      const labs = gefiltert();
+      $('.ch-sub', labDet).textContent = `${labs.length} ${labs.length === 1 ? 'Sorte' : 'Sorten'}`;
+      $('#labtab', labDet).innerHTML = `
       <div class="tw"><table class="t">
         <thead><tr>
           <th>Hersteller / Typ</th><th>${gl('gr', 'Gewicht')}</th><th>${gl('v0', 'v₀')}</th>
@@ -535,14 +705,15 @@
             <td class="num">${nf(l.bc, 3)}<br><span style="color:var(--dim)">${gl('g1g7', l.bc_modell)}</span></td>
             <td>${esc(l.zweck)}${l.anmerkung ? `<br><span style="color:var(--dim);font-size:12px">${esc(l.anmerkung)}</span>` : ''}</td>
           </tr>`).join('')}</tbody>
-      </table></div>`);
+      </table></div>`;
+    }
 
     /* 04 Ballistik-Rechner */
     const balDetails = kapitel('Ballistik-Rechner', 'interaktiv', `
       <p>Flugbahn, Energie und Windabdrift, gerechnet aus dem ballistischen Koeffizienten. Wähl eine Laborierung und passe an, was bei dir gilt.</p>
       <div class="calc-row">
         <div class="field"><label for="bl-lab">${gl('laborierung', 'Laborierung')}</label>
-          <select id="bl-lab">${labs.map((l, i) => `<option value="${i}">${esc(l.hersteller)} ${l.gr} gr ${esc(l.typ)}</option>`).join('')}</select>
+          <select id="bl-lab"></select>
         </div>
         <div class="field"><label for="bl-v0">${gl('v0', 'v₀ (m/s)')}</label><input id="bl-v0" type="number" inputmode="numeric" step="1"></div>
         <div class="field"><label for="bl-zero">${gl('fleck', 'Fleck (m)')}</label><input id="bl-zero" type="number" inputmode="numeric" step="5" value="100"></div>
@@ -553,8 +724,20 @@
     const labSel = $('#bl-lab', balDetails), v0In = $('#bl-v0', balDetails);
     const zeroIn = $('#bl-zero', balDetails), windIn = $('#bl-wind', balDetails);
 
+    // Das Laborierungs-Menü folgt der Formauswahl. Ohne das würde der Rechner
+    // eine Laborierung durchrechnen, die in der Tabelle darüber gar nicht steht.
+    function labListeFuellen() {
+      const labs = gefiltert();
+      labSel.innerHTML = labs.map((l, i) =>
+        `<option value="${i}">${esc(l.hersteller)} ${l.gr} gr ${esc(l.typ)}</option>`).join('');
+      labSel.value = '0';
+      if (labs[0]) v0In.value = labs[0].v0;
+    }
+
     function rechneUndZeichne() {
-      const l = labs[+labSel.value];
+      const labs = gefiltert();
+      const l = labs[+labSel.value] || labs[0];
+      if (!l) { $('#bl-out', balDetails).innerHTML = ''; return; }
       const v0 = +v0In.value || l.v0;
       const zero = Math.max(10, +zeroIn.value || 100);
       const wind = +windIn.value || 0;
@@ -607,25 +790,40 @@
           </tr>`; }).join('')}</tbody></table></div>
         <div class="src">Gerechnet mit ${l.bc_modell}-Widerstandsmodell, BC ${nf(l.bc, 3)}, Visierhöhe 40 mm, Normatmosphäre 15 °C / 1013 hPa / 50 % rF. Luftdichte ${nf(r.rho, 3)} kg/m³. Abgangswinkel ${nf(r.winkelMrad, 2)} mrad. Reale Werte weichen ab — die eigene v₀ zu messen bringt mehr als jede Nachkommastelle hier.</div>`;
     }
-    labSel.addEventListener('change', () => { v0In.value = labs[+labSel.value].v0; rechneUndZeichne(); });
+    labSel.addEventListener('change', () => {
+      const l = gefiltert()[+labSel.value];
+      if (l) v0In.value = l.v0;
+      rechneUndZeichne();
+    });
     [v0In, zeroIn, windIn].forEach(el => el.addEventListener('input', rechneUndZeichne));
-    v0In.value = labs[0].v0;
+    labListeFuellen();
     balDetails.addEventListener('toggle', function once() {
       if (balDetails.open) { rechneUndZeichne(); balDetails.removeEventListener('toggle', once); }
     });
 
     /* 05 Marktüberblick & Preise */
+    let preisDet = null;
     if (preise) {
+      preisDet = kapitel('Marktüberblick & Preise', `${preise.produkte.length} Angebote`,
+        `<div id="preistab"></div>`);
+    }
+
+    function preisZeichnen() {
+      if (!preisDet) return;
       const klasse = { guenstig: 'günstig', mittel: 'Mittelklasse', premium: 'Premium' };
-      kapitel('Marktüberblick & Preise', `${preise.produkte.length} Angebote`, `
+      const prods = preise.produkte.filter(p => !aktiveForm || p.form === aktiveForm);
+      $('.ch-sub', preisDet).textContent = `${prods.length} ${prods.length === 1 ? 'Angebot' : 'Angebote'}`;
+      const pr = prods.map(p => p.eur_schuss);
+      const spanne = pr.length ? [Math.min(...pr), Math.max(...pr)] : preise.range_eur_schuss;
+      $('#preistab', preisDet).innerHTML = `
         <div class="price-bar">
           <div class="pb-track"></div>
-          <div class="pb-labels"><span>${eur(preise.range_eur_schuss[0])} / Schuss</span><span>${eur(preise.range_eur_schuss[1])} / Schuss</span></div>
+          <div class="pb-labels"><span>${eur(spanne[0])} / Schuss</span><span>${eur(spanne[1])} / Schuss</span></div>
         </div>
         <p>${esc(preise.kommentar)}</p>
-        <div class="tw"><table class="t">
+        ${prods.length ? `<div class="tw"><table class="t">
           <thead><tr><th>Hersteller / Typ</th><th>Klasse</th><th>Packung</th><th>€/Schuss</th><th>Händler</th></tr></thead>
-          <tbody>${preise.produkte.map(p => `
+          <tbody>${prods.map(p => `
             <tr>
               <td class="name">${esc(p.hersteller)}<br><span style="color:var(--muted);font-weight:400">${esc(p.typ)}</span></td>
               <td>${klasse[p.klasse] || p.klasse}</td>
@@ -633,8 +831,8 @@
               <td class="num" style="color:var(--brass);font-weight:600">${eur(p.eur_schuss)}</td>
               <td><a class="ext" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.haendler)} ↗</a></td>
             </tr>`).join('')}</tbody>
-        </table></div>
-        <div class="src">Preisstand ${esc(PREISE.stand)} · Quelle: ${esc(PREISE.quelle)}. Richtwerte inkl. MwSt., ohne Versand — bewusst keine Tagespreise. Der Link führt zum Händler, dort steht der aktuelle Preis.</div>`);
+        </table></div>` : '<div class="own-empty">Für diese Geschossform ist kein Angebot hinterlegt.</div>'}
+        <div class="src">Preisstand ${esc(PREISE.stand)} · Quelle: ${esc(PREISE.quelle)}. Richtwerte inkl. MwSt., ohne Versand — bewusst keine Tagespreise. Der Link führt zum Händler, dort steht der aktuelle Preis.</div>`;
     }
 
     /* 06 Präzision / Beschussbilder */
@@ -695,6 +893,23 @@
     q.innerHTML = 'Quellen: ' + k.quellen.map(s =>
       `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.titel)}</a>`).join(' · ');
     view.appendChild(q);
+
+    // Alles, was von der Geschossform abhängt, einmal aufbauen …
+    function allesZeichnen() {
+      kopfZeichnen();
+      labZeichnen();
+      preisZeichnen();
+      labListeFuellen();
+      if (balDetails.open) rechneUndZeichne();
+    }
+    allesZeichnen();
+
+    // … und bei jeder Auswahl neu.
+    const formSel = $('#formsel');
+    if (formSel) formSel.addEventListener('change', () => {
+      aktiveForm = formSel.value || null;
+      allesZeichnen();
+    });
 
     window.scrollTo(0, 0);
   }

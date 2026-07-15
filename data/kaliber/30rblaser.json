@@ -1,20 +1,38 @@
 {
   "id": "30rblaser",
   "name": ".30 R Blaser",
-  "aliase": [".30R Blaser", "30 R Blaser", "7,62x68R", "7.62x68R", "30R Blaser", "7,62x68mmR"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    ".30R Blaser",
+    "30 R Blaser",
+    "7,62x68R",
+    "7.62x68R",
+    "30R Blaser",
+    "7,62x68mmR"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Magnum-Leistung mit Rand: Blasers Antwort auf die Frage, was man in einen Kipplauf oder eine Doppelbüchse legt, wenn .30-06 nicht reicht.",
-
   "schnell": {
-    "geschoss_gr": [150, 201],
-    "v0_ms": [780, 950],
-    "e0_j": [4000, 4600],
-    "drall_mm": [305, 305],
+    "geschoss_gr": [
+      150,
+      201
+    ],
+    "v0_ms": [
+      780,
+      950
+    ],
+    "e0_j": [
+      4000,
+      4600
+    ],
+    "drall_mm": [
+      305,
+      305
+    ],
     "gasdruck_bar": 4050
   },
-
   "warnungen": [],
-
   "basis": {
     "entwickler": "Blaser Jagdwaffen, Isny",
     "jahr": 1991,
@@ -24,9 +42,13 @@
       "Blaser entwickelte 1991 die .30 R Blaser genau für diese Lücke, zugeschnitten auf die eigene Kipplaufbüchse K95 und die Doppelbüchse D99. Die Hülse ist mit 68 mm ungewöhnlich lang und die Patrone mit 95 mm Gesamtlänge eine der längsten hier — das ist bei einem Kipplauf kein Problem, weil kein Magazin im Weg ist.",
       "Herausgekommen ist eine Patrone, die im Bereich der .300 Winchester Magnum spielt, aber ohne Gürtel und mit Rand. Für Bergjagd mit der leichten Kipplaufbüchse ist das eine überzeugende Kombination: wenig Waffengewicht, viel Leistung, weite Schüsse. Der Preis dafür ist die Bindung an ein Blaser-Ökosystem — außerhalb davon ist die Patrone eine Rarität."
     ],
-    "einsatz": ["Bergjagd mit der Kipplaufbüchse", "Jagd auf alles heimische Schalenwild", "Doppelbüchsen und Drillinge", "Weite Schüsse aus leichten Waffen"]
+    "einsatz": [
+      "Bergjagd mit der Kipplaufbüchse",
+      "Jagd auf alles heimische Schalenwild",
+      "Doppelbüchsen und Drillinge",
+      "Weite Schüsse aus leichten Waffen"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P.",
     "huelsenform": "mit Rand, Flaschenhals",
@@ -43,35 +65,121 @@
     "drall": "1:305 mm (1:12″)",
     "drall_hinweis": "Deckt die üblichen 150 bis 201 gr sicher ab. Für sehr schwere Matchgeschosse wäre er zu langsam — die spielen bei einer reinen Jagdpatrone aber keine Rolle."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 600 mm Lauf. Kipplaufbüchsen haben oft kürzere Läufe um 550 mm — dort sind 20–30 m/s weniger zu erwarten.",
     "laborierungen": [
-      { "hersteller": "RWS", "typ": "Doppelkern Teilmantel", "gr": 165, "g": 10.69, "v0": 914, "bc": 0.400, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Die Standardlaborierung. Hoher Restgewichtserhalt bei hoher Geschwindigkeit." },
-      { "hersteller": "RWS", "typ": "UNI Classic Teilmantel", "gr": 181, "g": 11.73, "v0": 853, "bc": 0.430, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Für starkes Wild — schwerer und ruhiger." },
-      { "hersteller": "RWS", "typ": "KS Teilmantel", "gr": 150, "g": 9.72, "v0": 945, "bc": 0.360, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Die rasanteste Laborierung — flachste Bahn für die Bergjagd." },
-      { "hersteller": "RWS", "typ": "KS Teilmantel", "gr": 201, "g": 13.02, "v0": 792, "bc": 0.450, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Schwerstes gängiges Geschoss, für Rotwild und starke Sauen." },
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 165, "g": 10.69, "v0": 905, "bc": 0.405, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Sehr zuverlässige Deformation über einen breiten Geschwindigkeitsbereich." },
-      { "hersteller": "RWS", "typ": "HIT bleifrei", "gr": 165, "g": 10.69, "v0": 900, "bc": 0.390, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bleifrei — die Antwort auf die Landesvorschriften. Praktisch die einzige Option in diesem Kaliber." }
+      {
+        "hersteller": "RWS",
+        "typ": "Doppelkern Teilmantel",
+        "form": "teilmantel",
+        "gr": 165,
+        "g": 10.69,
+        "v0": 914,
+        "bc": 0.4,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Die Standardlaborierung. Hoher Restgewichtserhalt bei hoher Geschwindigkeit."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "UNI Classic Teilmantel",
+        "form": "teilmantel",
+        "gr": 181,
+        "g": 11.73,
+        "v0": 853,
+        "bc": 0.43,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Für starkes Wild — schwerer und ruhiger."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "KS Teilmantel",
+        "form": "teilmantel",
+        "gr": 150,
+        "g": 9.72,
+        "v0": 945,
+        "bc": 0.36,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Die rasanteste Laborierung — flachste Bahn für die Bergjagd."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "KS Teilmantel",
+        "form": "teilmantel",
+        "gr": 201,
+        "g": 13.02,
+        "v0": 792,
+        "bc": 0.45,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Schwerstes gängiges Geschoss, für Rotwild und starke Sauen."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 165,
+        "g": 10.69,
+        "v0": 905,
+        "bc": 0.405,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Sehr zuverlässige Deformation über einen breiten Geschwindigkeitsbereich."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "HIT bleifrei",
+        "form": "bleifrei",
+        "gr": 165,
+        "g": 10.69,
+        "v0": 900,
+        "bc": 0.39,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei — die Antwort auf die Landesvorschriften. Praktisch die einzige Option in diesem Kaliber."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N160", "eignung": "Für das große Hülsenvolumen gut geeignet." },
-    { "name": "Vihtavuori N165", "eignung": "Langsam brennend, für schwere Geschosse." },
-    { "name": "Hodgdon H4831", "eignung": "Nutzt das Volumen aus, breites Ladefenster." },
-    { "name": "Alliant Reloder 22", "eignung": "Für maximale Geschwindigkeiten mit schweren Geschossen." }
+    {
+      "name": "Vihtavuori N160",
+      "eignung": "Für das große Hülsenvolumen gut geeignet."
+    },
+    {
+      "name": "Vihtavuori N165",
+      "eignung": "Langsam brennend, für schwere Geschosse."
+    },
+    {
+      "name": "Hodgdon H4831",
+      "eignung": "Nutzt das Volumen aus, breites Ladefenster."
+    },
+    {
+      "name": "Alliant Reloder 22",
+      "eignung": "Für maximale Geschwindigkeiten mit schweren Geschossen."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten (Büchse)", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten (Büchse)",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Praktisch bedeutungslos. Fabrik-Unterschallmunition gibt es nicht, und die Patrone ist als rasante Vollmachtpatrone konzipiert. Bei Kipplaufwaffen kommt hinzu, dass Schalldämpfer dort seltener montiert werden — die Waffen sind auf leichtes Gewicht und Handlichkeit ausgelegt, was ein Dämpfer konterkariert."
   },
-
   "vorteile": [
     "Magnum-Leistung in einer Randpatrone — für Kipplauf und Doppelbüchse konkurrenzlos",
     "Rund 15 % mehr Energie als .30-06 bei ähnlichem Druck",
@@ -89,7 +197,6 @@
     "Wiederladen schwierig: Hülsen und Ladedaten sind rar",
     "Bindung an ein Waffensystem — beim Wiederverkauf ein Nachteil"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich spielt die Patrone keine Rolle — sie ist eine reine Jagdpatrone für Kipplaufwaffen.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 7,82 mm klar erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 3.400–3.800 J weit über den geforderten 2.000 J.",
@@ -99,28 +206,60 @@
       "Für die Auslandsjagd riskant — außerhalb Deutschlands ist die Munition kaum zu bekommen. Munition mitnehmen."
     ]
   },
-
   "varianten": [
-    { "name": ".30 R Blaser leicht (150 gr)", "text": "Rund 945 m/s. Die rasanteste Laborierung, für Bergjagd und weite Schüsse." },
-    { "name": ".30 R Blaser Standard (165 gr)", "text": "Rund 905–914 m/s. Der Allrounder und meistverkaufte Laborierung." },
-    { "name": ".30 R Blaser schwer (181–201 gr)", "text": "792–853 m/s. Für Rotwild und starke Sauen, mit hoher Sektionsdichte." },
-    { "name": ".30-06 Springfield", "text": "Die randlose Alternative für Repetierer. Rund 15 % weniger Energie, aber überall verfügbar." },
-    { "name": "8 × 68 S", "text": "Die andere deutsche Hochleistungspatrone. Randlos, größeres Geschoss, ähnliche Klasse." }
+    {
+      "name": ".30 R Blaser leicht (150 gr)",
+      "text": "Rund 945 m/s. Die rasanteste Laborierung, für Bergjagd und weite Schüsse."
+    },
+    {
+      "name": ".30 R Blaser Standard (165 gr)",
+      "text": "Rund 905–914 m/s. Der Allrounder und meistverkaufte Laborierung."
+    },
+    {
+      "name": ".30 R Blaser schwer (181–201 gr)",
+      "text": "792–853 m/s. Für Rotwild und starke Sauen, mit hoher Sektionsdichte."
+    },
+    {
+      "name": ".30-06 Springfield",
+      "text": "Die randlose Alternative für Repetierer. Rund 15 % weniger Energie, aber überall verfügbar."
+    },
+    {
+      "name": "8 × 68 S",
+      "text": "Die andere deutsche Hochleistungspatrone. Randlos, größeres Geschoss, ähnliche Klasse."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".300 Winchester Magnum", "text": "Ähnliche Leistungsklasse, aber randlos mit Gürtel und für Repetierer. Viel besser verfügbar." },
-    { "name": ".30-06 Springfield", "text": "Rund 15 % weniger Energie, aber weltweit erhältlich und ein Bruchteil des Preises." },
-    { "name": "7 × 65 R", "text": "Die klassische deutsche Randpatrone für Kipplauf. Deutlich schwächer, aber besser verfügbar und billiger." },
-    { "name": "9,3 × 74 R", "text": "Die Randpatrone für starkes Wild: größeres Geschoss, weniger Rasanz." }
+    {
+      "name": ".300 Winchester Magnum",
+      "text": "Ähnliche Leistungsklasse, aber randlos mit Gürtel und für Repetierer. Viel besser verfügbar."
+    },
+    {
+      "name": ".30-06 Springfield",
+      "text": "Rund 15 % weniger Energie, aber weltweit erhältlich und ein Bruchteil des Preises."
+    },
+    {
+      "name": "7 × 65 R",
+      "text": "Die klassische deutsche Randpatrone für Kipplauf. Deutlich schwächer, aber besser verfügbar und billiger."
+    },
+    {
+      "name": "9,3 × 74 R",
+      "text": "Die Randpatrone für starkes Wild: größeres Geschoss, weniger Rasanz."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Kipplaufbüchsen haben systembedingt keinen starren Lauf-System-Verbund und reagieren empfindlich auf Laufwärme — der erste kalte Schuss zählt, danach wandert die Treffpunktlage oft deutlich. Werte aus Serien sagen bei dieser Waffengattung wenig aus. Trag den kalten ersten Schuss ein, das ist die Zahl, die jagdlich zählt.",
-
   "quellen": [
-    { "titel": "C.I.P. — 30 R Blaser (TAB. II)", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-ii/tabiical-en-page66.pdf" },
-    { "titel": "Wikipedia — .30 R Blaser", "url": "https://en.wikipedia.org/wiki/.30_R_Blaser" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. — 30 R Blaser (TAB. II)",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-ii/tabiical-en-page66.pdf"
+    },
+    {
+      "titel": "Wikipedia — .30 R Blaser",
+      "url": "https://en.wikipedia.org/wiki/.30_R_Blaser"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

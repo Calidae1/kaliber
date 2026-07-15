@@ -1,25 +1,44 @@
 {
   "id": "762x39",
   "name": "7,62 × 39 mm",
-  "aliase": ["7.62x39", "762x39", "7,62 Kalaschnikow", "7,62 Sowjet", "M43", "7.62 Soviet", "7,62x39mm"],
-  "gruppen": ["msr"],
+  "aliase": [
+    "7.62x39",
+    "762x39",
+    "7,62 Kalaschnikow",
+    "7,62 Sowjet",
+    "M43",
+    "7.62 Soviet",
+    "7,62x39mm"
+  ],
+  "gruppen": [
+    "msr"
+  ],
   "kurz": "Die Patrone der Kalaschnikow und damit die meistproduzierte Militärpatrone der Geschichte. Billig, robust, ballistisch fast deckungsgleich mit .300 Blackout — und mit .311″ dicker, als die meisten denken.",
-
   "schnell": {
-    "geschoss_gr": [122, 154],
-    "v0_ms": [650, 740],
-    "e0_j": [1900, 2150],
-    "drall_mm": [240, 240],
+    "geschoss_gr": [
+      122,
+      154
+    ],
+    "v0_ms": [
+      650,
+      740
+    ],
+    "e0_j": [
+      1900,
+      2150
+    ],
+    "drall_mm": [
+      240,
+      240
+    ],
     "gasdruck_bar": 3550
   },
-
   "warnungen": [
     {
       "titel": "Das Geschoss misst .311″, nicht .308″",
       "text": "Der weit verbreitete Irrtum bei diesem Kaliber: 7,62 × 39 verwendet Geschosse mit 7,90 mm (.311″), nicht die 7,82 mm (.308″) von .308 Win oder .300 Blackout. Wer beim Wiederladen versehentlich .308er-Geschosse nimmt, bekommt zu viel Spiel im Lauf — die Folge sind miserable Präzision, taumelnde Geschosse und Gasverluste. Umgekehrt passen .311er-Geschosse nicht in .308er-Kaliber. Erschwerend kommt hinzu, dass manche westlichen Hersteller ihre 7,62 × 39 mit .308er-Geschossen laden, weil sie die Fertigung teilen. Beim Kauf und beim Laden auf den Durchmesser achten, nicht auf die Kaliberbezeichnung."
     }
   ],
-
   "basis": {
     "entwickler": "Nikolai Jelisarow und Boris Semin",
     "jahr": 1943,
@@ -29,9 +48,13 @@
       "Eingeführt wurde sie zunächst im SKS-Karabiner, ihre Weltkarriere machte sie dann ab 1949 in der AK-47. Was folgte, ist beispiellos: Die Kalaschnikow wurde in über 100 Ländern gebaut oder eingesetzt, und 7,62 × 39 wurde zur meistproduzierten Militärpatrone der Geschichte. Bis heute liegt sie irgendwo auf der Welt in Millionenstückzahlen im Lager.",
       "Für den Sportschützen ist sie vor allem eines: billig und robust. Ballistisch entspricht sie fast exakt der .300 Blackout im Überschallbetrieb — nur kostet sie einen Bruchteil. Der Haken liegt woanders: In der AR-15 ist sie eine Bastelei, weil sie eigenen Verschluss und eigene Magazine braucht, und die stark konische Hülse macht Zuführstörungen zum Dauerthema."
     ],
-    "einsatz": ["Sportschießen (AK-Plattform, SKS, Repetierer)", "Militär und Behörden weltweit", "Rehwildjagd (je nach Landesrecht)", "Jagd auf übriges Schalenwild: unzulässig"]
+    "einsatz": [
+      "Sportschießen (AK-Plattform, SKS, Repetierer)",
+      "Militär und Behörden weltweit",
+      "Rehwildjagd (je nach Landesrecht)",
+      "Jagd auf übriges Schalenwild: unzulässig"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "randlos, stark konisch, Flaschenhals, mit Auszieherrille",
@@ -48,36 +71,134 @@
     "drall": "1:240 mm (1:9,45″)",
     "drall_hinweis": "Für die üblichen 122–125 gr ausgelegt und unkritisch. Schwere Geschosse ab 150 gr sind grenzwertig, spielen aber praktisch kaum eine Rolle."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 415 mm (16,3″) Lauf, wie bei AK und den meisten zivilen Waffen üblich. Die Patrone reagiert wenig empfindlich auf Lauflänge — auch aus kurzen Läufen bleibt fast alles erhalten.",
     "laborierungen": [
-      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 123, "g": 7.97, "v0": 716, "bc": 0.275, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Training", "anmerkung": "Der Standard. Boxer-gezündet und damit wiederladbar." },
-      { "hersteller": "PPU", "typ": "Vollmantel (FMJ)", "gr": 123, "g": 7.97, "v0": 710, "bc": 0.275, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg in Europa." },
-      { "hersteller": "GECO", "typ": "Vollmantel (FMJ)", "gr": 124, "g": 8.03, "v0": 712, "bc": 0.275, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Training", "anmerkung": null },
-      { "hersteller": "Hornady", "typ": "SST", "gr": 123, "g": 7.97, "v0": 720, "bc": 0.295, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Jagd", "anmerkung": "Die jagdliche Wahl — deformiert zuverlässig, .310″ Durchmesser." },
-      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 124, "g": 8.03, "v0": 705, "bc": 0.280, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Jagd", "anmerkung": "Günstige Jagdlaborierung." },
-      { "hersteller": "Winchester", "typ": "Power-Point", "gr": 123, "g": 7.97, "v0": 714, "bc": 0.271, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Jagd", "anmerkung": null },
-      { "hersteller": "Fiocchi", "typ": "Vollmantel (FMJ)", "gr": 154, "g": 9.98, "v0": 655, "bc": 0.340, "bc_modell": "G1", "lauf_mm": 415, "zweck": "Training", "anmerkung": "Schwerstes gängiges Geschoss, höherer BC, aber langsamer." }
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 123,
+        "g": 7.97,
+        "v0": 716,
+        "bc": 0.275,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Training",
+        "anmerkung": "Der Standard. Boxer-gezündet und damit wiederladbar."
+      },
+      {
+        "hersteller": "PPU",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 123,
+        "g": 7.97,
+        "v0": 710,
+        "bc": 0.275,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Training",
+        "anmerkung": "Günstigster regulärer Einstieg in Europa."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 124,
+        "g": 8.03,
+        "v0": 712,
+        "bc": 0.275,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Training",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "SST",
+        "form": "kunststoffspitze",
+        "gr": 123,
+        "g": 7.97,
+        "v0": 720,
+        "bc": 0.295,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Jagd",
+        "anmerkung": "Die jagdliche Wahl — deformiert zuverlässig, .310″ Durchmesser."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 124,
+        "g": 8.03,
+        "v0": 705,
+        "bc": 0.28,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Jagd",
+        "anmerkung": "Günstige Jagdlaborierung."
+      },
+      {
+        "hersteller": "Winchester",
+        "typ": "Power-Point",
+        "form": "teilmantel",
+        "gr": 123,
+        "g": 7.97,
+        "v0": 714,
+        "bc": 0.271,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Jagd",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Fiocchi",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 154,
+        "g": 9.98,
+        "v0": 655,
+        "bc": 0.34,
+        "bc_modell": "G1",
+        "lauf_mm": 415,
+        "zweck": "Training",
+        "anmerkung": "Schwerstes gängiges Geschoss, höherer BC, aber langsamer."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N120", "eignung": "Gute Ergebnisse mit 123 gr, in Europa verfügbar." },
-    { "name": "Hodgdon CFE BLK", "eignung": "Funktioniert im ähnlichen Volumenbereich sehr gut." },
-    { "name": "Accurate 1680", "eignung": "Der Klassiker für dieses Hülsenvolumen." },
-    { "name": "Vihtavuori N130", "eignung": "Etwas langsamer, für schwerere Geschosse." }
+    {
+      "name": "Vihtavuori N120",
+      "eignung": "Gute Ergebnisse mit 123 gr, in Europa verfügbar."
+    },
+    {
+      "name": "Hodgdon CFE BLK",
+      "eignung": "Funktioniert im ähnlichen Volumenbereich sehr gut."
+    },
+    {
+      "name": "Accurate 1680",
+      "eignung": "Der Klassiker für dieses Hülsenvolumen."
+    },
+    {
+      "name": "Vihtavuori N130",
+      "eignung": "Etwas langsamer, für schwerere Geschosse."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 7,62×39", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=7-62x39" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 7,62×39",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=7-62x39"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Möglich, aber undankbar. Zwar lässt sich die Patrone mit schweren Geschossen unterschall laden, doch die stark konische Hülse und die auf Vollgas ausgelegte Gasanlage der AK machen zuverlässiges Repetieren zum Glücksspiel. Passende Fabrikmunition gibt es in Deutschland praktisch nicht. Wer aus einer AR-Plattform leise schießen will, nimmt .300 Blackout — die ist genau dafür konstruiert."
   },
-
   "vorteile": [
     "Sehr günstig — nach .223 die billigste Büchsenmunition",
     "Robust und zuverlässig auch bei Schmutz, Frost und schlechter Pflege",
@@ -94,7 +215,6 @@
     "Geschossdurchmesser .311″ wird ständig mit .308″ verwechselt (siehe Warnung)",
     "Für übriges Schalenwild reicht die Energie nicht"
   ],
-
   "recht_de": {
     "sport": "Halbautomaten in 7,62 × 39 sind für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist. Das Kaliber selbst ist nicht beschränkt — über die Erwerbbarkeit entscheidet die Waffe.",
     "jagd": "Zulässig für Rehwild: Das Mindestkaliber von 6,5 mm ist mit 7,90 mm erfüllt, und eine 123-gr-Laborierung liefert auf 100 m rund 1.400–1.500 J, also klar über den geforderten 1.000 J. Für übriges Schalenwild reicht es nicht — dafür wären 2.000 J auf 100 m nötig, und die Patrone erreicht selbst an der Mündung nur rund 2.000–2.100 J.",
@@ -105,26 +225,52 @@
       "Bleifrei-Pflicht gilt je nach Bundesland; die Auswahl ist in diesem Kaliber sehr dünn."
     ]
   },
-
   "varianten": [
-    { "name": "7,62 × 39 Vollmantel", "text": "123 gr bei rund 710–716 m/s. Die Trainings- und Militärlaborierung. Für die Jagd unzulässig." },
-    { "name": "7,62 × 39 Teilmantel / SST", "text": "Deformierende Jagdgeschosse. Die einzige jagdlich zulässige Variante — auf .310″/.311″ Durchmesser achten." },
-    { "name": "Stahlhülsenmunition", "text": "Sehr billig, lackierte Stahlhülse, meist Berdan-gezündet. Nicht wiederladbar, verschmutzt stärker, und manche Waffen ziehen sie schlechter aus." },
-    { "name": "7,62 × 54R", "text": "Trotz ähnlicher Zahlen eine völlig andere, viel stärkere Randpatrone — die russische Vollmachtpatrone. Nicht verwechseln." }
+    {
+      "name": "7,62 × 39 Vollmantel",
+      "text": "123 gr bei rund 710–716 m/s. Die Trainings- und Militärlaborierung. Für die Jagd unzulässig."
+    },
+    {
+      "name": "7,62 × 39 Teilmantel / SST",
+      "text": "Deformierende Jagdgeschosse. Die einzige jagdlich zulässige Variante — auf .310″/.311″ Durchmesser achten."
+    },
+    {
+      "name": "Stahlhülsenmunition",
+      "text": "Sehr billig, lackierte Stahlhülse, meist Berdan-gezündet. Nicht wiederladbar, verschmutzt stärker, und manche Waffen ziehen sie schlechter aus."
+    },
+    {
+      "name": "7,62 × 54R",
+      "text": "Trotz ähnlicher Zahlen eine völlig andere, viel stärkere Randpatrone — die russische Vollmachtpatrone. Nicht verwechseln."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".300 AAC Blackout", "text": "Ballistisch fast deckungsgleich überschall, aber teurer. Dafür läuft sie in der unveränderten AR-15 und lässt sich hervorragend dämpfen." },
-    { "name": ".223 Rem / 5,56x45", "text": "Rasanter, flacher, billiger und weiter reichend — aber mit 5,70 mm unter dem jagdlichen Mindestkaliber." },
-    { "name": ".30-30 Winchester", "text": "Ähnliche Leistungsklasse, ähnlicher Einsatzbereich, aber Randpatrone für Unterhebelrepetierer." },
-    { "name": "6,5 Grendel", "text": "Auf derselben Hülsenfamilie aufgebaut, aber mit viel höherem BC und deutlich mehr Reichweite." }
+    {
+      "name": ".300 AAC Blackout",
+      "text": "Ballistisch fast deckungsgleich überschall, aber teurer. Dafür läuft sie in der unveränderten AR-15 und lässt sich hervorragend dämpfen."
+    },
+    {
+      "name": ".223 Rem / 5,56x45",
+      "text": "Rasanter, flacher, billiger und weiter reichend — aber mit 5,70 mm unter dem jagdlichen Mindestkaliber."
+    },
+    {
+      "name": ".30-30 Winchester",
+      "text": "Ähnliche Leistungsklasse, ähnlicher Einsatzbereich, aber Randpatrone für Unterhebelrepetierer."
+    },
+    {
+      "name": "6,5 Grendel",
+      "text": "Auf derselben Hülsenfamilie aufgebaut, aber mit viel höherem BC und deutlich mehr Reichweite."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Aus einer AK mit Stahlhülsenmunition sind 80–150 mm auf 100 m normal — das ist keine Präzisionsplattform. Ein guter Repetierer mit Messinghülsen-Munition schafft 40–60 mm. Wenn deine Werte weit auseinandergehen, liegt es fast immer am Geschossdurchmesser (siehe Warnung) oder an der Waffe, nicht an der Laborierung.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 7,62 × 39", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/7-62-x-39-en.pdf" },
-    { "titel": "Wikipedia — 7,62 × 39 mm", "url": "https://de.wikipedia.org/wiki/7,62_%C3%97_39_mm" }
+    {
+      "titel": "C.I.P. TDCC — 7,62 × 39",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/7-62-x-39-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 7,62 × 39 mm",
+      "url": "https://de.wikipedia.org/wiki/7,62_%C3%97_39_mm"
+    }
   ]
 }

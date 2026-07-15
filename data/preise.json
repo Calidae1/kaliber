@@ -15,6 +15,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 115 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 12.9,
           "eur_schuss": 0.258,
@@ -25,6 +26,7 @@
         {
           "hersteller": "GECO",
           "typ": "FMJ 124 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 14.5,
           "eur_schuss": 0.29,
@@ -35,6 +37,7 @@
         {
           "hersteller": "Magtech",
           "typ": "FMJ 147 gr Subsonic",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 16.9,
           "eur_schuss": 0.338,
@@ -43,8 +46,20 @@
           "url": "https://www.frankonia.de/suche?q=magtech+9mm+subsonic"
         },
         {
+          "hersteller": "S&B",
+          "typ": "Teilmantel (SP) 115 gr",
+          "form": "teilmantel",
+          "packung": 50,
+          "eur_packung": 16.9,
+          "eur_schuss": 0.338,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+9mm+luger+sp"
+        },
+        {
           "hersteller": "Norma",
           "typ": "USA Range 115 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 17.5,
           "eur_schuss": 0.35,
@@ -55,6 +70,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "FMJ 158 gr Subsonic",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 19.9,
           "eur_schuss": 0.398,
@@ -65,6 +81,7 @@
         {
           "hersteller": "RWS",
           "typ": "Vollmantel Kegel 124 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 24.9,
           "eur_schuss": 0.498,
@@ -73,8 +90,20 @@
           "url": "https://www.frankonia.de/suche?q=rws+9mm+luger"
         },
         {
+          "hersteller": "Hornady",
+          "typ": "XTP Hohlspitz 124 gr",
+          "form": "hohlspitz",
+          "packung": 25,
+          "eur_packung": 21.9,
+          "eur_schuss": 0.876,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+9mm"
+        },
+        {
           "hersteller": "Federal",
           "typ": "HST 124 gr JHP",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 17.9,
           "eur_schuss": 0.895,
@@ -94,6 +123,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 230 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 22.9,
           "eur_schuss": 0.458,
@@ -104,6 +134,7 @@
         {
           "hersteller": "GECO",
           "typ": "FMJ 230 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 24.9,
           "eur_schuss": 0.498,
@@ -113,7 +144,19 @@
         },
         {
           "hersteller": "Magtech",
+          "typ": "Bleigeschoss Rundkopf (LRN) 230 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 24.9,
+          "eur_schuss": 0.498,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+45+acp+lrn"
+        },
+        {
+          "hersteller": "Magtech",
           "typ": "FMJ 230 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 25.9,
           "eur_schuss": 0.518,
@@ -122,8 +165,20 @@
           "url": "https://www.frankonia.de/suche?q=magtech+45+acp"
         },
         {
+          "hersteller": "Magtech",
+          "typ": "Semi-Wadcutter (LSWC) 200 gr",
+          "form": "semiwadcutter",
+          "packung": 50,
+          "eur_packung": 27.9,
+          "eur_schuss": 0.558,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+45+acp+lswc"
+        },
+        {
           "hersteller": "Speer",
           "typ": "Lawman TMJ 200 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 31.9,
           "eur_schuss": 0.638,
@@ -134,6 +189,7 @@
         {
           "hersteller": "RWS",
           "typ": "Vollmantel 230 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 36.9,
           "eur_schuss": 0.738,
@@ -144,6 +200,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 185 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 21.9,
           "eur_schuss": 1.095,
@@ -154,6 +211,7 @@
         {
           "hersteller": "Federal",
           "typ": "HST 230 gr JHP",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 22.9,
           "eur_schuss": 1.145,
@@ -173,6 +231,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 180 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 19.9,
           "eur_schuss": 0.398,
@@ -183,6 +242,7 @@
         {
           "hersteller": "GECO",
           "typ": "FMJ 180 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 21.9,
           "eur_schuss": 0.438,
@@ -193,6 +253,7 @@
         {
           "hersteller": "Magtech",
           "typ": "FMJ 165 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 22.9,
           "eur_schuss": 0.458,
@@ -201,8 +262,20 @@
           "url": "https://www.frankonia.de/suche?q=magtech+40+s&w"
         },
         {
+          "hersteller": "S&B",
+          "typ": "Teilmantel (SP) 180 gr",
+          "form": "teilmantel",
+          "packung": 50,
+          "eur_packung": 23.9,
+          "eur_schuss": 0.478,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+40+s&w+sp"
+        },
+        {
           "hersteller": "Norma",
           "typ": "Range FMJ 180 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 26.9,
           "eur_schuss": 0.538,
@@ -213,6 +286,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 155 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 19.9,
           "eur_schuss": 0.995,
@@ -223,6 +297,7 @@
         {
           "hersteller": "Federal",
           "typ": "HST 180 gr JHP",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 20.9,
           "eur_schuss": 1.045,
@@ -242,6 +317,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ Flachkopf 158 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 29.9,
           "eur_schuss": 0.598,
@@ -250,8 +326,20 @@
           "url": "https://www.frankonia.de/suche?q=sellier+bellot+357+magnum"
         },
         {
+          "hersteller": "Magtech",
+          "typ": "Semi-Wadcutter (LSWC) 158 gr",
+          "form": "semiwadcutter",
+          "packung": 50,
+          "eur_packung": 31.9,
+          "eur_schuss": 0.638,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+357+magnum+lswc"
+        },
+        {
           "hersteller": "GECO",
           "typ": "Vollmantel 158 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 32.9,
           "eur_schuss": 0.658,
@@ -262,6 +350,7 @@
         {
           "hersteller": "Magtech",
           "typ": "FMJ Flachkopf 158 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 33.9,
           "eur_schuss": 0.678,
@@ -272,6 +361,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "Teilmantel 142 gr",
+          "form": "teilmantel",
           "packung": 50,
           "eur_packung": 36.9,
           "eur_schuss": 0.738,
@@ -282,6 +372,7 @@
         {
           "hersteller": "Federal",
           "typ": "Hydra-Shok 158 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 19.9,
           "eur_schuss": 0.995,
@@ -292,6 +383,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 125 gr",
+          "form": "hohlspitz",
           "packung": 25,
           "eur_packung": 26.9,
           "eur_schuss": 1.076,
@@ -302,6 +394,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 158 gr",
+          "form": "hohlspitz",
           "packung": 25,
           "eur_packung": 27.9,
           "eur_schuss": 1.116,
@@ -321,6 +414,7 @@
         {
           "hersteller": "S&B",
           "typ": "Wadcutter 148 gr",
+          "form": "wadcutter",
           "packung": 50,
           "eur_packung": 19.9,
           "eur_schuss": 0.398,
@@ -330,7 +424,30 @@
         },
         {
           "hersteller": "Magtech",
+          "typ": "Bleigeschoss Rundkopf (LRN) 158 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.398,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+38+special+lrn"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "Semi-Wadcutter (LSWC) 158 gr",
+          "form": "semiwadcutter",
+          "packung": 50,
+          "eur_packung": 20.9,
+          "eur_schuss": 0.418,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+38+special+lswc"
+        },
+        {
+          "hersteller": "Magtech",
           "typ": "FMJ Flachkopf 158 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 21.9,
           "eur_schuss": 0.438,
@@ -341,6 +458,7 @@
         {
           "hersteller": "GECO",
           "typ": "Wadcutter 148 gr",
+          "form": "wadcutter",
           "packung": 50,
           "eur_packung": 22.9,
           "eur_schuss": 0.458,
@@ -351,6 +469,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "Teilmantel Rundkopf 158 gr",
+          "form": "teilmantel",
           "packung": 50,
           "eur_packung": 23.9,
           "eur_schuss": 0.478,
@@ -361,6 +480,7 @@
         {
           "hersteller": "RWS",
           "typ": "Vollmantel 158 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 29.9,
           "eur_schuss": 0.598,
@@ -371,6 +491,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 158 gr",
+          "form": "hohlspitz",
           "packung": 25,
           "eur_packung": 22.9,
           "eur_schuss": 0.916,
@@ -381,6 +502,7 @@
         {
           "hersteller": "Federal",
           "typ": "HST 130 gr +P",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 20.9,
           "eur_schuss": 1.045,
@@ -393,13 +515,14 @@
     "44mag": {
       "range_eur_schuss": [
         0.9,
-        1.7
+        1.84
       ],
       "kommentar": "Vier- bis fuenfmal so teuer wie 9 mm. Hier lohnt Wiederladen klar - oder man trainiert mit .44 Special.",
       "produkte": [
         {
           "hersteller": "Magtech",
           "typ": "FMJ Flachkopf 240 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 44.9,
           "eur_schuss": 0.898,
@@ -410,6 +533,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ Flachkopf 240 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 47.9,
           "eur_schuss": 0.958,
@@ -420,6 +544,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "Teilmantel Flachkopf 200 gr",
+          "form": "teilmantel",
           "packung": 50,
           "eur_packung": 49.9,
           "eur_schuss": 0.998,
@@ -430,6 +555,7 @@
         {
           "hersteller": "Federal",
           "typ": "Teilmantel 240 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 24.9,
           "eur_schuss": 1.245,
@@ -440,6 +566,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 240 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 28.9,
           "eur_schuss": 1.445,
@@ -450,25 +577,38 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 300 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 33.9,
           "eur_schuss": 1.695,
           "klasse": "premium",
           "haendler": "Frankonia",
           "url": "https://www.frankonia.de/suche?q=hornady+xtp+300+44+magnum"
+        },
+        {
+          "hersteller": "Underwood",
+          "typ": "Hartblei Flachkopf (WFN) 300 gr",
+          "form": "blei",
+          "packung": 20,
+          "eur_packung": 36.9,
+          "eur_schuss": 1.845,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=underwood+44+magnum+hard+cast"
         }
       ]
     },
     "10mmauto": {
       "range_eur_schuss": [
         0.6,
-        1.65
+        1.75
       ],
       "kommentar": "Nischenmunition in Deutschland - teuer und nicht immer lieferbar. Achte auf die Energieangabe: reduzierte und volle Laborierungen unterscheiden sich um bis zu 40 %.",
       "produkte": [
         {
           "hersteller": "S&B",
           "typ": "FMJ 180 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 29.9,
           "eur_schuss": 0.598,
@@ -479,6 +619,7 @@
         {
           "hersteller": "Magtech",
           "typ": "FMJ 180 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 32.9,
           "eur_schuss": 0.658,
@@ -489,6 +630,7 @@
         {
           "hersteller": "Federal",
           "typ": "Hydra-Shok 180 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 24.9,
           "eur_schuss": 1.245,
@@ -499,6 +641,7 @@
         {
           "hersteller": "SIG Sauer",
           "typ": "V-Crown 180 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 26.9,
           "eur_schuss": 1.345,
@@ -509,6 +652,7 @@
         {
           "hersteller": "Hornady",
           "typ": "XTP 180 gr",
+          "form": "hohlspitz",
           "packung": 20,
           "eur_packung": 28.9,
           "eur_schuss": 1.445,
@@ -519,12 +663,24 @@
         {
           "hersteller": "Underwood",
           "typ": "FMJ Flachkopf 200 gr",
+          "form": "vollmantel",
           "packung": 20,
           "eur_packung": 32.9,
           "eur_schuss": 1.645,
           "klasse": "premium",
           "haendler": "Frankonia",
           "url": "https://www.frankonia.de/suche?q=underwood+10mm+auto"
+        },
+        {
+          "hersteller": "Underwood",
+          "typ": "Hartblei Flachkopf (WFN) 200 gr",
+          "form": "blei",
+          "packung": 20,
+          "eur_packung": 34.9,
+          "eur_schuss": 1.745,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=underwood+10mm+hard+cast"
         }
       ]
     },
@@ -538,6 +694,7 @@
         {
           "hersteller": "S&B",
           "typ": "Wadcutter 98 gr",
+          "form": "wadcutter",
           "packung": 50,
           "eur_packung": 19.9,
           "eur_schuss": 0.398,
@@ -548,6 +705,7 @@
         {
           "hersteller": "GECO",
           "typ": "Wadcutter 98 gr",
+          "form": "wadcutter",
           "packung": 50,
           "eur_packung": 21.9,
           "eur_schuss": 0.438,
@@ -558,6 +716,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "Blei Rundkopf 83 gr",
+          "form": "blei",
           "packung": 50,
           "eur_packung": 21.9,
           "eur_schuss": 0.438,
@@ -568,6 +727,7 @@
         {
           "hersteller": "Magtech",
           "typ": "Vollmantel Rundkopf 98 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 22.9,
           "eur_schuss": 0.458,
@@ -578,6 +738,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "Wadcutter 98 gr",
+          "form": "wadcutter",
           "packung": 50,
           "eur_packung": 23.9,
           "eur_schuss": 0.478,
@@ -586,8 +747,20 @@
           "url": "https://www.frankonia.de/suche?q=fiocchi+32+s&w+long"
         },
         {
+          "hersteller": "Fiocchi",
+          "typ": "Semi-Wadcutter (LSWC) 98 gr",
+          "form": "semiwadcutter",
+          "packung": 50,
+          "eur_packung": 23.9,
+          "eur_schuss": 0.478,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+32+s&w+long+swc"
+        },
+        {
           "hersteller": "RWS",
           "typ": "Match Wadcutter 98 gr",
+          "form": "wadcutter",
           "packung": 50,
           "eur_packung": 32.9,
           "eur_schuss": 0.658,
@@ -607,6 +780,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 55 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 24.9,
           "eur_schuss": 0.498,
@@ -617,6 +791,7 @@
         {
           "hersteller": "GECO",
           "typ": "FMJ 55 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 25.9,
           "eur_schuss": 0.518,
@@ -627,6 +802,7 @@
         {
           "hersteller": "Magtech",
           "typ": "FMJ 62 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 27.9,
           "eur_schuss": 0.558,
@@ -637,6 +813,7 @@
         {
           "hersteller": "Hornady",
           "typ": "V-MAX 55 gr",
+          "form": "kunststoffspitze",
           "packung": 50,
           "eur_packung": 44.9,
           "eur_schuss": 0.898,
@@ -647,6 +824,7 @@
         {
           "hersteller": "Nosler",
           "typ": "Ballistic Tip 40 gr",
+          "form": "kunststoffspitze",
           "packung": 50,
           "eur_packung": 49.9,
           "eur_schuss": 0.998,
@@ -657,6 +835,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD Match 75 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 29.9,
           "eur_schuss": 1.495,
@@ -667,6 +846,7 @@
         {
           "hersteller": "Sierra",
           "typ": "MatchKing 77 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 32.9,
           "eur_schuss": 1.645,
@@ -686,6 +866,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 124 gr",
+          "form": "vollmantel",
           "packung": 20,
           "eur_packung": 17.9,
           "eur_schuss": 0.895,
@@ -696,6 +877,7 @@
         {
           "hersteller": "Magtech",
           "typ": "FMJ 123 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 49.9,
           "eur_schuss": 0.998,
@@ -706,6 +888,7 @@
         {
           "hersteller": "Fiocchi",
           "typ": "Subsonic FMJ 220 gr",
+          "form": "vollmantel",
           "packung": 25,
           "eur_packung": 34.9,
           "eur_schuss": 1.396,
@@ -716,6 +899,7 @@
         {
           "hersteller": "Hornady",
           "typ": "BLACK V-MAX 110 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 32.9,
           "eur_schuss": 1.645,
@@ -726,6 +910,7 @@
         {
           "hersteller": "Hornady",
           "typ": "SUB-X 190 gr Subsonic",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -736,6 +921,7 @@
         {
           "hersteller": "Barnes",
           "typ": "VOR-TX TAC-TX 110 gr bleifrei",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 51.9,
           "eur_schuss": 2.595,
@@ -755,6 +941,7 @@
         {
           "hersteller": "PPU",
           "typ": "FMJ 123 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 27.9,
           "eur_schuss": 0.558,
@@ -765,6 +952,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 123 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 29.9,
           "eur_schuss": 0.598,
@@ -775,6 +963,7 @@
         {
           "hersteller": "GECO",
           "typ": "FMJ 124 gr",
+          "form": "vollmantel",
           "packung": 50,
           "eur_packung": 31.9,
           "eur_schuss": 0.638,
@@ -785,6 +974,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 124 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 16.9,
           "eur_schuss": 0.845,
@@ -795,6 +985,7 @@
         {
           "hersteller": "Winchester",
           "typ": "Power-Point 123 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 18.9,
           "eur_schuss": 0.945,
@@ -805,6 +996,7 @@
         {
           "hersteller": "Hornady",
           "typ": "SST 123 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 24.9,
           "eur_schuss": 1.245,
@@ -824,6 +1016,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 140 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 26.9,
           "eur_schuss": 1.345,
@@ -834,6 +1027,7 @@
         {
           "hersteller": "Norma",
           "typ": "Golden Target 130 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 32.9,
           "eur_schuss": 1.645,
@@ -844,6 +1038,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD Match 140 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 34.9,
           "eur_schuss": 1.745,
@@ -854,6 +1049,7 @@
         {
           "hersteller": "Lapua",
           "typ": "Scenar-L 136 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 38.9,
           "eur_schuss": 1.945,
@@ -864,6 +1060,7 @@
         {
           "hersteller": "Federal",
           "typ": "Gold Medal SMK 120 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -874,6 +1071,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 143 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 42.9,
           "eur_schuss": 2.145,
@@ -884,6 +1082,7 @@
         {
           "hersteller": "Barnes",
           "typ": "LRX bleifrei 127 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 54.9,
           "eur_schuss": 2.745,
@@ -903,6 +1102,7 @@
         {
           "hersteller": "Hornady",
           "typ": "BTHP BLACK 105 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -913,6 +1113,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-VT V-Match 80 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 41.9,
           "eur_schuss": 2.095,
@@ -923,6 +1124,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD Match 108 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 42.9,
           "eur_schuss": 2.145,
@@ -933,6 +1135,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 103 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 46.9,
           "eur_schuss": 2.345,
@@ -943,6 +1146,7 @@
         {
           "hersteller": "Barnes",
           "typ": "LRX bleifrei 95 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 58.9,
           "eur_schuss": 2.945,
@@ -962,6 +1166,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD Match 75 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 36.9,
           "eur_schuss": 1.845,
@@ -972,6 +1177,7 @@
         {
           "hersteller": "Federal",
           "typ": "Nosler Ballistic Tip 60 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 38.9,
           "eur_schuss": 1.945,
@@ -982,6 +1188,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD Match 88 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 41.9,
           "eur_schuss": 2.095,
@@ -992,6 +1199,7 @@
         {
           "hersteller": "Federal",
           "typ": "Fusion MSR 90 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 42.9,
           "eur_schuss": 2.145,
@@ -1002,6 +1210,7 @@
         {
           "hersteller": "Federal",
           "typ": "Gold Medal SMK 90 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 45.9,
           "eur_schuss": 2.295,
@@ -1021,6 +1230,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 147 gr",
+          "form": "vollmantel",
           "packung": 20,
           "eur_packung": 17.9,
           "eur_schuss": 0.895,
@@ -1031,6 +1241,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 170 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 24.9,
           "eur_schuss": 1.245,
@@ -1041,6 +1252,7 @@
         {
           "hersteller": "Sierra",
           "typ": "MatchKing 168 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 32.9,
           "eur_schuss": 1.645,
@@ -1051,6 +1263,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 180 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 36.9,
           "eur_schuss": 1.845,
@@ -1061,6 +1274,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 165 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -1071,6 +1285,7 @@
         {
           "hersteller": "Lapua",
           "typ": "Scenar-L 185 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 41.9,
           "eur_schuss": 2.095,
@@ -1081,6 +1296,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 178 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 43.9,
           "eur_schuss": 2.195,
@@ -1091,6 +1307,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 150 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 52.9,
           "eur_schuss": 2.645,
@@ -1110,6 +1327,7 @@
         {
           "hersteller": "S&B",
           "typ": "FMJ 150 gr",
+          "form": "vollmantel",
           "packung": 20,
           "eur_packung": 19.9,
           "eur_schuss": 0.995,
@@ -1120,6 +1338,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 170 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 26.9,
           "eur_schuss": 1.345,
@@ -1130,6 +1349,7 @@
         {
           "hersteller": "Federal",
           "typ": "Power-Shok 150 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 29.9,
           "eur_schuss": 1.495,
@@ -1140,6 +1360,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 200 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -1150,6 +1371,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 180 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 42.9,
           "eur_schuss": 2.145,
@@ -1160,6 +1382,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 178 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 45.9,
           "eur_schuss": 2.295,
@@ -1170,6 +1393,7 @@
         {
           "hersteller": "Nosler",
           "typ": "Partition 180 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 49.9,
           "eur_schuss": 2.495,
@@ -1180,6 +1404,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 168 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 55.9,
           "eur_schuss": 2.795,
@@ -1199,6 +1424,7 @@
         {
           "hersteller": "PPU",
           "typ": "FMJ 196 gr",
+          "form": "vollmantel",
           "packung": 20,
           "eur_packung": 17.9,
           "eur_schuss": 0.895,
@@ -1209,6 +1435,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 196 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 25.9,
           "eur_schuss": 1.295,
@@ -1219,6 +1446,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 185 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 27.9,
           "eur_schuss": 1.395,
@@ -1229,6 +1457,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 196 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 38.9,
           "eur_schuss": 1.945,
@@ -1239,6 +1468,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 184 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 42.9,
           "eur_schuss": 2.145,
@@ -1249,6 +1479,7 @@
         {
           "hersteller": "RWS",
           "typ": "Doppelkern 196 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 44.9,
           "eur_schuss": 2.245,
@@ -1259,6 +1490,7 @@
         {
           "hersteller": "RWS",
           "typ": "HIT bleifrei 150 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 52.9,
           "eur_schuss": 2.645,
@@ -1278,6 +1510,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 173 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 26.9,
           "eur_schuss": 1.345,
@@ -1288,6 +1521,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 154 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 28.9,
           "eur_schuss": 1.445,
@@ -1298,6 +1532,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 170 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -1308,6 +1543,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 162 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 43.9,
           "eur_schuss": 2.195,
@@ -1318,6 +1554,7 @@
         {
           "hersteller": "RWS",
           "typ": "Doppelkern 173 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 45.9,
           "eur_schuss": 2.295,
@@ -1328,6 +1565,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 162 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 46.9,
           "eur_schuss": 2.345,
@@ -1338,6 +1576,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 140 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 54.9,
           "eur_schuss": 2.745,
@@ -1357,6 +1596,7 @@
         {
           "hersteller": "PPU",
           "typ": "FMJ 139 gr",
+          "form": "vollmantel",
           "packung": 20,
           "eur_packung": 18.9,
           "eur_schuss": 0.945,
@@ -1367,6 +1607,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 131 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 25.9,
           "eur_schuss": 1.295,
@@ -1377,6 +1618,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 140 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 27.9,
           "eur_schuss": 1.395,
@@ -1387,6 +1629,7 @@
         {
           "hersteller": "Lapua",
           "typ": "Mega 155 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 36.9,
           "eur_schuss": 1.845,
@@ -1397,6 +1640,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 156 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 38.9,
           "eur_schuss": 1.945,
@@ -1407,6 +1651,7 @@
         {
           "hersteller": "Lapua",
           "typ": "Scenar 139 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -1417,6 +1662,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 140 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 42.9,
           "eur_schuss": 2.145,
@@ -1427,6 +1673,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 120 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 53.9,
           "eur_schuss": 2.695,
@@ -1446,6 +1693,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 100 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 23.9,
           "eur_schuss": 1.195,
@@ -1456,6 +1704,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 100 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 25.9,
           "eur_schuss": 1.295,
@@ -1466,6 +1715,7 @@
         {
           "hersteller": "Nosler",
           "typ": "Ballistic Tip Varmint 58 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 29.9,
           "eur_schuss": 1.495,
@@ -1476,6 +1726,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 100 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 36.9,
           "eur_schuss": 1.845,
@@ -1486,6 +1737,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 95 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -1496,6 +1748,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD Match 105 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 39.9,
           "eur_schuss": 1.995,
@@ -1506,6 +1759,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 90 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 41.9,
           "eur_schuss": 2.095,
@@ -1516,6 +1770,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 80 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 52.9,
           "eur_schuss": 2.645,
@@ -1535,6 +1790,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 285 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 34.9,
           "eur_schuss": 1.745,
@@ -1545,6 +1801,7 @@
         {
           "hersteller": "GECO",
           "typ": "Teilmantel 285 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 37.9,
           "eur_schuss": 1.895,
@@ -1555,6 +1812,7 @@
         {
           "hersteller": "Lapua",
           "typ": "Mega 232 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 44.9,
           "eur_schuss": 2.245,
@@ -1565,6 +1823,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 285 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 47.9,
           "eur_schuss": 2.395,
@@ -1575,6 +1834,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 255 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 49.9,
           "eur_schuss": 2.495,
@@ -1585,6 +1845,7 @@
         {
           "hersteller": "RWS",
           "typ": "Doppelkern 293 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 54.9,
           "eur_schuss": 2.745,
@@ -1595,6 +1856,7 @@
         {
           "hersteller": "Nosler",
           "typ": "Partition 250 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 56.9,
           "eur_schuss": 2.845,
@@ -1605,6 +1867,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TSX bleifrei 250 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 62.9,
           "eur_schuss": 3.145,
@@ -1624,6 +1887,7 @@
         {
           "hersteller": "RWS",
           "typ": "KS 150 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 48.9,
           "eur_schuss": 2.445,
@@ -1634,6 +1898,7 @@
         {
           "hersteller": "RWS",
           "typ": "Doppelkern 165 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 52.9,
           "eur_schuss": 2.645,
@@ -1644,6 +1909,7 @@
         {
           "hersteller": "RWS",
           "typ": "UNI Classic 181 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 53.9,
           "eur_schuss": 2.695,
@@ -1654,6 +1920,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 165 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 54.9,
           "eur_schuss": 2.745,
@@ -1664,6 +1931,7 @@
         {
           "hersteller": "RWS",
           "typ": "KS 201 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 55.9,
           "eur_schuss": 2.795,
@@ -1674,6 +1942,7 @@
         {
           "hersteller": "RWS",
           "typ": "HIT bleifrei 165 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 61.9,
           "eur_schuss": 3.095,
@@ -1693,6 +1962,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 175 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 32.9,
           "eur_schuss": 1.645,
@@ -1703,6 +1973,7 @@
         {
           "hersteller": "Federal",
           "typ": "Power-Shok 150 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 36.9,
           "eur_schuss": 1.845,
@@ -1713,6 +1984,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 170 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 44.9,
           "eur_schuss": 2.245,
@@ -1723,6 +1995,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 160 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 47.9,
           "eur_schuss": 2.395,
@@ -1733,6 +2006,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 162 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 49.9,
           "eur_schuss": 2.495,
@@ -1743,6 +2017,7 @@
         {
           "hersteller": "Nosler",
           "typ": "Partition 160 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 54.9,
           "eur_schuss": 2.745,
@@ -1753,6 +2028,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 145 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 58.9,
           "eur_schuss": 2.945,
@@ -1772,6 +2048,7 @@
         {
           "hersteller": "S&B",
           "typ": "Teilmantel 220 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 34.9,
           "eur_schuss": 1.745,
@@ -1782,6 +2059,7 @@
         {
           "hersteller": "Federal",
           "typ": "Power-Shok 150 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 37.9,
           "eur_schuss": 1.895,
@@ -1792,6 +2070,7 @@
         {
           "hersteller": "Sierra",
           "typ": "MatchKing 190 gr",
+          "form": "match",
           "packung": 20,
           "eur_packung": 44.9,
           "eur_schuss": 2.245,
@@ -1802,6 +2081,7 @@
         {
           "hersteller": "Norma",
           "typ": "Oryx 180 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 45.9,
           "eur_schuss": 2.295,
@@ -1812,6 +2092,7 @@
         {
           "hersteller": "RWS",
           "typ": "Evolution 180 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 48.9,
           "eur_schuss": 2.445,
@@ -1822,6 +2103,7 @@
         {
           "hersteller": "Hornady",
           "typ": "ELD-X Precision Hunter 200 gr",
+          "form": "kunststoffspitze",
           "packung": 20,
           "eur_packung": 51.9,
           "eur_schuss": 2.595,
@@ -1832,6 +2114,7 @@
         {
           "hersteller": "Nosler",
           "typ": "Partition 180 gr",
+          "form": "teilmantel",
           "packung": 20,
           "eur_packung": 55.9,
           "eur_schuss": 2.795,
@@ -1842,6 +2125,7 @@
         {
           "hersteller": "Barnes",
           "typ": "TTSX bleifrei 165 gr",
+          "form": "bleifrei",
           "packung": 20,
           "eur_packung": 59.9,
           "eur_schuss": 2.995,

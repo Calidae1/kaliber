@@ -1,20 +1,37 @@
 {
   "id": "9x19",
   "name": "9 mm Luger",
-  "aliase": ["9x19", "9 mm Parabellum", "9 mm Para", "9 mm NATO", "9mm"],
-  "gruppen": ["kurz"],
+  "aliase": [
+    "9x19",
+    "9 mm Parabellum",
+    "9 mm Para",
+    "9 mm NATO",
+    "9mm"
+  ],
+  "gruppen": [
+    "kurz"
+  ],
   "kurz": "Die meistgeschossene Patrone der Welt — billig, rückstoßarm, überall verfügbar. Für die Jagd in Deutschland nur zum Fangschuss.",
-
   "schnell": {
-    "geschoss_gr": [90, 158],
-    "v0_ms": [290, 430],
-    "e0_j": [430, 620],
-    "drall_mm": [250, 300],
+    "geschoss_gr": [
+      90,
+      158
+    ],
+    "v0_ms": [
+      290,
+      430
+    ],
+    "e0_j": [
+      420,
+      620
+    ],
+    "drall_mm": [
+      250,
+      300
+    ],
     "gasdruck_bar": 2350
   },
-
   "warnungen": [],
-
   "basis": {
     "entwickler": "Georg Luger (DWM)",
     "jahr": 1901,
@@ -24,9 +41,13 @@
       "1904 führte die Kaiserliche Marine die Patrone ein, 1908 folgte das Heer mit der Pistole 08 — daher der bis heute geläufige Name „Parabellum“, nach dem DWM-Telegrammcode, abgeleitet von „Si vis pacem, para bellum“.",
       "Nach 1945 setzte sich 9 mm Luger als NATO-Standard durch und verdrängte im Sport nach und nach die Revolverpatronen. Heute ist sie die mit Abstand meistproduzierte Zentralfeuerpatrone überhaupt: praktisch jeder Hersteller führt sie, und der Preisdruck durch die schiere Menge macht sie zur günstigsten sinnvollen Trainingsmunition."
     ],
-    "einsatz": ["Sportschießen (IPSC, Ordonnanz, Kombination)", "Behörden und Militär weltweit", "Selbstverteidigung", "Jagd: nur Fangschuss"]
+    "einsatz": [
+      "Sportschießen (IPSC, Ordonnanz, Kombination)",
+      "Behörden und Militär weltweit",
+      "Selbstverteidigung",
+      "Jagd: nur Fangschuss"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI / NATO (EPVAT)",
     "huelsenform": "randlos, leicht konisch, Zylinderhülse ohne Flaschenhals",
@@ -43,36 +64,160 @@
     "drall": "typisch 1:250 mm (1:9,8″), verbreitet 1:250 bis 1:300 mm",
     "drall_hinweis": "Der Drall ist bei 9 mm unkritisch — alle handelsüblichen Geschossgewichte von 90 bis 158 gr stabilisieren in jedem gängigen Lauf."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für Pistolenläufe von 100–120 mm. Kurze Läufe (Subkompakt, ~80 mm) liegen 20–40 m/s darunter, Karabiner (300–400 mm) 60–120 m/s darüber.",
     "laborierungen": [
-      { "hersteller": "GECO", "typ": "Vollmantel (FMJ)", "gr": 124, "g": 8.0, "v0": 350, "bc": 0.150, "bc_modell": "G1", "lauf_mm": 100, "zweck": "Training", "anmerkung": "Der Standard im Verein. Preis-Leistung ungeschlagen." },
-      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 115, "g": 7.5, "v0": 381, "bc": 0.140, "bc_modell": "G1", "lauf_mm": 100, "zweck": "Training", "anmerkung": "Etwas schärferer Impuls, sehr günstig." },
-      { "hersteller": "Magtech", "typ": "Vollmantel (FMJ)", "gr": 147, "g": 9.5, "v0": 300, "bc": 0.190, "bc_modell": "G1", "lauf_mm": 100, "zweck": "Training / Subsonic", "anmerkung": "Unterschall, weicher Rückstoß, beliebt für Dämpfer und IPSC-Minor." },
-      { "hersteller": "Federal", "typ": "HST Hohlspitz", "gr": 124, "g": 8.0, "v0": 351, "bc": 0.150, "bc_modell": "G1", "lauf_mm": 102, "zweck": "Verteidigung", "anmerkung": "Behördenmaßstab bei der Deformationsleistung." },
-      { "hersteller": "RWS", "typ": "Vollmantel Kegel", "gr": 124, "g": 8.0, "v0": 345, "bc": 0.155, "bc_modell": "G1", "lauf_mm": 100, "zweck": "Präzision", "anmerkung": "Enge Fertigungstoleranzen, entsprechend teurer." },
-      { "hersteller": "Norma", "typ": "USA Range FMJ", "gr": 115, "g": 7.5, "v0": 375, "bc": 0.140, "bc_modell": "G1", "lauf_mm": 100, "zweck": "Training", "anmerkung": null },
-      { "hersteller": "Fiocchi", "typ": "Vollmantel (FMJ)", "gr": 158, "g": 10.2, "v0": 290, "bc": 0.205, "bc_modell": "G1", "lauf_mm": 100, "zweck": "Subsonic", "anmerkung": "Schwerstes gängiges Geschoss, deutlich unter Schallgeschwindigkeit." }
+      {
+        "hersteller": "GECO",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 124,
+        "g": 8.0,
+        "v0": 350,
+        "bc": 0.15,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Training",
+        "anmerkung": "Der Standard im Verein. Preis-Leistung ungeschlagen."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 115,
+        "g": 7.5,
+        "v0": 381,
+        "bc": 0.14,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Training",
+        "anmerkung": "Etwas schärferer Impuls, sehr günstig."
+      },
+      {
+        "hersteller": "Magtech",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 147,
+        "g": 9.5,
+        "v0": 300,
+        "bc": 0.19,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Training / Subsonic",
+        "anmerkung": "Unterschall, weicher Rückstoß, beliebt für Dämpfer und IPSC-Minor."
+      },
+      {
+        "hersteller": "Federal",
+        "typ": "HST Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 124,
+        "g": 8.0,
+        "v0": 351,
+        "bc": 0.15,
+        "bc_modell": "G1",
+        "lauf_mm": 102,
+        "zweck": "Verteidigung",
+        "anmerkung": "Behördenmaßstab bei der Deformationsleistung."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Vollmantel Kegel",
+        "form": "vollmantel",
+        "gr": 124,
+        "g": 8.0,
+        "v0": 345,
+        "bc": 0.155,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Präzision",
+        "anmerkung": "Enge Fertigungstoleranzen, entsprechend teurer."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "USA Range FMJ",
+        "form": "vollmantel",
+        "gr": 115,
+        "g": 7.5,
+        "v0": 375,
+        "bc": 0.14,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Training",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Fiocchi",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 158,
+        "g": 10.2,
+        "v0": 290,
+        "bc": 0.205,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Subsonic",
+        "anmerkung": "Schwerstes gängiges Geschoss, deutlich unter Schallgeschwindigkeit."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 115,
+        "g": 7.45,
+        "v0": 380,
+        "bc": 0.135,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Jagd / Verteidigung",
+        "anmerkung": "Freiliegende Bleispitze. In 9 mm eine Nische — Hohlspitz wirkt besser."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "XTP Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 124,
+        "g": 8.04,
+        "v0": 355,
+        "bc": 0.15,
+        "bc_modell": "G1",
+        "lauf_mm": 100,
+        "zweck": "Verteidigung",
+        "anmerkung": "Der Klassiker unter den Hohlspitzgeschossen, sehr gleichmäßige Deformation."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N320", "eignung": "Der Klassiker für weiche Sportladungen, sauberer Abbrand." },
-    { "name": "Vihtavuori 3N37", "eignung": "Für schnellere Laborierungen und Major-Faktor." },
-    { "name": "Hodgdon Titegroup", "eignung": "Sehr dosierungsarm, unempfindlich gegen Füllgrad." },
-    { "name": "Accurate No. 5", "eignung": "Breites Ladefenster, gut für schwere Geschosse." }
+    {
+      "name": "Vihtavuori N320",
+      "eignung": "Der Klassiker für weiche Sportladungen, sauberer Abbrand."
+    },
+    {
+      "name": "Vihtavuori 3N37",
+      "eignung": "Für schnellere Laborierungen und Major-Faktor."
+    },
+    {
+      "name": "Hodgdon Titegroup",
+      "eignung": "Sehr dosierungsarm, unempfindlich gegen Füllgrad."
+    },
+    {
+      "name": "Accurate No. 5",
+      "eignung": "Breites Ladefenster, gut für schwere Geschosse."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 9 mm Luger", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=9mm-luger" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 9 mm Luger",
+      "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=9mm-luger"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": true,
     "text": "9 mm ist ab Werk hervorragend dämpfbar: 147- und 158-gr-Laborierungen liegen mit 290–330 m/s sicher unter der Schallgeschwindigkeit (~343 m/s), ohne dass man etwas anpassen müsste. Zu beachten ist nur, dass viele Selbstlader mit Unterschallmunition und Dämpfer unzuverlässig repetieren — hier hilft eine schwächere Schließfeder oder ein Booster."
   },
-
   "vorteile": [
     "Mit Abstand günstigste Zentralfeuermunition — Training wird bezahlbar",
     "Riesige Auswahl: jeder Hersteller, jedes Geschossgewicht, jeder Zweck",
@@ -87,7 +232,6 @@
     "Leistung hängt spürbar an der Lauflänge; aus Subkompakten bleibt wenig übrig",
     "Große Qualitätsspanne: billige Stahlhülsenmunition kann Ladehemmungen und Verschmutzung bringen"
   ],
-
   "recht_de": {
     "sport": "Erwerb und Besitz sind mit gelber, grüner oder roter WBK bzw. Munitionserwerbsschein für 9 mm Luger möglich, sofern die Waffe eingetragen ist. Als Kurzwaffenpatrone unterliegt sie dem Bedürfnisnachweis nach § 14 WaffG.",
     "jagd": "Für die Erlegung von Schalenwild ist 9 mm Luger in Deutschland nicht zulässig. Das Mindestkaliber von 6,5 mm wäre mit 9,03 mm zwar erfüllt, die geforderte Auftreffenergie auf 100 m verfehlt die Patrone jedoch klar: nötig sind 1.000 J für Rehwild und 2.000 J für übriges Schalenwild — 9 mm Luger liefert schon an der Mündung nur 430–620 J und auf 100 m noch etwa 350 J.",
@@ -97,27 +241,56 @@
       "Auf Raubwild und Fallenjagd ist 9 mm je nach Landesrecht einsetzbar."
     ]
   },
-
   "varianten": [
-    { "name": "9 mm Luger Standard", "text": "C.I.P.-Norm, 2350 bar. Läuft in jeder zugelassenen Waffe." },
-    { "name": "9 mm NATO", "text": "Militärische Spezifikation mit höherem Druck (~2520 bar) und meist 124-gr-Vollmantel. In modernen Waffen unproblematisch, in älteren oder leicht gebauten nicht zwingend freigegeben." },
-    { "name": "9 mm Luger +P", "text": "Nach SAAMI erhöhter Druck (ca. 2620 bar) für mehr Geschwindigkeit bei Verteidigungsmunition. Nur schießen, wenn der Hersteller die Waffe dafür freigibt — erhöhter Verschleiß." },
-    { "name": "9 mm Subsonic", "text": "147 bis 158 gr, unter 340 m/s. Für Schalldämpferbetrieb." },
-    { "name": "9 mm Action / Frangible", "text": "Bleifreie oder zerlegende Geschosse für Stahlziele auf kurze Distanz und für Schießkinos." }
+    {
+      "name": "9 mm Luger Standard",
+      "text": "C.I.P.-Norm, 2350 bar. Läuft in jeder zugelassenen Waffe."
+    },
+    {
+      "name": "9 mm NATO",
+      "text": "Militärische Spezifikation mit höherem Druck (~2520 bar) und meist 124-gr-Vollmantel. In modernen Waffen unproblematisch, in älteren oder leicht gebauten nicht zwingend freigegeben."
+    },
+    {
+      "name": "9 mm Luger +P",
+      "text": "Nach SAAMI erhöhter Druck (ca. 2620 bar) für mehr Geschwindigkeit bei Verteidigungsmunition. Nur schießen, wenn der Hersteller die Waffe dafür freigibt — erhöhter Verschleiß."
+    },
+    {
+      "name": "9 mm Subsonic",
+      "text": "147 bis 158 gr, unter 340 m/s. Für Schalldämpferbetrieb."
+    },
+    {
+      "name": "9 mm Action / Frangible",
+      "text": "Bleifreie oder zerlegende Geschosse für Stahlziele auf kurze Distanz und für Schießkinos."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".380 Auto (9x17)", "text": "Kürzer und schwächer, ca. 250 J. Für kleine Taschenpistolen mit Masseverschluss." },
-    { "name": ".40 S&W", "text": "Rund 25 % mehr Energie bei härterem, kippendem Impuls. Im Sport weitgehend von 9 mm verdrängt." },
-    { "name": ".357 SIG", "text": "Flaschenhalspatrone auf .40er-Hülse, sehr rasant und laut. Nische." },
-    { "name": "9x21 IMI", "text": "Verlängerte Hülse für Länder, in denen Militärkaliber zivil verboten sind. Ballistisch praktisch identisch." }
+    {
+      "name": ".380 Auto (9x17)",
+      "text": "Kürzer und schwächer, ca. 250 J. Für kleine Taschenpistolen mit Masseverschluss."
+    },
+    {
+      "name": ".40 S&W",
+      "text": "Rund 25 % mehr Energie bei härterem, kippendem Impuls. Im Sport weitgehend von 9 mm verdrängt."
+    },
+    {
+      "name": ".357 SIG",
+      "text": "Flaschenhalspatrone auf .40er-Hülse, sehr rasant und laut. Nische."
+    },
+    {
+      "name": "9x21 IMI",
+      "text": "Verlängerte Hülse für Länder, in denen Militärkaliber zivil verboten sind. Ballistisch praktisch identisch."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Für 9 mm sind veröffentlichte Streukreiswerte kaum vergleichbar — sie hängen mehr an Waffe und Schütze als an der Patrone. Trag deine eigenen Werte ein, das ist hier die einzige belastbare Aussage.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 9 mm Luger", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/9-mm-luger-en.pdf" },
-    { "titel": "Wikipedia — 9 × 19 mm Parabellum", "url": "https://de.wikipedia.org/wiki/9_%C3%97_19_mm" }
+    {
+      "titel": "C.I.P. TDCC — 9 mm Luger",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/9-mm-luger-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 9 × 19 mm Parabellum",
+      "url": "https://de.wikipedia.org/wiki/9_%C3%97_19_mm"
+    }
   ]
 }

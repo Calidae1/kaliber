@@ -1,25 +1,46 @@
 {
   "id": "8x57is",
   "name": "8 × 57 IS",
-  "aliase": ["8x57 IS", "8x57IS", "8 x 57 JS", "8x57JS", "7,92x57", "8mm Mauser", "7.92x57 Mauser", "8x57 I S", "8x57"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    "8x57 IS",
+    "8x57IS",
+    "8 x 57 JS",
+    "8x57JS",
+    "7,92x57",
+    "8mm Mauser",
+    "7.92x57 Mauser",
+    "8x57 I S",
+    "8x57"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Die deutsche Jagdpatrone schlechthin, seit über hundert Jahren. Leistung auf .30-06-Niveau — aber die Verwechslung von IS und I ist lebensgefährlich.",
-
   "schnell": {
-    "geschoss_gr": [150, 200],
-    "v0_ms": [750, 880],
-    "e0_j": [3400, 4000],
-    "drall_mm": [240, 240],
+    "geschoss_gr": [
+      150,
+      200
+    ],
+    "v0_ms": [
+      750,
+      880
+    ],
+    "e0_j": [
+      3400,
+      4000
+    ],
+    "drall_mm": [
+      240,
+      240
+    ],
     "gasdruck_bar": 3900
   },
-
   "warnungen": [
     {
       "titel": "Lebensgefahr: 8 × 57 IS gehört NICHT in eine 8 × 57 I",
       "text": "Die beiden Patronen sehen gleich aus und passen ineinander — haben aber unterschiedliche Geschossdurchmesser. Die ältere 8 × 57 I (auch „J“ geschrieben) von 1888 hat 8,08 mm (.318″), die neuere IS von 1905 hat 8,20 mm (.323″). Verschießt man IS-Munition in einem I-Lauf, wird ein 8,20-mm-Geschoss durch einen 8,08-mm-Lauf gepresst: Der Druck steigt schlagartig weit über jede Auslegung, die Waffe kann zerlegt werden. Betroffen sind vor allem alte Gewehre 88 und Vorkriegswaffen — und da IS heute der Standard ist, während viele alte Waffen noch I sind, passiert genau diese Verwechslung. Lass jede alte Waffe vom Büchsenmacher prüfen, bevor du sie schießt. Auf den Aufdruck ist bei Waffen dieses Alters kein Verlass."
     }
   ],
-
   "basis": {
     "entwickler": "Deutsche Gewehr-Prüfungskommission, überarbeitet 1905",
     "jahr": 1905,
@@ -29,9 +50,13 @@
       "Als Patrone des Gewehrs 98 und des Karabiners 98k war sie durch zwei Weltkriege die deutsche Ordonnanzpatrone und wurde in dreistelliger Millionenzahl produziert. Nach 1945 blieben Millionen Mauser-Systeme in Zivilhand, und die Patrone wanderte fast nahtlos ins Revier.",
       "Dort ist sie bis heute zu Hause. Ballistisch liegt sie auf .30-06-Niveau, mit etwas größerem Geschoss und entsprechend etwas mehr Wirkung. In Deutschland ist sie neben .30-06 und 7 × 64 die klassische Universal-Jagdpatrone — jeder Hersteller führt sie, und in jedem zweiten deutschen Waffenschrank steht eine."
     ],
-    "einsatz": ["Jagd auf alles heimische Schalenwild", "Drückjagd auf Sauen", "Militärhistorischer Sport (Ordonnanz)", "Sammler- und Altwaffen"]
+    "einsatz": [
+      "Jagd auf alles heimische Schalenwild",
+      "Drückjagd auf Sauen",
+      "Militärhistorischer Sport (Ordonnanz)",
+      "Sammler- und Altwaffen"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P.",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -48,36 +73,134 @@
     "drall": "1:240 mm (1:9,45″)",
     "drall_hinweis": "Von der Ordonnanz übernommen und für alle gängigen Geschosse von 150 bis 200 gr völlig ausreichend. Ein Drall-Problem gibt es bei diesem Kaliber praktisch nicht — anders als der Durchmesser (siehe Warnung)."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 600 mm Lauf und europäische Munition nach C.I.P. Amerikanische Fabrikmunition ist aus Rücksicht auf Altwaffen deutlich schwächer geladen und liefert bis zu 100 m/s weniger.",
     "laborierungen": [
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 184, "g": 11.92, "v0": 800, "bc": 0.420, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Die deutsche Standard-Jagdlaborierung. Sehr zuverlässige Deformation." },
-      { "hersteller": "RWS", "typ": "Doppelkern Teilmantel", "gr": 196, "g": 12.7, "v0": 780, "bc": 0.450, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Der Klassiker für starkes Wild — hoher Restgewichtserhalt." },
-      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 185, "g": 11.99, "v0": 795, "bc": 0.400, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 196, "g": 12.7, "v0": 775, "bc": 0.440, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bindekern, für Drückjagd auf Sauen sehr geschätzt." },
-      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 196, "g": 12.7, "v0": 770, "bc": 0.430, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": null },
-      { "hersteller": "RWS", "typ": "HIT bleifrei", "gr": 150, "g": 9.72, "v0": 880, "bc": 0.370, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bleifrei und rasant — die Antwort auf die Landesvorschriften." },
-      { "hersteller": "PPU", "typ": "Vollmantel (FMJ)", "gr": 196, "g": 12.7, "v0": 750, "bc": 0.430, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Training / Ordonnanz", "anmerkung": "Für den historischen Sport. Für die Jagd unzulässig." }
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 184,
+        "g": 11.92,
+        "v0": 800,
+        "bc": 0.42,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Die deutsche Standard-Jagdlaborierung. Sehr zuverlässige Deformation."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Doppelkern Teilmantel",
+        "form": "teilmantel",
+        "gr": 196,
+        "g": 12.7,
+        "v0": 780,
+        "bc": 0.45,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Der Klassiker für starkes Wild — hoher Restgewichtserhalt."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 185,
+        "g": 11.99,
+        "v0": 795,
+        "bc": 0.4,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Günstigste reguläre Jagdlaborierung."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 196,
+        "g": 12.7,
+        "v0": 775,
+        "bc": 0.44,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bindekern, für Drückjagd auf Sauen sehr geschätzt."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 196,
+        "g": 12.7,
+        "v0": 770,
+        "bc": 0.43,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "HIT bleifrei",
+        "form": "bleifrei",
+        "gr": 150,
+        "g": 9.72,
+        "v0": 880,
+        "bc": 0.37,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei und rasant — die Antwort auf die Landesvorschriften."
+      },
+      {
+        "hersteller": "PPU",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 196,
+        "g": 12.7,
+        "v0": 750,
+        "bc": 0.43,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Training / Ordonnanz",
+        "anmerkung": "Für den historischen Sport. Für die Jagd unzulässig."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N140", "eignung": "Der europäische Klassiker, sehr gleichmäßig." },
-    { "name": "Vihtavuori N150", "eignung": "Für schwere Geschosse ab 196 gr." },
-    { "name": "Hodgdon Varget", "eignung": "Temperaturstabil, breites Ladefenster." },
-    { "name": "Alliant Reloder 15", "eignung": "Gute Geschwindigkeiten bei moderatem Druck." }
+    {
+      "name": "Vihtavuori N140",
+      "eignung": "Der europäische Klassiker, sehr gleichmäßig."
+    },
+    {
+      "name": "Vihtavuori N150",
+      "eignung": "Für schwere Geschosse ab 196 gr."
+    },
+    {
+      "name": "Hodgdon Varget",
+      "eignung": "Temperaturstabil, breites Ladefenster."
+    },
+    {
+      "name": "Alliant Reloder 15",
+      "eignung": "Gute Geschwindigkeiten bei moderatem Druck."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 8×57 IS", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=8x57-is" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 8×57 IS",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=8x57-is"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Praktisch bedeutungslos. Fabrik-Unterschallmunition gibt es in diesem Kaliber nicht, und selbst geladen bliebe von 3.400–4.000 J nur ein Bruchteil bei extremer Bogenbahn. Die Patrone ist eine Vollmachtpatrone und wird als solche geschossen. Wer aus einer Jagdbüchse gedämpft schießen will, tut das mit normaler Überschallmunition — der Dämpfer reduziert dann den Mündungsknall spürbar, auch wenn der Geschossknall bleibt. In der Praxis ist das auf dem Ansitz der übliche Weg."
   },
-
   "vorteile": [
     "Reicht für jedes heimische Wild, von Reh bis Rotwild und starke Sauen",
     "8,20 mm Geschoss: mehr Wirkung als .308 bei ähnlicher Energie",
@@ -94,7 +217,6 @@
     "Trainingsmunition ist teuer, in dieser Klasse aber normal",
     "Außerhalb Europas weniger verbreitet als .30-06"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich vor allem in Ordonnanz- und historischen Disziplinen relevant; dort entscheidet der Verband über das Bedürfnis nach § 14 WaffG.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 8,20 mm klar erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 2.900–3.200 J deutlich über den geforderten 2.000 J.",
@@ -105,27 +227,56 @@
       "Für Drückjagd auf Sauen sind schwere Bindekern-Geschosse (RWS Doppelkern, Norma Oryx) die klassische Wahl."
     ]
   },
-
   "varianten": [
-    { "name": "8 × 57 IS", "text": "8,20 mm (.323″) Geschoss, der heutige Standard seit 1905. Alles, was man neu kauft, ist IS." },
-    { "name": "8 × 57 I (auch „J“)", "text": "Die alte Form von 1888 mit 8,08 mm (.318″). Nur noch in Altwaffen. IS-Munition darf hier NIEMALS hinein — siehe Warnung." },
-    { "name": "8 × 57 IRS", "text": "Die Randversion für Kipplaufwaffen und Drillinge. Ballistisch gleichwertig, aber mit Rand — passt nicht in IS-Waffen." },
-    { "name": "8 × 57 IS schwach (US-Ladung)", "text": "Amerikanische Fabrikmunition mit rund 2.700 bar statt 3.900. Sicher in Altwaffen, aber in einer modernen Büchse Leistungsverschwendung." }
+    {
+      "name": "8 × 57 IS",
+      "text": "8,20 mm (.323″) Geschoss, der heutige Standard seit 1905. Alles, was man neu kauft, ist IS."
+    },
+    {
+      "name": "8 × 57 I (auch „J“)",
+      "text": "Die alte Form von 1888 mit 8,08 mm (.318″). Nur noch in Altwaffen. IS-Munition darf hier NIEMALS hinein — siehe Warnung."
+    },
+    {
+      "name": "8 × 57 IRS",
+      "text": "Die Randversion für Kipplaufwaffen und Drillinge. Ballistisch gleichwertig, aber mit Rand — passt nicht in IS-Waffen."
+    },
+    {
+      "name": "8 × 57 IS schwach (US-Ladung)",
+      "text": "Amerikanische Fabrikmunition mit rund 2.700 bar statt 3.900. Sicher in Altwaffen, aber in einer modernen Büchse Leistungsverschwendung."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".30-06 Springfield", "text": "Das amerikanische Gegenstück: praktisch dieselbe Leistungsklasse, kleineres Geschoss, weltweit verbreiteter." },
-    { "name": ".308 Winchester", "text": "Ähnliche Energie aus kürzerer Hülse. Billiger und in kurzen Systemen verfügbar, aber mit kleinerem Geschoss." },
-    { "name": "9,3 × 62", "text": "Die nächste Stufe für starkes Wild: deutlich größeres Geschoss, mehr Energie, gleiche Systemlänge." },
-    { "name": "7 × 64", "text": "Die rasantere deutsche Alternative: flacher, weniger Rückstoß, kleineres Geschoss." }
+    {
+      "name": ".30-06 Springfield",
+      "text": "Das amerikanische Gegenstück: praktisch dieselbe Leistungsklasse, kleineres Geschoss, weltweit verbreiteter."
+    },
+    {
+      "name": ".308 Winchester",
+      "text": "Ähnliche Energie aus kürzerer Hülse. Billiger und in kurzen Systemen verfügbar, aber mit kleinerem Geschoss."
+    },
+    {
+      "name": "9,3 × 62",
+      "text": "Die nächste Stufe für starkes Wild: deutlich größeres Geschoss, mehr Energie, gleiche Systemlänge."
+    },
+    {
+      "name": "7 × 64",
+      "text": "Die rasantere deutsche Alternative: flacher, weniger Rückstoß, kleineres Geschoss."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Jagdlaborierungen aus einer guten modernen Büchse liegen typisch bei 25–40 mm auf 100 m. Alte Militärsysteme streuen oft 60–100 mm — das liegt an Lauf und Abzug, nicht an der Munition. Trag deine eigenen Werte ein.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 8 × 57 IS", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/8-x-57-is-en.pdf" },
-    { "titel": "Wikipedia — 8 × 57 IS", "url": "https://de.wikipedia.org/wiki/8_%C3%97_57_IS" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 8 × 57 IS",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/8-x-57-is-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 8 × 57 IS",
+      "url": "https://de.wikipedia.org/wiki/8_%C3%97_57_IS"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

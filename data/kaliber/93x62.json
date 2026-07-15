@@ -1,20 +1,38 @@
 {
   "id": "93x62",
   "name": "9,3 × 62",
-  "aliase": ["9,3x62", "9.3x62", "9,3 x 62 Mauser", "9,3x62mm", "93x62", "9.3x62 Mauser"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    "9,3x62",
+    "9.3x62",
+    "9,3 x 62 Mauser",
+    "9,3x62mm",
+    "93x62",
+    "9.3x62 Mauser"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Afrikatauglich aus einem Standard-Mauser: Otto Bocks Meisterstück von 1905 ist bis heute die Drückjagdpatrone für starke Sauen — und ballistisch souveräner, als ihr gemächliches Tempo vermuten lässt.",
-
   "schnell": {
-    "geschoss_gr": [232, 293],
-    "v0_ms": [700, 820],
-    "e0_j": [4500, 5100],
-    "drall_mm": [360, 360],
+    "geschoss_gr": [
+      232,
+      293
+    ],
+    "v0_ms": [
+      700,
+      820
+    ],
+    "e0_j": [
+      4500,
+      5100
+    ],
+    "drall_mm": [
+      360,
+      360
+    ],
     "gasdruck_bar": 3900
   },
-
   "warnungen": [],
-
   "basis": {
     "entwickler": "Otto Bock, Berlin",
     "jahr": 1905,
@@ -24,9 +42,13 @@
       "Ihre Karriere machte sie in Deutsch-Ostafrika. Farmer und Berufsjäger brauchten dort eine bezahlbare Büchse, die auch bei Kaffernbüffel und Elefant nicht versagt — und die 9,3 × 62 lieferte. Sie gilt bis heute in mehreren afrikanischen Ländern als Mindestkaliber für Großwild und ist damit die einzige Standard-Mauser-Patrone, die diesen Status hat.",
       "In Deutschland ist sie die Patrone für starke Sauen. Bei Drückjagden, wo auf kurze Distanz und in Bewegung geschossen wird, spielt ein schweres, langsames Geschoss seine Stärken aus: Es zerlegt sich nicht in Ästen, dringt auch schräg tief ein und hinterlässt eine breite Wundspur. Ihr Ruf als „langsam“ ist dabei irreführend — mit 4.500 bis 5.100 J liefert sie mehr Energie als jede andere Patrone in diesem Kapitel außer den Magnums."
     ],
-    "einsatz": ["Drückjagd auf Sauen", "Jagd auf starkes Schalenwild (Rotwild, Elch)", "Afrikajagd auf Großwild", "Die klassische Wahl, wenn Wirkung vor Rasanz geht"]
+    "einsatz": [
+      "Drückjagd auf Sauen",
+      "Jagd auf starkes Schalenwild (Rotwild, Elch)",
+      "Afrikajagd auf Großwild",
+      "Die klassische Wahl, wenn Wirkung vor Rasanz geht"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P.",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -43,37 +65,147 @@
     "drall": "1:360 mm (1:14″)",
     "drall_hinweis": "Langsam, aber für die kurzen, dicken 9,3-mm-Geschosse völlig ausreichend — sie sind im Verhältnis zum Durchmesser gar nicht lang. Ein Drall-Problem gibt es bei diesem Kaliber nicht."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 600 mm Lauf. Die Patrone reagiert wenig empfindlich auf Lauflänge — auch aus kurzen Drückjagdläufen bleibt fast alles erhalten.",
     "laborierungen": [
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 255, "g": 16.52, "v0": 775, "bc": 0.360, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Die deutsche Standard-Laborierung für starkes Wild." },
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 285, "g": 18.47, "v0": 720, "bc": 0.380, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bindekern, sehr hoher Restgewichtserhalt. Der Drückjagd-Klassiker." },
-      { "hersteller": "RWS", "typ": "Doppelkern Teilmantel", "gr": 293, "g": 18.99, "v0": 715, "bc": 0.390, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Schwerstes gängiges Geschoss — für Kaffernbüffel und stärkstes Wild." },
-      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 285, "g": 18.47, "v0": 725, "bc": 0.375, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
-      { "hersteller": "Barnes", "typ": "TSX bleifrei", "gr": 250, "g": 16.2, "v0": 780, "bc": 0.354, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Bleifrei, öffnet zuverlässig, hoher Restgewichtserhalt." },
-      { "hersteller": "Nosler", "typ": "Partition Teilmantel", "gr": 250, "g": 16.2, "v0": 785, "bc": 0.348, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Trennwand hält das Heck zusammen — für Afrika bewährt." },
-      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 285, "g": 18.47, "v0": 715, "bc": 0.370, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": null },
-      { "hersteller": "Lapua", "typ": "Mega Teilmantel", "gr": 232, "g": 15.03, "v0": 800, "bc": 0.330, "bc_modell": "G1", "lauf_mm": 600, "zweck": "Jagd", "anmerkung": "Leichtestes gängiges Geschoss, etwas rasanter." }
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 255,
+        "g": 16.52,
+        "v0": 775,
+        "bc": 0.36,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Die deutsche Standard-Laborierung für starkes Wild."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 285,
+        "g": 18.47,
+        "v0": 720,
+        "bc": 0.38,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bindekern, sehr hoher Restgewichtserhalt. Der Drückjagd-Klassiker."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Doppelkern Teilmantel",
+        "form": "teilmantel",
+        "gr": 293,
+        "g": 18.99,
+        "v0": 715,
+        "bc": 0.39,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Schwerstes gängiges Geschoss — für Kaffernbüffel und stärkstes Wild."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 285,
+        "g": 18.47,
+        "v0": 725,
+        "bc": 0.375,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Günstigste reguläre Jagdlaborierung."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TSX bleifrei",
+        "form": "bleifrei",
+        "gr": 250,
+        "g": 16.2,
+        "v0": 780,
+        "bc": 0.354,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei, öffnet zuverlässig, hoher Restgewichtserhalt."
+      },
+      {
+        "hersteller": "Nosler",
+        "typ": "Partition Teilmantel",
+        "form": "teilmantel",
+        "gr": 250,
+        "g": 16.2,
+        "v0": 785,
+        "bc": 0.348,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Trennwand hält das Heck zusammen — für Afrika bewährt."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Teilmantel (SP)",
+        "form": "teilmantel",
+        "gr": 285,
+        "g": 18.47,
+        "v0": 715,
+        "bc": 0.37,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Lapua",
+        "typ": "Mega Teilmantel",
+        "form": "teilmantel",
+        "gr": 232,
+        "g": 15.03,
+        "v0": 800,
+        "bc": 0.33,
+        "bc_modell": "G1",
+        "lauf_mm": 600,
+        "zweck": "Jagd",
+        "anmerkung": "Leichtestes gängiges Geschoss, etwas rasanter."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N140", "eignung": "Der Klassiker für dieses Kaliber, sehr gleichmäßig." },
-    { "name": "Vihtavuori N150", "eignung": "Für die schwersten Geschosse ab 285 gr." },
-    { "name": "Hodgdon Varget", "eignung": "Temperaturstabil, breites Ladefenster." },
-    { "name": "Alliant Reloder 15", "eignung": "Gute Geschwindigkeiten bei moderatem Druck." }
+    {
+      "name": "Vihtavuori N140",
+      "eignung": "Der Klassiker für dieses Kaliber, sehr gleichmäßig."
+    },
+    {
+      "name": "Vihtavuori N150",
+      "eignung": "Für die schwersten Geschosse ab 285 gr."
+    },
+    {
+      "name": "Hodgdon Varget",
+      "eignung": "Temperaturstabil, breites Ladefenster."
+    },
+    {
+      "name": "Alliant Reloder 15",
+      "eignung": "Gute Geschwindigkeiten bei moderatem Druck."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 9,3×62", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=9-3x62" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 9,3×62",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=9-3x62"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Praktisch bedeutungslos. Fabrik-Unterschallmunition gibt es nicht, und die Patrone ist eine Vollmachtpatrone für starkes Wild. Auf dem Ansitz wird sie wie alle Jagdkaliber mit normaler Überschallmunition und Dämpfer geschossen — der nimmt den erheblichen Mündungsknall, was bei diesem Kaliber besonders angenehm ist."
   },
-
   "vorteile": [
     "Großwildtauglich aus einem Standard-Mauser — kein Magnum-System nötig",
     "Mit 4.500–5.100 J die stärkste Nicht-Magnum-Patrone in diesem Kapitel",
@@ -92,7 +224,6 @@
     "Außerhalb Europas und Afrikas kaum verfügbar",
     "Niedrige BC-Werte: auf Distanz verliert sie schnell"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich spielt die Patrone keine Rolle — sie ist eine reine Jagdpatrone.",
     "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 9,30 mm weit übertroffen, und die Auftreffenergie auf 100 m liegt mit rund 3.700–4.100 J deutlich über den geforderten 2.000 J.",
@@ -103,28 +234,60 @@
       "Bei alten Mauser-Systemen vor dem ersten Schuss den Beschussstempel prüfen lassen."
     ]
   },
-
   "varianten": [
-    { "name": "9,3 × 62 Standard", "text": "285 gr Teilmantel bei rund 720 m/s. Die klassische Laborierung für starkes Wild." },
-    { "name": "9,3 × 62 leicht (232–255 gr)", "text": "Etwas rasanter und flacher, rund 775–800 m/s. Für Rotwild auf mittlere Distanz." },
-    { "name": "9,3 × 62 schwer (293 gr)", "text": "Langsam, aber mit maximaler Sektionsdichte. Für Kaffernbüffel und stärkstes Wild." },
-    { "name": "9,3 × 74 R", "text": "Die Randversion für Drillinge, Doppelbüchsen und Kipplaufwaffen. Etwas stärker, aber mit Rand — passt nicht in 9,3×62-Waffen." },
-    { "name": "9,3 × 64 Brenneke", "text": "Die stärkere Steigerung von Brenneke. Rund 20 % mehr Energie, braucht ein stärkeres System." }
+    {
+      "name": "9,3 × 62 Standard",
+      "text": "285 gr Teilmantel bei rund 720 m/s. Die klassische Laborierung für starkes Wild."
+    },
+    {
+      "name": "9,3 × 62 leicht (232–255 gr)",
+      "text": "Etwas rasanter und flacher, rund 775–800 m/s. Für Rotwild auf mittlere Distanz."
+    },
+    {
+      "name": "9,3 × 62 schwer (293 gr)",
+      "text": "Langsam, aber mit maximaler Sektionsdichte. Für Kaffernbüffel und stärkstes Wild."
+    },
+    {
+      "name": "9,3 × 74 R",
+      "text": "Die Randversion für Drillinge, Doppelbüchsen und Kipplaufwaffen. Etwas stärker, aber mit Rand — passt nicht in 9,3×62-Waffen."
+    },
+    {
+      "name": "9,3 × 64 Brenneke",
+      "text": "Die stärkere Steigerung von Brenneke. Rund 20 % mehr Energie, braucht ein stärkeres System."
+    }
   ],
-
   "nachbarn": [
-    { "name": "8 × 57 IS", "text": "Rund 20 % weniger Energie, kleineres Geschoss, deutlich weniger Rückstoß. Für heimisches Wild meist ausreichend." },
-    { "name": ".30-06 Springfield", "text": "Weniger Wirkung auf kurze Distanz, dafür flacher und weltweit verfügbar." },
-    { "name": "9,3 × 74 R", "text": "Die Randversion für Kipplaufwaffen. Gleiche Geschosse, gleiche Rolle." },
-    { "name": ".375 H&H Magnum", "text": "Die nächste Stufe für Afrika: mehr Energie, aber Magnum-System und deutlich mehr Rückstoß." }
+    {
+      "name": "8 × 57 IS",
+      "text": "Rund 20 % weniger Energie, kleineres Geschoss, deutlich weniger Rückstoß. Für heimisches Wild meist ausreichend."
+    },
+    {
+      "name": ".30-06 Springfield",
+      "text": "Weniger Wirkung auf kurze Distanz, dafür flacher und weltweit verfügbar."
+    },
+    {
+      "name": "9,3 × 74 R",
+      "text": "Die Randversion für Kipplaufwaffen. Gleiche Geschosse, gleiche Rolle."
+    },
+    {
+      "name": ".375 H&H Magnum",
+      "text": "Die nächste Stufe für Afrika: mehr Energie, aber Magnum-System und deutlich mehr Rückstoß."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Jagdlaborierungen aus einer guten Büchse liegen typisch bei 30–50 mm auf 100 m. Das ist für den Zweck völlig ausreichend — die Patrone wird auf 50 bis 150 m eingesetzt, nicht auf 300. Trag deine eigenen Werte ein.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 9,3 × 62", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/9-3-x-62-en.pdf" },
-    { "titel": "Wikipedia — 9,3 × 62 mm", "url": "https://de.wikipedia.org/wiki/9,3_%C3%97_62_mm" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 9,3 × 62",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/9-3-x-62-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 9,3 × 62 mm",
+      "url": "https://de.wikipedia.org/wiki/9,3_%C3%97_62_mm"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

@@ -1,25 +1,43 @@
 {
   "id": "44mag",
   "name": ".44 Remington Magnum",
-  "aliase": [".44 Mag", "44 Magnum", "10,9x33R", ".44 Magnum", "44 Rem Mag", "10.9x33mmR"],
-  "gruppen": ["kurz"],
+  "aliase": [
+    ".44 Mag",
+    "44 Magnum",
+    "10,9x33R",
+    ".44 Magnum",
+    "44 Rem Mag",
+    "10.9x33mmR"
+  ],
+  "gruppen": [
+    "kurz"
+  ],
   "kurz": "Elmer Keiths Lebenswerk und dank Dirty Harry die berühmteste Patrone der Welt. Aus dem Revolver eine Herausforderung, aus dem Karabiner eine ernstzunehmende Büchse.",
-
   "schnell": {
-    "geschoss_gr": [180, 300],
-    "v0_ms": [350, 440],
-    "e0_j": [1150, 1450],
-    "drall_mm": [508, 508],
+    "geschoss_gr": [
+      180,
+      300
+    ],
+    "v0_ms": [
+      350,
+      440
+    ],
+    "e0_j": [
+      1150,
+      1510
+    ],
+    "drall_mm": [
+      508,
+      508
+    ],
     "gasdruck_bar": 3000
   },
-
   "warnungen": [
     {
       "titel": ".44 Magnum passt NICHT in eine .44 Special",
       "text": "Wie bei .357 und .38 gilt die Beziehung nur in eine Richtung: .44 Special läuft problemlos in jedem .44-Magnum-Revolver, weil die Hülse 3,3 mm kürzer ist. Umgekehrt darf .44 Magnum niemals in eine .44 Special — deren Waffen sind für 1000 bar ausgelegt, die Magnum bringt 3000 bar. Prüfe den Aufdruck auf dem Lauf."
     }
   ],
-
   "basis": {
     "entwickler": "Elmer Keith mit Remington und Smith & Wesson",
     "jahr": 1955,
@@ -29,9 +47,13 @@
       "Zur Legende wurde sie 1971, als Clint Eastwood als Dirty Harry das Modell 29 „die stärkste Handfeuerwaffe der Welt“ nannte. Der Satz stimmte damals ungefähr und war für Smith & Wesson mehr wert als jede Werbekampagne — die Nachfrage explodierte und die Wartelisten wurden jahrelang.",
       "Jenseits des Mythos ist sie eine ernsthafte Patrone: Aus dem Revolver liefert sie 1.150–1.450 J bei einem Rückstoß, der ohne Übung schlicht nicht beherrschbar ist. Aus einem Unterhebelrepetierer mit 500-mm-Lauf werden daraus über 2.300 J — und damit eine echte Kurzstreckenbüchse für dichten Bewuchs."
     ],
-    "einsatz": ["Sportschießen (Revolverdisziplinen, Metallsilhouette)", "Unterhebelrepetierer / Karabiner", "In den USA: Jagd und Schutz gegen Großraubwild", "Jagd in DE: nur Fangschuss"]
+    "einsatz": [
+      "Sportschießen (Revolverdisziplinen, Metallsilhouette)",
+      "Unterhebelrepetierer / Karabiner",
+      "In den USA: Jagd und Schutz gegen Großraubwild",
+      "Jagd in DE: nur Fangschuss"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "mit Rand, zylindrisch ohne Flaschenhals",
@@ -48,35 +70,134 @@
     "drall": "1:508 mm (1:20″)",
     "drall_hinweis": "Für die üblichen 240 gr völlig ausreichend. Sehr lange Geschosse jenseits 320 gr, wie sie beim Silhouettenschießen vorkommen, sind bei diesem Drall grenzwertig."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für Revolverläufe von 150 mm (6″). Aus einem 500-mm-Karabinerlauf kommen 130–160 m/s dazu — die Energie steigt dann auf über 2.300 J, was die Patrone in eine völlig andere Klasse hebt.",
     "laborierungen": [
-      { "hersteller": "Magtech", "typ": "Vollmantel Flachkopf", "gr": 240, "g": 15.55, "v0": 395, "bc": 0.170, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg." },
-      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel Flachkopf", "gr": 240, "g": 15.55, "v0": 400, "bc": 0.170, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": null },
-      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 240, "g": 15.55, "v0": 405, "bc": 0.205, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Jagd / Verteidigung", "anmerkung": "Der Allrounder, hoher BC für die Klasse." },
-      { "hersteller": "Federal", "typ": "Teilmantel", "gr": 240, "g": 15.55, "v0": 398, "bc": 0.180, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Jagd", "anmerkung": null },
-      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 300, "g": 19.44, "v0": 360, "bc": 0.205, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Durchschlag", "anmerkung": "Schwerstes gängiges Geschoss, dringt sehr tief ein. Heftiger Rückstoß." },
-      { "hersteller": "Fiocchi", "typ": "Teilmantel Flachkopf", "gr": 200, "g": 12.96, "v0": 430, "bc": 0.145, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Sport", "anmerkung": "Leichter und schneller, etwas gnädiger im Rückstoß." }
+      {
+        "hersteller": "Magtech",
+        "typ": "Vollmantel Flachkopf",
+        "form": "vollmantel",
+        "gr": 240,
+        "g": 15.55,
+        "v0": 395,
+        "bc": 0.17,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Training",
+        "anmerkung": "Günstigster regulärer Einstieg."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Vollmantel Flachkopf",
+        "form": "vollmantel",
+        "gr": 240,
+        "g": 15.55,
+        "v0": 400,
+        "bc": 0.17,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Training",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "XTP Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 240,
+        "g": 15.55,
+        "v0": 405,
+        "bc": 0.205,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Jagd / Verteidigung",
+        "anmerkung": "Der Allrounder, hoher BC für die Klasse."
+      },
+      {
+        "hersteller": "Federal",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 240,
+        "g": 15.55,
+        "v0": 398,
+        "bc": 0.18,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Jagd",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "XTP Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 300,
+        "g": 19.44,
+        "v0": 360,
+        "bc": 0.205,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Durchschlag",
+        "anmerkung": "Schwerstes gängiges Geschoss, dringt sehr tief ein. Heftiger Rückstoß."
+      },
+      {
+        "hersteller": "Fiocchi",
+        "typ": "Teilmantel Flachkopf",
+        "form": "teilmantel",
+        "gr": 200,
+        "g": 12.96,
+        "v0": 430,
+        "bc": 0.145,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Sport",
+        "anmerkung": "Leichter und schneller, etwas gnädiger im Rückstoß."
+      },
+      {
+        "hersteller": "Underwood",
+        "typ": "Hartblei Flachkopf (WFN)",
+        "form": "blei",
+        "gr": 300,
+        "g": 19.44,
+        "v0": 393,
+        "bc": 0.21,
+        "bc_modell": "G1",
+        "lauf_mm": 150,
+        "zweck": "Durchschlag",
+        "anmerkung": "Hartgegossenes Blei, breite Flachspitze. Maximale Durchschlagsleistung, kaum Deformation."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Hodgdon H110 / Winchester 296", "eignung": "Der Standard für volle Magnum-Ladungen. Braucht hohen Füllgrad — auf keinen Fall herunterladen." },
-    { "name": "Vihtavuori N110", "eignung": "In Europa gut verfügbar, gute Ergebnisse mit 240 gr." },
-    { "name": "Accurate No. 9", "eignung": "Breites Ladefenster, verträgt schwere Geschosse." },
-    { "name": "Alliant Unique", "eignung": "Für reduzierte Trainingsladungen auf .44-Special-Niveau." }
+    {
+      "name": "Hodgdon H110 / Winchester 296",
+      "eignung": "Der Standard für volle Magnum-Ladungen. Braucht hohen Füllgrad — auf keinen Fall herunterladen."
+    },
+    {
+      "name": "Vihtavuori N110",
+      "eignung": "In Europa gut verfügbar, gute Ergebnisse mit 240 gr."
+    },
+    {
+      "name": "Accurate No. 9",
+      "eignung": "Breites Ladefenster, verträgt schwere Geschosse."
+    },
+    {
+      "name": "Alliant Unique",
+      "eignung": "Für reduzierte Trainingsladungen auf .44-Special-Niveau."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten .44 Rem Magnum", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=44-remington-magnum" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten .44 Rem Magnum",
+      "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=44-remington-magnum"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Als Magnum konzeptionell ungeeignet: Alle vollwertigen Laborierungen liegen mit 360–430 m/s klar über der Schallgrenze. Der Revolver bläst zudem am Trommelspalt seitlich Gas ab, wo kein Dämpfer wirkt. Wer aus einer .44-Waffe leise schießen will, nimmt .44 Special mit schweren Geschossen — und braucht dafür einen Karabiner, keinen Revolver."
   },
-
   "vorteile": [
     "Mit 1.150–1.450 J die stärkste beherrschbare Revolverpatrone",
     "Aus dem Karabiner über 2.300 J — eine echte Kurzstreckenbüchse",
@@ -93,7 +214,6 @@
     "Für die Jagd auf Wild in Deutschland unzulässig — auch aus dem Karabiner",
     "Nicht dämpfbar (Trommelspalt)"
   ],
-
   "recht_de": {
     "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein bei eingetragener Waffe. Bedürfnisnachweis nach § 14 WaffG. Als Randpatrone auch in Unterhebelrepetierern verbreitet — dann gelten die Regeln für Langwaffen.",
     "jagd": "Für die Erlegung von Schalenwild unzulässig. Das Mindestkaliber von 6,5 mm ist mit 10,9 mm mühelos erfüllt, aber die Energie reicht nicht: Aus dem Revolver bleiben auf 100 m nur rund 700 J, gefordert wären 1.000 J für Rehwild.",
@@ -103,26 +223,52 @@
       "Der in den USA verbreitete Einsatz auf Großwild hat in Deutschland keine Entsprechung."
     ]
   },
-
   "varianten": [
-    { "name": ".44 Magnum Standard", "text": "240 gr bei rund 395–405 m/s aus 6″. Die Urlaborierung und bis heute der Maßstab." },
-    { "name": ".44 Magnum schwer (300 gr)", "text": "Langsamer, aber mit hoher Sektionaldichte und tiefem Eindringen. Für Durchschlag statt Deformation — und mit brutalem Rückstoß." },
-    { "name": ".44 Special", "text": "Die kürzere Mutter. Läuft in jeder .44-Magnum-Waffe, rund ein Drittel der Energie. Die zivilisierte Trainingsoption." },
-    { "name": ".44-40 Winchester", "text": "Trotz ähnlichem Namen eine völlig andere, viel ältere Patrone mit Flaschenhals. Nicht verwechseln, passt nicht." }
+    {
+      "name": ".44 Magnum Standard",
+      "text": "240 gr bei rund 395–405 m/s aus 6″. Die Urlaborierung und bis heute der Maßstab."
+    },
+    {
+      "name": ".44 Magnum schwer (300 gr)",
+      "text": "Langsamer, aber mit hoher Sektionaldichte und tiefem Eindringen. Für Durchschlag statt Deformation — und mit brutalem Rückstoß."
+    },
+    {
+      "name": ".44 Special",
+      "text": "Die kürzere Mutter. Läuft in jeder .44-Magnum-Waffe, rund ein Drittel der Energie. Die zivilisierte Trainingsoption."
+    },
+    {
+      "name": ".44-40 Winchester",
+      "text": "Trotz ähnlichem Namen eine völlig andere, viel ältere Patrone mit Flaschenhals. Nicht verwechseln, passt nicht."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".357 Magnum", "text": "Die kleinere Schwester: rund 30 % weniger Energie, aber viel angenehmer zu schießen und deutlich billiger." },
-    { "name": ".44 Special", "text": "Dieselbe Waffe, kürzere Hülse, ein Drittel der Energie. Die Trainingsmunition zur .44 Mag." },
-    { "name": "10 mm Auto", "text": "Rund halb so viel Energie, dafür aus der Selbstladepistole mit hoher Kapazität." },
-    { "name": ".45 Colt", "text": "Ähnlicher Durchmesser, historisch älter. In modernen Waffen ähnlich stark ladbar, im Werkszustand deutlich schwächer." }
+    {
+      "name": ".357 Magnum",
+      "text": "Die kleinere Schwester: rund 30 % weniger Energie, aber viel angenehmer zu schießen und deutlich billiger."
+    },
+    {
+      "name": ".44 Special",
+      "text": "Dieselbe Waffe, kürzere Hülse, ein Drittel der Energie. Die Trainingsmunition zur .44 Mag."
+    },
+    {
+      "name": "10 mm Auto",
+      "text": "Rund halb so viel Energie, dafür aus der Selbstladepistole mit hoher Kapazität."
+    },
+    {
+      "name": ".45 Colt",
+      "text": "Ähnlicher Durchmesser, historisch älter. In modernen Waffen ähnlich stark ladbar, im Werkszustand deutlich schwächer."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Bei der .44 Magnum begrenzt fast immer der Schütze, nicht die Munition — der Rückstoß macht saubere Serien schwer. Eingespannt sind aus einem guten Revolver 40–60 mm auf 25 m realistisch, freihändig streut es leicht dreimal so weit. Notiere unbedingt die Testumgebung.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 44 Rem Magnum", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/44-rem-magnum-en.pdf" },
-    { "titel": "Wikipedia — .44 Remington Magnum", "url": "https://de.wikipedia.org/wiki/.44_Remington_Magnum" }
+    {
+      "titel": "C.I.P. TDCC — 44 Rem Magnum",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/44-rem-magnum-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — .44 Remington Magnum",
+      "url": "https://de.wikipedia.org/wiki/.44_Remington_Magnum"
+    }
   ]
 }

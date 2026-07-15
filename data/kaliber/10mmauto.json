@@ -1,25 +1,42 @@
 {
   "id": "10mmauto",
   "name": "10 mm Auto",
-  "aliase": ["10mm", "10 mm Automatic", "10x25", "10x25mm", "10 Auto"],
-  "gruppen": ["kurz"],
+  "aliase": [
+    "10mm",
+    "10 mm Automatic",
+    "10x25",
+    "10x25mm",
+    "10 Auto"
+  ],
+  "gruppen": [
+    "kurz"
+  ],
   "kurz": "Jeff Coopers Idee einer idealen Kampfpatrone: .45er-Durchmesser mit Magnum-Tempo. Zu heftig fürs FBI, zu gut zum Sterben — und heute die stärkste vernünftige Selbstladepatrone.",
-
   "schnell": {
-    "geschoss_gr": [155, 220],
-    "v0_ms": [330, 420],
-    "e0_j": [700, 850],
-    "drall_mm": [406, 406],
+    "geschoss_gr": [
+      155,
+      220
+    ],
+    "v0_ms": [
+      330,
+      420
+    ],
+    "e0_j": [
+      700,
+      1010
+    ],
+    "drall_mm": [
+      406,
+      406
+    ],
     "gasdruck_bar": 2300
   },
-
   "warnungen": [
     {
       "titel": "Werksmunition unterscheidet sich um bis zu 40 % in der Leistung",
       "text": "Unter dem Namen 10 mm Auto wird zweierlei verkauft: reduzierte Laborierungen auf .40-S&W-Niveau (rund 550 J) und volle Ladungen mit 750–850 J. Beides ist genormt und beides ist legal, aber die Waffe merkt den Unterschied deutlich. Wer eine auf schwache Munition eingestellte Pistole mit Vollgas-Laborierungen füttert, riskiert Rahmenschäden und ausgeschlagene Verschlussfänge — umgekehrt repetiert die Waffe mit schwacher Munition oft gar nicht. Prüfe die Energieangabe auf der Packung, nicht nur den Kaliberaufdruck."
     }
   ],
-
   "basis": {
     "entwickler": "Jeff Cooper, umgesetzt von Norma und Dornaus & Dixon",
     "jahr": 1983,
@@ -29,9 +46,13 @@
       "Gerettet hat die Patrone das FBI, das sie 1989 nach dem Desaster von Miami einführte. Nur hielt die Begeisterung nicht lange: Der Rückstoß überforderte viele Agenten, die Waffen waren groß und schwer. Man lud schwächer — und merkte, dass dann auch eine kürzere Hülse reichte. Aus dieser Erkenntnis entstand 1990 die .40 S&W, die die 10 mm binnen weniger Jahre fast vom Markt verdrängte.",
       "Totgesagte leben länger. Seit den 2010ern erlebt die 10 mm ein Comeback, getragen von Sportschützen und in den USA von Wanderern im Bärenland. Sie ist heute das, was Cooper wollte: die stärkste Patrone, die man noch vernünftig aus einer Selbstladepistole schießen kann — und mit gut 800 Joule spielt sie eine Klasse über allem anderen in diesem Kapitel."
     ],
-    "einsatz": ["Sportschießen (IPSC Major mit Reserve)", "Selbstverteidigung", "In den USA: Schutz gegen Großraubwild", "Jagd: nur Fangschuss"]
+    "einsatz": [
+      "Sportschießen (IPSC Major mit Reserve)",
+      "Selbstverteidigung",
+      "In den USA: Schutz gegen Großraubwild",
+      "Jagd: nur Fangschuss"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "randlos, zylindrisch ohne Flaschenhals",
@@ -48,35 +69,134 @@
     "drall": "1:406 mm (1:16″)",
     "drall_hinweis": "Unkritisch von 155 bis 220 gr."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für Läufe um 127 mm (5″) und volle Laborierungen. Reduzierte Werksmunition liegt bis zu 50 m/s darunter — siehe Warnung oben.",
     "laborierungen": [
-      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 180, "g": 11.66, "v0": 350, "bc": 0.164, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Training", "anmerkung": "Moderate Laborierung, günstigster Einstieg in Europa." },
-      { "hersteller": "Magtech", "typ": "Vollmantel (FMJ)", "gr": 180, "g": 11.66, "v0": 360, "bc": 0.164, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Training", "anmerkung": null },
-      { "hersteller": "Federal", "typ": "Hydra-Shok Hohlspitz", "gr": 180, "g": 11.66, "v0": 355, "bc": 0.165, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Verteidigung", "anmerkung": "Ausgewogen, keine Vollgas-Ladung." },
-      { "hersteller": "SIG Sauer", "typ": "V-Crown Hohlspitz", "gr": 180, "g": 11.66, "v0": 358, "bc": 0.165, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Verteidigung", "anmerkung": null },
-      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 180, "g": 11.66, "v0": 365, "bc": 0.164, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Verteidigung", "anmerkung": "Volle Laborierung, spürbarer Rückstoß." },
-      { "hersteller": "Underwood", "typ": "Vollmantel Flachkopf", "gr": 200, "g": 12.96, "v0": 335, "bc": 0.190, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Durchschlag", "anmerkung": "Schwer und tief eindringend — die Bärenland-Laborierung." }
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 180,
+        "g": 11.66,
+        "v0": 350,
+        "bc": 0.164,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Training",
+        "anmerkung": "Moderate Laborierung, günstigster Einstieg in Europa."
+      },
+      {
+        "hersteller": "Magtech",
+        "typ": "Vollmantel (FMJ)",
+        "form": "vollmantel",
+        "gr": 180,
+        "g": 11.66,
+        "v0": 360,
+        "bc": 0.164,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Training",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Federal",
+        "typ": "Hydra-Shok Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 180,
+        "g": 11.66,
+        "v0": 355,
+        "bc": 0.165,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Verteidigung",
+        "anmerkung": "Ausgewogen, keine Vollgas-Ladung."
+      },
+      {
+        "hersteller": "SIG Sauer",
+        "typ": "V-Crown Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 180,
+        "g": 11.66,
+        "v0": 358,
+        "bc": 0.165,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Verteidigung",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "XTP Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 180,
+        "g": 11.66,
+        "v0": 365,
+        "bc": 0.164,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Verteidigung",
+        "anmerkung": "Volle Laborierung, spürbarer Rückstoß."
+      },
+      {
+        "hersteller": "Underwood",
+        "typ": "Vollmantel Flachkopf",
+        "form": "vollmantel",
+        "gr": 200,
+        "g": 12.96,
+        "v0": 335,
+        "bc": 0.19,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Durchschlag",
+        "anmerkung": "Schwer und tief eindringend — die Bärenland-Laborierung."
+      },
+      {
+        "hersteller": "Underwood",
+        "typ": "Hartblei Flachkopf (WFN)",
+        "form": "blei",
+        "gr": 200,
+        "g": 12.96,
+        "v0": 393,
+        "bc": 0.19,
+        "bc_modell": "G1",
+        "lauf_mm": 127,
+        "zweck": "Durchschlag",
+        "anmerkung": "Hartgegossenes Blei mit breiter Flachspitze. In Nordamerika die Bärenladung — dringt sehr tief ein und deformiert kaum."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori 3N38", "eignung": "Für volle Laborierungen mit hohem Füllgrad." },
-    { "name": "Hodgdon Longshot", "eignung": "Der Klassiker für 10 mm auf Werksniveau." },
-    { "name": "Accurate No. 9", "eignung": "Langsam brennend, holt die volle Leistung aus der langen Hülse." },
-    { "name": "Vihtavuori N105", "eignung": "Für schwere Geschosse und maximale Energie." }
+    {
+      "name": "Vihtavuori 3N38",
+      "eignung": "Für volle Laborierungen mit hohem Füllgrad."
+    },
+    {
+      "name": "Hodgdon Longshot",
+      "eignung": "Der Klassiker für 10 mm auf Werksniveau."
+    },
+    {
+      "name": "Accurate No. 9",
+      "eignung": "Langsam brennend, holt die volle Leistung aus der langen Hülse."
+    },
+    {
+      "name": "Vihtavuori N105",
+      "eignung": "Für schwere Geschosse und maximale Energie."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten 10 mm Auto", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=10mm-auto" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten 10 mm Auto",
+      "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=10mm-auto"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Widerspricht dem Wesen der Patrone. Alle sinnvollen Laborierungen liegen mit 330–420 m/s deutlich über der Schallgrenze; um unterschall zu kommen, müsste man sie auf .45-ACP-Niveau herunterladen — dann kann man auch gleich .45 ACP schießen, die das ab Werk kann und billiger ist. Wer 10 mm wählt, will die Leistung, und die knallt."
   },
-
   "vorteile": [
     "Mit 700–850 J die stärkste vernünftig beherrschbare Selbstladepatrone",
     "Deutlich flachere Bahn als .45 ACP, auf 50 m noch brauchbar",
@@ -93,7 +213,6 @@
     "Für die Jagd auf Wild in Deutschland unzulässig",
     "Wiederladen lohnt hier klar — was gleichzeitig heißt: Fabrikmunition ist teuer"
   ],
-
   "recht_de": {
     "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein bei eingetragener Waffe. Bedürfnisnachweis nach § 14 WaffG.",
     "jagd": "Für die Erlegung von Schalenwild unzulässig. Das Mindestkaliber von 6,5 mm ist mit 10,17 mm erfüllt, die geforderten 1.000 J auf 100 m für Rehwild erreicht die Patrone jedoch nicht — an der Mündung sind es 700–850 J, auf 100 m bleiben rund 450 J.",
@@ -103,26 +222,52 @@
       "Der in den USA verbreitete Einsatz gegen Großraubwild hat in Deutschland keine Entsprechung."
     ]
   },
-
   "varianten": [
-    { "name": "10 mm Auto voll", "text": "180 gr bei 360–375 m/s, rund 780–820 J. Das, was Cooper meinte." },
-    { "name": "10 mm Auto reduziert (FBI-Load)", "text": "Auf etwa 550–600 J heruntergeladen. Historisch der Ursprung der .40 S&W. Wird bis heute verkauft — Packung lesen." },
-    { "name": "10 mm schwer (200–220 gr)", "text": "Langsamer, aber mit hoher Sektionaldichte und tiefem Eindringen. Für Durchschlagsleistung statt Deformation." },
-    { "name": ".40 S&W", "text": "Die gekürzte Tochter. Passt nicht ins 10-mm-Patronenlager im Sinne der Norm, wird aber gelegentlich verwechselt — Hülsenlänge prüfen." }
+    {
+      "name": "10 mm Auto voll",
+      "text": "180 gr bei 360–375 m/s, rund 780–820 J. Das, was Cooper meinte."
+    },
+    {
+      "name": "10 mm Auto reduziert (FBI-Load)",
+      "text": "Auf etwa 550–600 J heruntergeladen. Historisch der Ursprung der .40 S&W. Wird bis heute verkauft — Packung lesen."
+    },
+    {
+      "name": "10 mm schwer (200–220 gr)",
+      "text": "Langsamer, aber mit hoher Sektionaldichte und tiefem Eindringen. Für Durchschlagsleistung statt Deformation."
+    },
+    {
+      "name": ".40 S&W",
+      "text": "Die gekürzte Tochter. Passt nicht ins 10-mm-Patronenlager im Sinne der Norm, wird aber gelegentlich verwechselt — Hülsenlänge prüfen."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".40 S&W", "text": "Dieselbe Geschossfamilie, 3,6 mm kürzere Hülse, rund 25 % weniger Energie. Billiger und viel verbreiteter." },
-    { "name": ".45 ACP", "text": "Größeres Geschoss, deutlich weniger Energie, weicherer Rückstoß — und ab Werk unterschall." },
-    { "name": ".357 Magnum", "text": "Ähnliche Energieklasse, aber Revolverpatrone mit Rand. Rasanter, kleineres Geschoss." },
-    { "name": "9 mm Luger", "text": "Die halbe Energie, ein Bruchteil des Preises, doppelte Kapazität. Für alles außer maximaler Leistung die vernünftigere Wahl." }
+    {
+      "name": ".40 S&W",
+      "text": "Dieselbe Geschossfamilie, 3,6 mm kürzere Hülse, rund 25 % weniger Energie. Billiger und viel verbreiteter."
+    },
+    {
+      "name": ".45 ACP",
+      "text": "Größeres Geschoss, deutlich weniger Energie, weicherer Rückstoß — und ab Werk unterschall."
+    },
+    {
+      "name": ".357 Magnum",
+      "text": "Ähnliche Energieklasse, aber Revolverpatrone mit Rand. Rasanter, kleineres Geschoss."
+    },
+    {
+      "name": "9 mm Luger",
+      "text": "Die halbe Energie, ein Bruchteil des Preises, doppelte Kapazität. Für alles außer maximaler Leistung die vernünftigere Wahl."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Streukreise hängen bei Kurzwaffen überwiegend an Waffe und Schütze. Bei 10 mm kommt hinzu, dass die Leistungsstreuung der Werksmunition auch die Präzision beeinflusst — hier lohnt es sich besonders, verschiedene Laborierungen zu vergleichen und die eigenen Werte einzutragen.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 10 mm Auto", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/10-mm-auto-en.pdf" },
-    { "titel": "Wikipedia — 10 mm Auto", "url": "https://de.wikipedia.org/wiki/10_mm_Auto" }
+    {
+      "titel": "C.I.P. TDCC — 10 mm Auto",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/10-mm-auto-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — 10 mm Auto",
+      "url": "https://de.wikipedia.org/wiki/10_mm_Auto"
+    }
   ]
 }

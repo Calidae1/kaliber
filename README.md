@@ -249,6 +249,48 @@ aus `9mm` würde sonst eine blanke `9`, und die steckt in fast jeder Bezeichnung
 Die `aliase` steuern die Suche. Dort gehört jede Schreibweise hinein, nach der
 jemand suchen könnte.
 
+## 8a. Das „erhältlich in"-Menü (Geschossformen)
+
+Oben rechts auf jeder Kaliberseite. Die Auswahl steuert **alles darunter**: die
+Patronenzeichnung, die Laborierungstabelle, den Ballistikrechner, die
+Preisübersicht und die Schnellwerte (die verengen sich auf die Auswahl).
+
+Neun Formen, angelehnt an die Regalkategorien im deutschen Fachhandel:
+
+| `form` | Zeichnung |
+|---|---|
+| `wadcutter` | flacher Zylinder, sitzt tief in der Hülse, Bleifarbe |
+| `semiwadcutter` | Kegelstumpf mit Schulter, Bleifarbe |
+| `blei` | graue Rundkuppe, unmanteltes Blei |
+| `vollmantel` | Kupferkuppe (Kurzwaffe) bzw. Spitzgeschoss (Büchse) |
+| `teilmantel` | Spitzgeschoss mit freiliegender Bleispitze |
+| `kunststoffspitze` | Spitzgeschoss mit roter Polymerspitze |
+| `hohlspitz` | Kuppe mit sichtbarem Hohlraum |
+| `match` | langes Spitzgeschoss mit kleinem Hohlraum |
+| `bleifrei` | Spitzgeschoss, durchgehend Kupferfarbe |
+
+Vollmantel unterscheidet sich automatisch: Ragt das Geschoss mehr als das
+1,7-fache seines Durchmessers aus der Hülse, wird es als Spitzgeschoss
+gezeichnet, sonst als Rundkopf. Deshalb sieht 9 mm anders aus als .308.
+
+Die Menüeinträge verbinden Form und Zweck: „Teilmantel — Jagd", „Wadcutter —
+Präzision". Der Zweck ist der häufigste in der jeweiligen Form.
+
+**Das Menü wird aus den Daten gelesen**, nicht aus einer festen Liste. Deshalb
+zeigt es bei 9 mm nur, was es dort wirklich gibt. Wadcutter und Semi-Wadcutter
+sind Revolverformen — im Selbstlader würden sie an der Zuführrampe haken, und
+entsprechend gibt es sie für 9 mm nicht. Bei `.38 Special` stehen dagegen sechs
+Formen zur Wahl.
+
+Neue Datensätze brauchen ein `form`-Feld; `tools/pruefe.py` besteht darauf und
+lehnt unbekannte Werte ab. Für den Altbestand hat `tools/formen.py` es einmalig
+aus dem `typ`-Text abgeleitet — dieses Werkzeug ist **kein** Ersatz für eine
+saubere Angabe von Hand.
+
+> Beim Wadcutter und Semi-Wadcutter entfällt die COL-Maßlinie: Diese Geschosse
+> sitzen so tief, dass die Norm-Gesamtlänge dort eine Linie ins Leere wäre.
+> Stattdessen steht „Setztiefe je Laborierung verschieden".
+
 ## 9. Der Ballistikrechner
 
 `ballistik.js` rechnet die Flugbahn numerisch (Runge-Kutta 4. Ordnung) mit den

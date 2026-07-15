@@ -1,25 +1,44 @@
 {
   "id": "243win",
   "name": ".243 Winchester",
-  "aliase": [".243 Win", "243 Winchester", "6,2x52", "6.2x52", ".243", "243", "6mm Winchester"],
-  "gruppen": ["jagd"],
+  "aliase": [
+    ".243 Win",
+    "243 Winchester",
+    "6,2x52",
+    "6.2x52",
+    ".243",
+    "243",
+    "6mm Winchester"
+  ],
+  "gruppen": [
+    "jagd"
+  ],
   "kurz": "Die klassische Rehwildpatrone: rasant, flach, fast rückstoßfrei. Aber mit 6,20 mm unter dem gesetzlichen Mindestkaliber — für Rot- und Schwarzwild in ganz Deutschland unzulässig.",
-
   "schnell": {
-    "geschoss_gr": [55, 105],
-    "v0_ms": [870, 1140],
-    "e0_j": [2350, 2750],
-    "drall_mm": [203, 254],
+    "geschoss_gr": [
+      55,
+      105
+    ],
+    "v0_ms": [
+      870,
+      1140
+    ],
+    "e0_j": [
+      2350,
+      2750
+    ],
+    "drall_mm": [
+      203,
+      254
+    ],
     "gasdruck_bar": 4150
   },
-
   "warnungen": [
     {
       "titel": "6,20 mm — nur für Rehwild, nicht für übriges Schalenwild",
       "text": "Das Bundesjagdgesetz verlangt für übriges Schalenwild — also Rot-, Dam-, Sika-, Muffel- und Schwarzwild — mindestens 6,5 mm Geschossdurchmesser. Die .243 Winchester misst 6,20 mm und verfehlt das um 0,3 mm. Sie ist damit in ganz Deutschland ausschließlich für Rehwild zulässig, und daran ändert auch die reichlich vorhandene Energie nichts: Das Gesetz kennt hier keine Ausnahme über die Auftreffenergie. Der Irrtum ist verbreitet, weil die Patrone auf 100 m rund 2.000 J liefert und damit die Energiegrenze für Schalenwild erfüllen würde — nur eben das Kaliber nicht. Wer eine Universalbüchse sucht, ist hier falsch."
     }
   ],
-
   "basis": {
     "entwickler": "Winchester",
     "jahr": 1955,
@@ -29,9 +48,13 @@
       "Winchester zielte auf zwei Märkte gleichzeitig: Raubwild mit leichten, schnell zerlegenden Geschossen und leichtes Schalenwild mit 90 bis 100 gr. Beides funktioniert, und die Patrone wurde in den USA und Großbritannien zum Dauerbrenner.",
       "In Deutschland ist ihre Rolle enger gefasst, aber klar definiert: Sie ist eine ausgezeichnete Rehwildpatrone. Der Rückstoß ist so gering, dass man den eigenen Treffer im Glas sieht, die Bahn so flach, dass Entfernungsschätzung kaum eine Rolle spielt. Nur muss man wissen, wo die Grenze liegt — und die zieht das Gesetz bei 6,5 mm, nicht bei der Energie."
     ],
-    "einsatz": ["Rehwildjagd", "Raubwildjagd", "Sportschießen (Kurzdistanz-Präzision)", "Jagd auf übriges Schalenwild: unzulässig"]
+    "einsatz": [
+      "Rehwildjagd",
+      "Raubwildjagd",
+      "Sportschießen (Kurzdistanz-Präzision)",
+      "Jagd auf übriges Schalenwild: unzulässig"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -48,36 +71,134 @@
     "drall": "1:254 mm (1:10″) klassisch, 1:203 mm (1:8″) für schwere Geschosse",
     "drall_hinweis": "Hier lohnt genaues Hinsehen. Der klassische 1:10″-Drall stabilisiert Geschosse bis rund 100 gr — für Rehwild und Raubwild völlig ausreichend. Die modernen langen 105-gr-Matchgeschosse mit hohem BC brauchen dagegen 1:8″. Wer eine ältere Büchse hat, sollte bei 100 gr bleiben."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 610 mm (24″) Lauf. Die Patrone nutzt lange Läufe gut aus; ein 20″-Lauf kostet rund 40–50 m/s.",
     "laborierungen": [
-      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 95, "g": 6.16, "v0": 920, "bc": 0.365, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd (Rehwild)", "anmerkung": "Die deutsche Standard-Rehwildlaborierung." },
-      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 90, "g": 5.83, "v0": 940, "bc": 0.409, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd (Rehwild)", "anmerkung": "Hoher BC, öffnet auch bei niedriger Restgeschwindigkeit." },
-      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 100, "g": 6.48, "v0": 900, "bc": 0.356, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd (Rehwild)", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
-      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 100, "g": 6.48, "v0": 895, "bc": 0.350, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd (Rehwild)", "anmerkung": "Bindekern, hoher Restgewichtserhalt — wenig Wildbretentwertung." },
-      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 80, "g": 5.18, "v0": 985, "bc": 0.320, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd (Rehwild)", "anmerkung": "Bleifrei — die Antwort auf die Landesvorschriften." },
-      { "hersteller": "Hornady", "typ": "ELD Match", "gr": 105, "g": 6.8, "v0": 880, "bc": 0.530, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Sehr hoher BC. Braucht zwingend 1:8″ — in älteren Läufen taumelt es." },
-      { "hersteller": "Nosler", "typ": "Ballistic Tip Varmint", "gr": 58, "g": 3.76, "v0": 1130, "bc": 0.243, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Raubwild", "anmerkung": "Extrem rasant, zerlegt sich sofort — geringe Abprallgefahr." }
+      {
+        "hersteller": "RWS",
+        "typ": "Evolution Teilmantel",
+        "form": "kunststoffspitze",
+        "gr": 95,
+        "g": 6.16,
+        "v0": 920,
+        "bc": 0.365,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd (Rehwild)",
+        "anmerkung": "Die deutsche Standard-Rehwildlaborierung."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD-X Precision Hunter",
+        "form": "kunststoffspitze",
+        "gr": 90,
+        "g": 5.83,
+        "v0": 940,
+        "bc": 0.409,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd (Rehwild)",
+        "anmerkung": "Hoher BC, öffnet auch bei niedriger Restgeschwindigkeit."
+      },
+      {
+        "hersteller": "GECO",
+        "typ": "Teilmantel",
+        "form": "teilmantel",
+        "gr": 100,
+        "g": 6.48,
+        "v0": 900,
+        "bc": 0.356,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd (Rehwild)",
+        "anmerkung": "Günstigste reguläre Jagdlaborierung."
+      },
+      {
+        "hersteller": "Norma",
+        "typ": "Oryx Teilmantel",
+        "form": "teilmantel",
+        "gr": 100,
+        "g": 6.48,
+        "v0": 895,
+        "bc": 0.35,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd (Rehwild)",
+        "anmerkung": "Bindekern, hoher Restgewichtserhalt — wenig Wildbretentwertung."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TTSX bleifrei",
+        "form": "bleifrei",
+        "gr": 80,
+        "g": 5.18,
+        "v0": 985,
+        "bc": 0.32,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd (Rehwild)",
+        "anmerkung": "Bleifrei — die Antwort auf die Landesvorschriften."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD Match",
+        "form": "kunststoffspitze",
+        "gr": 105,
+        "g": 6.8,
+        "v0": 880,
+        "bc": 0.53,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Präzision",
+        "anmerkung": "Sehr hoher BC. Braucht zwingend 1:8″ — in älteren Läufen taumelt es."
+      },
+      {
+        "hersteller": "Nosler",
+        "typ": "Ballistic Tip Varmint",
+        "form": "kunststoffspitze",
+        "gr": 58,
+        "g": 3.76,
+        "v0": 1130,
+        "bc": 0.243,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Raubwild",
+        "anmerkung": "Extrem rasant, zerlegt sich sofort — geringe Abprallgefahr."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Vihtavuori N160", "eignung": "Der Klassiker für mittlere bis schwere Geschosse." },
-    { "name": "Hodgdon H4350", "eignung": "Breites Ladefenster, in den USA der Standard für dieses Kaliber." },
-    { "name": "Vihtavuori N150", "eignung": "Für leichtere Geschosse, sehr gleichmäßig." },
-    { "name": "Alliant Reloder 19", "eignung": "Für schwere Geschosse ab 100 gr." }
+    {
+      "name": "Vihtavuori N160",
+      "eignung": "Der Klassiker für mittlere bis schwere Geschosse."
+    },
+    {
+      "name": "Hodgdon H4350",
+      "eignung": "Breites Ladefenster, in den USA der Standard für dieses Kaliber."
+    },
+    {
+      "name": "Vihtavuori N150",
+      "eignung": "Für leichtere Geschosse, sehr gleichmäßig."
+    },
+    {
+      "name": "Alliant Reloder 19",
+      "eignung": "Für schwere Geschosse ab 100 gr."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Vihtavuori Ladedaten .243 Winchester", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=243-winchester" },
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+    {
+      "titel": "Vihtavuori Ladedaten .243 Winchester",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=243-winchester"
+    },
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Konzeptionell ungeeignet. Die Patrone lebt von extremer Geschwindigkeit — unterschall geladen bliebe von 2.350–2.750 J fast nichts, und die leichten 6-mm-Geschosse hätten dabei keinerlei Wirkung. Fabrikmunition existiert nicht. Auf dem Ansitz wird wie bei allen Jagdkalibern mit normaler Überschallmunition und Dämpfer geschossen."
   },
-
   "vorteile": [
     "Sehr geringer Rückstoß — man sieht den eigenen Treffer im Glas",
     "Extrem flache Bahn: auf 250 m spielt Entfernungsschätzung kaum eine Rolle",
@@ -95,7 +216,6 @@
     "Leichte Geschosse sind windempfindlich",
     "Als Universalbüchse ungeeignet — wer mehr als Rehwild will, braucht ein zweites Kaliber"
   ],
-
   "recht_de": {
     "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich spielt die Patrone kaum eine Rolle.",
     "jagd": "Ausschließlich für Rehwild zulässig. Für Rehwild gilt kein Mindestkaliber, sondern nur die 1.000-J-Grenze auf 100 m — die die Patrone mit rund 1.900–2.100 J deutlich überschreitet. Für übriges Schalenwild ist sie in ganz Deutschland unzulässig, weil sie mit 6,20 mm das gesetzliche Mindestkaliber von 6,5 mm verfehlt. Die Energie ändert daran nichts.",
@@ -106,27 +226,56 @@
       "Für Raubwild je nach Landesrecht eine sehr gute Wahl."
     ]
   },
-
   "varianten": [
-    { "name": ".243 Win Jagd (90–100 gr)", "text": "Teilmantel bei rund 900–940 m/s. Die Rehwildlaborierung — der Regelfall in Deutschland." },
-    { "name": ".243 Win Raubwild (55–70 gr)", "text": "Sehr leicht und extrem rasant, über 1.100 m/s. Zerlegt sich beim Auftreffen, geringe Abprallgefahr." },
-    { "name": ".243 Win Match (105 gr)", "text": "Langes Hochleistungsgeschoss mit BC über 0,5. Braucht zwingend 1:8″." },
-    { "name": "6 mm Creedmoor", "text": "Die moderne Alternative mit gleichem Durchmesser: mehr Geschwindigkeit mit schweren Geschossen, von Haus aus 1:8″. Unterliegt derselben 6,5-mm-Beschränkung." }
+    {
+      "name": ".243 Win Jagd (90–100 gr)",
+      "text": "Teilmantel bei rund 900–940 m/s. Die Rehwildlaborierung — der Regelfall in Deutschland."
+    },
+    {
+      "name": ".243 Win Raubwild (55–70 gr)",
+      "text": "Sehr leicht und extrem rasant, über 1.100 m/s. Zerlegt sich beim Auftreffen, geringe Abprallgefahr."
+    },
+    {
+      "name": ".243 Win Match (105 gr)",
+      "text": "Langes Hochleistungsgeschoss mit BC über 0,5. Braucht zwingend 1:8″."
+    },
+    {
+      "name": "6 mm Creedmoor",
+      "text": "Die moderne Alternative mit gleichem Durchmesser: mehr Geschwindigkeit mit schweren Geschossen, von Haus aus 1:8″. Unterliegt derselben 6,5-mm-Beschränkung."
+    }
   ],
-
   "nachbarn": [
-    { "name": "6,5 Creedmoor", "text": "Nur 0,5 mm größer — aber damit über der 6,5-mm-Grenze und für alles Schalenwild zugelassen. Für Jäger der entscheidende Unterschied." },
-    { "name": "6,5 × 55 SE", "text": "Ähnlich rückstoßarm, aber jagdlich uneingeschränkt einsetzbar. Für eine Universalbüchse die bessere Wahl." },
-    { "name": ".308 Winchester", "text": "Dieselbe Hülse, nicht eingezogen. Mehr Rückstoß, aber für alles Schalenwild zugelassen." },
-    { "name": ".222 Rem / .223 Rem", "text": "Die kleineren Raubwildkaliber. Weniger Energie, für Rehwild teils nicht zugelassen." }
+    {
+      "name": "6,5 Creedmoor",
+      "text": "Nur 0,5 mm größer — aber damit über der 6,5-mm-Grenze und für alles Schalenwild zugelassen. Für Jäger der entscheidende Unterschied."
+    },
+    {
+      "name": "6,5 × 55 SE",
+      "text": "Ähnlich rückstoßarm, aber jagdlich uneingeschränkt einsetzbar. Für eine Universalbüchse die bessere Wahl."
+    },
+    {
+      "name": ".308 Winchester",
+      "text": "Dieselbe Hülse, nicht eingezogen. Mehr Rückstoß, aber für alles Schalenwild zugelassen."
+    },
+    {
+      "name": ".222 Rem / .223 Rem",
+      "text": "Die kleineren Raubwildkaliber. Weniger Energie, für Rehwild teils nicht zugelassen."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Jagdlaborierungen aus einer guten Büchse liegen typisch bei 20–35 mm auf 100 m — die .243 ist von Haus aus präzise. Reißt deine Scheibe bei 105-gr-Geschossen ovale Löcher, ist der Drall zu langsam. Trag deine eigenen Werte ein.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 243 Winchester", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/243-win-en.pdf" },
-    { "titel": "Wikipedia — .243 Winchester", "url": "https://de.wikipedia.org/wiki/.243_Winchester" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 243 Winchester",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/243-win-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — .243 Winchester",
+      "url": "https://de.wikipedia.org/wiki/.243_Winchester"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

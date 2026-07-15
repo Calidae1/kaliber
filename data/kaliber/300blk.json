@@ -1,25 +1,42 @@
 {
   "id": "300blk",
   "name": ".300 AAC Blackout",
-  "aliase": ["300 BLK", "300 Blackout", "7,62x35 mm", ".300 AAC", ".300 Whisper"],
-  "gruppen": ["msr"],
+  "aliase": [
+    "300 BLK",
+    "300 Blackout",
+    "7,62x35 mm",
+    ".300 AAC",
+    ".300 Whisper"
+  ],
+  "gruppen": [
+    "msr"
+  ],
   "kurz": "7,62-mm-Geschoss aus der AR-15 mit Standardverschluss und -magazin. Volle Leistung schon aus kurzem Lauf, konkurrenzlos gut zu dämpfen.",
-
   "schnell": {
-    "geschoss_gr": [110, 220],
-    "v0_ms": [305, 730],
-    "e0_j": [630, 1900],
-    "drall_mm": [178, 203],
+    "geschoss_gr": [
+      110,
+      220
+    ],
+    "v0_ms": [
+      305,
+      730
+    ],
+    "e0_j": [
+      630,
+      1900
+    ],
+    "drall_mm": [
+      178,
+      203
+    ],
     "gasdruck_bar": 3800
   },
-
   "warnungen": [
     {
       "titel": "Lebensgefahr: .300 BLK lädt in einer 5,56-Kammer",
       "text": "Eine .300-BLK-Patrone mit kurzem Geschoss lässt sich in einem .223/5,56-Patronenlager verschließen und zünden. Das 7,82-mm-Geschoss wird dabei in einen 5,56-mm-Lauf gepresst — der Druck steigt schlagartig weit über jede Auslegung, die Waffe wird zerstört und der Schütze schwer verletzt. Weil beide Patronen dasselbe AR-15-Magazin und denselben Verschluss nutzen, ist die Verwechslung real und passiert regelmäßig. Konsequenz: Magazine eindeutig und dauerhaft kennzeichnen, .300 BLK und 5,56 niemals gleichzeitig auf dem Schießtisch oder in derselben Tasche haben, und beim Waffenwechsel jede Patrone einzeln kontrollieren."
     }
   ],
-
   "basis": {
     "entwickler": "Robert Silvers, Advanced Armament Corporation (AAC), mit Remington",
     "jahr": 2010,
@@ -29,9 +46,13 @@
       "2010 griff AAC die Idee auf und normte sie sauber — ausdrücklich mit dem Ziel, aus einer unveränderten AR-15 heraus zu funktionieren. Die Vorgabe lautete: nur der Lauf wird getauscht, Verschluss und Magazin bleiben, und das Magazin muss weiterhin voll gefüllt werden können. 2011 erfolgte die SAAMI-Zulassung, die C.I.P. zog nach.",
       "Genau diese Rückwärtskompatibilität erklärt den Erfolg: Wer eine AR-15 hat, wird für rund 300 € Laufkosten zum 7,62er — mit einer Patrone, die aus 23 cm Lauf ihre volle Leistung bringt und im Unterschallbetrieb mit Dämpfer außergewöhnlich leise ist. Militärisch blieb sie eine Nische, zivil ist sie in den USA längst Mainstream. In Deutschland ist sie angekommen, aber weiterhin deutlich teurer als 5,56."
     ],
-    "einsatz": ["Sportschießen mit AR-15 / Halbautomat", "Schalldämpferbetrieb (Unterschall)", "Jagd auf Rehwild und Raubwild — je nach Landesrecht und Laborierung", "Kurzläufige Waffen ab ca. 23 cm"]
+    "einsatz": [
+      "Sportschießen mit AR-15 / Halbautomat",
+      "Schalldämpferbetrieb (Unterschall)",
+      "Jagd auf Rehwild und Raubwild — je nach Landesrecht und Laborierung",
+      "Kurzläufige Waffen ab ca. 23 cm"
+    ]
   },
-
   "masse": {
     "norm": "C.I.P. / SAAMI",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -48,36 +69,134 @@
     "drall": "1:7″ bis 1:8″ (178–203 mm), Standard ist 1:8″",
     "drall_hinweis": "Der Drall ist hier die entscheidende Größe. 1:8″ deckt den gesamten Bereich von 110 bis 220 gr ab und ist deshalb die richtige Wahl, wenn du beides schießen willst. 1:7″ stabilisiert die schwersten Unterschallgeschosse (220 gr und mehr) sicherer, vor allem in sehr kurzen Läufen. Ein 1:10″-Lauf, wie ihn manche Umbausätze mitbringen, kommt mit schweren Unterschallgeschossen nicht mehr zurecht — die Geschosse taumeln und reißen ovale Löcher."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 406 mm (16″) Lauf, sofern nicht anders angegeben. Die Patrone ist auf 229 mm (9″) optimiert und verliert dort überschall nur etwa 30–50 m/s — im Unterschallbereich ist die Lauflänge fast bedeutungslos.",
     "laborierungen": [
-      { "hersteller": "Hornady", "typ": "V-MAX", "gr": 110, "g": 7.1, "v0": 730, "bc": 0.290, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Überschall / Sport", "anmerkung": "Die rasanteste gängige Laborierung, flachste Bahn." },
-      { "hersteller": "Barnes", "typ": "TAC-TX bleifrei", "gr": 110, "g": 7.1, "v0": 715, "bc": 0.278, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Jagd", "anmerkung": "Bleifrei, öffnet zuverlässig ab ca. 500 m/s. Die Jagdlaborierung der Wahl." },
-      { "hersteller": "Sellier & Bellot", "typ": "FMJ", "gr": 124, "g": 8.0, "v0": 655, "bc": 0.290, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg in Europa." },
-      { "hersteller": "Hornady", "typ": "BLACK V-MAX", "gr": 125, "g": 8.1, "v0": 685, "bc": 0.290, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Überschall / Sport", "anmerkung": null },
-      { "hersteller": "Hornady", "typ": "SUB-X Subsonic", "gr": 190, "g": 12.3, "v0": 320, "bc": 0.437, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Unterschall", "anmerkung": "Expandiert auch bei Unterschallgeschwindigkeit — konstruktiv anspruchsvoll." },
-      { "hersteller": "Hornady", "typ": "A-MAX Subsonic", "gr": 208, "g": 13.5, "v0": 312, "bc": 0.648, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Unterschall", "anmerkung": "Sehr hoher BC, aber als Zielgeschoss ohne Deformationsanspruch." },
-      { "hersteller": "Fiocchi", "typ": "Subsonic FMJ", "gr": 220, "g": 14.3, "v0": 305, "bc": 0.608, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Unterschall", "anmerkung": "Schwerstes gängiges Geschoss. Braucht 1:8″ oder enger." }
+      {
+        "hersteller": "Hornady",
+        "typ": "V-MAX",
+        "form": "kunststoffspitze",
+        "gr": 110,
+        "g": 7.1,
+        "v0": 730,
+        "bc": 0.29,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Überschall / Sport",
+        "anmerkung": "Die rasanteste gängige Laborierung, flachste Bahn."
+      },
+      {
+        "hersteller": "Barnes",
+        "typ": "TAC-TX bleifrei",
+        "form": "bleifrei",
+        "gr": 110,
+        "g": 7.1,
+        "v0": 715,
+        "bc": 0.278,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Jagd",
+        "anmerkung": "Bleifrei, öffnet zuverlässig ab ca. 500 m/s. Die Jagdlaborierung der Wahl."
+      },
+      {
+        "hersteller": "Sellier & Bellot",
+        "typ": "FMJ",
+        "form": "vollmantel",
+        "gr": 124,
+        "g": 8.0,
+        "v0": 655,
+        "bc": 0.29,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Training",
+        "anmerkung": "Günstigster regulärer Einstieg in Europa."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "BLACK V-MAX",
+        "form": "kunststoffspitze",
+        "gr": 125,
+        "g": 8.1,
+        "v0": 685,
+        "bc": 0.29,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Überschall / Sport",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "SUB-X Subsonic",
+        "form": "kunststoffspitze",
+        "gr": 190,
+        "g": 12.3,
+        "v0": 320,
+        "bc": 0.437,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Unterschall",
+        "anmerkung": "Expandiert auch bei Unterschallgeschwindigkeit — konstruktiv anspruchsvoll."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "A-MAX Subsonic",
+        "form": "kunststoffspitze",
+        "gr": 208,
+        "g": 13.5,
+        "v0": 312,
+        "bc": 0.648,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Unterschall",
+        "anmerkung": "Sehr hoher BC, aber als Zielgeschoss ohne Deformationsanspruch."
+      },
+      {
+        "hersteller": "Fiocchi",
+        "typ": "Subsonic FMJ",
+        "form": "vollmantel",
+        "gr": 220,
+        "g": 14.3,
+        "v0": 305,
+        "bc": 0.608,
+        "bc_modell": "G1",
+        "lauf_mm": 406,
+        "zweck": "Unterschall",
+        "anmerkung": "Schwerstes gängiges Geschoss. Braucht 1:8″ oder enger."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Hodgdon H110 / Winchester 296", "eignung": "Der Klassiker für Überschall, sehr hohe Füllgrade." },
-    { "name": "Vihtavuori N110", "eignung": "In Europa gut verfügbar, gute Ergebnisse überschall." },
-    { "name": "Accurate 1680", "eignung": "Breit einsetzbar, funktioniert überschall wie unterschall." },
-    { "name": "Hodgdon CFE BLK", "eignung": "Ausdrücklich für dieses Kaliber entwickelt, reduziert Kupferablagerungen." }
+    {
+      "name": "Hodgdon H110 / Winchester 296",
+      "eignung": "Der Klassiker für Überschall, sehr hohe Füllgrade."
+    },
+    {
+      "name": "Vihtavuori N110",
+      "eignung": "In Europa gut verfügbar, gute Ergebnisse überschall."
+    },
+    {
+      "name": "Accurate 1680",
+      "eignung": "Breit einsetzbar, funktioniert überschall wie unterschall."
+    },
+    {
+      "name": "Hodgdon CFE BLK",
+      "eignung": "Ausdrücklich für dieses Kaliber entwickelt, reduziert Kupferablagerungen."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Hodgdon Reloading Data Center — .300 AAC Blackout", "url": "https://hodgdonreloading.com/" },
-    { "titel": "Vihtavuori Ladedaten — .300 AAC Blackout", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=300-aac-blackout" }
+    {
+      "titel": "Hodgdon Reloading Data Center — .300 AAC Blackout",
+      "url": "https://hodgdonreloading.com/"
+    },
+    {
+      "titel": "Vihtavuori Ladedaten — .300 AAC Blackout",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=300-aac-blackout"
+    }
   ],
-
   "subsonic": {
     "tauglich": true,
     "text": "Das ist der eigentliche Daseinsgrund der Patrone. Mit 190- bis 220-gr-Geschossen bei etwa 305–320 m/s bleibt sie sicher unter der Schallgeschwindigkeit, und weil das Pulver schon nach wenigen Zentimetern durchgebrannt ist, bleibt auch aus einem 23-cm-Lauf kaum Mündungsknall übrig. Mit Dämpfer ist der Verschlussschlag der AR-15 lauter als der Schuss. Wichtig: der Gasdruck reicht unterschall nur knapp zum Repetieren — ein einstellbarer Gasblock oder ein für Unterschall ausgelegtes System ist praktisch Pflicht, sonst musst du beim Wechsel zwischen Über- und Unterschall jedes Mal nachstellen. Und die Bogenbahn ist ausgeprägt: Mit 100-m-Fleck liegst du auf 150 m bereits 40 cm tief und auf 175 m rund 70 cm. Jenseits 150 m wird das Schätzen der Entfernung zum eigentlichen Problem."
   },
-
   "vorteile": [
     "Umbau der AR-15 mit nur einem Laufwechsel — Verschluss und Magazin bleiben",
     "Volle Leistung schon aus 23 cm Lauf, ideal für kurze, handliche Waffen",
@@ -94,7 +213,6 @@
     "Unterschall verlangt einstellbaren Gasblock, sonst repetiert die Waffe unzuverlässig",
     "Jagdlich nur für Rehwild und nur mit passender Laborierung — und nicht überall erlaubt"
   ],
-
   "recht_de": {
     "sport": "Halbautomatische Büchsen in .300 BLK sind für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist. Das Kaliber selbst ist nicht beschränkt — die Waffe entscheidet.",
     "jagd": "Zulässig für Rehwild: Das Mindestkaliber von 6,5 mm ist mit 7,82 mm erfüllt, und eine 110-gr-Überschallaborierung liefert aus 16″-Lauf auf 100 m rund 1.340–1.420 J — klar über den geforderten 1.000 J. Für übriges Schalenwild reicht es nicht: Dafür wären 2.000 J auf 100 m nötig, und .300 BLK erreicht selbst an der Mündung nur etwa 1.900 J.",
@@ -105,27 +223,56 @@
       "Bleifrei-Pflicht gilt je nach Bundesland; die Barnes TAC-TX ist die naheliegende Antwort darauf."
     ]
   },
-
   "varianten": [
-    { "name": ".300 BLK Überschall", "text": "110–125 gr bei 655–730 m/s. Die Sport- und Jagdrolle. Ballistisch grob auf 7,62x39-Niveau." },
-    { "name": ".300 BLK Unterschall", "text": "190–220 gr bei etwa 305–320 m/s. Für Dämpferbetrieb. Energie auf .45-ACP-Niveau, aber mit besserer Durchschlagsleistung durch das lange Geschoss." },
-    { "name": ".300 Whisper", "text": "Die nicht genormte Wildcat-Vorgängerin von J. D. Jones. .300-BLK-Munition lässt sich in Whisper-Kammern meist schießen, umgekehrt nicht zwingend — Whisper-Laborierungen können längere Geschosssitze haben." },
-    { "name": "7,62x35 mm", "text": "Kein eigenes Kaliber, nur die metrische Bezeichnung derselben Patrone." }
+    {
+      "name": ".300 BLK Überschall",
+      "text": "110–125 gr bei 655–730 m/s. Die Sport- und Jagdrolle. Ballistisch grob auf 7,62x39-Niveau."
+    },
+    {
+      "name": ".300 BLK Unterschall",
+      "text": "190–220 gr bei etwa 305–320 m/s. Für Dämpferbetrieb. Energie auf .45-ACP-Niveau, aber mit besserer Durchschlagsleistung durch das lange Geschoss."
+    },
+    {
+      "name": ".300 Whisper",
+      "text": "Die nicht genormte Wildcat-Vorgängerin von J. D. Jones. .300-BLK-Munition lässt sich in Whisper-Kammern meist schießen, umgekehrt nicht zwingend — Whisper-Laborierungen können längere Geschosssitze haben."
+    },
+    {
+      "name": "7,62x35 mm",
+      "text": "Kein eigenes Kaliber, nur die metrische Bezeichnung derselben Patrone."
+    }
   ],
-
   "nachbarn": [
-    { "name": ".223 Rem / 5,56x45", "text": "Rasanter, viel flacher, deutlich billiger und weiter reichend. Aber schlecht zu dämpfen und mit kleinerem Geschossdurchmesser — 5,56 erfüllt das jagdliche Mindestkaliber von 6,5 mm nicht." },
-    { "name": "7,62x39", "text": "Ballistisch fast deckungsgleich mit .300 BLK überschall und billiger. Braucht aber eigenes Magazin und eigenen Verschluss — in der AR-15 immer eine Bastelei." },
-    { "name": "6,5 Creedmoor", "text": "Spielt in einer anderen Liga: doppelte Energie, dreifache Reichweite. Braucht aber die größere AR-10-Plattform." },
-    { "name": ".300 Whisper", "text": "Der direkte Vorgänger, siehe Varianten." }
+    {
+      "name": ".223 Rem / 5,56x45",
+      "text": "Rasanter, viel flacher, deutlich billiger und weiter reichend. Aber schlecht zu dämpfen und mit kleinerem Geschossdurchmesser — 5,56 erfüllt das jagdliche Mindestkaliber von 6,5 mm nicht."
+    },
+    {
+      "name": "7,62x39",
+      "text": "Ballistisch fast deckungsgleich mit .300 BLK überschall und billiger. Braucht aber eigenes Magazin und eigenen Verschluss — in der AR-15 immer eine Bastelei."
+    },
+    {
+      "name": "6,5 Creedmoor",
+      "text": "Spielt in einer anderen Liga: doppelte Energie, dreifache Reichweite. Braucht aber die größere AR-10-Plattform."
+    },
+    {
+      "name": ".300 Whisper",
+      "text": "Der direkte Vorgänger, siehe Varianten."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Überschall-Fabrikmunition liegt aus einem guten 16″-Lauf typisch bei 25–45 mm auf 100 m, Unterschall bei 30–60 mm. Weicht deine Waffe mit schweren Geschossen stark davon ab, ist meistens der Drall zu langsam. Trag deine eigenen Messwerte ein — nur die gelten für deinen Lauf.",
-
   "quellen": [
-    { "titel": "C.I.P. TDCC — 300 AAC Blackout (PDF)", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/300-aac-blackout-180801-de.pdf" },
-    { "titel": "Wikipedia — .300 AAC Blackout", "url": "https://en.wikipedia.org/wiki/.300_AAC_Blackout" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "C.I.P. TDCC — 300 AAC Blackout (PDF)",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/300-aac-blackout-180801-de.pdf"
+    },
+    {
+      "titel": "Wikipedia — .300 AAC Blackout",
+      "url": "https://en.wikipedia.org/wiki/.300_AAC_Blackout"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }

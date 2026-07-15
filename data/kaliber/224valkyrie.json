@@ -1,18 +1,36 @@
 {
   "id": "224valkyrie",
   "name": ".224 Valkyrie",
-  "aliase": ["224 Valkyrie", "5,7x41", ".224 Val", "224Valkyrie", "5.7x41"],
-  "gruppen": ["msr"],
+  "aliase": [
+    "224 Valkyrie",
+    "5,7x41",
+    ".224 Val",
+    "224Valkyrie",
+    "5.7x41"
+  ],
+  "gruppen": [
+    "msr"
+  ],
   "kurz": "Federals Versuch, die AR-15 auf 1.000 Yard zu bringen: .22er-Durchmesser mit Langstreckengeschossen. Ballistisch clever, am Markt jedoch weitgehend gescheitert.",
-
   "schnell": {
-    "geschoss_gr": [60, 90],
-    "v0_ms": [800, 1060],
-    "e0_j": [1850, 2200],
-    "drall_mm": [178, 178],
+    "geschoss_gr": [
+      60,
+      90
+    ],
+    "v0_ms": [
+      800,
+      1060
+    ],
+    "e0_j": [
+      1850,
+      2200
+    ],
+    "drall_mm": [
+      178,
+      178
+    ],
     "gasdruck_bar": 4050
   },
-
   "warnungen": [
     {
       "titel": "5,70 mm — verfehlt das jagdliche Mindestkaliber von 6,5 mm",
@@ -23,7 +41,6 @@
       "text": "Sei dir im Klaren, worauf du dich einlässt. Die Patrone hat sich am Markt nicht durchgesetzt, mehrere Hersteller haben die Produktion eingestellt oder stark reduziert. In Deutschland ist sie eine ausgesprochene Rarität — Munition ist teuer, oft nicht lieferbar und die Auswahl an Laborierungen minimal. Wer sie ohne Wiederladeausrüstung kauft, riskiert eine Waffe, für die es zeitweise schlicht nichts zu kaufen gibt."
     }
   ],
-
   "basis": {
     "entwickler": "Federal Premium",
     "jahr": 2017,
@@ -33,9 +50,13 @@
       "Ballistisch funktioniert das. Ein 90-gr-Sierra-MatchKing mit BC 0,563 aus der AR-15 war 2017 eine Ansage, und die Patrone bleibt tatsächlich bis über 1.200 Yard im Überschall. Der Rückstoß bleibt dabei nahe an dem der .223.",
       "Kommerziell wurde es trotzdem nichts. Die Konkurrenz durch 6 mm ARC und 6,5 Grendel war groß, die frühen Läufe hatten Präzisionsprobleme, und der Umbau verlangte ohnehin eigenen Verschluss und eigene Magazine — dann konnte man auch gleich ein etabliertes Kaliber nehmen. Heute ist die .224 Valkyrie eine Fußnote: technisch interessant, praktisch kaum noch relevant."
     ],
-    "einsatz": ["Langstreckenschießen mit der AR-15", "Sportschießen (Nische)", "Rehwildjagd (theoretisch, je nach Landesrecht)", "Jagd auf übriges Schalenwild: unzulässig"]
+    "einsatz": [
+      "Langstreckenschießen mit der AR-15",
+      "Sportschießen (Nische)",
+      "Rehwildjagd (theoretisch, je nach Landesrecht)",
+      "Jagd auf übriges Schalenwild: unzulässig"
+    ]
   },
-
   "masse": {
     "norm": "SAAMI / C.I.P.",
     "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
@@ -52,34 +73,108 @@
     "drall": "1:178 mm (1:7″)",
     "drall_hinweis": "Zwingend 1:7″. Die 90-gr-Langgeschosse, die den einzigen Daseinsgrund der Patrone ausmachen, stabilisieren bei langsamerem Drall nicht — dann taumeln sie und die Patrone ist wertlos. Frühe Läufe mancher Hersteller waren hier fehlerhaft ausgelegt und haben dem Ruf der Patrone erheblich geschadet."
   },
-
   "werte": {
     "hinweis": "v0-Werte gelten für 610 mm (24″) Lauf. Aus einem 18″-AR-Lauf sind 50–70 m/s weniger zu erwarten — bei dieser Patrone ein spürbarer Verlust, weil ihr ganzer Sinn in der Distanzleistung liegt.",
     "laborierungen": [
-      { "hersteller": "Federal", "typ": "Gold Medal Sierra MatchKing", "gr": 90, "g": 5.83, "v0": 823, "bc": 0.563, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Die Laborierung, für die das Kaliber existiert. BC 0,563 bei .224″ ist bemerkenswert." },
-      { "hersteller": "Hornady", "typ": "ELD Match", "gr": 88, "g": 5.7, "v0": 830, "bc": 0.545, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": null },
-      { "hersteller": "Federal", "typ": "Fusion MSR Teilmantel", "gr": 90, "g": 5.83, "v0": 804, "bc": 0.400, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Die Jagdlaborierung — in Deutschland nur für Rehwild zulässig." },
-      { "hersteller": "Hornady", "typ": "ELD Match", "gr": 75, "g": 4.86, "v0": 918, "bc": 0.467, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Leichter und rasanter, etwas flacher auf mittlere Distanz." },
-      { "hersteller": "Federal", "typ": "Nosler Ballistic Tip", "gr": 60, "g": 3.89, "v0": 1054, "bc": 0.264, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Raubwild", "anmerkung": "Extrem rasant, aber der niedrige BC verschenkt den Sinn der Patrone." }
+      {
+        "hersteller": "Federal",
+        "typ": "Gold Medal Sierra MatchKing",
+        "form": "match",
+        "gr": 90,
+        "g": 5.83,
+        "v0": 823,
+        "bc": 0.563,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Präzision",
+        "anmerkung": "Die Laborierung, für die das Kaliber existiert. BC 0,563 bei .224″ ist bemerkenswert."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD Match",
+        "form": "kunststoffspitze",
+        "gr": 88,
+        "g": 5.7,
+        "v0": 830,
+        "bc": 0.545,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Präzision",
+        "anmerkung": null
+      },
+      {
+        "hersteller": "Federal",
+        "typ": "Fusion MSR Teilmantel",
+        "form": "teilmantel",
+        "gr": 90,
+        "g": 5.83,
+        "v0": 804,
+        "bc": 0.4,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Jagd",
+        "anmerkung": "Die Jagdlaborierung — in Deutschland nur für Rehwild zulässig."
+      },
+      {
+        "hersteller": "Hornady",
+        "typ": "ELD Match",
+        "form": "kunststoffspitze",
+        "gr": 75,
+        "g": 4.86,
+        "v0": 918,
+        "bc": 0.467,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Präzision",
+        "anmerkung": "Leichter und rasanter, etwas flacher auf mittlere Distanz."
+      },
+      {
+        "hersteller": "Federal",
+        "typ": "Nosler Ballistic Tip",
+        "form": "kunststoffspitze",
+        "gr": 60,
+        "g": 3.89,
+        "v0": 1054,
+        "bc": 0.264,
+        "bc_modell": "G1",
+        "lauf_mm": 610,
+        "zweck": "Raubwild",
+        "anmerkung": "Extrem rasant, aber der niedrige BC verschenkt den Sinn der Patrone."
+      }
     ]
   },
-
   "pulver": [
-    { "name": "Hodgdon CFE 223", "eignung": "Gut geeignet für die schweren Geschosse." },
-    { "name": "Alliant Reloder 15", "eignung": "Bewährt in diesem Hülsenvolumen." },
-    { "name": "Hodgdon Varget", "eignung": "Temperaturstabil, breites Ladefenster." },
-    { "name": "Vihtavuori N540", "eignung": "In Europa besser verfügbar als die US-Sorten — bei diesem Kaliber ein echtes Argument." }
+    {
+      "name": "Hodgdon CFE 223",
+      "eignung": "Gut geeignet für die schweren Geschosse."
+    },
+    {
+      "name": "Alliant Reloder 15",
+      "eignung": "Bewährt in diesem Hülsenvolumen."
+    },
+    {
+      "name": "Hodgdon Varget",
+      "eignung": "Temperaturstabil, breites Ladefenster."
+    },
+    {
+      "name": "Vihtavuori N540",
+      "eignung": "In Europa besser verfügbar als die US-Sorten — bei diesem Kaliber ein echtes Argument."
+    }
   ],
   "ladedaten_links": [
-    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" },
-    { "titel": "Vihtavuori Ladedaten (Büchse)", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/" }
+    {
+      "titel": "Hodgdon Reloading Data Center",
+      "url": "https://hodgdonreloading.com/"
+    },
+    {
+      "titel": "Vihtavuori Ladedaten (Büchse)",
+      "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/"
+    }
   ],
-
   "subsonic": {
     "tauglich": false,
     "text": "Konzeptionell ungeeignet und praktisch sinnlos. Die Patrone ist auf maximale Überschallreichweite ausgelegt; unterschall geladen bliebe von 1.850–2.200 J vielleicht ein Zehntel, und die leichten .224er-Geschosse hätten dabei keinerlei Wirkung. Fabrikmunition dafür existiert nicht. Für leises Schießen aus der AR-15 gibt es .300 Blackout."
   },
-
   "vorteile": [
     "Höchste BC-Werte, die in .224″ erreichbar sind — bleibt bis über 1.200 Yard überschall",
     "Sehr geringer Rückstoß, kaum mehr als .223 Rem",
@@ -97,7 +192,6 @@
     "Von 6 mm ARC und 6,5 Grendel weitgehend verdrängt",
     "Ohne Wiederladeausrüstung ein riskanter Kauf"
   ],
-
   "recht_de": {
     "sport": "Halbautomaten in .224 Valkyrie sind für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist. Das Kaliber selbst ist nicht beschränkt — das praktische Problem ist die Munitionsversorgung, nicht das Recht.",
     "jagd": "Für übriges Schalenwild in ganz Deutschland unzulässig: Mit 5,70 mm verfehlt die Patrone das gesetzliche Mindestkaliber von 6,5 mm Geschossdurchmesser deutlich. Für Rehwild gilt kein Mindestkaliber, sondern nur die 1.000-J-Grenze auf 100 m — die eine 90-gr-Laborierung mit rund 1.500 J klar überschreitet.",
@@ -108,26 +202,52 @@
       "Realistisch betrachtet: Als Jagdpatrone ist sie in Deutschland keine sinnvolle Wahl. Als Sportpatrone auch nur, wenn du wiederlädst."
     ]
   },
-
   "varianten": [
-    { "name": ".224 Valkyrie 90 gr", "text": "Das Herzstück: 90-gr-Langgeschoss bei rund 823 m/s, BC 0,563. Braucht zwingend 1:7″." },
-    { "name": ".224 Valkyrie leicht (60–75 gr)", "text": "Rasanter, aber mit niedrigerem BC — damit verschenkt man genau den Vorteil, für den man die Patrone gekauft hat." },
-    { "name": "6,8 SPC", "text": "Die Mutterhülse, nicht eingezogen. Größeres Geschoss (7,00 mm), aber deutlich weniger Reichweite." },
-    { "name": ".22 Nosler", "text": "Der direkte Konkurrent mit ähnlicher Idee. Ebenfalls am Markt gescheitert." }
+    {
+      "name": ".224 Valkyrie 90 gr",
+      "text": "Das Herzstück: 90-gr-Langgeschoss bei rund 823 m/s, BC 0,563. Braucht zwingend 1:7″."
+    },
+    {
+      "name": ".224 Valkyrie leicht (60–75 gr)",
+      "text": "Rasanter, aber mit niedrigerem BC — damit verschenkt man genau den Vorteil, für den man die Patrone gekauft hat."
+    },
+    {
+      "name": "6,8 SPC",
+      "text": "Die Mutterhülse, nicht eingezogen. Größeres Geschoss (7,00 mm), aber deutlich weniger Reichweite."
+    },
+    {
+      "name": ".22 Nosler",
+      "text": "Der direkte Konkurrent mit ähnlicher Idee. Ebenfalls am Markt gescheitert."
+    }
   ],
-
   "nachbarn": [
-    { "name": "6 mm ARC", "text": "Die bessere Alternative mit derselben Idee: ähnlicher BC, mehr Energie, deutlich besser verfügbar. Hat die .224 Valkyrie faktisch verdrängt." },
-    { "name": "6,5 Grendel", "text": "Größeres Geschoss (6,71 mm) und damit jagdlich für Schalenwild zulässig. Für Jäger in der AR-15 die einzig sinnvolle Wahl." },
-    { "name": ".223 Rem / 5,56x45", "text": "Weniger Reichweite und Energie — aber überall verfügbar und ein Bruchteil des Preises. Für die meisten die vernünftigere Wahl." },
-    { "name": "6,5 Creedmoor", "text": "Eine Klasse darüber, aber nur in der AR-10." }
+    {
+      "name": "6 mm ARC",
+      "text": "Die bessere Alternative mit derselben Idee: ähnlicher BC, mehr Energie, deutlich besser verfügbar. Hat die .224 Valkyrie faktisch verdrängt."
+    },
+    {
+      "name": "6,5 Grendel",
+      "text": "Größeres Geschoss (6,71 mm) und damit jagdlich für Schalenwild zulässig. Für Jäger in der AR-15 die einzig sinnvolle Wahl."
+    },
+    {
+      "name": ".223 Rem / 5,56x45",
+      "text": "Weniger Reichweite und Energie — aber überall verfügbar und ein Bruchteil des Preises. Für die meisten die vernünftigere Wahl."
+    },
+    {
+      "name": "6,5 Creedmoor",
+      "text": "Eine Klasse darüber, aber nur in der AR-10."
+    }
   ],
-
   "praezision_referenz": [],
   "praezision_hinweis": "Erwartungswerte zur Orientierung: Federal Gold Medal aus einem guten 1:7″-Lauf liegt typisch bei 20–30 mm auf 100 m. Bei frühen Waffen mit fehlerhaftem Drall waren es das Doppelte und mehr — reißt deine Scheibe ovale Löcher, ist der Lauf das Problem, nicht die Munition. Belastbare Vergleichswerte sind bei diesem Nischenkaliber rar.",
-
   "quellen": [
-    { "titel": "Wikipedia — .224 Valkyrie", "url": "https://en.wikipedia.org/wiki/.224_Valkyrie" },
-    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+    {
+      "titel": "Wikipedia — .224 Valkyrie",
+      "url": "https://en.wikipedia.org/wiki/.224_Valkyrie"
+    },
+    {
+      "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote",
+      "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html"
+    }
   ]
 }
