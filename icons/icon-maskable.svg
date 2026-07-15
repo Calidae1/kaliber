@@ -1,22 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Maskable-Variante: Android beschneidet Symbole je nach Hersteller zu Kreis,
+       Quadrat oder Squircle. Deshalb randlos gefüllt und der Inhalt auf rund 60 %
+       verkleinert, damit er auch im engsten Zuschnitt vollständig bleibt. -->
   <defs>
-    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="mbrass" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#f0cd8c"/>
       <stop offset="40%" stop-color="#d4a24c"/>
       <stop offset="72%" stop-color="#96702f"/>
       <stop offset="100%" stop-color="#5c441b"/>
     </linearGradient>
-    <linearGradient id="lead" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="mlead" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#c99a6f"/>
       <stop offset="45%" stop-color="#a0704a"/>
       <stop offset="100%" stop-color="#63412a"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="#0b0e13"/>
+  <rect width="512" height="512" fill="#0b0e13"/>
   <g stroke="#141a24" stroke-width="2">
     <path d="M0 128h512M0 192h512M0 256h512M0 320h512M0 384h512M128 0v512M192 0v512M256 0v512M320 0v512M384 0v512"/>
   </g>
-  <g transform="translate(256 256) rotate(-90) translate(-256 -256)">
+  <g transform="translate(256 256) scale(0.8) rotate(-90) translate(-256 -256)">
     <path d="M256 92
              C 268 118, 286 156, 292 196
              L 292 372
@@ -24,9 +27,9 @@
              L 220 420 L 220 408 L 224 400 L 224 380 L 220 372
              L 220 196
              C 226 156, 244 118, 256 92 Z"
-          fill="url(#brass)" stroke="#2a1f0d" stroke-width="5"/>
+          fill="url(#mbrass)" stroke="#2a1f0d" stroke-width="5"/>
     <path d="M256 92 C 268 118, 286 156, 292 196 L 220 196 C 226 156, 244 118, 256 92 Z"
-          fill="url(#lead)" stroke="#2a1f0d" stroke-width="5"/>
+          fill="url(#mlead)" stroke="#2a1f0d" stroke-width="5"/>
     <line x1="220" y1="196" x2="292" y2="196" stroke="#2a1f0d" stroke-width="5"/>
   </g>
 </svg>

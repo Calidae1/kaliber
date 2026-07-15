@@ -7,13 +7,17 @@
  * installiert sich dieser Worker nie neu, und die Nutzer bekommen dauerhaft die
  * alte Hülle serviert — auch wenn auf dem Server längst neue Dateien liegen.
  */
-const VERSION = 'v3';
+const VERSION = 'v4';
 const SHELL = 'kk-shell-' + VERSION;
 const DATA = 'kk-data-' + VERSION;
 
 const SHELL_FILES = [
   './', './index.html', './app.css', './app.js', './ballistik.js',
-  './manifest.webmanifest', './icons/icon.svg'
+  './manifest.webmanifest',
+  // Die Symbole gehören dazu: ohne sie zeigt die installierte App auf dem
+  // Startbildschirm im Zweifel nichts an.
+  './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
+  './icons/icon-maskable.png'
 ];
 
 self.addEventListener('install', e => {

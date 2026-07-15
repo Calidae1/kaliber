@@ -68,6 +68,7 @@ tools/
   devserver.py          Testserver ohne Cache
   preise.py             Preispflege über CSV
   pruefe.py             Datenbank-Validierung
+  icons.py              App-Symbole erzeugen (nur Standardbibliothek)
 ```
 
 Bewusst **kein** Build-System, kein npm, keine Abhängigkeiten. Reines HTML, CSS und
@@ -95,19 +96,77 @@ und `6 mm ARC` deckten die Energiespannen die leichten Geschosse nicht ab).
 
 ## 5. Hosting (GitHub Pages)
 
-```
-git init && git add . && git commit -m "Kaliber-Kompendium"
-gh repo create kaliber-kompendium --public --source=. --push
-```
+Das Repo ist bereits angelegt und committet. Es fehlt nur noch das Hochladen:
 
-Dann auf GitHub: **Settings → Pages → Source: Deploy from branch → main / (root)**.
-Nach ein bis zwei Minuten liegt die App unter
-`https://<benutzername>.github.io/kaliber-kompendium/`.
+1. Auf github.com ein **neues, leeres Repo** anlegen (Name z. B. `kaliber`,
+   **public**, ohne README/`.gitignore`/Lizenz — die gibt es hier schon)
+2. Hochladen:
+   ```
+   cd kaliber-kompendium
+   git remote add origin https://github.com/<benutzername>/kaliber.git
+   git push -u origin main
+   ```
+3. **Settings → Pages → Source: Deploy from branch → main / (root)**
+4. Nach ein bis zwei Minuten: `https://<benutzername>.github.io/kaliber/`
 
 > Für GitHub Pages aus einem **privaten** Repo braucht es GitHub Pro. Mit einem
 > kostenlosen Konto muss das Repo öffentlich sein — die Adresse ist dann zwar nicht
 > verlinkt und praktisch nicht auffindbar, aber technisch erreichbar. Wer das nicht
 > will: Cloudflare Pages kann dasselbe kostenlos aus einem privaten Repo.
+
+### Kann jemand die Daten von außen verändern?
+
+**Nein — das schließt die Bauart aus, nicht eine Einstellung.** GitHub Pages
+liefert ausschließlich Dateien aus: kein Server-Code, keine Datenbank, keine
+Schnittstelle, kein Login. Es existiert keine Anfrage, mit der ein Besucher etwas
+schreiben könnte. Ein Besucher kann höchstens seine eigene Kopie im eigenen
+Browser verbiegen — das sieht nur er, ist nach dem Neuladen weg und erreicht
+niemanden sonst. Ein Fork ist eine eigene Kopie unter eigener Adresse.
+
+Das ist bei diesem Inhalt kein Nebenaspekt: Auf Schießständen gelten
+Energiegrenzen, und verfälschte Joule-Angaben könnten Material und Menschen
+gefährden.
+
+Ein **Passwort würde nichts verbessern**. Jede Passwortabfrage in einer
+statischen App läuft im Browser des Besuchers und ist umgehbar; die Dateien
+liegen ohnehin offen. Es würde Sicherheit vorgaukeln, wo bereits echte besteht.
+
+Die einzige reale Angriffsfläche ist das **GitHub-Konto**. Deshalb:
+
+- **Zwei-Faktor-Authentifizierung aktivieren** (Settings → Password and
+  authentication). Das ist die eigentliche Absicherung.
+- **Settings → Features:** Issues und Wiki abschalten — dann gibt es keinen
+  Kanal von außen.
+- Pull Requests lassen sich bei öffentlichen Repos nicht abschalten. Sie ändern
+  aber nichts: Ein PR ist nur ein Vorschlag, der ohne aktives Zusammenführen
+  durch den Eigentümer folgenlos bleibt.
+
+Zusätzlich setzt `index.html` eine **Content-Security-Policy**, die der App
+verbietet, fremde Skripte zu laden oder fremde Adressen zu kontaktieren.
+Angezeigte Werte können damit nur aus den ausgelieferten Daten stammen.
+
+### Weitergeben an nicht technikaffine Leute
+
+Link schicken, fertig. Die App führt selbst durch die Installation:
+
+- Beim ersten Öffnen im Browser erscheint unten ein Hinweis **„KALIBER als App
+  installieren"** mit einem Knopf. Ein Tipp darauf, den Systemdialog bestätigen —
+  danach liegt die App mit eigenem Symbol auf dem Startbildschirm. Keine
+  Einstellung, kein Store, kein „unbekannte Quellen erlauben".
+- Auf iPhone/iPad gibt es keinen automatischen Weg (Apple erlaubt ihn nicht).
+  Dort zeigt der Hinweis stattdessen die konkrete Anleitung: Teilen → Zum
+  Home-Bildschirm.
+- Wer ablehnt, wird nicht erneut gefragt.
+- In der Fußzeile gibt es **„Weitergeben"** — öffnet das Teilen-Menü des Handys
+  (WhatsApp, SMS, Mail) mit Link und kurzer Erklärung.
+
+Damit der Installieren-Knopf überhaupt erscheint, müssen alle Kriterien erfüllt
+sein — insbesondere **PNG-Symbole in 192 und 512**. SVG allein reicht nicht:
+iOS Safari und mehrere Android-Launcher ignorieren SVG-Symbole im Manifest, und
+Chromium scheitert an einem SVG mit `sizes: "any"` sogar komplett
+([crbug 40925759](https://issues.chromium.org/issues/40925759)). Die Symbole
+erzeugt `python tools/icons.py` — ohne jede Fremdbibliothek, damit das auch in
+Jahren noch läuft.
 
 ### Beim Ausliefern einer neuen App-Version: VERSION hochzählen
 

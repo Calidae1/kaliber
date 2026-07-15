@@ -3,15 +3,17 @@
   "short_name": "KALIBER",
   "description": "Nachschlagewerk für Munition: Basisdaten, ballistische Werte, Marktüberblick und eigenes Schießbuch.",
   "lang": "de",
+  "dir": "ltr",
   "start_url": "./",
   "scope": "./",
+  "id": "kaliber-kompendium",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0b0e13",
   "theme_color": "#0b0e13",
   "categories": ["reference", "sports", "utilities"],
+  "_hinweis_icons": "Bewusst nur PNG. Ein SVG-Eintrag mit sizes 'any' lässt die Installation in Chromium fehlschlagen (crbug 40925759), und iOS Safari sowie mehrere Android-Launcher ignorieren SVG-Symbole im Manifest ohnehin. Erzeugt mit: python tools/icons.py",
   "icons": [
-    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
     { "src": "icons/icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
