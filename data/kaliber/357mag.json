@@ -1,0 +1,130 @@
+{
+  "id": "357mag",
+  "name": ".357 Magnum",
+  "aliase": [".357 Mag", "357 Magnum", "9x33R", ".357 S&W Magnum", "357", "9x33mmR"],
+  "gruppen": ["kurz"],
+  "kurz": "Die erste Magnum überhaupt und bis heute der Maßstab für Revolverleistung. Aus dem Karabiner wird sie zur Büchse — und .38 Special passt problemlos mit rein.",
+
+  "schnell": {
+    "geschoss_gr": [110, 180],
+    "v0_ms": [370, 470],
+    "e0_j": [700, 1000],
+    "drall_mm": [474, 474],
+    "gasdruck_bar": 3000
+  },
+
+  "warnungen": [
+    {
+      "titel": ".357 Magnum passt NICHT in eine .38 Special",
+      "text": "Die Beziehung geht nur in eine Richtung: .38 Special lässt sich bedenkenlos in jedem .357-Magnum-Revolver schießen, weil deren Hülse 3,4 mm kürzer ist. Umgekehrt darf .357 Magnum niemals in eine .38 Special. Die längere Hülse passt zwar meist nicht ins Lager — aber bei ausgeschlagenen oder verschlissenen Trommeln kann sie es, und dann trifft der doppelte Druck (3000 statt 1500 bar) auf eine Waffe, die dafür nie ausgelegt war. Kontrolliere den Aufdruck auf dem Lauf, nicht die Packung."
+    }
+  ],
+
+  "basis": {
+    "entwickler": "Smith & Wesson und Winchester, auf Vorarbeiten von Elmer Keith, Phil Sharpe und D. B. Wesson",
+    "jahr": 1935,
+    "herkunft": "USA",
+    "geschichte": [
+      "Elmer Keith trieb in den frühen 1930ern die .38 Special immer weiter über die Norm hinaus — mit schweren Geschossen und Ladungen, die reguläre Revolver zerlegten. Smith & Wesson zog die Konsequenz und baute die Hülse um 3,4 mm länger, damit die starke Munition physisch nicht mehr in schwache Waffen passt. Genau dieser Sicherheitsgedanke steckt bis heute in der Konstruktion.",
+      "1935 erschien die Patrone zusammen mit dem Registered Magnum, dem ersten Revolver dieser Klasse — und begründete den Begriff „Magnum“ für Handfeuerwaffen überhaupt. Sie war für Jahrzehnte die Polizeipatrone der USA und wurde erst in den 1980ern von den Selbstladern verdrängt.",
+      "Bemerkenswert ist, was aus dem Karabiner wird: Aus einem 400-mm-Lauf legt dieselbe Patrone rund 150 m/s zu und liefert dann über 1.500 J — mehr als jede andere Patrone dieses Kapitels. Das erklärt, warum Unterhebelrepetierer in .357 bis heute gebaut werden."
+    ],
+    "einsatz": ["Sportschießen (Revolverdisziplinen, Ordonnanz)", "Selbstverteidigung", "Unterhebelrepetierer / Karabiner", "Jagd: nur Fangschuss"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "mit Rand, zylindrisch ohne Flaschenhals",
+    "geschoss_mm": 9.07,
+    "hals_mm": 9.6,
+    "schulter_mm": null,
+    "boden_mm": 9.6,
+    "rand_mm": 11.18,
+    "huelsenlaenge_mm": 32.77,
+    "col_mm": 40.0,
+    "gasdruck_bar": 3000,
+    "gasdruck_hinweis": "3000 bar — doppelt so viel wie .38 Special und mehr als jede gängige Selbstladepatrone. Genau deshalb wurde die Hülse verlängert: damit diese Ladung nicht versehentlich in einer .38er landet.",
+    "zuender": "Small Pistol Magnum, Boxer",
+    "drall": "1:474 mm (1:18,75″)",
+    "drall_hinweis": "Unkritisch von 110 bis 180 gr. Sehr schwere Geschosse jenseits 200 gr sind bei diesem Drall grenzwertig, spielen aber praktisch keine Rolle."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für Revolverläufe von 150 mm (6″). Kurze 2-Zoll-Läufe verlieren 80–120 m/s — dort bleibt von der Magnum-Leistung wenig übrig. Aus einem 400-mm-Karabinerlauf kommen dagegen 100–150 m/s dazu, was die Energie auf über 1.500 J treibt.",
+    "laborierungen": [
+      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel Flachkopf", "gr": 158, "g": 10.24, "v0": 395, "bc": 0.160, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg." },
+      { "hersteller": "GECO", "typ": "Vollmantel", "gr": 158, "g": 10.24, "v0": 400, "bc": 0.160, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Der Vereinsstandard." },
+      { "hersteller": "Magtech", "typ": "Vollmantel Flachkopf", "gr": 158, "g": 10.24, "v0": 405, "bc": 0.160, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": null },
+      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 158, "g": 10.24, "v0": 410, "bc": 0.206, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Verteidigung / Jagd", "anmerkung": "Hoher BC für die Klasse, gute Wahl für den Karabiner." },
+      { "hersteller": "Federal", "typ": "Hydra-Shok Hohlspitz", "gr": 158, "g": 10.24, "v0": 400, "bc": 0.180, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Verteidigung", "anmerkung": null },
+      { "hersteller": "Fiocchi", "typ": "Teilmantel", "gr": 142, "g": 9.2, "v0": 430, "bc": 0.145, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Sport", "anmerkung": "Etwas leichter, weniger Rückstoß." },
+      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 125, "g": 8.1, "v0": 450, "bc": 0.150, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Verteidigung", "anmerkung": "Sehr rasant, aber blitzt und knallt heftig." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Hodgdon H110 / Winchester 296", "eignung": "Der Klassiker für volle Magnum-Ladungen. Braucht hohen Füllgrad — nicht herunterladen, sonst droht Fehlabbrand." },
+    { "name": "Vihtavuori N110", "eignung": "In Europa gut verfügbar, sehr gute Ergebnisse mit 158 gr." },
+    { "name": "Accurate No. 9", "eignung": "Breites Ladefenster für mittlere bis volle Ladungen." },
+    { "name": "Vihtavuori N320", "eignung": "Für schwache Trainingsladungen auf .38-Niveau." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .357 Magnum", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=357-magnum" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Als Magnum konzeptionell ungeeignet: Alle vollwertigen Laborierungen liegen mit 395–450 m/s klar über der Schallgrenze. Dazu kommt, dass ein Revolver am Trommelspalt seitlich Gas abbläst — dort lässt sich nichts dämpfen, egal was vorn am Lauf sitzt. Wer mit .357-Waffen leise schießen will, greift zu .38 Special mit schweren Geschossen und braucht dafür einen Selbstlader oder Karabiner, keinen Revolver."
+  },
+
+  "vorteile": [
+    "Höchste Energie aller gängigen Revolverpatronen bei noch beherrschbarem Rückstoß",
+    "Aus dem Karabiner über 1.500 J — eine völlig andere Patrone als aus dem Revolver",
+    ".38 Special lässt sich problemlos mitschießen: eine Waffe, zwei Leistungsklassen",
+    "Randpatrone: keine Auszieherprobleme, keine verlorenen Hülsen",
+    "Riesige Auswahl an Geschossen und Laborierungen",
+    "Wiederladen lohnt sich und ist unkompliziert"
+  ],
+  "nachteile": [
+    "Aus kurzen Läufen bleibt wenig übrig — dafür umso mehr Mündungsfeuer und Knall",
+    "Deutlich lauter als alles andere in dieser Klasse",
+    "Rund dreimal so teuer wie 9 mm",
+    "Revolver: langsame Schussfolge, geringe Kapazität",
+    "Für die Jagd auf Wild in Deutschland unzulässig",
+    "Nicht dämpfbar (Trommelspalt)"
+  ],
+
+  "recht_de": {
+    "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein bei eingetragener Waffe. Bedürfnisnachweis nach § 14 WaffG. Als Randpatrone auch in Unterhebelrepetierern und Karabinern verbreitet — dann gelten die Regeln für Langwaffen.",
+    "jagd": "Für die Erlegung von Schalenwild unzulässig. Das Mindestkaliber von 6,5 mm ist mit 9,07 mm erfüllt, aber die Energie reicht nicht: Aus dem Revolver liefert die Patrone 700–1.000 J an der Mündung und auf 100 m nur noch rund 500 J — gefordert wären 1.000 J für Rehwild.",
+    "hinweise": [
+      "Auch aus dem Karabiner reicht es nicht: Dort liegen zwar über 1.500 J an der Mündung an, auf 100 m bleiben aber nur rund 850–950 J — knapp unter der Rehwildgrenze. Das ist der klassische Irrtum bei diesem Kaliber.",
+      "Zum Fangschuss nach § 19 BJagdG zulässig; dort gelten die E100-Grenzen nicht.",
+      "Auf Raubwild und bei der Fallenjagd je nach Landesrecht einsetzbar."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".357 Magnum Standard", "text": "158 gr bei rund 395–410 m/s aus 6″. Die Urlaborierung und bis heute der Maßstab." },
+    { "name": ".357 Magnum leicht (110–125 gr)", "text": "Sehr rasant, aber mit gewaltigem Mündungsfeuer und Knall. In den 1980ern als Polizeimunition beliebt, heute weniger." },
+    { "name": ".38 Special", "text": "Die kürzere Mutter. Läuft in jeder .357-Waffe, halber Druck, halbe Energie — die günstige Trainingsoption." },
+    { "name": ".357 Maximum", "text": "Nochmals verlängerte Hülse aus den 1980ern für Silhouettenschießen. Fraß Revolver auf und verschwand wieder." },
+    { "name": ".357 SIG", "text": "Trotz des Namens keine Verwandte: eine Selbstladepatrone auf .40-S&W-Hülse mit Flaschenhals. Nicht verwechseln." }
+  ],
+
+  "nachbarn": [
+    { "name": ".38 Special", "text": "Dieselbe Waffe, kürzere Hülse, halbe Leistung. Die Trainingsmunition zur .357." },
+    { "name": ".44 Magnum", "text": "Die nächstgrößere Stufe: rund 40 % mehr Energie, aber deutlich mehr Rückstoß und größere Waffen." },
+    { "name": "9 mm Luger", "text": "Rund zwei Drittel der Energie, ein Drittel des Preises, dreifache Kapazität. Der Selbstlader-Gegenentwurf." },
+    { "name": "10 mm Auto", "text": "Ähnliche Energieklasse, aber randlos und aus der Selbstladepistole." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Bei Revolvern beeinflusst der Trommeldurchgang die Präzision oft stärker als die Munition. Ein Karabiner in .357 schießt mit derselben Patrone regelmäßig doppelt so eng. Trag deine eigenen Werte ein und notiere unbedingt die Waffe dazu.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 357 Magnum", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/357-magnum-en.pdf" },
+    { "titel": "Wikipedia — .357 Magnum", "url": "https://de.wikipedia.org/wiki/.357_Magnum" }
+  ]
+}

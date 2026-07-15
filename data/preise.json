@@ -1,0 +1,1855 @@
+{
+  "_hinweis": "Separat gepflegte Preisdatenbank. Wird unabhängig von den Kaliberdaten aktualisiert — von Hand oder per 'python tools/preise.py export' / 'import'. Preise sind Richtwerte inkl. MwSt., ohne Versand. Ein Alter von 2-4 Wochen ist ausdrücklich in Ordnung.",
+  "version": 2,
+  "stand": "2026-07-15",
+  "waehrung": "EUR",
+  "quelle": "Manuell erfasst — Richtpreise deutscher Fachhändler, Stand Juli 2026",
+  "kaliber": {
+    "9x19": {
+      "range_eur_schuss": [
+        0.26,
+        0.9
+      ],
+      "kommentar": "Trainingsmunition liegt stabil um 25-30 ct/Schuss. Alles ueber 60 ct ist Verteidigungs- oder Matchmunition. Bei 1000er-Abnahme sind 10-15 % Nachlass ueblich.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 115 gr",
+          "packung": 50,
+          "eur_packung": 12.9,
+          "eur_schuss": 0.258,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+9mm+luger"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "FMJ 124 gr",
+          "packung": 50,
+          "eur_packung": 14.5,
+          "eur_schuss": 0.29,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+9mm+luger"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ 147 gr Subsonic",
+          "packung": 50,
+          "eur_packung": 16.9,
+          "eur_schuss": 0.338,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+9mm+subsonic"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "USA Range 115 gr",
+          "packung": 50,
+          "eur_packung": 17.5,
+          "eur_schuss": 0.35,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+9mm+luger"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "FMJ 158 gr Subsonic",
+          "packung": 50,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.398,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+9mm+subsonic"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Vollmantel Kegel 124 gr",
+          "packung": 50,
+          "eur_packung": 24.9,
+          "eur_schuss": 0.498,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+9mm+luger"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "HST 124 gr JHP",
+          "packung": 20,
+          "eur_packung": 17.9,
+          "eur_schuss": 0.895,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+hst+9mm"
+        }
+      ]
+    },
+    "45acp": {
+      "range_eur_schuss": [
+        0.46,
+        1.15
+      ],
+      "kommentar": "Grob das Doppelte von 9 mm. Trainingsmunition mit 230 gr Vollmantel ist der Regelfall; unter 45 ct/Schuss wird es selten.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 230 gr",
+          "packung": 50,
+          "eur_packung": 22.9,
+          "eur_schuss": 0.458,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+45+acp"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "FMJ 230 gr",
+          "packung": 50,
+          "eur_packung": 24.9,
+          "eur_schuss": 0.498,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+45+acp"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ 230 gr",
+          "packung": 50,
+          "eur_packung": 25.9,
+          "eur_schuss": 0.518,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+45+acp"
+        },
+        {
+          "hersteller": "Speer",
+          "typ": "Lawman TMJ 200 gr",
+          "packung": 50,
+          "eur_packung": 31.9,
+          "eur_schuss": 0.638,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=speer+lawman+45+acp"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Vollmantel 230 gr",
+          "packung": 50,
+          "eur_packung": 36.9,
+          "eur_schuss": 0.738,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+45+acp"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 185 gr",
+          "packung": 20,
+          "eur_packung": 21.9,
+          "eur_schuss": 1.095,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+45+acp"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "HST 230 gr JHP",
+          "packung": 20,
+          "eur_packung": 22.9,
+          "eur_schuss": 1.145,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+hst+45+acp"
+        }
+      ]
+    },
+    "40sw": {
+      "range_eur_schuss": [
+        0.4,
+        1.04
+      ],
+      "kommentar": "Im Sport auf dem Rueckzug, dadurch schrumpft die Auswahl. Preislich zwischen 9 mm und .45 ACP.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 180 gr",
+          "packung": 50,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.398,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+40+s&w"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "FMJ 180 gr",
+          "packung": 50,
+          "eur_packung": 21.9,
+          "eur_schuss": 0.438,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+40+s&w"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ 165 gr",
+          "packung": 50,
+          "eur_packung": 22.9,
+          "eur_schuss": 0.458,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+40+s&w"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Range FMJ 180 gr",
+          "packung": 50,
+          "eur_packung": 26.9,
+          "eur_schuss": 0.538,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+40+s&w"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 155 gr",
+          "packung": 20,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.995,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+40+s&w"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "HST 180 gr JHP",
+          "packung": 20,
+          "eur_packung": 20.9,
+          "eur_schuss": 1.045,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+hst+40+s&w"
+        }
+      ]
+    },
+    "357mag": {
+      "range_eur_schuss": [
+        0.6,
+        1.12
+      ],
+      "kommentar": "Rund das Dreifache von 9 mm. Wer viel schiesst, kommt am Wiederladen kaum vorbei - oder trainiert mit .38 Special in derselben Waffe.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ Flachkopf 158 gr",
+          "packung": 50,
+          "eur_packung": 29.9,
+          "eur_schuss": 0.598,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+357+magnum"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Vollmantel 158 gr",
+          "packung": 50,
+          "eur_packung": 32.9,
+          "eur_schuss": 0.658,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+357+magnum"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ Flachkopf 158 gr",
+          "packung": 50,
+          "eur_packung": 33.9,
+          "eur_schuss": 0.678,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+357+magnum"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "Teilmantel 142 gr",
+          "packung": 50,
+          "eur_packung": 36.9,
+          "eur_schuss": 0.738,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+357+magnum"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Hydra-Shok 158 gr",
+          "packung": 20,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.995,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+357+magnum"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 125 gr",
+          "packung": 25,
+          "eur_packung": 26.9,
+          "eur_schuss": 1.076,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+125+357+magnum"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 158 gr",
+          "packung": 25,
+          "eur_packung": 27.9,
+          "eur_schuss": 1.116,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+357+magnum"
+        }
+      ]
+    },
+    "38spl": {
+      "range_eur_schuss": [
+        0.4,
+        1.04
+      ],
+      "kommentar": "Die guenstige Trainingsoption fuer .357-Revolver. Wadcutter fuer die Scheibe sind kaum teurer als Vollmantel.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Wadcutter 148 gr",
+          "packung": 50,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.398,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+38+special+wadcutter"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ Flachkopf 158 gr",
+          "packung": 50,
+          "eur_packung": 21.9,
+          "eur_schuss": 0.438,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+38+special"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Wadcutter 148 gr",
+          "packung": 50,
+          "eur_packung": 22.9,
+          "eur_schuss": 0.458,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+38+special"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "Teilmantel Rundkopf 158 gr",
+          "packung": 50,
+          "eur_packung": 23.9,
+          "eur_schuss": 0.478,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+38+special"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Vollmantel 158 gr",
+          "packung": 50,
+          "eur_packung": 29.9,
+          "eur_schuss": 0.598,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+38+special"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 158 gr",
+          "packung": 25,
+          "eur_packung": 22.9,
+          "eur_schuss": 0.916,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+38+special"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "HST 130 gr +P",
+          "packung": 20,
+          "eur_packung": 20.9,
+          "eur_schuss": 1.045,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+hst+38+special"
+        }
+      ]
+    },
+    "44mag": {
+      "range_eur_schuss": [
+        0.9,
+        1.7
+      ],
+      "kommentar": "Vier- bis fuenfmal so teuer wie 9 mm. Hier lohnt Wiederladen klar - oder man trainiert mit .44 Special.",
+      "produkte": [
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ Flachkopf 240 gr",
+          "packung": 50,
+          "eur_packung": 44.9,
+          "eur_schuss": 0.898,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+44+magnum"
+        },
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ Flachkopf 240 gr",
+          "packung": 50,
+          "eur_packung": 47.9,
+          "eur_schuss": 0.958,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+44+magnum"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "Teilmantel Flachkopf 200 gr",
+          "packung": 50,
+          "eur_packung": 49.9,
+          "eur_schuss": 0.998,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+44+magnum"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Teilmantel 240 gr",
+          "packung": 20,
+          "eur_packung": 24.9,
+          "eur_schuss": 1.245,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+44+magnum"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 240 gr",
+          "packung": 20,
+          "eur_packung": 28.9,
+          "eur_schuss": 1.445,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+44+magnum"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 300 gr",
+          "packung": 20,
+          "eur_packung": 33.9,
+          "eur_schuss": 1.695,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+300+44+magnum"
+        }
+      ]
+    },
+    "10mmauto": {
+      "range_eur_schuss": [
+        0.6,
+        1.65
+      ],
+      "kommentar": "Nischenmunition in Deutschland - teuer und nicht immer lieferbar. Achte auf die Energieangabe: reduzierte und volle Laborierungen unterscheiden sich um bis zu 40 %.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 180 gr",
+          "packung": 50,
+          "eur_packung": 29.9,
+          "eur_schuss": 0.598,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+10mm+auto"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ 180 gr",
+          "packung": 50,
+          "eur_packung": 32.9,
+          "eur_schuss": 0.658,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+10mm+auto"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Hydra-Shok 180 gr",
+          "packung": 20,
+          "eur_packung": 24.9,
+          "eur_schuss": 1.245,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+10mm+auto"
+        },
+        {
+          "hersteller": "SIG Sauer",
+          "typ": "V-Crown 180 gr",
+          "packung": 20,
+          "eur_packung": 26.9,
+          "eur_schuss": 1.345,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sig+sauer+10mm+auto"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "XTP 180 gr",
+          "packung": 20,
+          "eur_packung": 28.9,
+          "eur_schuss": 1.445,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+xtp+10mm+auto"
+        },
+        {
+          "hersteller": "Underwood",
+          "typ": "FMJ Flachkopf 200 gr",
+          "packung": 20,
+          "eur_packung": 32.9,
+          "eur_schuss": 1.645,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=underwood+10mm+auto"
+        }
+      ]
+    },
+    "32swlong": {
+      "range_eur_schuss": [
+        0.4,
+        0.66
+      ],
+      "kommentar": "Reine Sportmunition. Matchmunition ist trotz winziger Ladung teuer - die Fertigungstoleranz kostet, nicht das Material.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Wadcutter 98 gr",
+          "packung": 50,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.398,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+32+s&w+long"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Wadcutter 98 gr",
+          "packung": 50,
+          "eur_packung": 21.9,
+          "eur_schuss": 0.438,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+32+s&w+long"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "Blei Rundkopf 83 gr",
+          "packung": 50,
+          "eur_packung": 21.9,
+          "eur_schuss": 0.438,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+32+s&w+long+blei"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "Vollmantel Rundkopf 98 gr",
+          "packung": 50,
+          "eur_packung": 22.9,
+          "eur_schuss": 0.458,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+32+s&w+long"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "Wadcutter 98 gr",
+          "packung": 50,
+          "eur_packung": 23.9,
+          "eur_schuss": 0.478,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+32+s&w+long"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Match Wadcutter 98 gr",
+          "packung": 50,
+          "eur_packung": 32.9,
+          "eur_schuss": 0.658,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+32+s&w+long+match"
+        }
+      ]
+    },
+    "223rem": {
+      "range_eur_schuss": [
+        0.5,
+        1.65
+      ],
+      "kommentar": "Die billigste Buechsenmunition ueberhaupt. Bei 1000er-Abnahme geht es unter 40 ct/Schuss. Matchmunition mit 75-77 gr kostet ein Vielfaches.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 55 gr",
+          "packung": 50,
+          "eur_packung": 24.9,
+          "eur_schuss": 0.498,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+223+rem"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "FMJ 55 gr",
+          "packung": 50,
+          "eur_packung": 25.9,
+          "eur_schuss": 0.518,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+223+rem"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ 62 gr",
+          "packung": 50,
+          "eur_packung": 27.9,
+          "eur_schuss": 0.558,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+223+rem"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "V-MAX 55 gr",
+          "packung": 50,
+          "eur_packung": 44.9,
+          "eur_schuss": 0.898,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+v-max+223+rem"
+        },
+        {
+          "hersteller": "Nosler",
+          "typ": "Ballistic Tip 40 gr",
+          "packung": 50,
+          "eur_packung": 49.9,
+          "eur_schuss": 0.998,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=nosler+223+rem"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD Match 75 gr",
+          "packung": 20,
+          "eur_packung": 29.9,
+          "eur_schuss": 1.495,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld+match+223+rem"
+        },
+        {
+          "hersteller": "Sierra",
+          "typ": "MatchKing 77 gr",
+          "packung": 20,
+          "eur_packung": 32.9,
+          "eur_schuss": 1.645,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sierra+matchking+223+rem"
+        }
+      ]
+    },
+    "300blk": {
+      "range_eur_schuss": [
+        0.9,
+        2.6
+      ],
+      "kommentar": "In Deutschland Nischenmunition - deutlich teurer als 5,56 und nicht immer lieferbar. Unterschall-Jagdmunition ist am schwersten zu bekommen. Wiederladen rechnet sich hier im Gegensatz zu 9 mm klar.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 124 gr",
+          "packung": 20,
+          "eur_packung": 17.9,
+          "eur_schuss": 0.895,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+300+blackout"
+        },
+        {
+          "hersteller": "Magtech",
+          "typ": "FMJ 123 gr",
+          "packung": 50,
+          "eur_packung": 49.9,
+          "eur_schuss": 0.998,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=magtech+300+blackout"
+        },
+        {
+          "hersteller": "Fiocchi",
+          "typ": "Subsonic FMJ 220 gr",
+          "packung": 25,
+          "eur_packung": 34.9,
+          "eur_schuss": 1.396,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=fiocchi+300+blackout"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "BLACK V-MAX 110 gr",
+          "packung": 20,
+          "eur_packung": 32.9,
+          "eur_schuss": 1.645,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+black+300+blackout"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "SUB-X 190 gr Subsonic",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+sub-x+300+blackout"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "VOR-TX TAC-TX 110 gr bleifrei",
+          "packung": 20,
+          "eur_packung": 51.9,
+          "eur_schuss": 2.595,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+vor-tx+300+blackout"
+        }
+      ]
+    },
+    "762x39": {
+      "range_eur_schuss": [
+        0.56,
+        1.25
+      ],
+      "kommentar": "Nach .223 die billigste Buechsenmunition. Stahlhuelsenmunition ist nochmals guenstiger, aber nicht wiederladbar. Jagdlaborierungen sind rar.",
+      "produkte": [
+        {
+          "hersteller": "PPU",
+          "typ": "FMJ 123 gr",
+          "packung": 50,
+          "eur_packung": 27.9,
+          "eur_schuss": 0.558,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=ppu+7.62x39"
+        },
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 123 gr",
+          "packung": 50,
+          "eur_packung": 29.9,
+          "eur_schuss": 0.598,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+7.62x39"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "FMJ 124 gr",
+          "packung": 50,
+          "eur_packung": 31.9,
+          "eur_schuss": 0.638,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+7.62x39"
+        },
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 124 gr",
+          "packung": 20,
+          "eur_packung": 16.9,
+          "eur_schuss": 0.845,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+7.62x39+sp"
+        },
+        {
+          "hersteller": "Winchester",
+          "typ": "Power-Point 123 gr",
+          "packung": 20,
+          "eur_packung": 18.9,
+          "eur_schuss": 0.945,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=winchester+7.62x39"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "SST 123 gr",
+          "packung": 20,
+          "eur_packung": 24.9,
+          "eur_schuss": 1.245,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+sst+7.62x39"
+        }
+      ]
+    },
+    "65creedmoor": {
+      "range_eur_schuss": [
+        1.34,
+        2.75
+      ],
+      "kommentar": "Trotz des Hypes gut verfuegbar und preislich moderat. Match- und Jagdlaborierungen liegen dicht beieinander.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 140 gr",
+          "packung": 20,
+          "eur_packung": 26.9,
+          "eur_schuss": 1.345,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+6.5+creedmoor"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Golden Target 130 gr",
+          "packung": 20,
+          "eur_packung": 32.9,
+          "eur_schuss": 1.645,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+6.5+creedmoor"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD Match 140 gr",
+          "packung": 20,
+          "eur_packung": 34.9,
+          "eur_schuss": 1.745,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld+match+6.5+creedmoor"
+        },
+        {
+          "hersteller": "Lapua",
+          "typ": "Scenar-L 136 gr",
+          "packung": 20,
+          "eur_packung": 38.9,
+          "eur_schuss": 1.945,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=lapua+6.5+creedmoor"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Gold Medal SMK 120 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+gold+medal+6.5+creedmoor"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 143 gr",
+          "packung": 20,
+          "eur_packung": 42.9,
+          "eur_schuss": 2.145,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+6.5+creedmoor"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "LRX bleifrei 127 gr",
+          "packung": 20,
+          "eur_packung": 54.9,
+          "eur_schuss": 2.745,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+lrx+6.5+creedmoor"
+        }
+      ]
+    },
+    "6mmarc": {
+      "range_eur_schuss": [
+        2.0,
+        2.94
+      ],
+      "kommentar": "Junge Nischenpatrone - praktisch nur Hornady, entsprechend teuer und nicht immer lieferbar. Ohne Wiederladen ein Risiko.",
+      "produkte": [
+        {
+          "hersteller": "Hornady",
+          "typ": "BTHP BLACK 105 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+black+6mm+arc"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-VT V-Match 80 gr",
+          "packung": 20,
+          "eur_packung": 41.9,
+          "eur_schuss": 2.095,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-vt+6mm+arc"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD Match 108 gr",
+          "packung": 20,
+          "eur_packung": 42.9,
+          "eur_schuss": 2.145,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld+match+6mm+arc"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 103 gr",
+          "packung": 20,
+          "eur_packung": 46.9,
+          "eur_schuss": 2.345,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+6mm+arc"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "LRX bleifrei 95 gr",
+          "packung": 20,
+          "eur_packung": 58.9,
+          "eur_schuss": 2.945,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+lrx+6mm+arc"
+        }
+      ]
+    },
+    "224valkyrie": {
+      "range_eur_schuss": [
+        1.84,
+        2.29
+      ],
+      "kommentar": "Am Markt weitgehend gescheitert - Munition ist teuer, oft nicht lieferbar und die Auswahl minimal. Vor dem Kauf der Waffe die Versorgungslage pruefen.",
+      "produkte": [
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD Match 75 gr",
+          "packung": 20,
+          "eur_packung": 36.9,
+          "eur_schuss": 1.845,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld+match+224+valkyrie"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Nosler Ballistic Tip 60 gr",
+          "packung": 20,
+          "eur_packung": 38.9,
+          "eur_schuss": 1.945,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+224+valkyrie"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD Match 88 gr",
+          "packung": 20,
+          "eur_packung": 41.9,
+          "eur_schuss": 2.095,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld+match+88+224+valkyrie"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Fusion MSR 90 gr",
+          "packung": 20,
+          "eur_packung": 42.9,
+          "eur_schuss": 2.145,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+fusion+224+valkyrie"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Gold Medal SMK 90 gr",
+          "packung": 20,
+          "eur_packung": 45.9,
+          "eur_schuss": 2.295,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+gold+medal+224+valkyrie"
+        }
+      ]
+    },
+    "308win": {
+      "range_eur_schuss": [
+        0.9,
+        2.65
+      ],
+      "kommentar": "Die beste Auswahl und die besten Preise aller Buechsenkaliber. Trainings-Vollmantel unter 60 ct/Schuss ist realistisch, Jagdmunition liegt bei 1,50-2,50 EUR.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 147 gr",
+          "packung": 20,
+          "eur_packung": 17.9,
+          "eur_schuss": 0.895,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+308+win+fmj"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 170 gr",
+          "packung": 20,
+          "eur_packung": 24.9,
+          "eur_schuss": 1.245,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+308+win"
+        },
+        {
+          "hersteller": "Sierra",
+          "typ": "MatchKing 168 gr",
+          "packung": 20,
+          "eur_packung": 32.9,
+          "eur_schuss": 1.645,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sierra+matchking+308+win"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 180 gr",
+          "packung": 20,
+          "eur_packung": 36.9,
+          "eur_schuss": 1.845,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+308+win"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 165 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+308+win"
+        },
+        {
+          "hersteller": "Lapua",
+          "typ": "Scenar-L 185 gr",
+          "packung": 20,
+          "eur_packung": 41.9,
+          "eur_schuss": 2.095,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=lapua+scenar+308+win"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 178 gr",
+          "packung": 20,
+          "eur_packung": 43.9,
+          "eur_schuss": 2.195,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+308+win"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 150 gr",
+          "packung": 20,
+          "eur_packung": 52.9,
+          "eur_schuss": 2.645,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+308+win"
+        }
+      ]
+    },
+    "3006": {
+      "range_eur_schuss": [
+        0.99,
+        2.79
+      ],
+      "kommentar": "Konkurrenzlose Auswahl. Preislich knapp ueber .308 Win. Fuer die Auslandsjagd die sicherste Wahl - ueberall zu bekommen.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "FMJ 150 gr",
+          "packung": 20,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.995,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+30-06+fmj"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 170 gr",
+          "packung": 20,
+          "eur_packung": 26.9,
+          "eur_schuss": 1.345,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+30-06"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Power-Shok 150 gr",
+          "packung": 20,
+          "eur_packung": 29.9,
+          "eur_schuss": 1.495,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+power-shok+30-06"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 200 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+30-06"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 180 gr",
+          "packung": 20,
+          "eur_packung": 42.9,
+          "eur_schuss": 2.145,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+30-06"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 178 gr",
+          "packung": 20,
+          "eur_packung": 45.9,
+          "eur_schuss": 2.295,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+30-06"
+        },
+        {
+          "hersteller": "Nosler",
+          "typ": "Partition 180 gr",
+          "packung": 20,
+          "eur_packung": 49.9,
+          "eur_schuss": 2.495,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=nosler+partition+30-06"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 168 gr",
+          "packung": 20,
+          "eur_packung": 55.9,
+          "eur_schuss": 2.795,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+30-06"
+        }
+      ]
+    },
+    "8x57is": {
+      "range_eur_schuss": [
+        0.9,
+        2.65
+      ],
+      "kommentar": "In Deutschland sehr gut verfuegbar. Achtung bei US-Munition: die ist aus Ruecksicht auf Altwaffen stark heruntergeladen - europaeische Ware nach C.I.P. liefert deutlich mehr.",
+      "produkte": [
+        {
+          "hersteller": "PPU",
+          "typ": "FMJ 196 gr",
+          "packung": 20,
+          "eur_packung": 17.9,
+          "eur_schuss": 0.895,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=ppu+8x57+is"
+        },
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 196 gr",
+          "packung": 20,
+          "eur_packung": 25.9,
+          "eur_schuss": 1.295,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+8x57+is"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 185 gr",
+          "packung": 20,
+          "eur_packung": 27.9,
+          "eur_schuss": 1.395,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+8x57+is"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 196 gr",
+          "packung": 20,
+          "eur_packung": 38.9,
+          "eur_schuss": 1.945,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+8x57+is"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 184 gr",
+          "packung": 20,
+          "eur_packung": 42.9,
+          "eur_schuss": 2.145,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+8x57+is"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Doppelkern 196 gr",
+          "packung": 20,
+          "eur_packung": 44.9,
+          "eur_schuss": 2.245,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+doppelkern+8x57+is"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "HIT bleifrei 150 gr",
+          "packung": 20,
+          "eur_packung": 52.9,
+          "eur_schuss": 2.645,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+hit+8x57+is"
+        }
+      ]
+    },
+    "7x64": {
+      "range_eur_schuss": [
+        1.34,
+        2.75
+      ],
+      "kommentar": "In Deutschland und Frankreich gut verfuegbar, ausserhalb Europas kaum. Trainingsmunition gibt es praktisch nicht - das ist eine reine Jagdpatrone.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 173 gr",
+          "packung": 20,
+          "eur_packung": 26.9,
+          "eur_schuss": 1.345,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+7x64"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 154 gr",
+          "packung": 20,
+          "eur_packung": 28.9,
+          "eur_schuss": 1.445,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+7x64"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 170 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+7x64"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 162 gr",
+          "packung": 20,
+          "eur_packung": 43.9,
+          "eur_schuss": 2.195,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+7x64"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Doppelkern 173 gr",
+          "packung": 20,
+          "eur_packung": 45.9,
+          "eur_schuss": 2.295,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+doppelkern+7x64"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 162 gr",
+          "packung": 20,
+          "eur_packung": 46.9,
+          "eur_schuss": 2.345,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+7x64"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 140 gr",
+          "packung": 20,
+          "eur_packung": 54.9,
+          "eur_schuss": 2.745,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+7x64"
+        }
+      ]
+    },
+    "65x55": {
+      "range_eur_schuss": [
+        0.94,
+        2.69
+      ],
+      "kommentar": "Gut verfuegbar in Deutschland und Skandinavien. Oft guenstiger als 6,5 Creedmoor bei praktisch gleicher Ballistik.",
+      "produkte": [
+        {
+          "hersteller": "PPU",
+          "typ": "FMJ 139 gr",
+          "packung": 20,
+          "eur_packung": 18.9,
+          "eur_schuss": 0.945,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=ppu+6.5x55"
+        },
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 131 gr",
+          "packung": 20,
+          "eur_packung": 25.9,
+          "eur_schuss": 1.295,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+6.5x55"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 140 gr",
+          "packung": 20,
+          "eur_packung": 27.9,
+          "eur_schuss": 1.395,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+6.5x55"
+        },
+        {
+          "hersteller": "Lapua",
+          "typ": "Mega 155 gr",
+          "packung": 20,
+          "eur_packung": 36.9,
+          "eur_schuss": 1.845,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=lapua+mega+6.5x55"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 156 gr",
+          "packung": 20,
+          "eur_packung": 38.9,
+          "eur_schuss": 1.945,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+6.5x55"
+        },
+        {
+          "hersteller": "Lapua",
+          "typ": "Scenar 139 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=lapua+scenar+6.5x55"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 140 gr",
+          "packung": 20,
+          "eur_packung": 42.9,
+          "eur_schuss": 2.145,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+6.5x55"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 120 gr",
+          "packung": 20,
+          "eur_packung": 53.9,
+          "eur_schuss": 2.695,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+6.5x55"
+        }
+      ]
+    },
+    "243win": {
+      "range_eur_schuss": [
+        1.2,
+        2.65
+      ],
+      "kommentar": "Gut verfuegbar und moderat im Preis. Raubwildlaborierungen mit leichten Geschossen sind meist guenstiger als Rehwildmunition.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 100 gr",
+          "packung": 20,
+          "eur_packung": 23.9,
+          "eur_schuss": 1.195,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+243+win"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 100 gr",
+          "packung": 20,
+          "eur_packung": 25.9,
+          "eur_schuss": 1.295,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+243+win"
+        },
+        {
+          "hersteller": "Nosler",
+          "typ": "Ballistic Tip Varmint 58 gr",
+          "packung": 20,
+          "eur_packung": 29.9,
+          "eur_schuss": 1.495,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=nosler+243+win"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 100 gr",
+          "packung": 20,
+          "eur_packung": 36.9,
+          "eur_schuss": 1.845,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+243+win"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 95 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+243+win"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD Match 105 gr",
+          "packung": 20,
+          "eur_packung": 39.9,
+          "eur_schuss": 1.995,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld+match+243+win"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 90 gr",
+          "packung": 20,
+          "eur_packung": 41.9,
+          "eur_schuss": 2.095,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+243+win"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 80 gr",
+          "packung": 20,
+          "eur_packung": 52.9,
+          "eur_schuss": 2.645,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+243+win"
+        }
+      ]
+    },
+    "93x62": {
+      "range_eur_schuss": [
+        1.75,
+        3.15
+      ],
+      "kommentar": "In Deutschland gut verfuegbar. Grob das Doppelte von .308 Win - schwere Geschosse kosten Material. Die Drueckjagdpatrone schlechthin.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 285 gr",
+          "packung": 20,
+          "eur_packung": 34.9,
+          "eur_schuss": 1.745,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+9.3x62"
+        },
+        {
+          "hersteller": "GECO",
+          "typ": "Teilmantel 285 gr",
+          "packung": 20,
+          "eur_packung": 37.9,
+          "eur_schuss": 1.895,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+9.3x62"
+        },
+        {
+          "hersteller": "Lapua",
+          "typ": "Mega 232 gr",
+          "packung": 20,
+          "eur_packung": 44.9,
+          "eur_schuss": 2.245,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=lapua+mega+9.3x62"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 285 gr",
+          "packung": 20,
+          "eur_packung": 47.9,
+          "eur_schuss": 2.395,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+9.3x62"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 255 gr",
+          "packung": 20,
+          "eur_packung": 49.9,
+          "eur_schuss": 2.495,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+9.3x62"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Doppelkern 293 gr",
+          "packung": 20,
+          "eur_packung": 54.9,
+          "eur_schuss": 2.745,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+doppelkern+9.3x62"
+        },
+        {
+          "hersteller": "Nosler",
+          "typ": "Partition 250 gr",
+          "packung": 20,
+          "eur_packung": 56.9,
+          "eur_schuss": 2.845,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=nosler+partition+9.3x62"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TSX bleifrei 250 gr",
+          "packung": 20,
+          "eur_packung": 62.9,
+          "eur_schuss": 3.145,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+tsx+9.3x62"
+        }
+      ]
+    },
+    "30rblaser": {
+      "range_eur_schuss": [
+        2.44,
+        3.1
+      ],
+      "kommentar": "Praktisch ein RWS-Monopol - entsprechend teuer und ausserhalb Deutschlands kaum zu bekommen. Bleifrei gibt es effektiv nur ein Produkt.",
+      "produkte": [
+        {
+          "hersteller": "RWS",
+          "typ": "KS 150 gr",
+          "packung": 20,
+          "eur_packung": 48.9,
+          "eur_schuss": 2.445,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+ks+30r+blaser"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Doppelkern 165 gr",
+          "packung": 20,
+          "eur_packung": 52.9,
+          "eur_schuss": 2.645,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+doppelkern+30r+blaser"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "UNI Classic 181 gr",
+          "packung": 20,
+          "eur_packung": 53.9,
+          "eur_schuss": 2.695,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+uni+classic+30r+blaser"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 165 gr",
+          "packung": 20,
+          "eur_packung": 54.9,
+          "eur_schuss": 2.745,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+30r+blaser"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "KS 201 gr",
+          "packung": 20,
+          "eur_packung": 55.9,
+          "eur_schuss": 2.795,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+ks+201+30r+blaser"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "HIT bleifrei 165 gr",
+          "packung": 20,
+          "eur_packung": 61.9,
+          "eur_schuss": 3.095,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+hit+30r+blaser"
+        }
+      ]
+    },
+    "7remmag": {
+      "range_eur_schuss": [
+        1.65,
+        2.94
+      ],
+      "kommentar": "Die meistverkaufte Magnum - daher trotz Nischenrolle in Deutschland ordentlich verfuegbar. Rund das Zweieinhalbfache von .308 Win.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 175 gr",
+          "packung": 20,
+          "eur_packung": 32.9,
+          "eur_schuss": 1.645,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+7mm+rem+mag"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Power-Shok 150 gr",
+          "packung": 20,
+          "eur_packung": 36.9,
+          "eur_schuss": 1.845,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+power-shok+7mm+rem+mag"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 170 gr",
+          "packung": 20,
+          "eur_packung": 44.9,
+          "eur_schuss": 2.245,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+7mm+rem+mag"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 160 gr",
+          "packung": 20,
+          "eur_packung": 47.9,
+          "eur_schuss": 2.395,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+7mm+rem+mag"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 162 gr",
+          "packung": 20,
+          "eur_packung": 49.9,
+          "eur_schuss": 2.495,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+7mm+rem+mag"
+        },
+        {
+          "hersteller": "Nosler",
+          "typ": "Partition 160 gr",
+          "packung": 20,
+          "eur_packung": 54.9,
+          "eur_schuss": 2.745,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=nosler+partition+7mm+rem+mag"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 145 gr",
+          "packung": 20,
+          "eur_packung": 58.9,
+          "eur_schuss": 2.945,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+7mm+rem+mag"
+        }
+      ]
+    },
+    "300wm": {
+      "range_eur_schuss": [
+        1.75,
+        3.0
+      ],
+      "kommentar": "Gut verfuegbar, weltweit zu bekommen. Rund das Zweieinhalbfache von .308 Win - und der Lauf haelt nur ein Viertel so lange.",
+      "produkte": [
+        {
+          "hersteller": "S&B",
+          "typ": "Teilmantel 220 gr",
+          "packung": 20,
+          "eur_packung": 34.9,
+          "eur_schuss": 1.745,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+300+win+mag"
+        },
+        {
+          "hersteller": "Federal",
+          "typ": "Power-Shok 150 gr",
+          "packung": 20,
+          "eur_packung": 37.9,
+          "eur_schuss": 1.895,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=federal+power-shok+300+win+mag"
+        },
+        {
+          "hersteller": "Sierra",
+          "typ": "MatchKing 190 gr",
+          "packung": 20,
+          "eur_packung": 44.9,
+          "eur_schuss": 2.245,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sierra+matchking+300+win+mag"
+        },
+        {
+          "hersteller": "Norma",
+          "typ": "Oryx 180 gr",
+          "packung": 20,
+          "eur_packung": 45.9,
+          "eur_schuss": 2.295,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=norma+oryx+300+win+mag"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Evolution 180 gr",
+          "packung": 20,
+          "eur_packung": 48.9,
+          "eur_schuss": 2.445,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+evolution+300+win+mag"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "ELD-X Precision Hunter 200 gr",
+          "packung": 20,
+          "eur_packung": 51.9,
+          "eur_schuss": 2.595,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+eld-x+300+win+mag"
+        },
+        {
+          "hersteller": "Nosler",
+          "typ": "Partition 180 gr",
+          "packung": 20,
+          "eur_packung": 55.9,
+          "eur_schuss": 2.795,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=nosler+partition+300+win+mag"
+        },
+        {
+          "hersteller": "Barnes",
+          "typ": "TTSX bleifrei 165 gr",
+          "packung": 20,
+          "eur_packung": 59.9,
+          "eur_schuss": 2.995,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=barnes+ttsx+300+win+mag"
+        }
+      ]
+    }
+  }
+}

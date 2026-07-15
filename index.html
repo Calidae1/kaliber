@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0e13">
+<!-- Die App lädt ausschließlich eigene Dateien. Die Richtlinie schreibt das fest:
+     kein fremdes Skript, kein externer Abruf, kein eingebetteter Fremdinhalt —
+     selbst dann nicht, wenn irgendwo Fremdinhalt hineingeriete. Angezeigte Werte
+     können damit nur aus den ausgelieferten Daten stammen. -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self';
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' data:;
+  connect-src 'self';
+  worker-src 'self';
+  manifest-src 'self';
+  base-uri 'none';
+  object-src 'none'">
+<title>KALIBER — Munitions-Kompendium</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="app.css">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="back" id="back" hidden aria-label="Zurück">‹</button>
+  <a class="brand" href="#/" aria-label="Startseite">
+    <span class="brand-mark"></span>
+    <span class="brand-text">KALIBER</span>
+  </a>
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="Kaliber suchen … z. B. 300 Blackout" autocomplete="off" spellcheck="false" aria-label="Kaliber suchen">
+    <div class="search-icon"></div>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="foot">
+  <span id="dbstamp" class="mono"></span>
+  <span class="foot-btns">
+    <button id="share" class="btn-ghost" hidden>Weitergeben</button>
+    <button id="refresh" class="btn-ghost">Daten aktualisieren</button>
+  </span>
+</footer>
+
+<!-- Installationshinweis. Erscheint nur im Browser, nie in der installierten App. -->
+<div id="install" class="install" hidden>
+  <div class="install-icon" aria-hidden="true"></div>
+  <div class="install-txt">
+    <strong id="install-t">KALIBER als App installieren</strong>
+    <span id="install-x">Eigenes Symbol auf dem Startbildschirm, Vollbild, funktioniert ohne Internet.</span>
+  </div>
+  <button class="btn" id="install-go">Installieren</button>
+  <button class="install-no" id="install-no" aria-label="Nicht jetzt">✕</button>
+</div>
+
+<dialog id="gldlg" class="gldlg" aria-labelledby="gl-t">
+  <h3 id="gl-t"></h3>
+  <p id="gl-x"></p>
+  <div id="gl-f" class="gl-faust"></div>
+  <button class="btn" id="gl-close">Verstanden</button>
+</dialog>
+
+<script src="ballistik.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

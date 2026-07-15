@@ -1,0 +1,122 @@
+{
+  "id": "40sw",
+  "name": ".40 S&W",
+  "aliase": [".40 Smith & Wesson", "40 S&W", "10x22", ".40", "40SW", "10x22mm Smith & Wesson"],
+  "gruppen": ["kurz"],
+  "kurz": "Der Kompromiss zwischen 9 mm und .45 — entstanden, weil dem FBI die 10 mm Auto zu heftig war. Mehr Energie als 9 mm, dafür harter Impuls und im Sport heute weitgehend verdrängt.",
+
+  "schnell": {
+    "geschoss_gr": [135, 200],
+    "v0_ms": [290, 380],
+    "e0_j": [500, 700],
+    "drall_mm": [406, 406],
+    "gasdruck_bar": 2250
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "Smith & Wesson und Winchester",
+    "jahr": 1990,
+    "herkunft": "USA",
+    "geschichte": [
+      "Nach dem Schusswechsel von Miami 1986 suchte das FBI eine durchschlagskräftigere Patrone und landete zunächst bei der 10 mm Auto. Die stellte sich im Alltag als zu heftig heraus: zu viel Rückstoß für viele Agenten, zu große Waffen für kleine Hände. Also lud man sie schwächer — und stellte fest, dass man die Hülse dann auch gleich kürzen konnte.",
+      "Genau das taten Smith & Wesson und Winchester 1990: dieselbe Leistung wie die abgeschwächte 10 mm, aber in einer kurzen Hülse, die in ein 9-mm-großes Griffstück passt. Der Erfolg war zunächst durchschlagend — über Jahre war .40 S&W die Standardpatrone der US-Polizei.",
+      "Inzwischen ist der Trend gedreht. Moderne 9-mm-Hohlspitzgeschosse haben den Wirkungsvorsprung der .40 weitgehend eingeholt, und 9 mm ist billiger, hat mehr Kapazität und weniger Rückstoß. Das FBI selbst ist 2015 zu 9 mm zurückgekehrt. Im Sport ist .40 S&W dadurch zur Nische geworden — sie hält sich vor allem, wo der IPSC-Major-Faktor zählt."
+    ],
+    "einsatz": ["Sportschießen (IPSC Major)", "Behörden (rückläufig)", "Selbstverteidigung", "Jagd: nur Fangschuss"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "randlos, zylindrisch ohne Flaschenhals",
+    "geschoss_mm": 10.17,
+    "hals_mm": 10.77,
+    "schulter_mm": null,
+    "boden_mm": 10.77,
+    "rand_mm": 10.77,
+    "huelsenlaenge_mm": 21.59,
+    "col_mm": 28.83,
+    "gasdruck_bar": 2250,
+    "gasdruck_hinweis": "Mit 2250 bar knapp unter 9 mm Luger, aber auf größerer Hülsenbodenfläche — die Kraft auf den Verschluss ist deshalb höher. Das erklärt den als hart empfundenen Impuls.",
+    "zuender": "Small Pistol, Boxer",
+    "drall": "1:406 mm (1:16″)",
+    "drall_hinweis": "Unkritisch über den gesamten Gewichtsbereich von 135 bis 200 gr."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für Läufe um 100–115 mm. Die Patrone reagiert weniger empfindlich auf kurze Läufe als 9 mm, weil das Pulver schneller durchbrennt.",
+    "laborierungen": [
+      { "hersteller": "GECO", "typ": "Vollmantel (FMJ)", "gr": 180, "g": 11.66, "v0": 295, "bc": 0.164, "bc_modell": "G1", "lauf_mm": 108, "zweck": "Training", "anmerkung": "Der Vereinsstandard." },
+      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 180, "g": 11.66, "v0": 300, "bc": 0.164, "bc_modell": "G1", "lauf_mm": 108, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg." },
+      { "hersteller": "Norma", "typ": "Range FMJ", "gr": 180, "g": 11.66, "v0": 298, "bc": 0.164, "bc_modell": "G1", "lauf_mm": 108, "zweck": "Training", "anmerkung": null },
+      { "hersteller": "Magtech", "typ": "Vollmantel (FMJ)", "gr": 165, "g": 10.69, "v0": 340, "bc": 0.140, "bc_modell": "G1", "lauf_mm": 108, "zweck": "Training / IPSC", "anmerkung": "Beliebte Major-Laborierung, spürbar schärfer." },
+      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 155, "g": 10.04, "v0": 360, "bc": 0.135, "bc_modell": "G1", "lauf_mm": 108, "zweck": "Verteidigung", "anmerkung": "Leicht und schnell, harter Rückstoß." },
+      { "hersteller": "Federal", "typ": "HST Hohlspitz", "gr": 180, "g": 11.66, "v0": 305, "bc": 0.165, "bc_modell": "G1", "lauf_mm": 108, "zweck": "Verteidigung", "anmerkung": "Der Maßstab bei Behördenmunition." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N320", "eignung": "Sauber und gut dosierbar für Standardladungen." },
+    { "name": "Vihtavuori 3N37", "eignung": "Für Major-Laborierungen mit leichten Geschossen." },
+    { "name": "Hodgdon Longshot", "eignung": "Für die oberen Leistungsbereiche, gute Füllgrade." },
+    { "name": "Accurate No. 5", "eignung": "Breites Ladefenster, unkompliziert." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .40 S&W", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=40-sw" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Grundsätzlich möglich, aber unattraktiv. Die Standardlaborierungen liegen mit 295–360 m/s über oder knapp unter der Schallgrenze, sodass man auf spezielle 200-gr-Unterschallmunition ausweichen müsste — die in Deutschland kaum jemand führt. Wer dämpfen will, ist mit 9 mm oder .45 ACP deutlich besser bedient: Beide sind ab Werk unterschall und überall zu bekommen."
+  },
+
+  "vorteile": [
+    "Rund 25 % mehr Energie als 9 mm bei ähnlicher Waffengröße",
+    "Erreicht den IPSC-Major-Faktor ohne Überdruck",
+    "Reagiert weniger empfindlich auf kurze Läufe als 9 mm",
+    "Gute Auswahl an Verteidigungsmunition",
+    "Viele Waffen lassen sich per Laufwechsel auf 9 mm umrüsten"
+  ],
+  "nachteile": [
+    "Harter, schlagender Rückstoß — bremst die Schussfolge und ermüdet",
+    "Rund doppelt so teuer wie 9 mm",
+    "Im Sport auf dem Rückzug, Auswahl schrumpft",
+    "Hoher Verschlussdruck auf großer Bodenfläche belastet die Waffe stärker",
+    "Wirkungsvorsprung gegenüber modernem 9-mm-Hohlspitz ist weitgehend dahin",
+    "Für die Jagd auf Wild in Deutschland unzulässig"
+  ],
+
+  "recht_de": {
+    "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein bei eingetragener Waffe. Bedürfnisnachweis nach § 14 WaffG wie bei jeder Kurzwaffe.",
+    "jagd": "Für die Erlegung von Schalenwild unzulässig. Das Mindestkaliber von 6,5 mm ist mit 10,17 mm zwar erfüllt, die geforderte Auftreffenergie auf 100 m aber bei weitem nicht: Nötig sind 1.000 J für Rehwild, .40 S&W liefert an der Mündung 500–700 J.",
+    "hinweise": [
+      "Zum Fangschuss nach § 19 BJagdG zulässig — dort gelten die E100-Grenzen nicht.",
+      "Auf Raubwild und bei der Fallenjagd je nach Landesrecht einsetzbar.",
+      "Landesjagdgesetze weichen ab."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".40 S&W Standard", "text": "180 gr Vollmantel bei rund 295–300 m/s. Die verbreitetste Laborierung." },
+    { "name": ".40 S&W leicht (155–165 gr)", "text": "Schneller, flacher, aber mit deutlich schärferem Impuls. Im IPSC beliebt, weil der Major-Faktor leichter erreicht wird." },
+    { "name": ".357 SIG", "text": "Kein .40er, aber der direkte Verwandte: dieselbe Hülse mit Flaschenhals auf 9 mm eingezogen. Sehr rasant, sehr laut, sehr Nische." },
+    { "name": ".40 Super", "text": "Deutlich stärkere Wildcat auf verlängerter Hülse. Praktisch bedeutungslos." }
+  ],
+
+  "nachbarn": [
+    { "name": "9 mm Luger", "text": "Billiger, mehr Kapazität, weniger Rückstoß — und mit moderner Munition kaum noch schwächer in der Wirkung. Der Grund, warum .40 zurückgeht." },
+    { "name": "10 mm Auto", "text": "Die Mutter der .40: gleicher Durchmesser, längere Hülse, rund 30 % mehr Energie." },
+    { "name": ".45 ACP", "text": "Ähnliche Energie, aber weich schiebender statt hart schlagender Rückstoß. Und ab Werk unterschall." },
+    { "name": ".357 SIG", "text": "Flaschenhalspatrone auf .40er-Hülse. Rasanter und flacher, aber laut und teuer." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Streukreise hängen bei Kurzwaffen überwiegend an Waffe und Schütze, nicht an der Patrone. Trag deine eigenen Werte ein — nur die gelten für deine Waffe.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 40 S&W", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/40-sw-en.pdf" },
+    { "titel": "Wikipedia — .40 S&W", "url": "https://de.wikipedia.org/wiki/.40_S%26W" }
+  ]
+}

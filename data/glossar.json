@@ -1,0 +1,141 @@
+{
+  "_hinweis": "Begriffserklärungen für die antippbaren Kürzel in der App. Schlüssel = data-gl-Attribut im HTML.",
+  "version": 1,
+  "begriffe": {
+    "bc": {
+      "titel": "BC — Ballistischer Koeffizient",
+      "text": "Ein Maß dafür, wie gut ein Geschoss die Luft durchschneidet. Je höher, desto weniger Geschwindigkeit verliert es unterwegs, desto flacher die Bahn und desto weniger schiebt der Wind. Ein langes, schlankes Geschoss hat einen hohen BC, ein kurzes stumpfes einen niedrigen. Angegeben wird er in lb/in² — die Einheit ist historisch bedingt und praktisch bedeutungslos, es zählt nur der Vergleich untereinander.",
+      "faustregel": "Unter 0,2 = kurze Distanz (Pistole). Über 0,5 = Langstrecke."
+    },
+    "g1g7": {
+      "titel": "G1 und G7 — Widerstandsmodelle",
+      "text": "Ein BC gilt immer nur im Vergleich zu einem genormten Referenzgeschoss. G1 ist ein kurzes, flachköpfiges Geschoss aus dem 19. Jahrhundert — bis heute der übliche Bezug, weil alle Hersteller ihn angeben. G7 ist ein modernes Langgeschoss mit Bootsheck und passt zu heutigen Match-Geschossen deutlich besser. Wichtig: G1- und G7-Werte sind nicht vergleichbar. Derselbe Geschoss hat etwa G1 0,5 und G7 0,25 — also grob halb so viel.",
+      "faustregel": "Nie G1 mit G7 vergleichen. Immer prüfen, welches Modell angegeben ist."
+    },
+    "v0": {
+      "titel": "v₀ — Mündungsgeschwindigkeit",
+      "text": "Wie schnell das Geschoss den Lauf verlässt, in Meter pro Sekunde. Der wichtigste Einzelwert überhaupt: Er bestimmt Energie, Flugbahn und Reichweite. Achtung, Katalogwerte gelten immer für eine bestimmte Lauflänge — ein kürzerer Lauf gibt weniger, teils erheblich. Wer es genau wissen will, misst mit einem Chronographen.",
+      "faustregel": "Kürzerer Lauf = weniger v₀. Bei Pistolen grob 10–15 m/s je 2,5 cm Lauf."
+    },
+    "v0diff": {
+      "titel": "v₀-Differenz (Streuung)",
+      "text": "Der Unterschied zwischen dem schnellsten und dem langsamsten Schuss einer Serie. Ein Maß für die Gleichmäßigkeit der Munition: Je kleiner, desto konstanter brennt die Ladung ab und desto besser trifft die Patrone auf Distanz. Auf kurze Entfernung fällt es kaum auf, auf 300 m entscheidet es über die Höhenstreuung.",
+      "faustregel": "Fabrikmunition typisch 10–25 m/s. Gute Handladung unter 8 m/s."
+    },
+    "e0": {
+      "titel": "E₀ — Mündungsenergie",
+      "text": "Die Bewegungsenergie an der Mündung, in Joule. Errechnet sich aus Masse und Geschwindigkeit, wobei die Geschwindigkeit quadratisch eingeht — doppelte Geschwindigkeit heißt vierfache Energie. Ein grober Vergleichswert für die Leistungsklasse einer Patrone, aber allein kein Maß für die Wirkung im Ziel; Geschosskonstruktion und Treffersitz zählen mehr.",
+      "faustregel": "Pistole 400–800 J. Büchse Jagd 2.000–4.000 J."
+    },
+    "e100": {
+      "titel": "E₁₀₀ — Auftreffenergie auf 100 m",
+      "text": "Die verbliebene Energie nach 100 m Flug. In Deutschland die rechtlich maßgebliche Größe für die Jagd: Das Bundesjagdgesetz verlangt mindestens 1.000 J für Rehwild und mindestens 2.000 J für übriges Schalenwild — letzteres zusätzlich zu einem Mindestkaliber von 6,5 mm Geschossdurchmesser. Landesrecht kann strenger sein.",
+      "faustregel": "1.000 J = Rehwild. 2.000 J + 6,5 mm = übriges Schalenwild."
+    },
+    "gr": {
+      "titel": "gr — Grain (Geschossgewicht)",
+      "text": "Die angelsächsische Gewichtseinheit für Geschosse und Pulver. 1 Grain = 0,0648 Gramm, also 15,43 Grain auf ein Gramm. Hat sich international durchgesetzt, weil die meisten Geschosse aus den USA kommen. Schwerere Geschosse haben mehr Bewegungsenergie bei gleicher Geschwindigkeit, brauchen aber einen schnelleren Drall zur Stabilisierung.",
+      "faustregel": "Grain ÷ 15,43 = Gramm. 124 gr ≈ 8 g."
+    },
+    "col": {
+      "titel": "COL — Patronen-Gesamtlänge",
+      "text": "Cartridge Overall Length: die Gesamtlänge der fertigen Patrone von der Bodenkante bis zur Geschossspitze. Genormt, weil sie ins Magazin und ins Patronenlager passen muss. Beim Wiederladen die kritische Größe — ein zu lang gesetztes Geschoss kann in den Zug stoßen und den Druck gefährlich erhöhen.",
+      "faustregel": "Über der Norm = passt nicht ins Magazin oder erhöht den Druck."
+    },
+    "huelsenlaenge": {
+      "titel": "Hülsenlänge",
+      "text": "Die Länge der leeren Hülse. Beim Wiederladen wächst sie durch das Fließen des Messings mit jedem Zyklus — deshalb muss regelmäßig gemessen und bei Bedarf gekürzt werden. Eine zu lange Hülse klemmt im Patronenlager, kann sich nicht öffnen und treibt den Druck hoch.",
+      "faustregel": "Beim Wiederladen jedes Mal messen."
+    },
+    "drall": {
+      "titel": "Drall (Drallänge / Twist)",
+      "text": "Die Strecke, auf der sich das Geschoss im Lauf einmal um die eigene Achse dreht. Angegeben als 1:8″ oder metrisch 1:203 mm — beides heißt: eine volle Umdrehung auf 8 Zoll. Kleinere Zahl = schnellerer Drall = mehr Stabilisierung. Er entscheidet, welche Geschossgewichte funktionieren: Lange, schwere Geschosse brauchen schnellen Drall, sonst taumeln sie und reißen ovale Löcher.",
+      "faustregel": "Ovale Löcher in der Scheibe = Drall zu langsam für dieses Geschoss."
+    },
+    "streukreis": {
+      "titel": "Streukreis",
+      "text": "Der Durchmesser des Kreises, in dem alle Schüsse einer Serie liegen — gemessen von Lochmitte zu Lochmitte der beiden am weitesten auseinanderliegenden Treffer. Das gängige deutsche Präzisionsmaß, in Millimeter auf eine feste Entfernung. Nur vergleichbar bei gleicher Schusszahl und gleicher Distanz: 3 Schuss streuen fast immer enger als 5, und 5 enger als 10.",
+      "faustregel": "Immer Schusszahl und Distanz dazuschreiben, sonst wertlos."
+    },
+    "moa": {
+      "titel": "MOA — Winkelminute",
+      "text": "Angloamerikanisches Präzisionsmaß. Eine Winkelminute ist 1/60 Grad und entspricht auf 100 Meter etwa 2,9 cm, auf 100 Yard etwa 2,54 cm (daher die verbreitete Näherung „1 Zoll auf 100 Yard“). Anders als der Streukreis in Millimeter ist MOA ein Winkelmaß und damit unabhängig von der Entfernung.",
+      "faustregel": "1 MOA ≈ 2,9 cm auf 100 m."
+    },
+    "pmax": {
+      "titel": "p_max — Maximaler Gasdruck",
+      "text": "Der höchste zulässige Druck im Patronenlager, in bar. Von der C.I.P. für jedes Kaliber verbindlich festgelegt; Waffen werden auf 130 % davon beschossen. Nicht mit dem SAAMI-Wert in psi vergleichbar — die Amerikaner messen an anderer Stelle mit anderem Verfahren, weshalb sich die Zahlen nicht ineinander umrechnen lassen.",
+      "faustregel": "C.I.P. in bar und SAAMI in psi nie direkt vergleichen."
+    },
+    "fleck": {
+      "titel": "Fleck (Einschussentfernung)",
+      "text": "Die Entfernung, auf der Visierlinie und Geschossbahn sich schneiden — dort trifft die Waffe genau dorthin, wo du hinzielst. Weil das Geschoss der Schwerkraft folgt, kreuzt es die Visierlinie zweimal: kurz nach der Mündung und dann wieder auf der eingestellten Entfernung. Dazwischen liegt es darüber, danach fällt es ab.",
+      "faustregel": "Übliche Flecke: 25 m Kurzwaffe, 100 m Büchse."
+    },
+    "kugelfall": {
+      "titel": "Kugelfall",
+      "text": "Wie weit das Geschoss über oder unter der Visierlinie liegt, in Zentimeter. Positiv heißt: Es fliegt über dem Haltepunkt, du triffst hoch. Negativ heißt: Es liegt darunter, du musst höher halten. Auf dem Fleck ist der Wert per Definition null. Bezieht sich hier immer auf eine Visierhöhe von 40 mm über der Seelenachse.",
+      "faustregel": "Minus = du triffst tief und musst höher halten."
+    },
+    "windabdrift": {
+      "titel": "Windabdrift",
+      "text": "Wie weit ein Seitenwind das Geschoss zur Seite versetzt. Gerechnet wird hier mit vollem Querwind (90° zur Schussrichtung) — der ungünstigste Fall. Entscheidend ist nicht die Windstärke allein, sondern die Flugzeit: Je länger das Geschoss unterwegs ist, desto mehr Zeit hat der Wind. Deshalb hilft ein hoher BC gegen Wind mehr als hohe Geschwindigkeit.",
+      "faustregel": "Wind von schräg vorn/hinten wirkt schwächer als voller Querwind."
+    },
+    "laborierung": {
+      "titel": "Laborierung",
+      "text": "Die konkrete Zusammenstellung einer Patrone: welches Geschoss, welches Gewicht, welches Pulver, welche Ladung. Dasselbe Kaliber kann Dutzende Laborierungen haben, die sich in Leistung und Präzision deutlich unterscheiden. Deshalb sagt „ich schieße 9 mm“ wenig — erst die Laborierung bestimmt, was hinten rauskommt.",
+      "faustregel": "Jede Waffe hat ihre Lieblingslaborierung. Ausprobieren."
+    },
+    "subsonic": {
+      "titel": "Unterschall (Subsonic)",
+      "text": "Munition, die unter der Schallgeschwindigkeit von etwa 343 m/s bleibt. Nur dann bringt ein Schalldämpfer seine volle Wirkung: Ein Überschallgeschoss zieht einen eigenen Knall hinter sich her, den kein Dämpfer der Welt unterdrücken kann. Erkauft wird das mit weniger Energie und deutlich stärkerem Kugelfall.",
+      "faustregel": "Über 343 m/s knallt es, egal welcher Dämpfer."
+    },
+    "cip": {
+      "titel": "C.I.P.",
+      "text": "Commission Internationale Permanente — die europäische Normungsbehörde für Handfeuerwaffen, mit Sitz in Brüssel. Legt für jedes Kaliber Maße und Höchstdruck verbindlich fest und schreibt den Beschuss vor. In Deutschland gesetzlich bindend: Jede zivile Waffe braucht den Beschussstempel. Das US-Pendant SAAMI ist dagegen nur eine freiwillige Herstellervereinbarung.",
+      "faustregel": "In Europa bindend, in den USA gilt SAAMI und ist freiwillig."
+    },
+    "boxer": {
+      "titel": "Boxer- und Berdan-Zündung",
+      "text": "Zwei Bauarten des Zündhütchens. Boxer hat einen zentralen Zündkanal und einen Amboss im Hütchen — leicht auszustoßen und damit wiederladefreundlich. Berdan hat den Amboss in der Hülse und zwei seitliche Kanäle; billiger in der Fertigung, aber praktisch nicht wiederladbar. Osteuropäische und alte Militärmunition ist meist Berdan.",
+      "faustregel": "Wer wiederladen will, braucht Boxer."
+    },
+    "fmj": {
+      "titel": "Vollmantel (FMJ)",
+      "text": "Full Metal Jacket: ein Bleikern, komplett von einem Kupfermantel umschlossen. Deformiert sich kaum, durchschlägt tief und gibt wenig Energie ab. Billig, verschmutzt den Lauf wenig und funktioniert zuverlässig in Selbstladern — deshalb der Standard fürs Training. Für die Jagd wegen der geringen Wirkung ungeeignet und meist unzulässig.",
+      "faustregel": "Trainingsmunition. Nicht für die Jagd."
+    },
+    "jhp": {
+      "titel": "Hohlspitz (JHP)",
+      "text": "Jacketed Hollow Point: ein Mantelgeschoss mit Hohlraum in der Spitze. Beim Auftreffen presst sich Gewebe hinein und klappt das Geschoss pilzförmig auf. Das vergrößert die Wirkfläche, gibt mehr Energie ab und verringert die Gefahr des Durchschlags. Standard bei Verteidigungs- und Jagdmunition.",
+      "faustregel": "Braucht Mindestgeschwindigkeit, sonst öffnet es nicht."
+    },
+    "ogive": {
+      "titel": "Ogive",
+      "text": "Die geschwungene Spitzenpartie des Geschosses, vom zylindrischen Führungsteil bis zur Spitze. Ihre Form bestimmt den Luftwiderstand maßgeblich: Je länger und schlanker, desto höher der BC. Deshalb sind Langstreckengeschosse vorn spitz und hinten mit Bootsheck versehen, während Pistolengeschosse rund oder flach sein dürfen.",
+      "faustregel": "Länger und schlanker = höherer BC."
+    },
+    "plusp": {
+      "titel": "+P (Überdruck-Laborierung)",
+      "text": "Munition mit bewusst erhöhtem Druck über der Standardnorm, für mehr Geschwindigkeit. Eine SAAMI-Kennzeichnung ohne direkte C.I.P.-Entsprechung. Nur schießen, wenn der Waffenhersteller die Waffe ausdrücklich dafür freigibt — sonst drohen erhöhter Verschleiß bis zum Schaden. +P+ ist noch stärker und gar nicht genormt.",
+      "faustregel": "Nur mit ausdrücklicher Freigabe des Waffenherstellers."
+    },
+    "sd": {
+      "titel": "Sektionaldichte",
+      "text": "Das Verhältnis von Geschossmasse zu Querschnittsfläche. Sagt aus, wie viel Masse hinter jedem Quadratmillimeter Stirnfläche steckt — und damit, wie gut ein Geschoss eindringt. Ein langes, schmales Geschoss hat eine hohe Sektionaldichte und durchschlägt tiefer als ein kurzes dickes gleichen Gewichts.",
+      "faustregel": "Hoch = tiefes Eindringen. Für Jagd auf starkes Wild wichtig."
+    },
+    "testumgebung": {
+      "titel": "Testumgebung",
+      "text": "Wie die Waffe beim Messen gehalten wurde. Entscheidend für die Aussagekraft: Eingespannt in einer Lafette misst man die Munition, freihändig misst man den Schützen. Dazwischen liegen Auflage, Sandsack und Zweibein. Werte aus verschiedenen Umgebungen sind schlicht nicht vergleichbar.",
+      "faustregel": "Eingespannt = Munition. Freihändig = Schütze."
+    },
+    "randlos": {
+      "titel": "Hülsenform",
+      "text": "Randlos heißt: Der Hülsenboden hat denselben Durchmesser wie der Körper, mit einer Auszieherrille — nötig für Magazinwaffen. Randpatronen haben einen überstehenden Rand und stapeln sich im Magazin schlecht, sitzen dafür im Revolver oder Kipplauf sauber. Flaschenhals bedeutet, dass der Hülsenkörper zum Geschoss hin verjüngt ist, was mehr Pulver hinter kleinerem Geschoss erlaubt.",
+      "faustregel": "Randlos = Selbstlader. Rand = Revolver und Kipplauf."
+    }
+  }
+}

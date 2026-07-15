@@ -1,0 +1,123 @@
+{
+  "id": "45acp",
+  "name": ".45 ACP",
+  "aliase": [".45 Auto", "45 ACP", "11,43x23", ".45 Automatic", "45 Auto", "11.43x23mm"],
+  "gruppen": ["kurz"],
+  "kurz": "Das große, langsame Geschoss von John Browning. Von Haus aus unterschall, weicher schiebender Rückstoß statt harter Schlag — und bis heute die Patrone der 1911.",
+
+  "schnell": {
+    "geschoss_gr": [155, 230],
+    "v0_ms": [255, 340],
+    "e0_j": [480, 600],
+    "drall_mm": [406, 406],
+    "gasdruck_bar": 1300
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "John Moses Browning",
+    "jahr": 1905,
+    "herkunft": "USA",
+    "geschichte": [
+      "Die US-Armee hatte auf den Philippinen schlechte Erfahrungen mit der .38 Long Colt gemacht und verlangte ausdrücklich wieder ein Kaliber von mindestens .45 Zoll. Browning entwarf daraufhin eine randlose Patrone mit schwerem, langsamem Geschoss — zusammen mit der Pistole, die sie verschießen sollte.",
+      "1911 wurde beides als Colt M1911 und .45 ACP eingeführt und blieb 74 Jahre US-Ordonnanz, bis 9 mm NATO übernahm. Die Pistole ist bis heute im Sport allgegenwärtig, und in der IPSC-Wertung Major erreicht die Patrone den Faktor mühelos.",
+      "Ihr Charakter kommt aus der Physik: viel Masse, wenig Geschwindigkeit. Der Rückstoß fällt dadurch weich und schiebend aus statt kurz und schlagend — viele Schützen empfinden ihn als angenehmer als den einer .40 S&W, obwohl mehr Energie im Spiel ist. Und weil sie schon ab Werk unter der Schallgeschwindigkeit bleibt, war sie mit Schalldämpfer interessant, lange bevor das ein Trend wurde."
+    ],
+    "einsatz": ["Sportschießen (IPSC Major, Ordonnanz, 1911-Klassen)", "Selbstverteidigung", "Schalldämpferbetrieb", "Jagd: nur Fangschuss"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "randlos, zylindrisch ohne Flaschenhals",
+    "geschoss_mm": 11.48,
+    "hals_mm": 12.0,
+    "schulter_mm": null,
+    "boden_mm": 12.09,
+    "rand_mm": 12.19,
+    "huelsenlaenge_mm": 22.81,
+    "col_mm": 32.39,
+    "gasdruck_bar": 1300,
+    "gasdruck_hinweis": "Mit 1300 bar der niedrigste Druck aller gängigen Kurzwaffenpatronen — etwa halb so viel wie 9 mm Luger. Das schont Material und Hand, erklärt aber auch, warum die Leistung trotz des großen Geschosses begrenzt bleibt.",
+    "zuender": "Large Pistol, Boxer",
+    "drall": "1:406 mm (1:16″)",
+    "drall_hinweis": "Unkritisch. Die kurzen, dicken Geschosse stabilisieren in jedem Serienlauf, egal ob 185 oder 230 gr."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für Läufe von 127 mm (5″), wie bei der 1911 üblich. Kompakte Modelle mit 108 mm (4,25″) liegen 10–20 m/s darunter.",
+    "laborierungen": [
+      { "hersteller": "GECO", "typ": "Vollmantel (FMJ)", "gr": 230, "g": 14.9, "v0": 255, "bc": 0.195, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Training", "anmerkung": "Der Standard. Unterschall ohne Zutun." },
+      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 230, "g": 14.9, "v0": 260, "bc": 0.195, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg." },
+      { "hersteller": "RWS", "typ": "Vollmantel", "gr": 230, "g": 14.9, "v0": 258, "bc": 0.195, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Präzision", "anmerkung": "Enge Toleranzen, entsprechend teurer." },
+      { "hersteller": "Magtech", "typ": "Vollmantel (FMJ)", "gr": 230, "g": 14.9, "v0": 262, "bc": 0.195, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Training", "anmerkung": null },
+      { "hersteller": "Speer", "typ": "Lawman TMJ", "gr": 200, "g": 12.96, "v0": 290, "bc": 0.145, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Training / IPSC", "anmerkung": "Beliebt für Major-Laborierungen." },
+      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 185, "g": 11.99, "v0": 300, "bc": 0.148, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Verteidigung", "anmerkung": "Leichter und schneller, öffnet zuverlässig." },
+      { "hersteller": "Federal", "typ": "HST Hohlspitz", "gr": 230, "g": 14.9, "v0": 270, "bc": 0.180, "bc_modell": "G1", "lauf_mm": 127, "zweck": "Verteidigung", "anmerkung": "Behördenmaßstab bei der Deformation." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N320", "eignung": "Der Klassiker, sauberer Abbrand bei niedrigem Druck." },
+    { "name": "Hodgdon Titegroup", "eignung": "Sehr dosierungsarm, unempfindlich gegen den Füllgrad — bei der großen .45er-Hülse ein echtes Argument." },
+    { "name": "Accurate No. 5", "eignung": "Breites Ladefenster, verträgt schwere Geschosse gut." },
+    { "name": "Vihtavuori N310", "eignung": "Für sehr weiche Zielscheibenladungen." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .45 ACP", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=45-acp" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": true,
+    "text": "Unterschall ohne jede Anpassung: Die Standardlaborierung mit 230 gr liegt bei 255–262 m/s und damit weit unter den 343 m/s Schallgeschwindigkeit. Man kauft schlicht Fabrikmunition und schraubt den Dämpfer dran. Das große, schwere Geschoss gibt dabei einen dumpfen, tiefen Ton statt eines scharfen Knalls. Einziger Haken: Der Verschluss einer 1911 ist mit Dämpfer oft lauter als der Schuss, und manche Waffen brauchen einen Booster, um mit dem Zusatzgewicht sauber zu repetieren."
+  },
+
+  "vorteile": [
+    "Ab Werk unterschall — dämpfen ohne Spezialmunition",
+    "Weicher, schiebender Rückstoß statt hartem Schlag; für viele angenehmer zu schießen",
+    "Erreicht den IPSC-Major-Faktor mühelos, ohne Überdruck",
+    "Sehr niedriger Gasdruck schont Waffe und Hülsen — Messing hält viele Ladezyklen",
+    "Große Auswahl, jeder Hersteller führt sie",
+    "Die 1911-Plattform ist ausgereift und hervorragend zu tunen"
+  ],
+  "nachteile": [
+    "Deutlich teurer als 9 mm — grob das Doppelte pro Schuss",
+    "Große Patrone: weniger Magazinkapazität bei gleicher Griffgröße",
+    "Stark gekrümmte Bahn, jenseits 50 m praktisch sinnlos",
+    "Für die Jagd auf Wild in Deutschland unzulässig",
+    "Kompakte Waffen verlieren spürbar an Leistung"
+  ],
+
+  "recht_de": {
+    "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein, sofern die Waffe eingetragen ist. Als Kurzwaffenpatrone gilt der Bedürfnisnachweis nach § 14 WaffG.",
+    "jagd": "Für die Erlegung von Schalenwild in Deutschland unzulässig. Das Mindestkaliber von 6,5 mm wäre mit 11,48 mm zwar mühelos erfüllt, aber die Auftreffenergie auf 100 m verfehlt die Patrone klar: Gefordert sind 1.000 J für Rehwild, .45 ACP liefert schon an der Mündung nur 480–600 J.",
+    "hinweise": [
+      "Zum Fangschuss auf Schalenwild ist die Kurzwaffe nach § 19 BJagdG zulässig; dort gelten die E100-Grenzen nicht.",
+      "Auf Raubwild und bei der Fallenjagd je nach Landesrecht einsetzbar.",
+      "Landesjagdgesetze weichen ab — im Zweifel die untere Jagdbehörde fragen."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".45 ACP Standard", "text": "230 gr Vollmantel bei rund 255–262 m/s. Die Urlaborierung, seit 1911 praktisch unverändert." },
+    { "name": ".45 ACP +P", "text": "Erhöhter Druck für mehr Geschwindigkeit bei Verteidigungsmunition, etwa 1450 bar. Nur mit ausdrücklicher Freigabe des Waffenherstellers schießen — nicht jede 1911 ist dafür ausgelegt." },
+    { "name": ".45 ACP Match / Wadcutter", "text": "Zylindrische Geschosse, die saubere runde Löcher stanzen. Für Präzisionsdisziplinen, erfordern oft angepasste Zuführrampen." },
+    { "name": ".45 GAP", "text": "Kürzere Hülse von Glock für kompaktere Griffe, ballistisch gleichwertig. Am Markt praktisch gescheitert." }
+  ],
+
+  "nachbarn": [
+    { "name": "9 mm Luger", "text": "Halb so teuer, doppelte Magazinkapazität, weniger Rückstoß. Der rationale Gegenentwurf — .45 ACP schießt man aus Überzeugung, nicht aus Vernunft." },
+    { "name": ".40 S&W", "text": "Der Kompromiss zwischen beiden. Mehr Energie als 9 mm, härterer Impuls als .45." },
+    { "name": "10 mm Auto", "text": "Deutlich stärker bei ähnlichem Durchmesser. Die .45 für Leute, denen .45 zu zahm ist." },
+    { "name": ".45 Colt", "text": "Die alte Randpatrone für Revolver. Ähnlicher Durchmesser, längere Hülse, ganz andere Waffen." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Match-taugliche 1911 mit passender Laborierung erreichen eingespannt durchaus 25–40 mm auf 25 m. Serienwaffen mit Trainingsmunition liegen eher bei 50–80 mm. Die Spanne sagt mehr über Waffe und Schütze als über die Patrone — trag deine eigenen Werte ein.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 45 Auto", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/45-auto-en.pdf" },
+    { "titel": "Wikipedia — .45 ACP", "url": "https://de.wikipedia.org/wiki/.45_ACP" }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "6mmarc",
+  "name": "6 mm ARC",
+  "aliase": ["6mm ARC", "6 ARC", "6mm Advanced Rifle Cartridge", "6x38", "6mmARC"],
+  "gruppen": ["msr"],
+  "kurz": "Hornadys Antwort auf die Distanzschwäche der AR-15: 6,5-Creedmoor-Ballistik im kleinen System. Für die deutsche Jagd verfehlt sie das Mindestkaliber jedoch um 0,33 mm.",
+
+  "schnell": {
+    "geschoss_gr": [80, 108],
+    "v0_ms": [780, 900],
+    "e0_j": [2050, 2500],
+    "drall_mm": [190, 190],
+    "gasdruck_bar": 3800
+  },
+
+  "warnungen": [
+    {
+      "titel": "6,17 mm — verfehlt das jagdliche Mindestkaliber von 6,5 mm",
+      "text": "Der Name führt in die Irre. „6 mm ARC“ klingt nah an 6,5, aber das Geschoss misst tatsächlich 6,17 mm (.243″). Das Bundesjagdgesetz verlangt für übriges Schalenwild mindestens 6,5 mm Geschossdurchmesser — die Patrone verfehlt das um 0,33 mm und ist damit in ganz Deutschland für Rot-, Dam- und Schwarzwild unzulässig, unabhängig von der Energie. Für Rehwild gilt kein Mindestkaliber, dort ist sie bundesrechtlich zulässig. Wer eine AR-Plattform jagdlich nutzen will und mehr als Rehwild vorhat, braucht ein anderes Kaliber."
+    }
+  ],
+
+  "basis": {
+    "entwickler": "Hornady",
+    "jahr": 2020,
+    "herkunft": "USA",
+    "geschichte": [
+      "Die AR-15 hat ein bekanntes Problem: Ihr kleines System begrenzt die Patronenlänge, und die .223 Rem stößt jenseits 400 m an ihre Grenzen. Für die AR-10 mit 6,5 Creedmoor müsste man dagegen die ganze Plattform tauschen — schwerer, größer, teurer.",
+      "Hornady entwickelte die 6 mm ARC ab 2017 für einen nicht näher genannten Kunden im US-Verteidigungsministerium, der genau diese Lücke schließen wollte. Basis wurde die 6,5-Grendel-Hülse, eingezogen auf 6 mm — dadurch passt sie in ein AR-15-Magazin und braucht nur Lauf, Verschluss und Magazin, nicht das ganze System.",
+      "Das Ergebnis ist bemerkenswert: Mit einem 108-gr-ELD-Match bei BC 0,536 liegt sie ballistisch näher an der 6,5 Creedmoor als an der .223, bei rund einem Drittel mehr Energie als .223 und immer noch moderatem Rückstoß. 2020 veröffentlicht, hat sie sich in den USA schnell etabliert. In Deutschland ist sie bislang eine Randerscheinung — und jagdlich durch das Mindestkaliber ausgebremst."
+    ],
+    "einsatz": ["Langstreckenschießen mit der AR-15", "Sportschießen (PRS Gas Gun)", "Rehwildjagd (je nach Landesrecht)", "Jagd auf übriges Schalenwild: unzulässig"]
+  },
+
+  "masse": {
+    "norm": "SAAMI / C.I.P.",
+    "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
+    "geschoss_mm": 6.18,
+    "hals_mm": 6.96,
+    "schulter_mm": 10.92,
+    "boden_mm": 11.2,
+    "rand_mm": 11.2,
+    "huelsenlaenge_mm": 37.85,
+    "col_mm": 57.4,
+    "gasdruck_bar": 3800,
+    "gasdruck_hinweis": "C.I.P. gibt 3800 bar an, SAAMI 52.000 psi für Gasdrucklader. Für Repetierer wird ein höherer Wert von 62.000 psi genannt — die AR-15 verträgt das nicht, und Munition mit dieser Ladung gehört nicht in einen Selbstlader.",
+    "zuender": "Small Rifle, Boxer",
+    "drall": "1:190 mm (1:7,5″)",
+    "drall_hinweis": "Einheitlich auf 1:7,5″ festgelegt, damit die langen 105- bis 108-gr-Geschosse sicher stabilisieren. Genau diese Geschosse sind der Daseinsgrund der Patrone — mit einem langsameren Drall wäre sie sinnlos. Anders als bei .223 gibt es hier keinen Drall-Wildwuchs."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für 610 mm (24″) Lauf, wie von Hornady angegeben. Aus einem typischen 18″-AR-Lauf sind 40–60 m/s weniger zu erwarten.",
+    "laborierungen": [
+      { "hersteller": "Hornady", "typ": "ELD Match", "gr": 108, "g": 7.0, "v0": 838, "bc": 0.536, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Die Laborierung, für die das Kaliber gebaut wurde. BC 0,536 aus der AR-15 — das war vorher nicht möglich." },
+      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 103, "g": 6.67, "v0": 853, "bc": 0.512, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Die Jagdlaborierung — in Deutschland nur für Rehwild zulässig." },
+      { "hersteller": "Hornady", "typ": "BTHP BLACK", "gr": 105, "g": 6.8, "v0": 838, "bc": 0.530, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision / Training", "anmerkung": "Günstigere Match-Alternative." },
+      { "hersteller": "Hornady", "typ": "ELD-VT V-Match", "gr": 80, "g": 5.18, "v0": 900, "bc": 0.336, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Raubwild", "anmerkung": "Leicht und rasant, zerlegt sich schnell." },
+      { "hersteller": "Barnes", "typ": "LRX bleifrei", "gr": 95, "g": 6.16, "v0": 855, "bc": 0.427, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Bleifrei. Verfügbarkeit in Deutschland schwierig." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Hodgdon CFE 223", "eignung": "Von Hornady in den Ladedaten geführt, gute Geschwindigkeiten." },
+    { "name": "Hodgdon H4350", "eignung": "Für schwere Geschosse, sehr gleichmäßig." },
+    { "name": "Alliant Reloder 16", "eignung": "Temperaturstabil, holt viel aus der kleinen Hülse." },
+    { "name": "Vihtavuori N540", "eignung": "In Europa besser verfügbar als die US-Sorten." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Hornady Ladedaten 6 mm ARC (Gas Gun / Bolt Gun)", "url": "https://www.hornady.com/6mmARC" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Konzeptionell ungeeignet. Die gesamte Auslegung zielt auf hohe Geschwindigkeit bei hohem BC — unterschall geladen bliebe davon nichts, und Fabrikmunition dafür gibt es nicht. Wer aus der AR-15 leise schießen will, nimmt .300 Blackout: dieselbe Plattform, genau für diesen Zweck gebaut."
+  },
+
+  "vorteile": [
+    "6,5-Creedmoor-ähnliche BC-Werte aus der kleinen AR-15 — das war vorher nicht möglich",
+    "Rund ein Drittel mehr Energie als .223 Rem bei nur wenig mehr Rückstoß",
+    "Umbau der AR-15 mit Lauf, Verschluss und Magazin — kein neues System nötig",
+    "Einheitlicher Drall von 1:7,5″, kein Drall-Wildwuchs",
+    "Deutlich besser im Wind als .223 durch den hohen BC",
+    "Auf 600 m und darüber noch sinnvoll einsetzbar"
+  ],
+  "nachteile": [
+    "6,17 mm: verfehlt das jagdliche Mindestkaliber von 6,5 mm — kein übriges Schalenwild (siehe Warnung)",
+    "In Deutschland Nischenmunition: teuer, schlecht verfügbar, praktisch nur Hornady",
+    "Deutlich teurer als .223 Rem — grob das Drei- bis Vierfache",
+    "Auswahl an Laborierungen und Waffen ist dünn",
+    "Für Schalldämpferbetrieb ungeeignet",
+    "Sehr jung — Langzeiterfahrung zu Laufstandzeit und Verfügbarkeit fehlt noch"
+  ],
+
+  "recht_de": {
+    "sport": "Halbautomaten in 6 mm ARC sind für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist. Das Kaliber selbst ist nicht beschränkt.",
+    "jagd": "Für übriges Schalenwild in ganz Deutschland unzulässig: Mit 6,17 mm verfehlt die Patrone das gesetzliche Mindestkaliber von 6,5 mm Geschossdurchmesser um 0,33 mm — die Energie spielt dabei keine Rolle. Für Rehwild gilt kein Mindestkaliber, sondern nur die 1.000-J-Grenze auf 100 m, die sie mit rund 1.900–2.000 J deutlich überschreitet.",
+    "hinweise": [
+      "Der Name täuscht: „6 mm“ klingt nah an 6,5, ist aber rechtlich eine andere Welt. Genau hier verrechnen sich Käufer.",
+      "Für Rehwild bundesrechtlich zulässig, aber Landesjagdgesetze können strenger sein — vor der Anschaffung prüfen.",
+      "Halbautomaten sind in mehreren Bundesländern für die Jagd verboten oder eingeschränkt.",
+      "Bleifreie Jagdmunition ist in diesem Kaliber in Deutschland kaum zu bekommen — bei Bleifrei-Pflicht ein echtes Problem."
+    ]
+  },
+
+  "varianten": [
+    { "name": "6 mm ARC Gas Gun", "text": "Auf 52.000 psi geladen, für die AR-15. Die reguläre Fabrikmunition." },
+    { "name": "6 mm ARC Bolt Gun", "text": "Höher geladen (bis 62.000 psi) für Repetierer. Gehört nicht in einen Selbstlader — die Gasanlage verträgt das nicht." },
+    { "name": "6,5 Grendel", "text": "Die Mutterhülse, nicht eingezogen. Größeres Geschoss (6,71 mm) und damit jagdlich für Schalenwild zulässig — dafür weniger rasant." },
+    { "name": "6 mm Creedmoor", "text": "Gleicher Durchmesser, viel größere Hülse. Braucht die AR-10 oder ein Kurzsystem, liefert aber deutlich mehr." }
+  ],
+
+  "nachbarn": [
+    { "name": "6,5 Grendel", "text": "Dieselbe Hülsenfamilie, 6,71 mm Geschoss. Weniger rasant, aber jagdlich für Schalenwild zulässig — für Jäger die bessere Wahl in der AR-15." },
+    { "name": ".223 Rem / 5,56x45", "text": "Ein Drittel weniger Energie und deutlich schlechter im Wind, dafür ein Bruchteil des Preises und überall verfügbar." },
+    { "name": "6,5 Creedmoor", "text": "Die große Schwester in Sachen Ballistik-Philosophie: mehr Energie, mehr Reichweite — braucht aber die AR-10." },
+    { "name": ".300 AAC Blackout", "text": "Dieselbe Plattform, ganz andere Rolle: kurze Distanz, großes Geschoss, hervorragend zu dämpfen." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Erwartungswerte zur Orientierung: Hornady-Match aus einer guten AR-15 liegt typisch bei 20–30 mm auf 100 m. Belastbare Vergleichswerte sind bei diesem jungen Kaliber noch rar — umso mehr lohnt es sich, eigene Messwerte zu sammeln.",
+
+  "quellen": [
+    { "titel": "Hornady — 6 mm ARC", "url": "https://www.hornady.com/6mmARC" },
+    { "titel": "Wikipedia — 6 mm ARC", "url": "https://en.wikipedia.org/wiki/6mm_ARC" },
+    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+  ]
+}

@@ -1,0 +1,11 @@
+# Von "python tools/preise.py export" erzeugt — Arbeitsdatei, gehört nicht ins Repo
+preise_bearbeiten.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini

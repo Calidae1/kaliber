@@ -1,0 +1,407 @@
+{
+  "version": 2,
+  "stand": "2026-07-15",
+  "gruppen": {
+    "kurz": "Kurzwaffe / Sport",
+    "jagd": "Büchse / Jagd DE",
+    "msr": "AR-Plattform"
+  },
+  "kaliber": [
+    {
+      "id": "9x19",
+      "name": "9 mm Luger",
+      "aliase": [
+        "9x19",
+        "9 mm Parabellum",
+        "9 mm Para",
+        "9 mm NATO",
+        "9mm"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Die meistgeschossene Patrone der Welt — billig, rückstoßarm, überall verfügbar. Für die Jagd in Deutschland nur zum Fangschuss."
+    },
+    {
+      "id": "45acp",
+      "name": ".45 ACP",
+      "aliase": [
+        ".45 Auto",
+        "45 ACP",
+        "11,43x23",
+        ".45 Automatic",
+        "45 Auto",
+        "11.43x23mm"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Das große, langsame Geschoss von John Browning. Von Haus aus unterschall, weicher schiebender Rückstoß statt harter Schlag — und bis heute die Patrone der 1911."
+    },
+    {
+      "id": "40sw",
+      "name": ".40 S&W",
+      "aliase": [
+        ".40 Smith & Wesson",
+        "40 S&W",
+        "10x22",
+        ".40",
+        "40SW",
+        "10x22mm Smith & Wesson"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Der Kompromiss zwischen 9 mm und .45 — entstanden, weil dem FBI die 10 mm Auto zu heftig war. Mehr Energie als 9 mm, dafür harter Impuls und im Sport heute weitgehend verdrängt."
+    },
+    {
+      "id": "357mag",
+      "name": ".357 Magnum",
+      "aliase": [
+        ".357 Mag",
+        "357 Magnum",
+        "9x33R",
+        ".357 S&W Magnum",
+        "357",
+        "9x33mmR"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Die erste Magnum überhaupt und bis heute der Maßstab für Revolverleistung. Aus dem Karabiner wird sie zur Büchse — und .38 Special passt problemlos mit rein."
+    },
+    {
+      "id": "38spl",
+      "name": ".38 Special",
+      "aliase": [
+        ".38 Spl",
+        "38 Special",
+        "9x29R",
+        ".38 Smith & Wesson Special",
+        "38 Spez",
+        "9x29mmR"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Die Präzisionspatrone unter den Revolverkalibern: milder Rückstoß, hervorragende Genauigkeit, billig. Läuft in jeder .357 Magnum mit."
+    },
+    {
+      "id": "44mag",
+      "name": ".44 Remington Magnum",
+      "aliase": [
+        ".44 Mag",
+        "44 Magnum",
+        "10,9x33R",
+        ".44 Magnum",
+        "44 Rem Mag",
+        "10.9x33mmR"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Elmer Keiths Lebenswerk und dank Dirty Harry die berühmteste Patrone der Welt. Aus dem Revolver eine Herausforderung, aus dem Karabiner eine ernstzunehmende Büchse."
+    },
+    {
+      "id": "10mmauto",
+      "name": "10 mm Auto",
+      "aliase": [
+        "10mm",
+        "10 mm Automatic",
+        "10x25",
+        "10x25mm",
+        "10 Auto"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Jeff Coopers Idee einer idealen Kampfpatrone: .45er-Durchmesser mit Magnum-Tempo. Zu heftig fürs FBI, zu gut zum Sterben — und heute die stärkste vernünftige Selbstladepatrone."
+    },
+    {
+      "id": "32swlong",
+      "name": ".32 S&W long",
+      "aliase": [
+        ".32 S&W lang",
+        "32 S&W long",
+        "7,65x23R",
+        ".32 Colt New Police",
+        "32 SW long",
+        "7.65x23mmR"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Die Patrone der olympischen Sportpistole. Kaum Rückstoß, kaum Energie, dafür präziser als praktisch alles andere — und dafür ist sie auch gebaut."
+    },
+    {
+      "id": "223rem",
+      "name": ".223 Remington",
+      "aliase": [
+        "5,56x45",
+        "5.56x45",
+        "223 Rem",
+        ".223",
+        "5,56 NATO",
+        "5,56mm",
+        "223",
+        "5.56 NATO",
+        "5,56"
+      ],
+      "gruppen": [
+        "msr"
+      ],
+      "kurz": "Die meistgeschossene Büchsenpatrone der Welt und das Herz der AR-15. Billig, rasant, rückstoßarm — für die Jagd in Deutschland aber fast überall zu klein."
+    },
+    {
+      "id": "300blk",
+      "name": ".300 AAC Blackout",
+      "aliase": [
+        "300 BLK",
+        "300 Blackout",
+        "7,62x35 mm",
+        ".300 AAC",
+        ".300 Whisper"
+      ],
+      "gruppen": [
+        "msr"
+      ],
+      "kurz": "7,62-mm-Geschoss aus der AR-15 mit Standardverschluss und -magazin. Volle Leistung schon aus kurzem Lauf, konkurrenzlos gut zu dämpfen."
+    },
+    {
+      "id": "762x39",
+      "name": "7,62 × 39 mm",
+      "aliase": [
+        "7.62x39",
+        "762x39",
+        "7,62 Kalaschnikow",
+        "7,62 Sowjet",
+        "M43",
+        "7.62 Soviet",
+        "7,62x39mm"
+      ],
+      "gruppen": [
+        "msr"
+      ],
+      "kurz": "Die Patrone der Kalaschnikow und damit die meistproduzierte Militärpatrone der Geschichte. Billig, robust, ballistisch fast deckungsgleich mit .300 Blackout — und mit .311″ dicker, als die meisten denken."
+    },
+    {
+      "id": "65creedmoor",
+      "name": "6,5 Creedmoor",
+      "aliase": [
+        "6.5 Creedmoor",
+        "65 Creedmoor",
+        "6,5 CM",
+        "6.5 CM",
+        "6,5x49",
+        "65CM",
+        "6,5 Creed"
+      ],
+      "gruppen": [
+        "msr",
+        "jagd"
+      ],
+      "kurz": "Der Langstrecken-Überflieger der letzten fünfzehn Jahre: hoher BC, wenig Rückstoß, passt in kurze Systeme. Wird oft überschätzt — aber selten zu Unrecht gelobt."
+    },
+    {
+      "id": "6mmarc",
+      "name": "6 mm ARC",
+      "aliase": [
+        "6mm ARC",
+        "6 ARC",
+        "6mm Advanced Rifle Cartridge",
+        "6x38",
+        "6mmARC"
+      ],
+      "gruppen": [
+        "msr"
+      ],
+      "kurz": "Hornadys Antwort auf die Distanzschwäche der AR-15: 6,5-Creedmoor-Ballistik im kleinen System. Für die deutsche Jagd verfehlt sie das Mindestkaliber jedoch um 0,33 mm."
+    },
+    {
+      "id": "224valkyrie",
+      "name": ".224 Valkyrie",
+      "aliase": [
+        "224 Valkyrie",
+        "5,7x41",
+        ".224 Val",
+        "224Valkyrie",
+        "5.7x41"
+      ],
+      "gruppen": [
+        "msr"
+      ],
+      "kurz": "Federals Versuch, die AR-15 auf 1.000 Yard zu bringen: .22er-Durchmesser mit Langstreckengeschossen. Ballistisch clever, am Markt jedoch weitgehend gescheitert."
+    },
+    {
+      "id": "308win",
+      "name": ".308 Winchester",
+      "aliase": [
+        ".308 Win",
+        "308 Winchester",
+        "7,62x51",
+        "7.62x51",
+        "7,62 NATO",
+        ".308",
+        "308",
+        "7,62x51mm NATO"
+      ],
+      "gruppen": [
+        "jagd",
+        "msr"
+      ],
+      "kurz": "Der Universalist. Kann alles ordentlich, nichts überragend — und ist genau deshalb weltweit die meistgenutzte Büchsenpatrone für Jagd, Sport und Militär."
+    },
+    {
+      "id": "3006",
+      "name": ".30-06 Springfield",
+      "aliase": [
+        ".30-06",
+        "30-06",
+        "7,62x63",
+        "7.62x63",
+        ".30-06 Sprg",
+        "3006",
+        "30.06",
+        "7,62x63mm"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Die vielleicht vielseitigste Büchsenpatrone überhaupt: seit 1906 im Dienst, von Reh bis Elch alles möglich, und weltweit an jeder Ecke zu bekommen."
+    },
+    {
+      "id": "8x57is",
+      "name": "8 × 57 IS",
+      "aliase": [
+        "8x57 IS",
+        "8x57IS",
+        "8 x 57 JS",
+        "8x57JS",
+        "7,92x57",
+        "8mm Mauser",
+        "7.92x57 Mauser",
+        "8x57 I S",
+        "8x57"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Die deutsche Jagdpatrone schlechthin, seit über hundert Jahren. Leistung auf .30-06-Niveau — aber die Verwechslung von IS und I ist lebensgefährlich."
+    },
+    {
+      "id": "7x64",
+      "name": "7 × 64",
+      "aliase": [
+        "7x64",
+        "7 x 64 Brenneke",
+        "7x64 Brenneke",
+        "7x64mm",
+        "7 mm Brenneke"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Wilhelm Brennekes europäische Antwort auf die .30-06: rasanter, flacher, weniger Rückstoß — und in Deutschland eine der beliebtesten Jagdpatronen überhaupt."
+    },
+    {
+      "id": "65x55",
+      "name": "6,5 × 55 SE",
+      "aliase": [
+        "6,5x55",
+        "6.5x55",
+        "6,5x55 SE",
+        "6,5x55 Schwedisch",
+        "6,5 Schwede",
+        "6.5x55 Swedish",
+        "6,5x55mm",
+        "65x55"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Die schwedische Militärpatrone von 1894 — und bis heute ein Maßstab. Wenig Rückstoß, hoher BC, legendäre Durchschlagsleistung. Alles, wofür die 6,5 Creedmoor gefeiert wird, konnte sie schon vor 130 Jahren."
+    },
+    {
+      "id": "243win",
+      "name": ".243 Winchester",
+      "aliase": [
+        ".243 Win",
+        "243 Winchester",
+        "6,2x52",
+        "6.2x52",
+        ".243",
+        "243",
+        "6mm Winchester"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Die klassische Rehwildpatrone: rasant, flach, fast rückstoßfrei. Aber mit 6,20 mm unter dem gesetzlichen Mindestkaliber — für Rot- und Schwarzwild in ganz Deutschland unzulässig."
+    },
+    {
+      "id": "93x62",
+      "name": "9,3 × 62",
+      "aliase": [
+        "9,3x62",
+        "9.3x62",
+        "9,3 x 62 Mauser",
+        "9,3x62mm",
+        "93x62",
+        "9.3x62 Mauser"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Afrikatauglich aus einem Standard-Mauser: Otto Bocks Meisterstück von 1905 ist bis heute die Drückjagdpatrone für starke Sauen — und ballistisch souveräner, als ihr gemächliches Tempo vermuten lässt."
+    },
+    {
+      "id": "30rblaser",
+      "name": ".30 R Blaser",
+      "aliase": [
+        ".30R Blaser",
+        "30 R Blaser",
+        "7,62x68R",
+        "7.62x68R",
+        "30R Blaser",
+        "7,62x68mmR"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Magnum-Leistung mit Rand: Blasers Antwort auf die Frage, was man in einen Kipplauf oder eine Doppelbüchse legt, wenn .30-06 nicht reicht."
+    },
+    {
+      "id": "7remmag",
+      "name": "7 mm Rem. Magnum",
+      "aliase": [
+        "7mm Rem Mag",
+        "7 mm Remington Magnum",
+        "7x64R Mag",
+        "7mm RM",
+        "7 Rem Mag",
+        "7mmRemMag"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Die erfolgreichste Magnum überhaupt: sehr flache Bahn, hohe BC-Werte, für jedes heimische Wild mehr als genug. Der Preis sind Rückstoß, Knall und Laufverschleiß."
+    },
+    {
+      "id": "300wm",
+      "name": ".300 Winchester Magnum",
+      "aliase": [
+        ".300 Win Mag",
+        "300 Winchester Magnum",
+        "7,62x67",
+        "7.62x67",
+        ".300 WM",
+        "300WM",
+        "300 Win Mag"
+      ],
+      "gruppen": [
+        "jagd"
+      ],
+      "kurz": "Die Magnum für alles: 4.700 Joule, flache Bahn, weltweit verfügbar. Kann mehr, als die meisten Reviere und die meisten Schützen brauchen — und lässt einen das auch spüren."
+    }
+  ]
+}

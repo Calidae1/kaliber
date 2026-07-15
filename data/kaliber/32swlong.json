@@ -1,0 +1,123 @@
+{
+  "id": "32swlong",
+  "name": ".32 S&W long",
+  "aliase": [".32 S&W lang", "32 S&W long", "7,65x23R", ".32 Colt New Police", "32 SW long", "7.65x23mmR"],
+  "gruppen": ["kurz"],
+  "kurz": "Die Patrone der olympischen Sportpistole. Kaum Rückstoß, kaum Energie, dafür präziser als praktisch alles andere — und dafür ist sie auch gebaut.",
+
+  "schnell": {
+    "geschoss_gr": [83, 100],
+    "v0_ms": [210, 280],
+    "e0_j": [130, 200],
+    "drall_mm": [483, 483],
+    "gasdruck_bar": 1100
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "Smith & Wesson",
+    "jahr": 1896,
+    "herkunft": "USA",
+    "geschichte": [
+      "Ursprünglich als schwache Revolverpatrone für Polizei und Zivilisten gedacht, und in dieser Rolle längst bedeutungslos — die Energie liegt unter der einer starken Luftpistole aus heutiger Sicht. Als Verteidigungspatrone ist sie schlicht ungeeignet, und das ist keine neue Erkenntnis.",
+      "Ihre zweite Karriere begann im Wettkampf. Der internationale Schießsport suchte eine Zentralfeuerpatrone mit minimalem Rückstoß für die Sportpistolen-Disziplin, und die .32 S&W long passte perfekt: wenig Druck, wenig Impuls, aber bei entsprechender Fertigung außerordentlich gleichmäßig.",
+      "Heute ist sie praktisch reine Sportmunition. Die Waffen dafür — Pardini, Walther, Morini — sind hochspezialisierte Präzisionsgeräte, die mit einem Gebrauchsrevolver nichts mehr gemein haben. Wer .32 S&W long schießt, tut das für die Ringe, nicht für die Wirkung."
+    ],
+    "einsatz": ["Sportschießen (ISSF/DSB Sportpistole, Zentralfeuerpistole)", "Historische Revolver", "Jagd: praktisch keine"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "mit Rand, zylindrisch ohne Flaschenhals",
+    "geschoss_mm": 7.94,
+    "hals_mm": 8.51,
+    "schulter_mm": null,
+    "boden_mm": 8.61,
+    "rand_mm": 9.7,
+    "huelsenlaenge_mm": 23.4,
+    "col_mm": 32.0,
+    "gasdruck_bar": 1100,
+    "gasdruck_hinweis": "Mit 1100 bar der niedrigste Druck aller hier behandelten Patronen. Das ist kein Mangel, sondern der Zweck: wenig Druck heißt wenig Impuls, wenig Waffenbewegung und damit maximale Präzision.",
+    "zuender": "Small Pistol, Boxer",
+    "drall": "1:483 mm (1:19″)",
+    "drall_hinweis": "Unkritisch. Die Wadcutter mit 98 gr stabilisieren trotz stumpfer Form problemlos, weil sie langsam fliegen."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für Sportpistolenläufe um 150 mm. Die Streuung der Geschwindigkeit ist bei guter Matchmunition sehr klein — genau darauf kommt es bei dieser Patrone an.",
+    "laborierungen": [
+      { "hersteller": "RWS", "typ": "Match Wadcutter", "gr": 98, "g": 6.35, "v0": 230, "bc": 0.062, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Präzision", "anmerkung": "Der Maßstab im Sport. Sehr enge v₀-Streuung, entsprechend teuer." },
+      { "hersteller": "Sellier & Bellot", "typ": "Wadcutter", "gr": 98, "g": 6.35, "v0": 228, "bc": 0.062, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Präzision", "anmerkung": "Günstigere Alternative fürs Training." },
+      { "hersteller": "Fiocchi", "typ": "Wadcutter", "gr": 98, "g": 6.35, "v0": 232, "bc": 0.062, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Präzision", "anmerkung": null },
+      { "hersteller": "GECO", "typ": "Wadcutter", "gr": 98, "g": 6.35, "v0": 225, "bc": 0.062, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Der Vereinsstandard." },
+      { "hersteller": "Magtech", "typ": "Vollmantel Rundkopf", "gr": 98, "g": 6.35, "v0": 240, "bc": 0.110, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Rundkopf statt Wadcutter — führt in Selbstladern besser zu." },
+      { "hersteller": "Fiocchi", "typ": "Bleigeschoss Rundkopf", "gr": 83, "g": 5.38, "v0": 270, "bc": 0.095, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Leichter und schneller, für historische Revolver." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N310", "eignung": "Der Klassiker für Wadcutter — sehr geringe Mengen, sauberer Abbrand bei niedrigem Druck." },
+    { "name": "Hodgdon Clays", "eignung": "Für sehr weiche Matchladungen." },
+    { "name": "Vihtavuori N320", "eignung": "Etwas langsamer, gut dosierbar." },
+    { "name": "Hodgdon Titegroup", "eignung": "Unempfindlich gegen den Füllgrad — bei so kleinen Ladungen ein Vorteil." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .32 S&W Long", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=32-sw-long-wadcutter" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": true,
+    "text": "Weit unterschall — mit 210–280 m/s liegt sie deutlich unter den 343 m/s. Praktisch spielt das keine Rolle: Die Waffen sind Sportpistolen und Revolver, an die niemand einen Dämpfer schraubt, und beim Revolver würde der Trommelspalt es ohnehin verhindern. Der niedrige Schallpegel kommt hier schlicht daher, dass wenig Pulver verbrennt."
+  },
+
+  "vorteile": [
+    "Nahezu rückstoßfrei — die Waffe bleibt im Ziel, schnelle Schussfolge ohne Nachführen",
+    "Außergewöhnliche Präzision bei entsprechender Matchmunition",
+    "Die Patrone der olympischen Sportpistole: ohne sie keine ISSF-Disziplin",
+    "Sehr niedriger Druck: Waffen und Hülsen halten praktisch ewig",
+    "Wadcutter machen die Ringwertung eindeutig",
+    "Wiederladen ist wegen der winzigen Ladungen extrem günstig"
+  ],
+  "nachteile": [
+    "Mit 130–200 J praktisch ohne jede Wirkung — als Verteidigungspatrone ungeeignet",
+    "Stark gekrümmte Bahn, jenseits 25 m sinnlos",
+    "Reine Nischenmunition: außerhalb des Sports kaum erhältlich",
+    "Matchmunition ist trotz winziger Ladung teuer",
+    "Für die Jagd in Deutschland vollständig ungeeignet und unzulässig",
+    "Die Waffen dafür sind teure Spezialgeräte"
+  ],
+
+  "recht_de": {
+    "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein bei eingetragener Waffe. Bedürfnisnachweis nach § 14 WaffG. Für die Sportpistolen-Disziplin von praktisch allen Verbänden anerkannt — für Sportschützen der übliche Weg zur Zentralfeuer-Kurzwaffe.",
+    "jagd": "Für die Jagd auf Wild in Deutschland unzulässig und praktisch ungeeignet. Mit 130–200 J an der Mündung liegt sie um ein Vielfaches unter den geforderten 1.000 J auf 100 m für Rehwild — und selbst zum Fangschuss wäre sie eine schlechte Wahl.",
+    "hinweise": [
+      "Theoretisch nach § 19 BJagdG zum Fangschuss zulässig, praktisch aber zu schwach dafür. Nimm etwas Größeres.",
+      "Auf Raubwild je nach Landesrecht denkbar, aber wegen der geringen Wirkung nicht empfehlenswert.",
+      "Als reine Sportmunition rechtlich am unproblematischsten."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".32 S&W long Wadcutter", "text": "98 gr zylindrisches Geschoss bei rund 225–232 m/s. Die Sportlaborierung — praktisch die einzige, die zählt." },
+    { "name": ".32 S&W long Rundkopf", "text": "Vollmantel oder Blei mit Rundkopf. Führt in Selbstladern besser zu, für Revolver und historische Waffen." },
+    { "name": ".32 S&W (kurz)", "text": "Die kürzere Vorgängerin von 1878. Läuft in .32-S&W-long-Waffen mit, ist aber noch schwächer und praktisch verschwunden." },
+    { "name": ".32 H&R Magnum", "text": "Verlängerte, stärkere Weiterentwicklung mit rund 400 J. Deutlich mehr Leistung, aber nicht für den ISSF-Sport zugelassen." }
+  ],
+
+  "nachbarn": [
+    { "name": ".38 Special", "text": "Die nächste Stufe im Präzisionssport: doppelte Energie, immer noch milder Rückstoß, deutlich verbreiteter." },
+    { "name": ".32 H&R Magnum", "text": "Dieselbe Geschossfamilie, längere Hülse, doppelte Energie. Für Waffen, die dafür ausgelegt sind." },
+    { "name": "9 mm Luger", "text": "Rund das Dreifache an Energie und ein Bruchteil des Preises — aber mit spürbarem Rückstoß und deshalb im Präzisionssport chancenlos." },
+    { "name": ".22 lfB", "text": "Der Randfeuer-Gegenentwurf: noch billiger und noch milder, aber eine andere Disziplinfamilie." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Diese Patrone ist der seltene Fall, in dem die Munition tatsächlich der begrenzende Faktor sein kann — bei guter Matchmunition und einer echten Sportpistole sind eingespannt 15–25 mm auf 25 m erreichbar. Genau deshalb lohnt es sich hier besonders, verschiedene Chargen zu vergleichen und die Werte festzuhalten.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 32 S&W Long", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/32-sw-long-en.pdf" },
+    { "titel": "Wikipedia — .32 S&W long", "url": "https://de.wikipedia.org/wiki/.32_S%26W_long" }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "223rem",
+  "name": ".223 Remington",
+  "aliase": ["5,56x45", "5.56x45", "223 Rem", ".223", "5,56 NATO", "5,56mm", "223", "5.56 NATO", "5,56"],
+  "gruppen": ["msr"],
+  "kurz": "Die meistgeschossene Büchsenpatrone der Welt und das Herz der AR-15. Billig, rasant, rückstoßarm — für die Jagd in Deutschland aber fast überall zu klein.",
+
+  "schnell": {
+    "geschoss_gr": [40, 77],
+    "v0_ms": [820, 1000],
+    "e0_j": [1280, 1850],
+    "drall_mm": [178, 305],
+    "gasdruck_bar": 4300
+  },
+
+  "warnungen": [
+    {
+      "titel": "5,56 NATO in einem .223-Rem-Patronenlager erhöht den Druck gefährlich",
+      "text": "Die beiden Patronen sehen identisch aus und passen mechanisch ineinander, sind aber nicht dasselbe. Das 5,56-NATO-Lager hat einen längeren Übergangskonus (Leade) vor den Zügen. Verschießt man 5,56-NATO-Munition, die ohnehin höher geladen ist, in einem engeren .223-Rem-Lager, stößt das Geschoss früher in die Züge und der Druck steigt deutlich über die Auslegung. Umgekehrt ist es unbedenklich: .223 Rem darf in jedem 5,56-Lager geschossen werden. Merksatz: Was auf dem Lauf steht, entscheidet — steht dort .223 Rem, gehört auch nur .223 Rem hinein."
+    }
+  ],
+
+  "basis": {
+    "entwickler": "Remington und Armalite (Eugene Stoner), aus der .222 Remington entwickelt",
+    "jahr": 1962,
+    "herkunft": "USA",
+    "geschichte": [
+      "Die US-Armee suchte Ende der 1950er nach einer leichten Patrone für ein automatisches Gewehr — die Idee: viele kleine, schnelle Geschosse statt weniger großer. Aus der .222 Remington entstand über die .222 Remington Magnum die .223, die 1964 zusammen mit dem M16 als 5,56×45 mm eingeführt wurde.",
+      "1980 übernahm die NATO eine belgische Weiterentwicklung als Standard: die SS109 mit schwererem 62-gr-Geschoss und Stahlkern, die einen schnelleren Drall von 1:7″ verlangte. Deshalb findet man bis heute Läufe von 1:12″ bis 1:7″ — und deshalb ist der Drall bei diesem Kaliber die entscheidende Frage.",
+      "Zivil ist die .223 Rem zur meistgeschossenen Büchsenpatrone der Welt geworden. Sie ist billig, rückstoßarm und rasant, und mit der AR-15 gibt es eine Plattform, die man endlos umbauen kann. In Deutschland ist sie im Sport allgegenwärtig — jagdlich hingegen spielt sie kaum eine Rolle, weil sie am 6,5-mm-Mindestkaliber scheitert."
+    ],
+    "einsatz": ["Sportschießen mit AR-15 und Repetierer", "Behörden und Militär weltweit", "Raubwildjagd (je nach Landesrecht)", "Jagd auf Schalenwild: allenfalls Rehwild, meist unzulässig"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. (.223 Rem) / SAAMI / NATO (5,56×45)",
+    "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
+    "geschoss_mm": 5.7,
+    "hals_mm": 6.43,
+    "schulter_mm": 9.0,
+    "boden_mm": 9.58,
+    "rand_mm": 9.6,
+    "huelsenlaenge_mm": 44.7,
+    "col_mm": 57.4,
+    "gasdruck_bar": 4300,
+    "gasdruck_hinweis": "C.I.P. gibt für .223 Rem 4300 bar an. 5,56 NATO liegt nach EPVAT höher und wird zudem an anderer Stelle gemessen — die Zahlen sind nicht direkt vergleichbar. Praktisch relevant ist der Unterschied im Patronenlager, nicht in der Druckangabe (siehe Warnung).",
+    "zuender": "Small Rifle, Boxer (Berdan bei Militärüberschüssen)",
+    "drall": "1:305 mm (1:12″) alt, 1:229 mm (1:9″) verbreitet, 1:178 mm (1:7″) für schwere Geschosse",
+    "drall_hinweis": "Hier entscheidet der Drall alles. Ein alter 1:12″-Lauf stabilisiert nur Geschosse bis etwa 55 gr — schwerere taumeln. 1:9″ deckt 40 bis 69 gr ab und ist der brauchbarste Kompromiss. Für 75- und 77-gr-Matchgeschosse, mit denen die Patrone erst auf Distanz interessant wird, braucht es 1:8″ oder 1:7″. Wer heute kauft, nimmt 1:8″ oder 1:7″."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für 406 mm (16″) Lauf. Ein 20″-Lauf legt 30–50 m/s zu, ein kurzer 10,5″-Lauf verliert 80–120 m/s. Die Patrone reagiert empfindlicher auf Lauflänge als die meisten anderen hier.",
+    "laborierungen": [
+      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 55, "g": 3.56, "v0": 990, "bc": 0.243, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Training", "anmerkung": "Der Standard. Läuft in jedem Drall ab 1:12″." },
+      { "hersteller": "GECO", "typ": "Vollmantel (FMJ)", "gr": 55, "g": 3.56, "v0": 980, "bc": 0.243, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Training", "anmerkung": "Günstigster regulärer Einstieg." },
+      { "hersteller": "Magtech", "typ": "Vollmantel (FMJ)", "gr": 62, "g": 4.02, "v0": 940, "bc": 0.307, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Training", "anmerkung": "Braucht 1:9″ oder schneller." },
+      { "hersteller": "Hornady", "typ": "V-MAX", "gr": 55, "g": 3.56, "v0": 985, "bc": 0.255, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Raubwild", "anmerkung": "Zerlegt sich schnell, geringe Abprallgefahr." },
+      { "hersteller": "Hornady", "typ": "ELD Match", "gr": 75, "g": 4.86, "v0": 840, "bc": 0.467, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Präzision", "anmerkung": "Braucht 1:8″ oder schneller. Erst hiermit wird die Patrone auf Distanz interessant." },
+      { "hersteller": "Sierra", "typ": "MatchKing HPBT", "gr": 77, "g": 4.99, "v0": 830, "bc": 0.372, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Präzision", "anmerkung": "Der Matchstandard. Braucht zwingend 1:8″ oder 1:7″." },
+      { "hersteller": "Nosler", "typ": "Ballistic Tip", "gr": 40, "g": 2.59, "v0": 1000, "bc": 0.221, "bc_modell": "G1", "lauf_mm": 406, "zweck": "Raubwild", "anmerkung": "Sehr leicht und rasant, extrem flache Bahn auf kurze Distanz." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N133", "eignung": "Der Klassiker für leichte bis mittlere Geschosse, in Europa gut verfügbar." },
+    { "name": "Vihtavuori N140", "eignung": "Für schwere Matchgeschosse ab 69 gr." },
+    { "name": "Hodgdon Varget", "eignung": "Sehr temperaturstabil, breites Ladefenster." },
+    { "name": "Hodgdon CFE 223", "eignung": "Reduziert Kupferablagerungen — bei hohen Schusszahlen ein echtes Argument." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .223 Remington", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=223-remington" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Der große Schwachpunkt. Um .223 unter die Schallgrenze zu bringen, muss man sie so weit herunterladen, dass die Waffe nicht mehr repetiert und die Energie auf ein Zehntel fällt. Dazu kommt: Die leichten Geschosse haben zu wenig Masse, um bei 320 m/s noch irgendetwas auszurichten, und die üblichen Dralle stabilisieren die nötigen langen Schwergeschosse nicht. Genau diese Lücke hat die .300 Blackout geschlossen — sie ist die Antwort auf die Frage, die .223 nicht beantworten kann."
+  },
+
+  "vorteile": [
+    "Mit Abstand billigste Büchsenmunition — Training in Mengen wird bezahlbar",
+    "Sehr geringer Rückstoß: schnelle Schussfolge, man sieht den eigenen Treffer",
+    "Rasant und flach — auf 300 m noch gut beherrschbar",
+    "Riesige Auswahl an Geschossen, von 40 bis 77 gr",
+    "Überall verfügbar, weltweit die verbreitetste Büchsenpatrone",
+    "Die AR-15-Plattform ist ausgereift und endlos konfigurierbar"
+  ],
+  "nachteile": [
+    "5,70 mm Geschossdurchmesser: verfehlt das jagdliche Mindestkaliber von 6,5 mm — für übriges Schalenwild in ganz Deutschland unzulässig",
+    "Verwechslungsgefahr .223 Rem / 5,56 NATO (siehe Warnung)",
+    "Für Schalldämpferbetrieb praktisch ungeeignet",
+    "Der Drall entscheidet über die nutzbaren Geschosse — ein alter Lauf begrenzt hart",
+    "Leichte Geschosse sind windempfindlich",
+    "Reagiert empfindlich auf kurze Läufe"
+  ],
+
+  "recht_de": {
+    "sport": "Halbautomatische Büchsen in .223 Rem sind für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist. Das Kaliber selbst ist nicht beschränkt — über die Erwerbbarkeit entscheidet die Waffe, nicht die Patrone.",
+    "jagd": "Für übriges Schalenwild in ganz Deutschland unzulässig: Mit 5,70 mm verfehlt die Patrone das gesetzliche Mindestkaliber von 6,5 mm Geschossdurchmesser, und daran ändert auch keine Energieangabe etwas. Für Rehwild gilt kein Mindestkaliber, sondern nur die 1.000-J-Grenze auf 100 m — die eine 55-gr-Laborierung mit rund 1.050–1.150 J knapp erreicht.",
+    "hinweise": [
+      "Rehwild ist damit bundesrechtlich denkbar, aber mehrere Landesjagdgesetze schließen .223 dafür ausdrücklich aus oder verlangen ein Mindestgeschossgewicht. Vor der Anschaffung das Landesrecht prüfen — nicht danach.",
+      "Auf Raubwild ist die Patrone je nach Landesrecht verbreitet und dort auch sinnvoll.",
+      "Halbautomaten sind in mehreren Bundesländern für die Jagd verboten oder eingeschränkt.",
+      "Der Abstand zur 1.000-J-Grenze ist gering und hängt an der Lauflänge. Ein kurzer Lauf bringt dich darunter — miss deine tatsächliche v₀."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".223 Remington", "text": "Die zivile C.I.P.-Norm, 4300 bar. Läuft in jedem zugelassenen Lauf, auch in 5,56-Lagern." },
+    { "name": "5,56×45 NATO", "text": "Die militärische Spezifikation: höher geladen, längerer Übergangskonus im Lager. Nicht in .223-Rem-Läufe (siehe Warnung)." },
+    { "name": ".223 Wylde", "text": "Kein eigenes Kaliber, sondern ein Zwischenmaß im Patronenlager. Nimmt beide Munitionsarten sicher auf und schießt trotzdem präzise — die vernünftigste Wahl bei einem Neukauf." },
+    { "name": ".222 Remington", "text": "Die kürzere Vorgängerin von 1950. In Europa lange die Standardpatrone für Raubwild, heute weitgehend verdrängt. Passt nicht." },
+    { "name": ".204 Ruger", "text": "Noch kleiner und noch rasanter. Reine Raubwildpatrone." }
+  ],
+
+  "nachbarn": [
+    { "name": ".300 AAC Blackout", "text": "Dieselbe Waffe, nur anderer Lauf. Größeres Geschoss, erfüllt das Mindestkaliber, und dämpfen lässt sie sich hervorragend — dafür teurer und mit kürzerer Reichweite." },
+    { "name": "7,62x39", "text": "Ähnliche Rolle, größeres Geschoss, weniger rasant. Braucht in der AR-15 eigenes Magazin und eigenen Verschluss." },
+    { "name": "6 mm ARC", "text": "Die moderne Antwort auf die Distanzschwäche der .223: viel höherer BC, deutlich mehr Energie, passt noch in die AR-15." },
+    { "name": ".224 Valkyrie", "text": "Gleicher Durchmesser, viel höherer BC durch lange Geschosse. Die Langstreckenversion der .223-Idee." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Erwartungswerte zur Orientierung: Trainings-Vollmantel aus einem guten 16″-Lauf liegt typisch bei 30–50 mm auf 100 m, Matchmunition mit 75–77 gr bei 15–25 mm. Reißt deine Scheibe ovale Löcher, ist der Drall zu langsam für das Geschoss — der mit Abstand häufigste Fehler bei diesem Kaliber.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 223 Remington", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/223-rem-en.pdf" },
+    { "titel": "Wikipedia — .223 Remington", "url": "https://de.wikipedia.org/wiki/.223_Remington" },
+    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+  ]
+}

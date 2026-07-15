@@ -1,0 +1,124 @@
+{
+  "id": "38spl",
+  "name": ".38 Special",
+  "aliase": [".38 Spl", "38 Special", "9x29R", ".38 Smith & Wesson Special", "38 Spez", "9x29mmR"],
+  "gruppen": ["kurz"],
+  "kurz": "Die Präzisionspatrone unter den Revolverkalibern: milder Rückstoß, hervorragende Genauigkeit, billig. Läuft in jeder .357 Magnum mit.",
+
+  "schnell": {
+    "geschoss_gr": [110, 158],
+    "v0_ms": [210, 290],
+    "e0_j": [230, 400],
+    "drall_mm": [474, 474],
+    "gasdruck_bar": 1500
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "Smith & Wesson",
+    "jahr": 1902,
+    "herkunft": "USA",
+    "geschichte": [
+      "Die .38 Long Colt hatte auf den Philippinen versagt, und Smith & Wesson antwortete 1902 mit einer verlängerten, stärkeren Hülse. Der Erfolg war beispiellos: Für rund siebzig Jahre war die .38 Special die Standardpatrone praktisch jeder US-Polizeibehörde, und weltweit wurden Millionen Revolver dafür gebaut.",
+      "Ihre eigentliche Karriere machte sie jedoch im Sport. Der niedrige Druck, der milde Rückstoß und die ausgezeichnete Präzision machten sie zur ersten Wahl für Scheibendisziplinen — insbesondere mit Wadcutter-Geschossen, die saubere runde Löcher stanzen und dadurch die Ringwertung eindeutig machen.",
+      "Verdrängt wurde sie im Dienst zuerst von ihrer eigenen Tochter, der .357 Magnum, dann von den Selbstladern. Geblieben ist sie als das, was sie am besten kann: die günstige, angenehme und sehr genaue Trainingspatrone — die noch dazu in jedem .357-Revolver läuft."
+    ],
+    "einsatz": ["Sportschießen (Scheibendisziplinen, Ordonnanz)", "Trainingsmunition für .357-Revolver", "Selbstverteidigung (klassisch)", "Jagd: nur Fangschuss"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "mit Rand, zylindrisch ohne Flaschenhals",
+    "geschoss_mm": 9.07,
+    "hals_mm": 9.65,
+    "schulter_mm": null,
+    "boden_mm": 9.65,
+    "rand_mm": 11.18,
+    "huelsenlaenge_mm": 29.34,
+    "col_mm": 39.12,
+    "gasdruck_bar": 1500,
+    "gasdruck_hinweis": "1500 bar sind halb so viel wie bei der .357 Magnum. Genau darin liegt der Reiz: wenig Druck heißt wenig Rückstoß, wenig Verschleiß und lange haltbare Hülsen. Die +P-Variante geht auf etwa 1750 bar — nicht jeder ältere Revolver ist dafür freigegeben.",
+    "zuender": "Small Pistol, Boxer",
+    "drall": "1:474 mm (1:18,75″)",
+    "drall_hinweis": "Unkritisch. Die klassischen Wadcutter mit 148 gr stabilisieren trotz ihrer stumpfen Form problemlos, weil sie langsam fliegen."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für Revolverläufe von 150 mm (6″). Kurze 2-Zoll-Läufe verlieren 40–60 m/s.",
+    "laborierungen": [
+      { "hersteller": "Sellier & Bellot", "typ": "Wadcutter", "gr": 148, "g": 9.59, "v0": 220, "bc": 0.058, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Präzision", "anmerkung": "Das Scheibengeschoss: stanzt saubere runde Löcher, minimaler Rückstoß." },
+      { "hersteller": "GECO", "typ": "Wadcutter", "gr": 148, "g": 9.59, "v0": 225, "bc": 0.058, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Präzision", "anmerkung": "Der Vereinsstandard für Scheibendisziplinen." },
+      { "hersteller": "Magtech", "typ": "Vollmantel Flachkopf", "gr": 158, "g": 10.24, "v0": 250, "bc": 0.150, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": "Der Allrounder." },
+      { "hersteller": "Fiocchi", "typ": "Teilmantel Rundkopf", "gr": 158, "g": 10.24, "v0": 255, "bc": 0.150, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Training", "anmerkung": null },
+      { "hersteller": "Federal", "typ": "HST Hohlspitz +P", "gr": 130, "g": 8.42, "v0": 280, "bc": 0.140, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Verteidigung", "anmerkung": "+P — nur in freigegebenen Waffen schießen." },
+      { "hersteller": "Hornady", "typ": "XTP Hohlspitz", "gr": 158, "g": 10.24, "v0": 260, "bc": 0.206, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Verteidigung", "anmerkung": "Öffnet auch bei dieser gemäßigten Geschwindigkeit." },
+      { "hersteller": "RWS", "typ": "Vollmantel", "gr": 158, "g": 10.24, "v0": 248, "bc": 0.150, "bc_modell": "G1", "lauf_mm": 150, "zweck": "Präzision", "anmerkung": "Enge Toleranzen, entsprechend teurer." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N310", "eignung": "Der Klassiker für Wadcutter-Ladungen, sehr geringe Mengen." },
+    { "name": "Vihtavuori N320", "eignung": "Für Standardladungen mit 158 gr, sauberer Abbrand." },
+    { "name": "Hodgdon Titegroup", "eignung": "Dosierungsarm und unempfindlich gegen den Füllgrad — bei der langen .38er-Hülse hilfreich." },
+    { "name": "Hodgdon Clays", "eignung": "Sehr weiche Zielscheibenladungen." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .38 Special", "url": "https://www.vihtavuori.com/reloading-data/handgun-reloading/?cartridge=38-special" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": true,
+    "text": "Ab Werk unterschall — alle Standardlaborierungen liegen mit 210–290 m/s deutlich unter den 343 m/s. Nur nützt das im Revolver wenig: Am Trommelspalt bläst seitlich Gas ab, und dort lässt sich nichts dämpfen. Interessant wird es erst in Waffen ohne Trommelspalt, etwa Unterhebelrepetierern in .357, die .38 Special mitschießen. Dort ergibt die Kombination aus geschlossenem System und Unterschallgeschoss eine bemerkenswert leise Patrone."
+  },
+
+  "vorteile": [
+    "Ausgezeichnete Präzision bei minimalem Rückstoß — die Scheibenpatrone schlechthin",
+    "Läuft in jedem .357-Magnum-Revolver: eine Waffe, zwei Leistungsklassen",
+    "Günstig, und Wiederladen ist wegen des niedrigen Drucks besonders einfach",
+    "Sehr niedriger Druck: Hülsen halten viele Zyklen, die Waffe verschleißt kaum",
+    "Ab Werk unterschall",
+    "Wadcutter machen die Ringwertung eindeutig"
+  ],
+  "nachteile": [
+    "Geringe Energie (230–400 J) — deutlich unter 9 mm Luger",
+    "Stark gekrümmte Bahn, jenseits 25 m kaum noch sinnvoll",
+    "Im Revolver nicht dämpfbar (Trommelspalt)",
+    "Wadcutter führen in manchen Selbstladern und Karabinern schlecht zu",
+    "Für die Jagd auf Wild in Deutschland unzulässig",
+    "+P-Munition ist nicht in jeder älteren Waffe freigegeben"
+  ],
+
+  "recht_de": {
+    "sport": "Erwerb und Besitz mit grüner oder roter WBK bzw. Munitionserwerbsschein bei eingetragener Waffe. Bedürfnisnachweis nach § 14 WaffG. Wer eine .357 Magnum eingetragen hat, darf .38 Special dafür erwerben — die Waffe ist dafür zugelassen.",
+    "jagd": "Für die Erlegung von Schalenwild unzulässig. Das Mindestkaliber von 6,5 mm ist mit 9,07 mm zwar erfüllt, aber mit 230–400 J an der Mündung liegt die Patrone weit unter den geforderten 1.000 J auf 100 m für Rehwild.",
+    "hinweise": [
+      "Zum Fangschuss nach § 19 BJagdG zulässig; dort gelten die E100-Grenzen nicht.",
+      "Auf Raubwild und bei der Fallenjagd je nach Landesrecht einsetzbar.",
+      "Landesjagdgesetze weichen ab."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".38 Special Standard", "text": "158 gr bei rund 250 m/s. Die klassische Laborierung, seit über hundert Jahren praktisch unverändert." },
+    { "name": ".38 Special Wadcutter", "text": "148 gr zylindrisches Geschoss, bündig in der Hülse versenkt, rund 220 m/s. Die Scheibenlaborierung — stanzt runde Löcher und hat kaum Rückstoß." },
+    { "name": ".38 Special +P", "text": "Erhöhter Druck (etwa 1750 bar) für Verteidigungsmunition. Nur in ausdrücklich freigegebenen Waffen schießen; viele ältere Revolver sind es nicht." },
+    { "name": ".38 Short Colt / .38 Long Colt", "text": "Die kürzeren Vorgänger. Laufen in .38-Special-Waffen mit, sind aber praktisch verschwunden." }
+  ],
+
+  "nachbarn": [
+    { "name": ".357 Magnum", "text": "Dieselbe Waffe, 3,4 mm längere Hülse, doppelte Energie. .38 passt in .357 — nie umgekehrt." },
+    { "name": ".32 S&W long", "text": "Noch milder und noch präziser. Die ISSF-Sportpistolenpatrone." },
+    { "name": "9 mm Luger", "text": "Rund 50 % mehr Energie, deutlich billiger, aber Selbstlader statt Revolver." },
+    { "name": ".38 S&W", "text": "Trotz ähnlichem Namen eine andere Patrone: kürzer und dicker. Passt nicht und darf nicht verwechselt werden." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Mit Wadcuttern aus einem guten Match-Revolver sind eingespannt 20–30 mm auf 25 m realistisch — die .38 Special gehört zum Präzisesten, was Kurzwaffen zu bieten haben. Serienwaffen mit Trainingsmunition liegen eher bei 50–70 mm. Trag deine eigenen Werte ein.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 38 Special", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/38-special-en.pdf" },
+    { "titel": "Wikipedia — .38 Special", "url": "https://de.wikipedia.org/wiki/.38_Special" }
+  ]
+}

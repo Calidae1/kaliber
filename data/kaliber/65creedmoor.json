@@ -1,0 +1,128 @@
+{
+  "id": "65creedmoor",
+  "name": "6,5 Creedmoor",
+  "aliase": ["6.5 Creedmoor", "65 Creedmoor", "6,5 CM", "6.5 CM", "6,5x49", "65CM", "6,5 Creed"],
+  "gruppen": ["msr", "jagd"],
+  "kurz": "Der Langstrecken-Überflieger der letzten fünfzehn Jahre: hoher BC, wenig Rückstoß, passt in kurze Systeme. Wird oft überschätzt — aber selten zu Unrecht gelobt.",
+
+  "schnell": {
+    "geschoss_gr": [120, 147],
+    "v0_ms": [780, 880],
+    "e0_j": [2800, 3200],
+    "drall_mm": [203, 203],
+    "gasdruck_bar": 4350
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "Dave Emary (Hornady) und Dennis DeMille (Creedmoor Sports)",
+    "jahr": 2007,
+    "herkunft": "USA",
+    "geschichte": [
+      "Die Idee entstand 2007 buchstäblich beim Reden: Dennis DeMille, Wettkampfschütze, beklagte gegenüber Hornady-Ingenieur Dave Emary die Schwächen der damaligen Langstreckenkaliber. Man wollte eine Patrone, die in ein kurzes System passt, die hochwertigen 6,5-mm-Langgeschosse verschießt, wenig Rückstoß hat und die man ohne Ladeexpertise auf Anhieb präzise bekommt.",
+      "Herausgekommen ist eine sehr gut durchdachte Konstruktion: die Hülse kurz genug für AR-10 und Kurzsysteme, die Schulter steil für gleichmäßigen Abbrand, und der Hals lang genug, dass die schweren Geschosse nicht in den Pulverraum ragen. Der Drall wurde von Anfang an mit 1:8″ festgelegt — kein Kompromiss, kein Wildwuchs wie bei .223.",
+      "Der Rest ist Marketinggeschichte. Innerhalb weniger Jahre räumte die Patrone die US-Langstreckenwettbewerbe ab und wurde zum meistdiskutierten Kaliber überhaupt. Der Hype ist gewaltig und geht am Ziel vorbei — ballistisch ist sie der über hundert Jahre alten 6,5 × 55 kaum überlegen. Ihre echte Stärke: Sie ist verfügbar, standardisiert, passt in kurze Systeme, und praktisch jeder Hersteller baut Waffen und Munition dafür."
+    ],
+    "einsatz": ["Langstreckenschießen (PRS, F-Klasse, Ordonnanz)", "AR-10-Plattform", "Jagd auf Schalenwild bis Rotwild", "Der Standard bei modernen Präzisionsbüchsen"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
+    "geschoss_mm": 6.71,
+    "hals_mm": 7.42,
+    "schulter_mm": 11.2,
+    "boden_mm": 11.95,
+    "rand_mm": 11.95,
+    "huelsenlaenge_mm": 48.77,
+    "col_mm": 72.39,
+    "gasdruck_bar": 4350,
+    "gasdruck_hinweis": "4350 bar liegen am oberen Ende des Üblichen und knapp über .308 Win. Die steile 30-Grad-Schulter sorgt für gleichmäßigen Abbrand — einer der Gründe, warum die Patrone auch mit Fabrikmunition so konstant schießt.",
+    "zuender": "Large Rifle, Boxer",
+    "drall": "1:203 mm (1:8″)",
+    "drall_hinweis": "Von Anfang an einheitlich auf 1:8″ festgelegt — das ist einer der stillen Vorzüge der Patrone. Damit stabilisieren alle gängigen Geschosse von 120 bis 147 gr zuverlässig, und man muss beim Waffenkauf nicht auf den Drall achten. Bei .223 oder .308 ist das anders."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für 610 mm (24″) Lauf. Die Patrone reagiert deutlich auf Lauflänge — ein 20″-Lauf kostet rund 40–50 m/s, was auf Distanz spürbar wird.",
+    "laborierungen": [
+      { "hersteller": "Hornady", "typ": "ELD Match", "gr": 140, "g": 9.07, "v0": 820, "bc": 0.646, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Der Matchstandard. Der BC von 0,646 ist der eigentliche Grund für den Ruf der Patrone." },
+      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 143, "g": 9.27, "v0": 800, "bc": 0.625, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Die jagdliche Wahl — hoher BC bei zuverlässiger Deformation." },
+      { "hersteller": "Lapua", "typ": "Scenar-L HPBT", "gr": 136, "g": 8.81, "v0": 830, "bc": 0.585, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Sehr gleichmäßig, in Europa gut verfügbar." },
+      { "hersteller": "Norma", "typ": "Golden Target HPBT", "gr": 130, "g": 8.42, "v0": 850, "bc": 0.560, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": null },
+      { "hersteller": "Barnes", "typ": "LRX bleifrei", "gr": 127, "g": 8.23, "v0": 855, "bc": 0.468, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Bleifrei — die Antwort auf die Landesvorschriften." },
+      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 140, "g": 9.07, "v0": 800, "bc": 0.480, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
+      { "hersteller": "Federal", "typ": "Gold Medal Sierra MatchKing", "gr": 120, "g": 7.78, "v0": 880, "bc": 0.510, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Präzision", "anmerkung": "Leichter und rasanter, etwas flachere Bahn auf mittlere Distanz." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Hodgdon H4350", "eignung": "Der Klassiker für dieses Kaliber — in den USA jahrelang deshalb ausverkauft." },
+    { "name": "Vihtavuori N550", "eignung": "In Europa gut verfügbar, sehr gleichmäßig." },
+    { "name": "Vihtavuori N160", "eignung": "Für schwere Geschosse ab 140 gr." },
+    { "name": "Alliant Reloder 16", "eignung": "Temperaturstabil, gute Geschwindigkeiten." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten 6,5 Creedmoor", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=6-5-creedmoor" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Widerspricht dem Zweck. Die gesamte Konstruktion zielt auf hohe Geschwindigkeit bei hohem BC — unterschall geladen bliebe von beidem nichts. Fabrikmunition gibt es dafür nicht, und die Waffen sind auf Vollgas ausgelegt. Wer aus einer AR-Plattform leise schießen will, nimmt .300 Blackout."
+  },
+
+  "vorteile": [
+    "Sehr hohe BC-Werte — die Patrone verliert wenig Geschwindigkeit und steht sehr gut im Wind",
+    "Deutlich weniger Rückstoß als .308 Win bei besserer Langstreckenleistung",
+    "Einheitlicher Drall von 1:8″: kein Drall-Wildwuchs wie bei .223 oder .308",
+    "Passt in kurze Systeme und in die AR-10",
+    "6,71 mm erfüllen das jagdliche Mindestkaliber von 6,5 mm — knapp, aber sicher",
+    "Riesige Auswahl an Waffen und Fabrikmunition, auch in Deutschland",
+    "Schießt schon ab Werk erstaunlich präzise, ohne Ladeexperimente"
+  ],
+  "nachteile": [
+    "Der Hype übertreibt: ballistisch der 6,5 × 55 kaum überlegen, die es seit 1894 gibt",
+    "Deutlich teurer als .308 Win bei ähnlicher Verfügbarkeit",
+    "Kurze Laufstandzeit — 2.000–3.000 Schuss bei intensiver Nutzung sind normal",
+    "Reagiert empfindlich auf Lauflänge; unter 20″ verliert sie ihren Vorteil",
+    "Für schweres Wild eher an der unteren Grenze",
+    "Erfüllt das 6,5-mm-Mindestkaliber nur um 0,21 mm — bei Nachbarkalibern wie 6 mm ARC geht das schief"
+  ],
+
+  "recht_de": {
+    "sport": "Repetierer und Halbautomaten (AR-10) in 6,5 Creedmoor sind für Sportschützen erwerbbar, sofern der Verband die Disziplin führt und das Bedürfnis nach § 14 WaffG anerkannt ist. Für Jäger über den Jagdschein unproblematisch.",
+    "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 6,71 mm erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 2.500–2.600 J klar über den geforderten 2.000 J für übriges Schalenwild.",
+    "hinweise": [
+      "Für Rotwild und starke Sauen von vielen als untere Grenze angesehen — die Patrone kann es, aber sie verzeiht schlechten Treffersitz weniger als eine 9,3 × 62.",
+      "Bleifrei-Pflicht gilt je nach Bundesland; die Auswahl ist gut, etwa Barnes LRX.",
+      "Halbautomaten sind in mehreren Bundesländern für die Jagd verboten oder eingeschränkt — für die AR-10 relevant.",
+      "Auf große Distanz erlaubt die Patrone mehr, als jagdlich vertretbar ist. Die Reichweite der Munition ist nicht die Reichweite des Schützen."
+    ]
+  },
+
+  "varianten": [
+    { "name": "6,5 Creedmoor Match", "text": "136–140 gr HPBT bei 820–830 m/s. Die Disziplin, für die sie gebaut wurde." },
+    { "name": "6,5 Creedmoor Jagd", "text": "127–143 gr Deformationsgeschoss. ELD-X bleihaltig, LRX bleifrei." },
+    { "name": "6,5 PRC", "text": "Die stärkere große Schwester: mehr Pulver, rund 100 m/s mehr, braucht ein Magnum-System. Kürzere Laufstandzeit." },
+    { "name": "6,5 Grendel", "text": "Die kleine Verwandte für die AR-15. Deutlich schwächer, aber passt in das kleine System." },
+    { "name": "6 mm Creedmoor", "text": "Auf 6 mm eingezogen: rasanter und noch weniger Rückstoß — verfehlt aber mit 6,17 mm das jagdliche Mindestkaliber." }
+  ],
+
+  "nachbarn": [
+    { "name": "6,5 × 55 SE", "text": "Die schwedische Urahnin von 1894. Ballistisch praktisch gleichwertig, oft billiger — braucht aber ein längeres System." },
+    { "name": ".308 Winchester", "text": "Billiger, verbreiteter, größeres Geschoss und mehr Energie auf kurze Distanz. Ab 500 m dreht sich das Verhältnis zugunsten der 6,5." },
+    { "name": ".243 Winchester", "text": "Rasanter und noch rückstoßärmer, aber mit 6,20 mm unter dem jagdlichen Mindestkaliber — nur Rehwild." },
+    { "name": "6 mm ARC", "text": "Die AR-15-taugliche Alternative mit ähnlicher BC-Philosophie, aber weniger Energie — und ebenfalls unter 6,5 mm." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Erwartungswerte zur Orientierung: Match-Fabrikmunition aus einer guten Büchse liegt typisch bei 12–20 mm auf 100 m, Jagdlaborierungen bei 20–30 mm. Die Patrone gehört zu den wenigen, die schon ab Werk fast das liefern, was sonst Handladung braucht. Trag deine eigenen Werte ein.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 6,5 Creedmoor", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/6-5-creedmoor-en.pdf" },
+    { "titel": "Wikipedia — 6,5 mm Creedmoor", "url": "https://de.wikipedia.org/wiki/6,5_mm_Creedmoor" },
+    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "300wm",
+  "name": ".300 Winchester Magnum",
+  "aliase": [".300 Win Mag", "300 Winchester Magnum", "7,62x67", "7.62x67", ".300 WM", "300WM", "300 Win Mag"],
+  "gruppen": ["jagd"],
+  "kurz": "Die Magnum für alles: 4.700 Joule, flache Bahn, weltweit verfügbar. Kann mehr, als die meisten Reviere und die meisten Schützen brauchen — und lässt einen das auch spüren.",
+
+  "schnell": {
+    "geschoss_gr": [150, 220],
+    "v0_ms": [850, 1000],
+    "e0_j": [4500, 5200],
+    "drall_mm": [254, 254],
+    "gasdruck_bar": 4300
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "Winchester",
+    "jahr": 1963,
+    "herkunft": "USA",
+    "geschichte": [
+      "Winchester kam ein Jahr nach Remingtons 7 mm Magnum und wollte dasselbe Konzept mit dem in Amerika beliebteren .30er-Geschoss. Man nahm die gegürtete .375-H&H-Hülse, kürzte sie so weit, dass sie noch in ein Standard-Langsystem passt, und schob die Schulter weit nach vorn, um maximales Pulvervolumen unterzubringen.",
+      "Das Ergebnis wurde ein Dauererfolg: Sie liefert rund 15 bis 20 % mehr als eine .30-06, nutzt dieselben Geschosse, für die es die größte Auswahl der Welt gibt, und passt in ein normal langes System. In Nordamerika ist sie die Elch- und Bergpatrone schlechthin, militärisch dient sie als Scharfschützenpatrone.",
+      "In Deutschland ist ihre Rolle die des Spezialisten: Bergjagd, weite Schüsse, Auslandsjagd. Für ein normales Revier ist sie klar überdimensioniert — der Rückstoß ist erheblich, der Knall auch, und ein Lauf hält vielleicht 2.000 Schuss. Wer sie kauft, sollte einen Grund haben, der über „viel hilft viel“ hinausgeht."
+    ],
+    "einsatz": ["Bergjagd und weite Schüsse", "Jagd auf starkes Wild (Rotwild, Elch, Bär)", "Auslandsjagd (Nordamerika, Afrika Plains Game)", "Langstreckenschießen und Scharfschützeneinsatz"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "randlos mit Gürtel, Flaschenhals, mit Auszieherrille",
+    "geschoss_mm": 7.82,
+    "hals_mm": 8.64,
+    "schulter_mm": 12.01,
+    "boden_mm": 12.62,
+    "rand_mm": 13.51,
+    "huelsenlaenge_mm": 66.55,
+    "col_mm": 84.84,
+    "gasdruck_bar": 4300,
+    "gasdruck_hinweis": "4300 bar am oberen Ende, kombiniert mit sehr großem Pulvervolumen. Der kurze Hals ist eine bekannte Konstruktionsschwäche: Schwere Langgeschosse ragen tief in den Pulverraum und verdrängen Ladung — deshalb reizen viele Wiederlader die Patrone mit 220 gr nicht aus.",
+    "zuender": "Large Rifle Magnum, Boxer",
+    "drall": "1:254 mm (1:10″)",
+    "drall_hinweis": "Einheitlich 1:10″ und für die üblichen 150 bis 220 gr ausreichend. Für die modernen sehr langen Hochleistungsgeschosse ab 230 gr wäre er zu langsam — dafür gibt es die neueren .300-PRC-Konstruktionen mit 1:8″."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für 660 mm (26″) Lauf. Die Patrone braucht lange Läufe: Ein 560-mm-Lauf kostet 60–80 m/s und verschenkt einen guten Teil des Magnum-Vorteils — dann kann man auch .30-06 schießen.",
+    "laborierungen": [
+      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 200, "g": 12.96, "v0": 860, "bc": 0.626, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Sehr hoher BC — die Wahl für weite Schüsse auf starkes Wild." },
+      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 180, "g": 11.66, "v0": 900, "bc": 0.480, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Die europäische Standard-Jagdlaborierung." },
+      { "hersteller": "Nosler", "typ": "Partition Teilmantel", "gr": 180, "g": 11.66, "v0": 895, "bc": 0.474, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Trennwand hält das Heck zusammen — für Elch und Bär bewährt." },
+      { "hersteller": "Sierra", "typ": "MatchKing HPBT", "gr": 190, "g": 12.31, "v0": 880, "bc": 0.533, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Präzision", "anmerkung": "Der Matchstandard, auch als Scharfschützenladung verbreitet." },
+      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 165, "g": 10.69, "v0": 940, "bc": 0.442, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Bleifrei, öffnet zuverlässig — die Antwort auf die Landesvorschriften." },
+      { "hersteller": "Federal", "typ": "Power-Shok Teilmantel", "gr": 150, "g": 9.72, "v0": 990, "bc": 0.387, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Extrem rasant und flach — aber der niedrige BC verschenkt es auf Distanz." },
+      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 180, "g": 11.66, "v0": 890, "bc": 0.450, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Bindekern, hoher Restgewichtserhalt — für Drückjagd auf starke Sauen." },
+      { "hersteller": "Sellier & Bellot", "typ": "Teilmantel (SP)", "gr": 220, "g": 14.26, "v0": 850, "bc": 0.500, "bc_modell": "G1", "lauf_mm": 660, "zweck": "Jagd", "anmerkung": "Schwerstes gängiges Geschoss, sehr hohe Sektionsdichte." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N165", "eignung": "Langsam brennend — nötig für das große Volumen." },
+    { "name": "Hodgdon H4831", "eignung": "Der US-Klassiker für dieses Kaliber." },
+    { "name": "Alliant Reloder 22", "eignung": "Für maximale Geschwindigkeiten mit schweren Geschossen." },
+    { "name": "Hodgdon H1000", "eignung": "Sehr langsam, für die schwersten Geschosse ab 200 gr." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .300 Win Magnum", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=300-winchester-magnum" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Konzeptionell absurd. Die Patrone existiert für maximale Energie über große Distanz — unterschall geladen bliebe davon fast nichts. Fabrikmunition gibt es nicht. Auf dem Ansitz wird mit normaler Überschallmunition und Dämpfer geschossen; bei diesem Kaliber ist der Dämpfer besonders willkommen, weil der Mündungsknall ohne ihn schlicht brutal ist."
+  },
+
+  "vorteile": [
+    "Mit 4.500–5.200 J die stärkste Patrone in diesem Kompendium",
+    "Sehr flache Bahn und hohe BC-Werte — auf 400 m noch souverän",
+    "Nutzt .308er-Geschosse: die größte Auswahl der Welt",
+    "Weltweit verfügbar — für die Auslandsjagd eine sichere Wahl",
+    "Passt in ein Standard-Langsystem, kein Übermaß-Magnum nötig",
+    "Reicht für jedes Wild von Rehwild bis Elch und Bär"
+  ],
+  "nachteile": [
+    "Erheblicher Rückstoß — der häufigste Grund für Mucken beim Abziehen",
+    "Sehr lauter Mündungsknall mit deutlichem Feuer",
+    "Kurze Laufstandzeit: 2.000–2.500 Schuss sind normal",
+    "Braucht 26″-Läufe — schwere, lange Waffen",
+    "Teuer: grob das Zweieinhalbfache von .308 Win",
+    "Für normale Reviere klar überdimensioniert, erhebliche Wildbretentwertung",
+    "Kurzer Hals: schwere Langgeschosse verdrängen Pulver (siehe Maße)",
+    "Der Gürtel ist konstruktiv überholt und erschwert das Wiederladen"
+  ],
+
+  "recht_de": {
+    "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich in Langstreckendisziplinen verbreitet; dort entscheidet der Verband über das Bedürfnis nach § 14 WaffG.",
+    "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 7,82 mm klar erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 3.900–4.300 J weit über den geforderten 2.000 J.",
+    "hinweise": [
+      "Für Rehwild massiv überdimensioniert — die Wildbretentwertung ist erheblich. Wer überwiegend Rehwild jagt, ist hier deutlich falsch.",
+      "Bleifrei-Pflicht gilt je nach Bundesland; die Auswahl ist gut (Barnes TTSX, RWS HIT).",
+      "Auf große Distanz erlaubt die Patrone weit mehr, als jagdlich vertretbar ist. Die Reichweite der Munition ist nicht die Reichweite des Schützen — bei diesem Kaliber ist das die wichtigste Aussage überhaupt.",
+      "Für die Auslandsjagd auf Elch und Bär eine sehr gute Wahl."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".300 Win Mag Standard (180 gr)", "text": "Rund 890–900 m/s. Der Allrounder und meistverkaufte Laborierung." },
+    { "name": ".300 Win Mag leicht (150–165 gr)", "text": "Bis 990 m/s, extrem flach. Der niedrige BC verschenkt den Vorteil aber jenseits 300 m." },
+    { "name": ".300 Win Mag schwer (200–220 gr)", "text": "850–860 m/s mit sehr hoher Sektionsdichte. Für Elch, Bär und weite Schüsse." },
+    { "name": ".300 PRC", "text": "Die moderne Neuauflage von 2018: gürtellos, langer Hals, 1:8″-Drall für die schwersten Langgeschosse. Technisch klar überlegen, aber weniger verbreitet." },
+    { "name": ".300 Win Mag Match (190 gr)", "text": "Sierra MatchKing bei rund 880 m/s. Die Scharfschützen- und Langstreckenlaborierung." }
+  ],
+
+  "nachbarn": [
+    { "name": ".30-06 Springfield", "text": "Rund 15–20 % weniger Energie, aber viel milder, billiger, mit besserer Laufstandzeit — und für jedes heimische Revier völlig ausreichend." },
+    { "name": "7 mm Rem Magnum", "text": "Etwas weniger Energie und Rückstoß bei ähnlicher Reichweite. Für viele der bessere Kompromiss." },
+    { "name": ".30 R Blaser", "text": "Ähnliche Leistungsklasse, aber Randpatrone für Kipplaufwaffen." },
+    { "name": "6,5 Creedmoor", "text": "Ein Bruchteil des Rückstoßes, deutlich weniger Energie — auf Distanz aber erstaunlich konkurrenzfähig, und mit viel längerer Laufstandzeit." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Erwartungswerte zur Orientierung: Match-Laborierungen aus einer guten Büchse liegen typisch bei 15–25 mm auf 100 m, Jagdlaborierungen bei 25–40 mm. Zwei Dinge verfälschen hier fast alle Messungen: Laufwärme (nach drei Schuss wandert die Treffpunktlage deutlich) und der Schütze selbst — der Rückstoß führt bei langen Serien zu unbewusstem Mucken. Notiere die Schusszahl und lass auskühlen.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 300 Winchester Magnum", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/300-win-magnum-en.pdf" },
+    { "titel": "Wikipedia — .300 Winchester Magnum", "url": "https://de.wikipedia.org/wiki/.300_Winchester_Magnum" },
+    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+  ]
+}

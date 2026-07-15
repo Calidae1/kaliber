@@ -1,0 +1,129 @@
+{
+  "id": "3006",
+  "name": ".30-06 Springfield",
+  "aliase": [".30-06", "30-06", "7,62x63", "7.62x63", ".30-06 Sprg", "3006", "30.06", "7,62x63mm"],
+  "gruppen": ["jagd"],
+  "kurz": "Die vielleicht vielseitigste Büchsenpatrone überhaupt: seit 1906 im Dienst, von Reh bis Elch alles möglich, und weltweit an jeder Ecke zu bekommen.",
+
+  "schnell": {
+    "geschoss_gr": [150, 220],
+    "v0_ms": [760, 920],
+    "e0_j": [3600, 4200],
+    "drall_mm": [254, 254],
+    "gasdruck_bar": 4050
+  },
+
+  "warnungen": [],
+
+  "basis": {
+    "entwickler": "Springfield Armory / US Army",
+    "jahr": 1906,
+    "herkunft": "USA",
+    "geschichte": [
+      "Der Name sagt alles: Kaliber .30, angenommen im Jahr 1906. Sie ersetzte die nur zwei Jahre alte .30-03, deren Rundkopfgeschoss sich gegenüber den deutschen Spitzgeschossen als hoffnungslos unterlegen erwiesen hatte — die US Army zog die Konsequenz und lud auf ein Spitzgeschoss um.",
+      "Es folgten fünfzig Jahre Dienst: durch zwei Weltkriege und Korea, im Springfield M1903, im Garand M1 und im BAR. Erst 1954 löste die kürzere 7,62 × 51 NATO sie ab — nicht weil sie schlechter war, sondern weil neue Pulver dieselbe Leistung aus weniger Hülse holten.",
+      "Zivil ist sie nie verschwunden. Sie kann von 150-gr-Rehwildladungen bis zu 220-gr-Geschossen für Elch und Bär praktisch alles, ihre Auswahl an Laborierungen ist konkurrenzlos, und sie ist auf jedem Kontinent zu bekommen. Wer nur eine einzige Büchse besitzen dürfte, käme schwer an ihr vorbei — genau das ist bis heute ihr Argument."
+    ],
+    "einsatz": ["Jagd auf alles heimische Schalenwild", "Auslandsjagd (weltweit verfügbar)", "Sportschießen (Ordonnanz, Garand-Disziplinen)", "Der Klassiker unter den Universalkalibern"]
+  },
+
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "randlos, Flaschenhals, mit Auszieherrille",
+    "geschoss_mm": 7.82,
+    "hals_mm": 8.63,
+    "schulter_mm": 11.2,
+    "boden_mm": 11.96,
+    "rand_mm": 12.01,
+    "huelsenlaenge_mm": 63.35,
+    "col_mm": 84.84,
+    "gasdruck_bar": 4050,
+    "gasdruck_hinweis": "4050 bar — etwas unter der .308 Win, obwohl die Patrone mehr leistet. Der Grund ist schlicht das größere Hülsenvolumen: mehr Pulver bei weniger Druck. Das schont das Material und ist einer der Gründe für die lange Laufstandzeit.",
+    "zuender": "Large Rifle, Boxer",
+    "drall": "1:254 mm (1:10″)",
+    "drall_hinweis": "Einheitlich 1:10″ und damit unkritisch über den gesamten Bereich von 150 bis 220 gr. Anders als bei .223 oder .308 gibt es hier keinen Drall-Wildwuchs — ein stiller Vorzug der Patrone."
+  },
+
+  "werte": {
+    "hinweis": "v0-Werte gelten für 610 mm (24″) Lauf. Ein jagdüblicher 560-mm-Lauf kostet rund 20–30 m/s. Die Patrone nutzt lange Läufe gut aus.",
+    "laborierungen": [
+      { "hersteller": "RWS", "typ": "Evolution Teilmantel", "gr": 180, "g": 11.66, "v0": 830, "bc": 0.450, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Die europäische Standard-Jagdlaborierung." },
+      { "hersteller": "Hornady", "typ": "ELD-X Precision Hunter", "gr": 178, "g": 11.53, "v0": 838, "bc": 0.552, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Hoher BC für weite Schüsse." },
+      { "hersteller": "GECO", "typ": "Teilmantel", "gr": 170, "g": 11.02, "v0": 850, "bc": 0.380, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Günstigste reguläre Jagdlaborierung." },
+      { "hersteller": "Nosler", "typ": "Partition Teilmantel", "gr": 180, "g": 11.66, "v0": 825, "bc": 0.474, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Der Klassiker für starkes Wild — Trennwand hält das Heck zusammen." },
+      { "hersteller": "Barnes", "typ": "TTSX bleifrei", "gr": 168, "g": 10.89, "v0": 855, "bc": 0.470, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Bleifrei, öffnet zuverlässig. Antwort auf die Landesvorschriften." },
+      { "hersteller": "Federal", "typ": "Power-Shok Teilmantel", "gr": 150, "g": 9.72, "v0": 900, "bc": 0.387, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Leicht und rasant, für Rehwild und weite Schüsse." },
+      { "hersteller": "Norma", "typ": "Oryx Teilmantel", "gr": 200, "g": 12.96, "v0": 780, "bc": 0.480, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Jagd", "anmerkung": "Schwer und tief eindringend — für Elch und starke Sauen." },
+      { "hersteller": "Sellier & Bellot", "typ": "Vollmantel (FMJ)", "gr": 150, "g": 9.72, "v0": 890, "bc": 0.393, "bc_modell": "G1", "lauf_mm": 610, "zweck": "Training / Ordonnanz", "anmerkung": "Für den Garand-Sport. Für die Jagd unzulässig." }
+    ]
+  },
+
+  "pulver": [
+    { "name": "Vihtavuori N140", "eignung": "Für leichte bis mittlere Geschosse, sehr gleichmäßig." },
+    { "name": "Vihtavuori N160", "eignung": "Für schwere Geschosse ab 180 gr — nutzt das große Volumen aus." },
+    { "name": "Hodgdon H4350", "eignung": "Der US-Klassiker, breites Ladefenster." },
+    { "name": "Alliant Reloder 17", "eignung": "Temperaturstabil, gute Geschwindigkeiten mit schweren Geschossen." }
+  ],
+  "ladedaten_links": [
+    { "titel": "Vihtavuori Ladedaten .30-06 Springfield", "url": "https://www.vihtavuori.com/reloading-data/rifle-reloading/?cartridge=30-06-springfield" },
+    { "titel": "Hodgdon Reloading Data Center", "url": "https://hodgdonreloading.com/" }
+  ],
+
+  "subsonic": {
+    "tauglich": false,
+    "text": "Praktisch bedeutungslos. Fabrik-Unterschallmunition gibt es nicht, und selbst geladen bliebe von 3.600–4.200 J fast nichts bei extremer Bogenbahn. Wie bei allen Vollmachtpatronen gilt: Wer auf dem Ansitz gedämpft schießt, tut das mit normaler Überschallmunition — der Dämpfer nimmt den Mündungsknall, der Geschossknall bleibt. Das ist in der Praxis der übliche und völlig ausreichende Weg."
+  },
+
+  "vorteile": [
+    "Enorme Bandbreite: von 150 gr für Rehwild bis 220 gr für Elch — ein Kaliber für alles",
+    "Weltweit verfügbar, auf jedem Kontinent an jeder Ecke zu bekommen",
+    "Konkurrenzlose Auswahl an Laborierungen und Geschossen",
+    "Rund 10 % mehr Energie als .308 Win",
+    "Niedriger Druck bei hoher Leistung — lange Laufstandzeit",
+    "Einheitlicher Drall von 1:10″, kein Drall-Wildwuchs",
+    "Wiederladen ist besser dokumentiert als bei praktisch jeder anderen Patrone"
+  ],
+  "nachteile": [
+    "Braucht ein langes System — schwerer und länger als eine .308-Büchse",
+    "Spürbarer Rückstoß, deutlich mehr als .308 Win",
+    "Auf Distanz von modernen Konstruktionen wie 6,5 Creedmoor geschlagen",
+    "Für Schalldämpferbetrieb ungeeignet",
+    "Trainingsmunition ist teuer",
+    "Für sehr starkes Wild ist 9,3 × 62 souveräner"
+  ],
+
+  "recht_de": {
+    "sport": "Für Jäger über den Jagdschein unproblematisch. Sportlich vor allem in Ordonnanz- und Garand-Disziplinen relevant; dort entscheidet der Verband über das Bedürfnis nach § 14 WaffG.",
+    "jagd": "Uneingeschränkt zulässig für Rehwild und übriges Schalenwild. Das Mindestkaliber von 6,5 mm ist mit 7,82 mm klar erfüllt, und die Auftreffenergie auf 100 m liegt mit rund 3.000–3.400 J weit über den geforderten 2.000 J.",
+    "hinweise": [
+      "Vollmantelgeschosse sind für die Jagd unzulässig — die Ordonnanzmunition gehört nicht ins Revier.",
+      "Bleifrei-Pflicht gilt je nach Bundesland; die Auswahl ist ausgezeichnet (Barnes TTSX, RWS HIT, GECO Zero und viele mehr).",
+      "Für die Auslandsjagd die sicherste Wahl überhaupt — .30-06 bekommt man notfalls auch in Kanada, Afrika oder Skandinavien.",
+      "Für Drückjagd auf Sauen sind schwere Bindekern- oder Trennwandgeschosse (Nosler Partition, Norma Oryx) die klassische Wahl."
+    ]
+  },
+
+  "varianten": [
+    { "name": ".30-06 Standard", "text": "180 gr Teilmantel bei rund 830 m/s. Die klassische Universallaborierung." },
+    { "name": ".30-06 leicht (150 gr)", "text": "Rasanter und flacher, rund 900 m/s. Für Rehwild und weite Schüsse." },
+    { "name": ".30-06 schwer (200–220 gr)", "text": "Langsamer, aber hohe Sektionaldichte und tiefes Eindringen. Für Elch, Bär und starke Sauen." },
+    { "name": ".30-06 M1 Garand", "text": "Speziell auf den Gasdruckverlauf des Garand abgestimmt. Moderne schwere Jagdladungen können den Gaskolben des Garand beschädigen — bei dieser Waffe auf passende Munition achten." },
+    { "name": ".270 Winchester", "text": "Dieselbe Hülse auf 7 mm eingezogen. Rasanter und flacher, weniger Rückstoß." }
+  ],
+
+  "nachbarn": [
+    { "name": ".308 Winchester", "text": "Rund 10 % weniger Energie aus kürzerer Hülse. Billiger, kürzeres System, weniger Rückstoß — für die meisten europäischen Aufgaben völlig ausreichend." },
+    { "name": "8 × 57 IS", "text": "Das deutsche Gegenstück: praktisch dieselbe Leistungsklasse, größeres Geschoss, hierzulande traditionell verbreiteter." },
+    { "name": "7 × 64", "text": "Die europäische Alternative: rasanter, flacher, weniger Rückstoß bei ähnlicher Systemlänge." },
+    { "name": ".300 Winchester Magnum", "text": "Die Magnum-Steigerung: rund 15 % mehr Energie, deutlich mehr Rückstoß und kürzere Laufstandzeit." }
+  ],
+
+  "praezision_referenz": [],
+  "praezision_hinweis": "Erwartungswerte zur Orientierung: Jagdlaborierungen aus einer guten modernen Büchse liegen typisch bei 25–40 mm auf 100 m. Alte Militärsysteme streuen deutlich weiter — das liegt an Lauf und Abzug, nicht an der Munition. Trag deine eigenen Werte ein und vergleiche die Laborierungen; bei der Auswahl in diesem Kaliber lohnt sich das besonders.",
+
+  "quellen": [
+    { "titel": "C.I.P. TDCC — 30-06 Springfield", "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/30-06-springfield-en.pdf" },
+    { "titel": "Wikipedia — .30-06 Springfield", "url": "https://de.wikipedia.org/wiki/.30-06_Springfield" },
+    { "titel": "§ 19 Bundesjagdgesetz — Sachliche Verbote", "url": "https://www.gesetze-im-internet.de/bjagdg/__19.html" }
+  ]
+}
