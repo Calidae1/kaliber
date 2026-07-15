@@ -13,12 +13,18 @@ die angegebene Spanne geprüft — genau die Art Fehler, die man beim Tippen
 nicht sieht.
 """
 
+import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
 WURZEL = Path(__file__).resolve().parent.parent
 DATA = WURZEL / "data"
+
+# Dateien der App-Hülle. Ändert sich eine davon, muss VERSION in sw.js hoch.
+SHELL_DATEIEN = ["index.html", "app.css", "app.js", "ballistik.js",
+                 "manifest.webmanifest", "icons/icon.svg"]
 
 GRAIN_KG = 0.00006479891
 
@@ -49,6 +55,42 @@ def e0(gr: float, v0: float) -> float:
     return 0.5 * gr * GRAIN_KG * v0 * v0
 
 
+def pruefe_shell_version() -> None:
+    """Warnt, wenn die App-Hülle geändert wurde, ohne VERSION in sw.js hochzuzählen.
+
+    Ohne Bump installiert sich der Service Worker nie neu und liefert den Nutzern
+    dauerhaft den alten Stand aus — auch wenn auf dem Server längst neue Dateien
+    liegen. Das ist hier zweimal passiert und beide Male erst am Endgerät
+    aufgefallen, also lieber mechanisch absichern.
+    """
+    sw = WURZEL / "sw.js"
+    if not sw.exists():
+        f("sw.js fehlt.")
+        return
+    quelle = sw.read_text(encoding="utf-8")
+
+    h = hashlib.sha256()
+    for name in SHELL_DATEIEN:
+        p = WURZEL / name
+        if not p.exists():
+            f(f"Datei der App-Hülle fehlt: {name}")
+            return
+        h.update(p.read_bytes())
+    ist = h.hexdigest()[:16]
+
+    m = re.search(r"//\s*SHELL-HASH:\s*([0-9a-f]{16})", quelle)
+    if not m:
+        w("sw.js hat keine SHELL-HASH-Zeile — die Versionsprüfung ist damit aus.")
+        return
+    if m.group(1) != ist:
+        v = re.search(r"const VERSION = '(\w+)'", quelle)
+        f(f"App-Hülle geändert, aber sw.js nicht nachgezogen (VERSION steht auf "
+          f"'{v.group(1) if v else '?'}'). Sonst bekommen installierte Apps dauerhaft "
+          f"den alten Stand.\n"
+          f"           Zu tun: VERSION hochzählen UND die Zeile ersetzen durch:\n"
+          f"           // SHELL-HASH: {ist}")
+
+
 PFLICHT = [
     "id", "name", "aliase", "gruppen", "kurz", "schnell", "basis", "masse",
     "werte", "pulver", "ladedaten_links", "vorteile", "nachteile",
@@ -75,6 +117,8 @@ def main() -> int:
         for m in fehler:
             print("FEHLER  " + m)
         return 1
+
+    pruefe_shell_version()
 
     gl_keys = set(glossar["begriffe"])
     gruppen_ids = set(index["gruppen"])

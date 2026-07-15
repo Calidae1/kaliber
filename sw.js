@@ -7,7 +7,11 @@
  * installiert sich dieser Worker nie neu, und die Nutzer bekommen dauerhaft die
  * alte Hülle serviert — auch wenn auf dem Server längst neue Dateien liegen.
  */
-const VERSION = 'v4';
+const VERSION = 'v5';
+// SHELL-HASH: 8e44a2adfd98e976
+// Die Zeile darüber prüft tools/pruefe.py: Ändert sich eine Datei der App-Hülle,
+// ohne dass VERSION hochgezählt wird, liefert der Worker sie nie neu aus — die
+// Nutzer bekämen dauerhaft den alten Stand. Genau das ist hier zweimal passiert.
 const SHELL = 'kk-shell-' + VERSION;
 const DATA = 'kk-data-' + VERSION;
 
