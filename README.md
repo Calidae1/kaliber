@@ -181,6 +181,11 @@ aus. Bleibt VERSION gleich, installiert er sich nie neu, und die Nutzer bekommen
 dauerhaft die alte Version serviert — auch wenn auf dem Server längst neue Dateien
 liegen. Genau das ist hier während der Entwicklung passiert.
 
+Der Prüfer (`tools/pruefe.py`) erzwingt das: Er hasht die Dateien der App-Hülle und
+vergleicht gegen die `// SHELL-HASH:`-Zeile in `sw.js`. Weicht sie ab, schlägt er
+fehl und nennt den einzusetzenden Hash. Also: VERSION hochzählen **und** Hash
+ersetzen.
+
 Nur Daten geändert (`data/*.json`)? Dann reicht der **„Daten aktualisieren"**-Knopf
 in der App, VERSION muss nicht hoch. Die Daten laufen network-first.
 
