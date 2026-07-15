@@ -7,7 +7,7 @@
  * installiert sich dieser Worker nie neu, und die Nutzer bekommen dauerhaft die
  * alte Hülle serviert — auch wenn auf dem Server längst neue Dateien liegen.
  */
-const VERSION = 'v5';
+const VERSION = 'v6';
 // SHELL-HASH: 8e44a2adfd98e976
 // Die Zeile darüber prüft tools/pruefe.py: Ändert sich eine Datei der App-Hülle,
 // ohne dass VERSION hochgezählt wird, liefert der Worker sie nie neu aus — die
@@ -59,10 +59,18 @@ self.addEventListener('fetch', e => {
 
   if (url.pathname.includes('/data/')) {
     e.respondWith(
-      fetch(req)
+      // cache:'reload' umgeht den HTTP-Cache des Browsers. Ohne das ist
+      // "network-first" eine Lüge: Der Abruf landet im Browser-Cache (GitHub
+      // Pages setzt dort max-age=600), liefert bis zu zehn Minuten alte Daten
+      // zurück — und die schreiben wir dann auch noch in den Offline-Cache.
+      // Nach einem Preis-Update sähen die Nutzer so alte Preise, obwohl die App
+      // scheinbar frisch geladen hat.
+      fetch(new Request(req.url, { cache: 'reload' }))
         .then(res => {
-          const copy = res.clone();
-          caches.open(DATA).then(c => c.put(req, copy));
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(DATA).then(c => c.put(req, copy));
+          }
           return res;
         })
         .catch(() => caches.match(req, { ignoreSearch: true }))
