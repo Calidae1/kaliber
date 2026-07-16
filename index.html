@@ -40,11 +40,24 @@
 <main id="view" class="view"></main>
 
 <footer class="foot">
-  <span id="dbstamp" class="mono"></span>
-  <span class="foot-btns">
-    <button id="share" class="btn-ghost" hidden>Weitergeben</button>
-    <button id="refresh" class="btn-ghost">Daten aktualisieren</button>
-  </span>
+  <div class="foot-row">
+    <span id="dbstamp" class="mono"></span>
+    <span class="foot-btns">
+      <button id="share" class="btn-ghost" hidden>Weitergeben</button>
+      <button id="refresh" class="btn-ghost">Daten aktualisieren</button>
+    </span>
+  </div>
+  <!-- Steht bewusst auf jeder Seite und nicht hinter einem Aufklapper: Wer die
+       App weitergibt, kann sich nicht darauf verlassen, dass der Nächste ein
+       Impressum sucht. -->
+  <p class="foot-disc">
+    <strong>Achtung:</strong> Die Inhalte dieses Kompendiums sind teilweise KI-erstellt und
+    rechnerisch ermittelt. Es ist als Übersicht gedacht, nicht als wissenschaftliche
+    Abhandlung — Irrtümer und Änderungen vorbehalten. Maßgeblich sind immer die Angaben
+    des Waffen- und Munitionsherstellers, die Beschriftung deines Laufs und die geltenden
+    Vorschriften. <strong>Prüfe die nötigen Spezifikationen vor jedem Einsatz scharfer
+    Munition selbst.</strong>
+  </p>
 </footer>
 
 <!-- Installationshinweis. Erscheint nur im Browser, nie in der installierten App. -->

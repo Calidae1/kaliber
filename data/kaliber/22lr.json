@@ -1,0 +1,268 @@
+{
+  "id": "22lr",
+  "name": ".22 long rifle",
+  "aliase": [
+    ".22 lfB",
+    ".22 lr",
+    "22 lr",
+    ".22 LR",
+    "5,6x15R",
+    "5.6x15R",
+    ".22 Kleinkaliber",
+    "22lfB",
+    ".22 lang für Büchsen"
+  ],
+  "gruppen": [
+    "kurz"
+  ],
+  "kurz": "Die meistgeschossene Patrone der Welt und das Einstiegskaliber schlechthin: winziger Rückstoß, minimaler Preis, überall zu bekommen. Randfeuer — nicht wiederladbar, aber dafür braucht man es auch nicht.",
+  "schnell": {
+    "geschoss_gr": [
+      32,
+      40
+    ],
+    "v0_ms": [
+      290,
+      495
+    ],
+    "e0_j": [
+      110,
+      250
+    ],
+    "drall_mm": [
+      406,
+      406
+    ],
+    "gasdruck_bar": 1700
+  },
+  "warnungen": [
+    {
+      "titel": "Randfeuer — die Reichweite wird unterschätzt",
+      "text": "Ein .22-Geschoss ist klein und langsam, aber es fliegt bei flachem Winkel weit über einen Kilometer und bleibt dabei lange verletzungsfähig. Genau weil die Patrone so harmlos wirkt, passieren mit ihr die meisten Unfälle mit Fehlschüssen ins Gelände. Auch hier gilt ausnahmslos: nie ohne sicheren Kugelfang und ohne Blick auf den Hintergrund schießen."
+    }
+  ],
+  "basis": {
+    "entwickler": "J. Stevens Arms & Tool Company",
+    "jahr": 1887,
+    "herkunft": "USA",
+    "geschichte": [
+      "Die .22 long rifle entstand 1887 aus der älteren .22 Long, indem man deren Hülse mit dem schwereren 40-grain-Geschoss der .22 Extra Long lud. Das Ergebnis war so ausgewogen, dass es alle Verwandten verdrängte: Die .22 Short, .22 Long und .22 Extra Long sind heute Randerscheinungen, die .22 long rifle ist die mit Abstand meistproduzierte Patrone der Welt.",
+      "Ihr Erfolg liegt in der Genügsamkeit. Sie verbrennt so wenig Treibmittel, dass Rückstoß und Knall kaum ins Gewicht fallen, und sie ist als Randfeuerpatrone in der Herstellung konkurrenzlos billig. Millionen Schützen haben mit ihr das Schießen gelernt, und im Wettkampf reicht ihr Spektrum von der günstigen Trainingsmunition bis zur handverlesenen Matchpatrone, mit der auf 50 Meter Zehntelringe entschieden werden.",
+      "Der Preis für die einfache Randzündung ist, dass sich die Patrone nicht wiederladen lässt: Das Zündmittel sitzt ringförmig im umgebördelten Hülsenrand und wird beim Schuss dauerhaft verformt. Bei den geringen Stückkosten spielt das keine Rolle — man kauft, schießt und entsorgt die Hülse."
+    ],
+    "einsatz": [
+      "Sportschießen (KK-Gewehr 50 m / 100 m, KK-Sportpistole, Biathlon)",
+      "Training und Einstieg — das günstigste Kaliber zum Üben überhaupt",
+      "Kleinkaliberjagd auf Raubwild und Fangschuss an der Falle (landesrechtlich geregelt)",
+      "Schädlingsbekämpfung und Hegeabschuss auf kurze Distanz"
+    ]
+  },
+  "masse": {
+    "norm": "C.I.P. / SAAMI",
+    "huelsenform": "mit Rand, zylindrisch ohne Flaschenhals",
+    "geschoss_mm": 5.58,
+    "hals_mm": 5.7,
+    "schulter_mm": null,
+    "boden_mm": 5.7,
+    "rand_mm": 7.1,
+    "huelsenlaenge_mm": 15.6,
+    "col_mm": 25.4,
+    "gasdruck_bar": 1700,
+    "gasdruck_hinweis": "170 MPa nach C.I.P. Das Geschoss sitzt als sogenanntes Heel-Geschoss außen auf der Hülse: Sein sichtbarer Teil hat denselben Durchmesser wie die Hülse, nur der eingesteckte Fuß ist verjüngt. Deshalb ist die Patrone außen geschmiert — der Grund, warum .22-Munition fettig anzufassen ist.",
+    "zuender": "Randfeuer (nicht wiederladbar)",
+    "drall": "1:406 mm (1:16″)",
+    "drall_hinweis": "1:16″ ist der verbreitete Standard und stabilisiert die 40-grain-Rundkopfgeschosse zuverlässig. Für die schnelle Präzision auf 50 m ist weniger der Drall entscheidend als die Gleichmäßigkeit der Munition."
+  },
+  "werte": {
+    "hinweis": "v₀-Werte gelten für Gewehrläufe um 500 mm; aus kurzen Pistolenläufen (100–150 mm) fällt die Geschwindigkeit deutlich ab, teils um 30–50 m/s. Bei Matchmunition zählt weniger die absolute v₀ als ihre enge Streuung von Schuss zu Schuss.",
+    "laborierungen": [
+      {
+        "hersteller": "Lapua",
+        "typ": "Center-X",
+        "form": "blei",
+        "gr": 40,
+        "g": 2.59,
+        "v0": 328,
+        "bc": 0.145,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Präzision",
+        "anmerkung": "Match-Standard im KK-Sport. Sehr enge v₀-Streuung."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "R 50",
+        "form": "blei",
+        "gr": 40,
+        "g": 2.59,
+        "v0": 330,
+        "bc": 0.145,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Präzision",
+        "anmerkung": "Die klassische deutsche Matchpatrone."
+      },
+      {
+        "hersteller": "SK",
+        "typ": "Standard Plus",
+        "form": "blei",
+        "gr": 40,
+        "g": 2.59,
+        "v0": 333,
+        "bc": 0.14,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Training / Präzision",
+        "anmerkung": "Günstige Matchmunition fürs Vereinstraining, ballistisch nah an der teuren Ware."
+      },
+      {
+        "hersteller": "CCI",
+        "typ": "Standard Velocity",
+        "form": "blei",
+        "gr": 40,
+        "g": 2.59,
+        "v0": 328,
+        "bc": 0.125,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Training",
+        "anmerkung": "Der weltweite Übungsstandard. Zuverlässig, sauber, billig."
+      },
+      {
+        "hersteller": "CCI",
+        "typ": "Mini-Mag (kupferbeschichtet)",
+        "form": "vollmantel",
+        "gr": 40,
+        "g": 2.59,
+        "v0": 375,
+        "bc": 0.13,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Allround",
+        "anmerkung": "Hochgeschwindigkeit mit Kupferauflage — funktioniert zuverlässig in Selbstladern."
+      },
+      {
+        "hersteller": "Winchester",
+        "typ": "Super-X Hohlspitz",
+        "form": "hohlspitz",
+        "gr": 36,
+        "g": 2.33,
+        "v0": 390,
+        "bc": 0.11,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Kleinwild / Schädlinge",
+        "anmerkung": "Leichtes Hohlspitzgeschoss mit hoher v₀ für mehr Wirkung auf Kleinwild."
+      },
+      {
+        "hersteller": "CCI",
+        "typ": "Stinger",
+        "form": "hohlspitz",
+        "gr": 32,
+        "g": 2.07,
+        "v0": 490,
+        "bc": 0.084,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "Kleinwild",
+        "anmerkung": "Hyper-Velocity: das schnellste gängige .22-Geschoss, aber lauter und mit gekrümmterer Bahn als es die v₀ vermuten lässt."
+      },
+      {
+        "hersteller": "RWS",
+        "typ": "Subsonic HP",
+        "form": "hohlspitz",
+        "gr": 40,
+        "g": 2.59,
+        "v0": 293,
+        "bc": 0.115,
+        "bc_modell": "G1",
+        "lauf_mm": 500,
+        "zweck": "gedämpft",
+        "anmerkung": "Bewusst unter der Schallgrenze — leise am Schalldämpfer, mit Hohlspitze trotzdem wirksam auf kurze Distanz."
+      }
+    ]
+  },
+  "pulver": [],
+  "ladedaten_links": [],
+  "subsonic": {
+    "tauglich": true,
+    "text": "Ein Sonderfall: Standardmunition liegt mit rund 330 m/s knapp unter oder um die Schallgrenze (343 m/s), sodass es bei manchen Losen zum überschallknallenden Einzelschuss kommt. Für den leisen Betrieb am Schalldämpfer gibt es eigene Subsonic-Laborierungen um 290–320 m/s, die zuverlässig unterschall bleiben. Die .22 long rifle ist damit eines der beliebtesten Kaliber für die gedämpfte Nutzung überhaupt — vorausgesetzt, die Waffe ist ein Repetierer oder Einzellader; viele Selbstlader funktionieren mit Subsonic-Munition nicht mehr sicher."
+  },
+  "vorteile": [
+    "Praktisch rückstoß- und knallarm — das ideale Kaliber zum Erlernen sauberer Schießtechnik",
+    "Konkurrenzlos billig: ein Vielfaches günstiger als jede Zentralfeuerpatrone",
+    "Überall und in jeder Menge erhältlich",
+    "Riesige Waffenauswahl vom Sportgewehr bis zur Matchpistole",
+    "Hervorragend für den gedämpften Betrieb mit Subsonic-Munition geeignet",
+    "Matchmunition erreicht auf 50 m eine Präzision, die die meisten Schützen nicht ausreizen"
+  ],
+  "nachteile": [
+    "Nicht wiederladbar — Randfeuer",
+    "Empfindlich gegen Verschmutzung und Feuchtigkeit; das Außenfett zieht Schmutz an",
+    "Munition und Lauf müssen zusammenpassen: Jede Waffe „mag“ bestimmte Lose besser als andere",
+    "Geringe Energie — jenseits von Kleinwild und Sport ohne Bedeutung",
+    "Zur Jagd auf Schalenwild in Deutschland verboten",
+    "Selbstlader reagieren empfindlich auf schwache oder Subsonic-Laborierungen"
+  ],
+  "recht_de": {
+    "sport": "Das verbreitetste Einstiegskaliber im Schießsport. Erwerb und Besitz mit grüner WBK bei eingetragener Waffe, Munitionserwerb über die WBK oder einen Munitionserwerbsschein. Für zahlreiche KK-Disziplinen zugelassen (KK-Gewehr 50 m und 100 m, KK-Sportpistole, KK-Biathlon). Wegen des milden Verhaltens der übliche Weg, mit dem Präzisionsschießen zu beginnen.",
+    "jagd": "Als Randfeuerpatrone für die Jagd auf Schalenwild in Deutschland bundesweit verboten (§ 19 BJagdG). Zulässig und gebräuchlich ist sie dagegen auf Raubwild und zum Fangschuss an der Falle — das regelt jedoch das jeweilige Landesjagdgesetz unterschiedlich. Für den Einsatz gilt: kurze, sichere Entfernung und ein einwandfreier Kugelfang.",
+    "hinweise": [
+      "Randfeuermunition ist auf Schalenwild ausnahmslos verboten — unabhängig von der Energie.",
+      "Für Raubwild und Fallenjagd im Zweifel das Landesjagdgesetz und die untere Jagdbehörde prüfen.",
+      "Für den gedämpften Betrieb ist in vielen Ländern inzwischen der Schalldämpfer bei der Jagd erlaubt — auch das ist Landesrecht."
+    ]
+  },
+  "varianten": [
+    {
+      "name": ".22 lr Standard Velocity",
+      "text": "40-grain-Bleigeschoss um 330 m/s. Der Allrounder für Training und Sport, ballistisch die Basis der ganzen Familie."
+    },
+    {
+      "name": ".22 lr Match",
+      "text": "Dieselben Eckdaten, aber handverlesen auf engste v₀-Streuung. Der Unterschied zeigt sich erst auf 50 m in der Ringwertung — und im Preis."
+    },
+    {
+      "name": ".22 lr High Velocity",
+      "text": "40 gr auf rund 370–390 m/s, oft mit Kupferauflage. Mehr Wirkung und sichere Selbstladerfunktion, dafür lauter und weniger präzise."
+    },
+    {
+      "name": ".22 lr Subsonic",
+      "text": "Bewusst unter der Schallgrenze gehalten, meist als Hohlspitz. Die erste Wahl für den leisen Betrieb am Schalldämpfer."
+    },
+    {
+      "name": ".22 lr Hyper Velocity",
+      "text": "Leichteres Geschoss (30–32 gr) auf bis zu 500 m/s, etwa die CCI Stinger. Höchste Mündungsgeschwindigkeit der Familie, aber gekrümmtere Bahn als erwartet."
+    },
+    {
+      "name": ".22 Short / .22 Long",
+      "text": "Die kürzeren Vorfahren. Laufen in vielen .22-lr-Waffen mit, sind aber schwächer und heute Nischenmunition."
+    }
+  ],
+  "nachbarn": [
+    {
+      "name": ".22 WMR (.22 Magnum)",
+      "text": "Die stärkere Randfeuerschwester: längere Hülse, rund die doppelte bis dreifache Energie, flachere Bahn. Nicht in .22-lr-Waffen schießbar."
+    },
+    {
+      "name": ".32 S&W long",
+      "text": "Der Zentralfeuer-Gegenentwurf im Präzisionssport: etwas mehr Energie, wiederladbar, aber teurer und eine andere Disziplinfamilie."
+    },
+    {
+      "name": ".17 HMR",
+      "text": "Randfeuer mit winzigem, sehr schnellem Geschoss und rasant flacher Bahn. Die moderne Kleinkaliber-Alternative für Distanz auf Kleinwild."
+    }
+  ],
+  "praezision_referenz": [],
+  "praezision_hinweis": "Bei der .22 long rifle ist die Munition oft der begrenzende Faktor, nicht der Schütze. Jeder Lauf bevorzugt bestimmte Lose — es lohnt sich ausdrücklich, mehrere Sorten und sogar mehrere Chargen derselben Sorte zu testen und die Streukreise festzuhalten. Mit guter Matchmunition und einem echten Sportgewehr sind auf 50 m eingespannt Gruppen um 10–15 mm erreichbar.",
+  "quellen": [
+    {
+      "titel": "C.I.P. TDCC — .22 Long Rifle",
+      "url": "https://bobp.cip-bobp.org/uploads/tdcc/tab-i/22-long-rifle-en.pdf"
+    },
+    {
+      "titel": "Wikipedia — .22 long rifle",
+      "url": "https://de.wikipedia.org/wiki/.22_long_rifle"
+    }
+  ]
+}

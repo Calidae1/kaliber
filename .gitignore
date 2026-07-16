@@ -9,3 +9,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Lokaler Dev-Server-Starter (nur für die Vorschau, kein Teil der App)
+.claude/

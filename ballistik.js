@@ -76,6 +76,46 @@
   }
 
   /**
+   * Baut Ableitung und RK4-Schritt für eine Patrone in einer Atmosphäre.
+   * Bewusst gemeinsam für Flugbahn und Weitenrechnung: Zwei Kopien derselben
+   * Physik driften irgendwann auseinander, und dann widersprechen sich zwei
+   * Angaben in derselben App, ohne dass es jemandem auffällt.
+   */
+  function feld(o) {
+    const table = (o.modell === 'G7') ? G7 : G1;
+    const bcSi = o.bc * LB_IN2_TO_KG_M2;
+    const { rho, mach: cSound } = atmosphere(
+      o.tempC != null ? o.tempC : 15,
+      o.druckHpa != null ? o.druckHpa : 1013.25,
+      o.feuchte != null ? o.feuchte : 0.5
+    );
+    const k = (Math.PI / 8) * rho / bcSi;
+
+    // Zustand [x, y, vx, vy]
+    const deriv = s => {
+      const vx = s[2], vy = s[3];
+      const v = Math.hypot(vx, vy);
+      if (v < 1e-6) return [vx, vy, 0, -G];
+      const cd = cdLookup(table, v / cSound);
+      const a = k * v * cd; // = (π/8)·ρ·Cd·v/BC → mit vx bzw. vy multipliziert ergibt v²-Abhängigkeit
+      return [vx, vy, -a * vx, -a * vy - G];
+    };
+
+    const step = (s, dt) => {
+      const k1 = deriv(s);
+      const s2 = s.map((val, i) => val + k1[i] * dt / 2);
+      const k2 = deriv(s2);
+      const s3 = s.map((val, i) => val + k2[i] * dt / 2);
+      const k3 = deriv(s3);
+      const s4 = s.map((val, i) => val + k3[i] * dt);
+      const k4 = deriv(s4);
+      return s.map((val, i) => val + (dt / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]));
+    };
+
+    return { deriv, step, rho, cSound };
+  }
+
+  /**
    * Flugbahn rechnen.
    * @param {object} o
    * @param {number} o.v0            Mündungsgeschwindigkeit [m/s]
@@ -93,42 +133,13 @@
    * @returns {{punkte: Array, winkelMrad: number, rho: number}}
    */
   function rechne(o) {
-    const table = (o.modell === 'G7') ? G7 : G1;
-    const bcSi = o.bc * LB_IN2_TO_KG_M2;
     const masseKg = o.masseGr * GRAIN_TO_KG;
     const zeroM = o.zeroM != null ? o.zeroM : 100;
     const sightM = (o.visierMm != null ? o.visierMm : 40) / 1000;
     const maxM = o.maxM != null ? o.maxM : 300;
     const stepM = o.schrittM != null ? o.schrittM : 10;
     const windMs = o.windMs || 0;
-    const { rho, mach: cSound } = atmosphere(
-      o.tempC != null ? o.tempC : 15,
-      o.druckHpa != null ? o.druckHpa : 1013.25,
-      o.feuchte != null ? o.feuchte : 0.5
-    );
-
-    const k = (Math.PI / 8) * rho / bcSi;
-
-    // Ableitung des Zustands [x, y, vx, vy]
-    function deriv(s) {
-      const vx = s[2], vy = s[3];
-      const v = Math.hypot(vx, vy);
-      if (v < 1e-6) return [vx, vy, 0, -G];
-      const cd = cdLookup(table, v / cSound);
-      const a = k * v * cd; // = (π/8)·ρ·Cd·v/BC  → mit vx bzw. vy multipliziert ergibt v²-Abhängigkeit
-      return [vx, vy, -a * vx, -a * vy - G];
-    }
-
-    function step(s, dt) {
-      const k1 = deriv(s);
-      const s2 = s.map((val, i) => val + k1[i] * dt / 2);
-      const k2 = deriv(s2);
-      const s3 = s.map((val, i) => val + k2[i] * dt / 2);
-      const k3 = deriv(s3);
-      const s4 = s.map((val, i) => val + k3[i] * dt);
-      const k4 = deriv(s4);
-      return s.map((val, i) => val + (dt / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]));
-    }
+    const { step, rho, cSound } = feld(o);
 
     // Flugbahn bis maxM verfolgen, y relativ zur Seelenachse
     function fliege(angleRad, bisM) {
@@ -215,11 +226,63 @@
     return { punkte, winkelMrad: winkel * 1000, rho, cSound };
   }
 
+  /**
+   * Größte Schussweite und der Winkel, bei dem sie erreicht wird.
+   *
+   * Hintergrund: Die Flugbahn-Diagramme zeigen den Zielbereich (150–300 m) und
+   * legen dabei den Nullstrich auf die Visierlinie. Wer das für den Boden hält,
+   * meint, das Geschoss lande auf dem Fleck. Diese Rechnung setzt dagegen die
+   * Größenordnung: dieselbe Patrone, steil geschossen, fliegt Kilometer weit.
+   *
+   * Grenzen des Modells: Es rechnet mit einer Punktmasse, die die ganze Bahn
+   * über mit der Spitze voran fliegt. Ein reales Geschoss wird im absteigenden
+   * Ast instabil, taumelt und bremst dadurch stärker — die echte Weite liegt
+   * also eher darunter. Die Zahl taugt als Größenordnung, nicht als Grenze:
+   * Maßgeblich ist immer ein ausreichender Kugelfang.
+   *
+   * @param {object} o                    wie bei rechne(): v0, bc, modell
+   * @param {number} [o.muendungshoeheM=1.5]  Höhe der Mündung über Grund
+   * @returns {{grad:number, weite:number, gipfel:number, t:number, vEnde:number}}
+   */
+  function maxWeite(o) {
+    const { step } = feld(o);
+    const hoehe = o.muendungshoeheM != null ? o.muendungshoeheM : 1.5;
+    // dt = 0.01 reicht: gegen dt = 0.002 gegengerechnet weicht die Weite um
+    // unter 0,05 % ab, bei einem Fünftel des Rechenaufwands.
+    const dt = 0.01;
+
+    function wurf(grad) {
+      const rad = grad * Math.PI / 180;
+      let s = [0, 0, o.v0 * Math.cos(rad), o.v0 * Math.sin(rad)];
+      let t = 0, gipfel = 0, guard = 0;
+      // Läuft, bis das Geschoss wieder unter die Mündungshöhe fällt — bei
+      // ebenem Gelände also bis zum Aufschlag.
+      while (guard++ < 100000 && !(s[1] < -hoehe && s[3] < 0)) {
+        s = step(s, dt);
+        t += dt;
+        if (s[1] > gipfel) gipfel = s[1];
+      }
+      return { grad, weite: s[0], gipfel, t, vEnde: Math.hypot(s[2], s[3]) };
+    }
+
+    // Goldener Schnitt über den Abgangswinkel. Das Maximum liegt wegen des
+    // Luftwiderstands nicht bei 45°, sondern je nach BC bei etwa 30–38°.
+    const PHI = (Math.sqrt(5) - 1) / 2;
+    let lo = 20, hi = 50;
+    let a = hi - PHI * (hi - lo), b = lo + PHI * (hi - lo);
+    let fa = wurf(a).weite, fb = wurf(b).weite;
+    for (let i = 0; i < 12; i++) {
+      if (fa < fb) { lo = a; a = b; fa = fb; b = lo + PHI * (hi - lo); fb = wurf(b).weite; }
+      else         { hi = b; b = a; fb = fa; a = hi - PHI * (hi - lo); fa = wurf(a).weite; }
+    }
+    return wurf((a + b) / 2);
+  }
+
   /** Mündungsenergie [J] aus Masse [grain] und v0 [m/s]. */
   function e0(masseGr, v0) {
     return 0.5 * masseGr * GRAIN_TO_KG * v0 * v0;
   }
 
-  global.Ballistik = { rechne, e0, atmosphere, GRAIN_TO_KG };
+  global.Ballistik = { rechne, maxWeite, e0, atmosphere, GRAIN_TO_KG };
 
 })(typeof window !== 'undefined' ? window : this);

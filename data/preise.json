@@ -928,6 +928,28 @@
           "klasse": "premium",
           "haendler": "Frankonia",
           "url": "https://www.frankonia.de/suche?q=barnes+vor-tx+300+blackout"
+        },
+        {
+          "hersteller": "Hornady",
+          "typ": "Sub-X 190 gr (subsonic)",
+          "form": "hohlspitz",
+          "packung": 20,
+          "eur_packung": 34.9,
+          "eur_schuss": 1.745,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=hornady+sub-x+300+blackout"
+        },
+        {
+          "hersteller": "Sellier & Bellot",
+          "typ": "FMJ 124 gr (Überschall)",
+          "form": "vollmantel",
+          "packung": 20,
+          "eur_packung": 21.9,
+          "eur_schuss": 1.095,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sellier+bellot+300+blackout"
         }
       ]
     },
@@ -2132,6 +2154,125 @@
           "klasse": "premium",
           "haendler": "Frankonia",
           "url": "https://www.frankonia.de/suche?q=barnes+ttsx+300+win+mag"
+        }
+      ]
+    },
+    "22lr": {
+      "range_eur_schuss": [
+        0.14,
+        0.46
+      ],
+      "kommentar": "Das billigste Kaliber überhaupt — einfache Übungsmunition liegt bei rund 14 Cent je Schuss, handverlesene Matchware beim Drei- bis Vierfachen. Der Aufpreis bezahlt die enge Streuung, nicht mehr Material.",
+      "produkte": [
+        {
+          "hersteller": "GECO",
+          "typ": "Rifle 40 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 6.9,
+          "eur_schuss": 0.138,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=geco+22+lr"
+        },
+        {
+          "hersteller": "CCI",
+          "typ": "Standard Velocity 40 gr",
+          "form": "blei",
+          "packung": 100,
+          "eur_packung": 14.9,
+          "eur_schuss": 0.149,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=cci+standard+22+lr"
+        },
+        {
+          "hersteller": "SK",
+          "typ": "Standard Plus 40 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 9.9,
+          "eur_schuss": 0.198,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=sk+standard+plus+22"
+        },
+        {
+          "hersteller": "Eley",
+          "typ": "Club 40 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 14.9,
+          "eur_schuss": 0.298,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=eley+club+22+lr"
+        },
+        {
+          "hersteller": "Lapua",
+          "typ": "Center-X 40 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 18.9,
+          "eur_schuss": 0.378,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=lapua+center-x+22"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "R 50 40 gr",
+          "form": "blei",
+          "packung": 50,
+          "eur_packung": 22.9,
+          "eur_schuss": 0.458,
+          "klasse": "premium",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+r50+22+lr"
+        },
+        {
+          "hersteller": "CCI",
+          "typ": "Mini-Mag CPRN 40 gr",
+          "form": "vollmantel",
+          "packung": 100,
+          "eur_packung": 19.9,
+          "eur_schuss": 0.199,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=cci+mini-mag+22+lr"
+        },
+        {
+          "hersteller": "Winchester",
+          "typ": "Super-X HP 36 gr",
+          "form": "hohlspitz",
+          "packung": 50,
+          "eur_packung": 8.9,
+          "eur_schuss": 0.178,
+          "klasse": "guenstig",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=winchester+super-x+22+lr+hp"
+        },
+        {
+          "hersteller": "RWS",
+          "typ": "Subsonic HP 40 gr",
+          "form": "hohlspitz",
+          "packung": 50,
+          "eur_packung": 11.9,
+          "eur_schuss": 0.238,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=rws+subsonic+22+lr"
+        },
+        {
+          "hersteller": "CCI",
+          "typ": "Stinger HP 32 gr",
+          "form": "hohlspitz",
+          "packung": 50,
+          "eur_packung": 13.9,
+          "eur_schuss": 0.278,
+          "klasse": "mittel",
+          "haendler": "Frankonia",
+          "url": "https://www.frankonia.de/suche?q=cci+stinger+22+lr"
         }
       ]
     }

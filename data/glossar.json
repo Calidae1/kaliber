@@ -4,8 +4,8 @@
   "begriffe": {
     "bc": {
       "titel": "BC — Ballistischer Koeffizient",
-      "text": "Ein Maß dafür, wie gut ein Geschoss die Luft durchschneidet. Je höher, desto weniger Geschwindigkeit verliert es unterwegs, desto flacher die Bahn und desto weniger schiebt der Wind. Ein langes, schlankes Geschoss hat einen hohen BC, ein kurzes stumpfes einen niedrigen. Angegeben wird er in lb/in² — die Einheit ist historisch bedingt und praktisch bedeutungslos, es zählt nur der Vergleich untereinander.",
-      "faustregel": "Unter 0,2 = kurze Distanz (Pistole). Über 0,5 = Langstrecke."
+      "text": "Der BC sagt, wie gut ein Geschoss seine Geschwindigkeit gegen den Luftwiderstand hält. Er besteht aus zwei Anteilen: der Querschnittsbelastung — Masse geteilt durch Querschnittsfläche, also wie schwer das Geschoss für seinen Durchmesser ist — und dem Formfaktor, der die Kontur mit einem genormten Referenzgeschoss vergleicht. Daher auch die Einheit lb/in²: die stammt von der Querschnittsbelastung, der Formfaktor selbst ist einheitenlos. Je höher der BC, desto flacher die Bahn, desto mehr Restenergie und desto weniger Windabdrift. Zwei Dinge werden dabei oft übersehen. Erstens zählt die Masse genauso wie die Form: Ein schweres Rundkopfgeschoss kann einen höheren BC haben als ein leichtes Spitzgeschoss. Zweitens ist der BC keine Naturkonstante des Geschosses, sondern ändert sich mit der Geschwindigkeit — die Herstellerangabe gilt für einen bestimmten Bereich.",
+      "faustregel": "Nur innerhalb desselben Modells vergleichen. G1: unter 0,2 Kurzwaffe · 0,3–0,5 gängige Büchsengeschosse · über 0,55 Langstrecke."
     },
     "g1g7": {
       "titel": "G1 und G7 — Widerstandsmodelle",
@@ -76,6 +76,11 @@
       "titel": "Kugelfall",
       "text": "Wie weit das Geschoss über oder unter der Visierlinie liegt, in Zentimeter. Positiv heißt: Es fliegt über dem Haltepunkt, du triffst hoch. Negativ heißt: Es liegt darunter, du musst höher halten. Auf dem Fleck ist der Wert per Definition null. Bezieht sich hier immer auf eine Visierhöhe von 40 mm über der Seelenachse.",
       "faustregel": "Minus = du triffst tief und musst höher halten."
+    },
+    "schussweite": {
+      "titel": "Größte Schussweite (Gefahrenbereich)",
+      "text": "Wie weit ein Geschoss fliegt, wenn es nichts aufhält. Die größte Weite wird nicht bei 45° erreicht wie im luftleeren Raum, sondern wegen des Luftwiderstands schon bei etwa 30 bis 38° Rohrerhöhung. Die Größenordnung überrascht viele: Eine .22 lfB kommt rund 1,5 km weit, eine 9 mm Luger etwa 1,7 km, eine gängige Büchsenpatrone 4 bis 5 km. Das Geschoss steigt dabei über einen Kilometer hoch und ist eine halbe Minute unterwegs. Genau deshalb zählt der Hintergrund so viel wie das Ziel: Auf dem Stand sorgt der Kugelfang dafür, im Revier gewachsener Boden oder ansteigendes Gelände. Ein Schuss gegen den freien Himmel hat keinen Hintergrund.",
+      "faustregel": "Kurzwaffe rund 1,5–2 km, Büchse 4–5 km. Nie ohne sicheren Kugelfang schießen."
     },
     "windabdrift": {
       "titel": "Windabdrift",

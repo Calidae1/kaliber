@@ -41,6 +41,21 @@
       "text": "Die beiden Patronen sehen identisch aus und passen mechanisch ineinander, sind aber nicht dasselbe. Das 5,56-NATO-Lager hat einen längeren Übergangskonus (Leade) vor den Zügen. Verschießt man 5,56-NATO-Munition, die ohnehin höher geladen ist, in einem engeren .223-Rem-Lager, stößt das Geschoss früher in die Züge und der Druck steigt deutlich über die Auslegung. Umgekehrt ist es unbedenklich: .223 Rem darf in jedem 5,56-Lager geschossen werden. Merksatz: Was auf dem Lauf steht, entscheidet — steht dort .223 Rem, gehört auch nur .223 Rem hinein."
     }
   ],
+  "zielballistik": {
+    "hinweis": "Was ein Geschoss im Ziel bewirkt, hängt weniger vom Kaliber ab als von Bauart und Auftreffgeschwindigkeit. Gerade bei der militärischen 5,56 wird das oft missverstanden.",
+    "absaetze": [
+      "Das kleine 5,56-Geschoss wirkt nicht durch Wucht — dafür ist es zu leicht —, sondern durch sein Verhalten beim Auftreffen. Ein Vollmantelgeschoss fliegt stabil mit der Spitze voran, kippt aber im dichteren Medium (Gewebe) nach kurzer Eindringtiefe um seine Querachse. Dieses Umschlagen (Yaw) und, bei den frühen M193-Geschossen, das anschließende Zerlegen an der Bördelrille erzeugt die eigentliche Wirkung. Es ist also ein Effekt der Konstruktion, nicht der Energie.",
+      "Entscheidend ist dabei die Auftreffgeschwindigkeit. Oberhalb einer Schwelle von grob 700 m/s zerlegt sich das klassische Geschoss zuverlässig; darunter durchschlägt es zunehmend, ohne umzuschlagen — der oft zitierte „Eispickel-Effekt“. Weil die Geschwindigkeit mit der Entfernung und mit kürzerem Lauf sinkt, wirkt dieselbe Patrone aus einem kurzen Lauf oder auf große Distanz deutlich anders als aus einem langen Lauf auf kurze Distanz. Das ist der Grund, warum die Wirkung der 5,56 so umstritten ist: Sie ist stark von den Umständen abhängig.",
+      "Die NATO-Nachfolgerin SS109/M855 trägt einen Stahlpenetrator im Kern. Der verbessert die Durchschlagsleistung gegen Deckung und Schutzwesten, macht die Wirkung im weichen Ziel aber nicht zwangsläufig größer. Zivile Geschosse gehen den umgekehrten Weg: Weichkern-Konstruktionen wie Teilmantel, V-MAX oder die bleifreien TSX sind auf kontrollierte, berechenbare Aufpilzung ausgelegt statt auf Zerlegen — für die Jagd der bewusst gewählte Gegenentwurf zum Militärgeschoss."
+    ],
+    "punkte": [
+      "Wirkung der Militär-5,56 beruht auf Umschlagen und Zerlegen, nicht auf Energie",
+      "Schwellengeschwindigkeit rund 700 m/s — darunter stark nachlassende Wirkung",
+      "Kurzer Lauf und große Entfernung senken die Auftreffgeschwindigkeit deutlich",
+      "M855-Stahlkern: mehr Durchschlag, nicht automatisch mehr Wirkung im Weichziel",
+      "Jagdgeschosse (Teilmantel, V-MAX, TSX) sind auf kontrollierte Aufpilzung gebaut"
+    ]
+  },
   "basis": {
     "entwickler": "Remington und Armalite (Eugene Stoner), aus der .222 Remington entwickelt",
     "jahr": 1962,

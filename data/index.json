@@ -134,6 +134,25 @@
       "kurz": "Die Patrone der olympischen Sportpistole. Kaum Rückstoß, kaum Energie, dafür präziser als praktisch alles andere — und dafür ist sie auch gebaut."
     },
     {
+      "id": "22lr",
+      "name": ".22 long rifle",
+      "aliase": [
+        ".22 lfB",
+        ".22 lr",
+        "22 lr",
+        ".22 LR",
+        "5,6x15R",
+        "5.6x15R",
+        ".22 Kleinkaliber",
+        "22lfB",
+        ".22 lang für Büchsen"
+      ],
+      "gruppen": [
+        "kurz"
+      ],
+      "kurz": "Die meistgeschossene Patrone der Welt und das Einstiegskaliber schlechthin: winziger Rückstoß, minimaler Preis, überall zu bekommen. Randfeuer — nicht wiederladbar, aber dafür braucht man es auch nicht."
+    },
+    {
       "id": "223rem",
       "name": ".223 Remington",
       "aliase": [

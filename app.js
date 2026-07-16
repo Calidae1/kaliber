@@ -61,6 +61,7 @@
     if (b) { e.preventDefault(); zeigeBegriff(b.dataset.gl); }
   });
 
+
   // Kein <form method="dialog">, damit die Content-Security-Policy form-action
   // sperren kann, ohne dass der Dialog davon betroffen wäre.
   document.getElementById('gl-close').addEventListener('click', () => {
@@ -165,6 +166,20 @@
       treffer: bewertet.filter(x => x.s >= TREFFER_AB).map(x => x.k),
       vorschlaege: bewertet.filter(x => x.s < TREFFER_AB).map(x => x.k)
     };
+  }
+
+  /**
+   * Löst einen Namen streng auf einen Datensatz auf: nur exakter Treffer auf
+   * Name oder Alias. Bewusst ohne Tippfehlertoleranz und ohne die mm-lose
+   * Normalisierung — ein "passt ungefähr" führte hier von der .222 Remington
+   * zur .223 Remington, und das ist genau die Verwechslung, vor der dieselbe
+   * App zwei Kapitel weiter oben warnt.
+   */
+  function findeKaliber(name) {
+    const n = normA(name);
+    if (!n) return null;
+    return INDEX.kaliber.find(k =>
+      normA(k.name) === n || (k.aliase || []).some(a => normA(a) === n)) || null;
   }
 
   /* ---------- Patronen-Zeichnung (parametrisch aus den Maßen) ---------- */
@@ -375,7 +390,7 @@
   /* ---------- Diagramme ---------- */
 
   function linienChart(opts) {
-    const { serien, xLabel, yLabel, yEinheit, marken, xMarken } = opts;
+    const { serien, xLabel, yLabel, yEinheit, marken, xMarken, nullText } = opts;
     // Die viewBox ist bewusst schmal gehalten: Auf einem 375-px-Handy bleibt der
     // Skalierungsfaktor damit nahe 1, sodass die Beschriftung lesbar groß bleibt.
     // Eine breite viewBox (etwa 700) schrumpft die Schrift auf dem Handy auf
@@ -407,19 +422,32 @@
       <text x="${px(x).toFixed(1)}" y="${H - mb + 12}" fill="#5d6979" font-size="9" text-anchor="middle" font-family="ui-monospace, monospace">${x}</text>`);
     }
 
+    // Beschriftung nach links: Energiekurven fallen von links nach rechts, am
+    // rechten Rand liegt die Kurve deshalb genau dort, wo die Grenzwertlinie
+    // verläuft — Text und Kurve überdeckten sich dort gegenseitig.
     const markLines = (marken || []).map(m => `
       <line x1="${ml}" y1="${py(m.y).toFixed(1)}" x2="${W - mr}" y2="${py(m.y).toFixed(1)}"
             stroke="${m.farbe}" stroke-width="0.9" stroke-dasharray="4 3" opacity=".85"/>
-      <text x="${W - mr - 3}" y="${(py(m.y) - 3).toFixed(1)}" fill="${m.farbe}" font-size="8.5"
-            text-anchor="end" font-family="ui-monospace, monospace">${esc(m.text)}</text>`).join('');
+      <text x="${ml + 3}" y="${(py(m.y) - 3).toFixed(1)}" fill="${m.farbe}" font-size="8.5"
+            font-family="ui-monospace, monospace">${esc(m.text)}</text>`).join('');
 
     const paths = serien.map(s => {
       const dd = s.punkte.map((p, i) => `${i ? 'L' : 'M'} ${px(p.x).toFixed(1)} ${py(p.y).toFixed(1)}`).join(' ');
       return `<path d="${dd}" fill="none" stroke="${s.farbe}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>`;
     }).join('');
 
+    // Der Nullstrich ist beim Kugelfall die Visierlinie, NICHT der Boden. Ohne
+    // Beschriftung liest man die Kurve, die dahinter absackt, als Aufschlag —
+    // die Patrone scheint dann nach 100 m zu landen. Deshalb bekommt er auf
+    // Wunsch einen Namen.
     const zero = (yMin < 0 && yMax > 0)
-      ? `<line x1="${ml}" y1="${py(0).toFixed(1)}" x2="${W - mr}" y2="${py(0).toFixed(1)}" stroke="#3a4757" stroke-width="1"/>` : '';
+      ? `<line x1="${ml}" y1="${py(0).toFixed(1)}" x2="${W - mr}" y2="${py(0).toFixed(1)}" stroke="#3a4757" stroke-width="1"/>` +
+        // Rechts angeschlagen: Links oben sitzen bereits die Marken der
+        // Bezugsentfernungen ("25 m"), und der Kugelfall liegt am rechten Rand
+        // weit unter der Visierlinie — dort ist über dem Strich Platz.
+        (nullText ? `<text x="${W - mr - 3}" y="${(py(0) - 3).toFixed(1)}" fill="#6b7a8d" font-size="7.5"
+           text-anchor="end" font-family="ui-monospace, monospace">${esc(nullText)}</text>` : '')
+      : '';
 
     // Feste Bezugsentfernungen (25 m Kurzwaffe / DSB, 100 m Büchse). Damit lässt
     // sich auf einen Blick ablesen, ob der Haltepunkt auf beiden Distanzen passt.
@@ -762,18 +790,37 @@
       // 25 m ist die gängige DSB-Kurzwaffendistanz, 100 m der Büchsen-Standard.
       const xMarken = [25, 100].filter(x => x < weit);
 
+      // Größte Schussweite derselben Laborierung. Steht bewusst neben den
+      // Diagrammen: Die zeigen nur den Zielbereich, und ihr Nullstrich ist die
+      // Visierlinie — daraus liest man leicht heraus, das Geschoss käme nach
+      // 100 m herunter. Es fliegt in Wahrheit Kilometer weit.
+      const mw = Ballistik.maxWeite({ v0, bc: l.bc, modell: l.bc_modell });
+      const rund = (x, s) => nf(Math.round(x / s) * s);
+
       $('#bl-out', balDetails).innerHTML =
-        `<h4>Kugelfall über der Entfernung</h4>
-         <p style="font-size:13px;color:var(--muted);margin-bottom:2px">Wie weit das Geschoss über (+) oder unter (−) dem Haltepunkt liegt. Auf dem Fleck von ${zero} m ist der Wert null.</p>` +
+        `<h4>Treffpunktlage gegenüber dem Haltepunkt</h4>
+         <p style="font-size:13px;color:var(--muted);margin-bottom:2px">Wie weit das Geschoss über (+) oder unter (−) dem Haltepunkt liegt. Auf dem Fleck von ${zero} m ist der Wert null. <strong>Der Nullstrich ist die Visierlinie, nicht der Boden</strong> — wie weit die Kugel wirklich fliegt, steht unter den Diagrammen.</p>` +
         linienChart({
           serien: [{ name: 'Kugelfall', farbe: '#d4a24c', punkte: r.punkte.map(p => ({ x: p.m, y: p.drop_cm })) }],
-          xLabel: 'Entfernung (m)', yLabel: 'Kugelfall', yEinheit: 'cm', xMarken
+          xLabel: 'Entfernung (m)', yLabel: 'über / unter Haltepunkt', yEinheit: 'cm',
+          xMarken, nullText: 'Visierlinie'
         }) +
-        `<h4>Energie über der Entfernung</h4>` +
+        `<h4>Restenergie auf der Flugstrecke</h4>` +
         linienChart({
           serien: [{ name: 'Energie', farbe: '#5aa6c4', punkte: r.punkte.map(p => ({ x: p.m, y: p.e })) }],
           xLabel: 'Entfernung (m)', yLabel: 'Energie', yEinheit: 'J', marken, xMarken
         }) +
+        `<h4>Wie weit fliegt sie wirklich?</h4>
+         <div class="reichweite">
+           <div class="rw-zahl">${rund(mw.weite, 100)} m</div>
+           <div class="rw-txt">
+             ${gl('schussweite', 'Größte Schussweite')} dieser Laborierung — erreicht bei rund ${nf(mw.grad, 0)}° Rohrerhöhung.
+             Das Geschoss steigt dabei etwa ${rund(mw.gipfel, 50)} m hoch und ist ungefähr
+             ${nf(mw.t, 0)} Sekunden unterwegs. Die Diagramme darüber zeigen nur die ersten
+             ${weit} m, also den Bereich, in dem gezielt wird.
+           </div>
+         </div>
+         <div class="src">Gerechnet mit demselben Modell wie die Flugbahn, Abgangswinkel auf größte Weite optimiert, Mündung 1,5 m über Grund. Das Modell lässt das Geschoss die ganze Bahn mit der Spitze voran fliegen — real wird es im absteigenden Ast instabil, taumelt und bremst stärker, kommt also eher kürzer. Die Zahl ist eine Größenordnung, keine Grenze: Maßgeblich ist immer ein ausreichender Kugelfang und ein sicherer Hintergrund, nie eine gerechnete Weite.</div>` +
         `<div class="tw"><table class="t"><thead><tr>
           <th>Distanz</th><th>v</th><th>Energie</th><th>${gl('kugelfall', 'Kugelfall')}</th>${wind ? `<th>${gl('windabdrift', 'Wind')}</th>` : ''}<th>Flugzeit</th>
         </tr></thead><tbody>${tabelle.map(p => {
@@ -801,17 +848,51 @@
       if (balDetails.open) { rechneUndZeichne(); balDetails.removeEventListener('toggle', once); }
     });
 
-    /* 05 Marktüberblick & Preise */
+    /* 05 Zielballistik (nur wo hinterlegt) */
+    // Für Militär-/AR-Kaliber (Gruppe "msr") von vornherein aufgeklappt: Wer die
+    // 5,56 unter ihrer militärischen Bezeichnung sucht, will genau das wissen —
+    // was das Geschoss im Ziel tut. Bei anderen Kalibern bleibt es zugeklappt.
+    if (k.zielballistik) {
+      const z = k.zielballistik;
+      const militaerisch = (k.gruppen || []).includes('msr');
+      kapitel('Zielballistik — Wirkung im Ziel', 'Terminalballistik', `
+        ${z.hinweis ? `<div class="note">${esc(z.hinweis)}</div>` : ''}
+        ${(z.absaetze || []).map(p => `<p>${esc(p)}</p>`).join('')}
+        ${z.punkte && z.punkte.length ? `<h4>Auf einen Blick</h4>
+          <ul class="pc-list pc-con">${z.punkte.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+        <div class="note">Terminalballistik ist ein komplexes, in Teilen umstrittenes Feld. Die Darstellung hier ist eine allgemein gehaltene Übersicht, kein ballistisches Gutachten.</div>`,
+        militaerisch);
+    }
+
+    /* 06 Marktüberblick & Preise */
     let preisDet = null;
     if (preise) {
       preisDet = kapitel('Marktüberblick & Preise', `${preise.produkte.length} Angebote`,
         `<div id="preistab"></div>`);
     }
 
+    const KLASSE = { guenstig: 'günstig', mittel: 'Mittelklasse', premium: 'Premium' };
+    const preisTabelle = liste => `<div class="tw"><table class="t">
+      <thead><tr><th>Hersteller / Typ</th><th>Klasse</th><th>Packung</th><th>€/Schuss</th><th>Händler</th></tr></thead>
+      <tbody>${liste.map(p => `
+        <tr>
+          <td class="name">${esc(p.hersteller)}<br><span style="color:var(--muted);font-weight:400">${esc(p.typ)}</span></td>
+          <td>${KLASSE[p.klasse] || p.klasse}</td>
+          <td class="num">${p.packung} Stk<br><span style="color:var(--dim)">${eur(p.eur_packung)}</span></td>
+          <td class="num" style="color:var(--brass);font-weight:600">${eur(p.eur_schuss)}</td>
+          <td><a class="ext" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.haendler)} ↗</a></td>
+        </tr>`).join('')}</tbody>
+    </table></div>`;
+
     function preisZeichnen() {
       if (!preisDet) return;
-      const klasse = { guenstig: 'günstig', mittel: 'Mittelklasse', premium: 'Premium' };
       const prods = preise.produkte.filter(p => !aktiveForm || p.form === aktiveForm);
+      // Die übrigen Angebote desselben Kalibers. Ein echter "mehr laden"-Knopf
+      // ginge nicht: Die App darf per CSP/CORS keinen Shop abfragen, es gibt
+      // also nichts nachzuladen. Aber der Markt ist breiter als die gefilterte
+      // Form — filtert man auf Hohlspitz und bekommt ein Angebot, sollen die
+      // anderen Sorten des Kalibers nicht einfach verschwinden.
+      const rest = aktiveForm ? preise.produkte.filter(p => p.form !== aktiveForm) : [];
       $('.ch-sub', preisDet).textContent = `${prods.length} ${prods.length === 1 ? 'Angebot' : 'Angebote'}`;
       const pr = prods.map(p => p.eur_schuss);
       const spanne = pr.length ? [Math.min(...pr), Math.max(...pr)] : preise.range_eur_schuss;
@@ -821,17 +902,10 @@
           <div class="pb-labels"><span>${eur(spanne[0])} / Schuss</span><span>${eur(spanne[1])} / Schuss</span></div>
         </div>
         <p>${esc(preise.kommentar)}</p>
-        ${prods.length ? `<div class="tw"><table class="t">
-          <thead><tr><th>Hersteller / Typ</th><th>Klasse</th><th>Packung</th><th>€/Schuss</th><th>Händler</th></tr></thead>
-          <tbody>${prods.map(p => `
-            <tr>
-              <td class="name">${esc(p.hersteller)}<br><span style="color:var(--muted);font-weight:400">${esc(p.typ)}</span></td>
-              <td>${klasse[p.klasse] || p.klasse}</td>
-              <td class="num">${p.packung} Stk<br><span style="color:var(--dim)">${eur(p.eur_packung)}</span></td>
-              <td class="num" style="color:var(--brass);font-weight:600">${eur(p.eur_schuss)}</td>
-              <td><a class="ext" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.haendler)} ↗</a></td>
-            </tr>`).join('')}</tbody>
-        </table></div>` : '<div class="own-empty">Für diese Geschossform ist kein Angebot hinterlegt.</div>'}
+        ${prods.length ? preisTabelle(prods)
+          : '<div class="own-empty">Für diese Geschossform ist kein Angebot hinterlegt — der übrige Markt dieses Kalibers steht unten.</div>'}
+        ${rest.length ? `<details class="mehr"><summary>Weitere ${rest.length} ${rest.length === 1 ? 'Angebot' : 'Angebote'} dieses Kalibers (andere Geschossform)</summary>
+          ${preisTabelle(rest)}</details>` : ''}
         <div class="src">Preisstand ${esc(PREISE.stand)} · Quelle: ${esc(PREISE.quelle)}. Richtwerte inkl. MwSt., ohne Versand — bewusst keine Tagespreise. Der Link führt zum Händler, dort steht der aktuelle Preis.</div>`;
     }
 
@@ -856,15 +930,53 @@
       </div>`);
 
     /* 09 Varianten & Nachbarkaliber */
+
+    // Steckt hinter dem Namen ein eigener Datensatz, wird er anklickbar —
+    // sonst bleibt er Text. Bewusst keine Rückfallebene über die Suche: Die
+    // allermeisten Einträge hier sind gar keine Kaliber, sondern Laborierungen
+    // (".45 ACP +P") oder Patronenlagermaße (".223 Wylde"). Für die findet die
+    // Suche bestenfalls Rauschen — ein Klick auf ".222 Remington" bot in einem
+    // Test ".44 Rem Magnum" an, weil beide "Remington" heißen. Ein Link, der
+    // irgendwo landet, ist schlechter als gar keiner.
+    const link = (ziel, text) => `<a class="varlink" href="#/k/${ziel.id}">${esc(text)}</a>`;
+
+    const varTitel = name => {
+      const direkt = findeKaliber(name);
+      if (direkt) return direkt.id === id ? esc(name) : link(direkt, name);
+
+      // Manche Einträge führen zwei Bezeichnungen derselben Patrone im Namen:
+      // ".223 Rem / 5,56x45" steht bei vier Kalibern als Nachbar. Ohne das
+      // Zerlegen am Schrägstrich bliebe ausgerechnet der meistgenannte
+      // Datensatz von dort aus unerreichbar.
+      const teile = name.split('/').map(t => t.trim());
+      if (teile.length < 2) return esc(name);
+
+      const ziele = teile.map(t => {
+        const z = findeKaliber(t);
+        return z && z.id !== id ? z : null;
+      });
+      const distinkt = [...new Set(ziele.filter(Boolean).map(z => z.id))];
+
+      // Ein einziges Ziel: der ganze Eintrag wird zum Link, sonst stünden zwei
+      // Pfeile nebeneinander, die dieselbe Seite meinen.
+      if (distinkt.length === 1) return link(ziele.find(Boolean), name);
+      // Mehrere Ziele: jeder Teil verlinkt für sich, damit klar bleibt, welcher
+      // Name wohin führt.
+      if (distinkt.length > 1) {
+        return teile.map((t, i) => ziele[i] ? link(ziele[i], t) : esc(t)).join(' / ');
+      }
+      return esc(name);
+    };
+
     kapitel('Varianten & Nachbarkaliber', `${k.varianten.length} Varianten`, `
       <h4>Varianten</h4>
       <div class="dl" style="grid-template-columns:1fr">
-        ${k.varianten.map(v => `<dt style="color:var(--text);font-weight:600;border:none;padding-bottom:2px">${esc(v.name)}</dt>
+        ${k.varianten.map(v => `<dt style="color:var(--text);font-weight:600;border:none;padding-bottom:2px">${varTitel(v.name)}</dt>
           <dd style="text-align:left;font-family:var(--sans);color:#cfd8e3;padding-top:0">${esc(v.text)}</dd>`).join('')}
       </div>
       <h4>Im Vergleich zu</h4>
       <div class="dl" style="grid-template-columns:1fr">
-        ${k.nachbarn.map(v => `<dt style="color:var(--steel);font-weight:600;border:none;padding-bottom:2px">${esc(v.name)}</dt>
+        ${k.nachbarn.map(v => `<dt style="color:var(--steel);font-weight:600;border:none;padding-bottom:2px">${varTitel(v.name)}</dt>
           <dd style="text-align:left;font-family:var(--sans);color:#cfd8e3;padding-top:0">${esc(v.text)}</dd>`).join('')}
       </div>`);
 
@@ -875,17 +987,24 @@
     }
 
     /* 11 Wiederladen */
-    kapitel('Wiederladen', `${k.pulver.length} Pulver`, `
-      <h4>Bewährte Pulversorten</h4>
-      <div class="dl" style="grid-template-columns:1fr">
-        ${k.pulver.map(p => `<dt style="color:var(--text);font-weight:600;border:none;padding-bottom:2px">${esc(p.name)}</dt>
-          <dd style="text-align:left;font-family:var(--sans);color:#cfd8e3;padding-top:0">${esc(p.eignung)}</dd>`).join('')}
-      </div>
-      <h4>Ladedaten</h4>
-      <p>Konkrete Ladungsgewichte stehen bewusst nicht in dieser App. Abgeschriebene Ladedaten ohne Bezug auf deine Charge, dein Pulverlos und deine Waffe sind ein echtes Sicherheitsrisiko. Nimm die Originaldaten des Pulverherstellers — die sind kostenlos, aktuell und gelten für die Charge, die du in der Hand hast.</p>
-      <ul class="pc-list" style="list-style:none">
-        ${k.ladedaten_links.map(l => `<li style="padding-left:0"><a class="ext" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.titel)} ↗</a></li>`).join('')}
-      </ul>`);
+    // Randfeuermunition (leere Pulverliste) lässt sich nicht wiederladen — dann
+    // wäre die ganze Ladedaten-Sektion sinnlos und irreführend.
+    if (k.pulver.length) {
+      kapitel('Wiederladen', `${k.pulver.length} Pulver`, `
+        <h4>Bewährte Pulversorten</h4>
+        <div class="dl" style="grid-template-columns:1fr">
+          ${k.pulver.map(p => `<dt style="color:var(--text);font-weight:600;border:none;padding-bottom:2px">${esc(p.name)}</dt>
+            <dd style="text-align:left;font-family:var(--sans);color:#cfd8e3;padding-top:0">${esc(p.eignung)}</dd>`).join('')}
+        </div>
+        <h4>Ladedaten</h4>
+        <p>Konkrete Ladungsgewichte stehen bewusst nicht in dieser App. Abgeschriebene Ladedaten ohne Bezug auf deine Charge, dein Pulverlos und deine Waffe sind ein echtes Sicherheitsrisiko. Nimm die Originaldaten des Pulverherstellers — die sind kostenlos, aktuell und gelten für die Charge, die du in der Hand hast.</p>
+        <ul class="pc-list" style="list-style:none">
+          ${k.ladedaten_links.map(l => `<li style="padding-left:0"><a class="ext" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.titel)} ↗</a></li>`).join('')}
+        </ul>`);
+    } else {
+      kapitel('Wiederladen', 'nicht möglich', `
+        <p>Diese Patrone ist <strong>Randfeuermunition</strong> und lässt sich nicht wiederladen: Das Zündmittel sitzt ringförmig im umgebördelten Hülsenrand und wird beim Schuss dauerhaft verformt. Es gibt keine Zündhütchentasche, in die ein neues Zündhütchen käme. Bei den geringen Stückkosten spielt das ohnehin keine Rolle — man kauft, schießt und entsorgt die Hülse.</p>`);
+    }
 
     /* Quellen */
     const q = document.createElement('div');
